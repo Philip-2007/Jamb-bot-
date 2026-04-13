@@ -1,0 +1,2218 @@
+ [
+    {
+      "number": 1,
+      "question": "Which of the following particles is negatively charged?",
+      "options": {
+        "A": "Proton",
+        "B": "Neutron",
+        "C": "Electron",
+        "D": "Nucleus"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 2,
+      "question": "The smallest particle of an element that can take part in a chemical reaction is called?",
+      "options": {
+        "A": "Atom",
+        "B": "Molecule",
+        "C": "Compound",
+        "D": "Ion"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "question": "Which of the following is a physical change?",
+      "options": {
+        "A": "Burning of paper",
+        "B": "Rusting of iron",
+        "C": "Melting of ice",
+        "D": "Digestion of food"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 4,
+      "question": "The number of protons in an atom is known as its?",
+      "options": {
+        "A": "Mass number",
+        "B": "Atomic number",
+        "C": "Isotope number",
+        "D": "Valency"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "question": "Which of the following is a mixture?",
+      "options": {
+        "A": "Air",
+        "B": "Water",
+        "C": "Salt",
+        "D": "Iron"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "question": "The gas used in a light bulb is usually?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Hydrogen",
+        "C": "Argon",
+        "D": "Chlorine"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 7,
+      "question": "Which law states that matter cannot be created or destroyed?",
+      "options": {
+        "A": "Law of definite proportion",
+        "B": "Law of conservation of mass",
+        "C": "Boyle's law",
+        "D": "Charles law"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "question": "The pH of a neutral solution is?",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "10",
+        "D": "14"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 9,
+      "question": "Which of the following metals is most reactive?",
+      "options": {
+        "A": "Copper",
+        "B": "Gold",
+        "C": "Potassium",
+        "D": "Silver"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 10,
+      "question": "The process of removing soluble impurities from water is called?",
+      "options": {
+        "A": "Filtration",
+        "B": "Evaporation",
+        "C": "Distillation",
+        "D": "Sedimentation"
+      },
+      "answer": "C"
+    },
+
+    {
+      "number": 11,
+      "question": "Which subatomic particle has no charge?",
+      "options": {
+        "A": "Electron",
+        "B": "Proton",
+        "C": "Neutron",
+        "D": "Ion"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 12,
+      "question": "Which of the following is an alkali metal?",
+      "options": {
+        "A": "Iron",
+        "B": "Sodium",
+        "C": "Calcium",
+        "D": "Aluminium"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 13,
+      "question": "A solution that turns red litmus paper blue is?",
+      "options": {
+        "A": "Acidic",
+        "B": "Neutral",
+        "C": "Basic",
+        "D": "Salt"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 14,
+      "question": "The boiling point of water is?",
+      "options": {
+        "A": "50°C",
+        "B": "100°C",
+        "C": "0°C",
+        "D": "150°C"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 15,
+      "question": "Which gas is responsible for global warming?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon dioxide",
+        "D": "Hydrogen"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 16,
+      "question": "The electron configuration of sodium (11) is?",
+      "options": {
+        "A": "2,8,1",
+        "B": "2,7,2",
+        "C": "2,8,2",
+        "D": "2,6,3"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 17,
+      "question": "Which of the following is an example of a hydrocarbon?",
+      "options": {
+        "A": "NaCl",
+        "B": "CH4",
+        "C": "H2SO4",
+        "D": "H2O"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 18,
+      "question": "The main component of natural gas is?",
+      "options": {
+        "A": "Ethane",
+        "B": "Methane",
+        "C": "Propane",
+        "D": "Butane"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 19,
+      "question": "Which of the following is a noble gas?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Helium",
+        "C": "Nitrogen",
+        "D": "Chlorine"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 20,
+      "question": "The method used to separate crude oil into fractions is?",
+      "options": {
+        "A": "Filtration",
+        "B": "Fractional distillation",
+        "C": "Crystallization",
+        "D": "Evaporation"
+      },
+      "answer": "B"
+    },
+
+    {
+      "number": 21,
+      "question": "Which acid is found in vinegar?",
+      "options": {
+        "A": "Sulfuric acid",
+        "B": "Hydrochloric acid",
+        "C": "Acetic acid",
+        "D": "Nitric acid"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 22,
+      "question": "The SI unit of amount of substance is?",
+      "options": {
+        "A": "Gram",
+        "B": "Mole",
+        "C": "Liter",
+        "D": "Atom"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 23,
+      "question": "Which of the following is a base?",
+      "options": {
+        "A": "NaOH",
+        "B": "HCl",
+        "C": "H2SO4",
+        "D": "CO2"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 24,
+      "question": "Rusting of iron requires?",
+      "options": {
+        "A": "Nitrogen and water",
+        "B": "Oxygen and water",
+        "C": "Hydrogen and oxygen",
+        "D": "Carbon dioxide and water"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 25,
+      "question": "Which of the following is used as a drying agent?",
+      "options": {
+        "A": "Water",
+        "B": "Calcium chloride",
+        "C": "Sodium chloride",
+        "D": "Carbon dioxide"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 26,
+      "question": "Atoms of the same element with different mass numbers are called?",
+      "options": {
+        "A": "Isotopes",
+        "B": "Isomers",
+        "C": "Ions",
+        "D": "Allotropes"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 27,
+      "question": "Which of the following is a covalent compound?",
+      "options": {
+        "A": "NaCl",
+        "B": "MgO",
+        "C": "H2O",
+        "D": "KBr"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 28,
+      "question": "The arrangement of elements in the periodic table is based on?",
+      "options": {
+        "A": "Atomic mass",
+        "B": "Atomic number",
+        "C": "Valency",
+        "D": "Density"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 29,
+      "question": "Which of the following is a property of metals?",
+      "options": {
+        "A": "Poor conductor",
+        "B": "Brittle",
+        "C": "Malleable",
+        "D": "Non-lustrous"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 30,
+      "question": "The gas evolved when acid reacts with metal is?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "C"
+    },
+
+    {
+      "number": 31,
+      "question": "Which instrument is used to measure pH?",
+      "options": {
+        "A": "Barometer",
+        "B": "Thermometer",
+        "C": "pH meter",
+        "D": "Hygrometer"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 32,
+      "question": "Which of the following is a strong acid?",
+      "options": {
+        "A": "Acetic acid",
+        "B": "Hydrochloric acid",
+        "C": "Carbonic acid",
+        "D": "Citric acid"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 33,
+      "question": "The bond formed by sharing electrons is called?",
+      "options": {
+        "A": "Ionic bond",
+        "B": "Covalent bond",
+        "C": "Hydrogen bond",
+        "D": "Metallic bond"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 34,
+      "question": "Which of the following is used in making fertilizers?",
+      "options": {
+        "A": "Nitrogen",
+        "B": "Oxygen",
+        "C": "Helium",
+        "D": "Argon"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 35,
+      "question": "The process of solid changing directly to gas is?",
+      "options": {
+        "A": "Condensation",
+        "B": "Sublimation",
+        "C": "Evaporation",
+        "D": "Freezing"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 36,
+      "question": "Which of the following is an electrolyte?",
+      "options": {
+        "A": "Sugar solution",
+        "B": "Ethanol",
+        "C": "Molten NaCl",
+        "D": "Petrol"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 37,
+      "question": "Which of the following is a non-metal?",
+      "options": {
+        "A": "Iron",
+        "B": "Copper",
+        "C": "Sulfur",
+        "D": "Aluminium"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 38,
+      "question": "The valency of oxygen is?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 39,
+      "question": "Which of the following is used to prevent rusting?",
+      "options": {
+        "A": "Boiling",
+        "B": "Painting",
+        "C": "Freezing",
+        "D": "Crushing"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 40,
+      "question": "The mass number of an atom is the sum of?",
+      "options": {
+        "A": "Protons and electrons",
+        "B": "Neutrons and electrons",
+        "C": "Protons and neutrons",
+        "D": "Only protons"
+      },
+      "answer": "C"
+    },
+
+    {
+      "number": 41,
+      "question": "Which of the following is a product of combustion?",
+      "options": {
+        "A": "Water and carbon dioxide",
+        "B": "Oxygen only",
+        "C": "Hydrogen only",
+        "D": "Nitrogen only"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 42,
+      "question": "Which of the following is used to test for starch?",
+      "options": {
+        "A": "Benedict's solution",
+        "B": "Iodine solution",
+        "C": "Litmus paper",
+        "D": "Silver nitrate"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 43,
+      "question": "Which gas is used in welding metals?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 44,
+      "question": "Which of the following is a characteristic of acids?",
+      "options": {
+        "A": "Bitter taste",
+        "B": "Slippery feel",
+        "C": "Sour taste",
+        "D": "Soapy feel"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 45,
+      "question": "The number of electrons in the outermost shell is called?",
+      "options": {
+        "A": "Atomic number",
+        "B": "Valence electrons",
+        "C": "Mass number",
+        "D": "Proton number"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 46,
+      "question": "Which of the following is used in water purification?",
+      "options": {
+        "A": "Chlorine",
+        "B": "Nitrogen",
+        "C": "Hydrogen",
+        "D": "Helium"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 47,
+      "question": "Which of the following is a product of respiration?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 48,
+      "question": "Which of the following is a mixture separation method for insoluble solid?",
+      "options": {
+        "A": "Crystallization",
+        "B": "Filtration",
+        "C": "Distillation",
+        "D": "Fermentation"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 49,
+      "question": "Which of the following is a property of noble gases?",
+      "options": {
+        "A": "Highly reactive",
+        "B": "Inert",
+        "C": "Corrosive",
+        "D": "Radioactive"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 50,
+      "question": "Which of the following is used to increase soil fertility?",
+      "options": {
+        "A": "Fertilizers",
+        "B": "Sand",
+        "C": "Stone",
+        "D": "Plastic"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 51,
+      "question": "Which of the following is the electronic configuration of chlorine (17)?",
+      "options": {
+        "A": "2,8,7",
+        "B": "2,8,8",
+        "C": "2,7,8",
+        "D": "2,6,9"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 52,
+      "question": "The process of removing air from substances by heating in absence of air is called?",
+      "options": {
+        "A": "Oxidation",
+        "B": "Calcination",
+        "C": "Reduction",
+        "D": "Sublimation"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 53,
+      "question": "Which of the following is an oxide of nitrogen?",
+      "options": {
+        "A": "NO2",
+        "B": "Na2O",
+        "C": "CO2",
+        "D": "SO2"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 54,
+      "question": "Avogadro’s number is approximately?",
+      "options": {
+        "A": "6.02 × 10^23",
+        "B": "3.02 × 10^23",
+        "C": "1.60 × 10^23",
+        "D": "9.81 × 10^23"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 55,
+      "question": "Which of the following is used as a fuel in rockets?",
+      "options": {
+        "A": "Nitrogen",
+        "B": "Hydrogen",
+        "C": "Helium",
+        "D": "Argon"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 56,
+      "question": "Which of the following is an example of a homogeneous mixture?",
+      "options": {
+        "A": "Sand and water",
+        "B": "Oil and water",
+        "C": "Air",
+        "D": "Granite"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 57,
+      "question": "The element with atomic number 1 is?",
+      "options": {
+        "A": "Helium",
+        "B": "Hydrogen",
+        "C": "Lithium",
+        "D": "Oxygen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 58,
+      "question": "Which of the following metals is extracted by electrolysis?",
+      "options": {
+        "A": "Iron",
+        "B": "Aluminium",
+        "C": "Copper",
+        "D": "Silver"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 59,
+      "question": "The main ore of aluminium is?",
+      "options": {
+        "A": "Haematite",
+        "B": "Bauxite",
+        "C": "Galena",
+        "D": "Calcite"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 60,
+      "question": "Which of the following is a property of acids?",
+      "options": {
+        "A": "Turn blue litmus red",
+        "B": "Turn red litmus blue",
+        "C": "Taste bitter",
+        "D": "Feel slippery"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 61,
+      "question": "The number of neutrons in an atom is calculated as?",
+      "options": {
+        "A": "Atomic number - mass number",
+        "B": "Mass number - atomic number",
+        "C": "Protons + electrons",
+        "D": "Electrons - protons"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 62,
+      "question": "Which of the following is a catalyst in the Haber process?",
+      "options": {
+        "A": "Iron",
+        "B": "Copper",
+        "C": "Nickel",
+        "D": "Platinum"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 63,
+      "question": "Which gas is produced when limestone reacts with acid?",
+      "options": {
+        "A": "Hydrogen",
+        "B": "Oxygen",
+        "C": "Carbon dioxide",
+        "D": "Nitrogen"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 64,
+      "question": "The general formula for alkanes is?",
+      "options": {
+        "A": "CnH2n",
+        "B": "CnH2n+2",
+        "C": "CnHn",
+        "D": "CnH2n-2"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 65,
+      "question": "Which of the following is a saturated hydrocarbon?",
+      "options": {
+        "A": "Ethene",
+        "B": "Ethane",
+        "C": "Ethyne",
+        "D": "Benzene"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 66,
+      "question": "Which of the following is used to soften hard water?",
+      "options": {
+        "A": "Sodium carbonate",
+        "B": "Calcium chloride",
+        "C": "Hydrogen peroxide",
+        "D": "Carbon dioxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 67,
+      "question": "Which of the following is an allotrope of carbon?",
+      "options": {
+        "A": "Graphite",
+        "B": "Sodium chloride",
+        "C": "Oxygen",
+        "D": "Hydrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 68,
+      "question": "The process of gaining electrons is called?",
+      "options": {
+        "A": "Oxidation",
+        "B": "Reduction",
+        "C": "Combustion",
+        "D": "Evaporation"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 69,
+      "question": "Which of the following is used in fire extinguishers?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 70,
+      "question": "Which of the following is a strong base?",
+      "options": {
+        "A": "NaOH",
+        "B": "NH3",
+        "C": "HCl",
+        "D": "CO2"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 71,
+      "question": "The process of coating iron with zinc is called?",
+      "options": {
+        "A": "Galvanization",
+        "B": "Distillation",
+        "C": "Filtration",
+        "D": "Crystallization"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 72,
+      "question": "Which of the following is a greenhouse gas?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Methane",
+        "D": "Argon"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 73,
+      "question": "Which of the following is used to test for carbon dioxide?",
+      "options": {
+        "A": "Limewater",
+        "B": "Litmus",
+        "C": "Iodine",
+        "D": "Benedict's solution"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 74,
+      "question": "Which of the following is a product of fermentation?",
+      "options": {
+        "A": "Ethanol",
+        "B": "Methane",
+        "C": "Oxygen",
+        "D": "Hydrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 75,
+      "question": "Which of the following is a property of ionic compounds?",
+      "options": {
+        "A": "Low melting point",
+        "B": "Conduct electricity in solid state",
+        "C": "High melting point",
+        "D": "Non-crystalline"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 76,
+      "question": "Which of the following is used in photography?",
+      "options": {
+        "A": "Silver bromide",
+        "B": "Sodium chloride",
+        "C": "Calcium oxide",
+        "D": "Iron oxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 77,
+      "question": "Which of the following is a liquid metal?",
+      "options": {
+        "A": "Mercury",
+        "B": "Iron",
+        "C": "Aluminium",
+        "D": "Copper"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 78,
+      "question": "The gas used in making margarine is?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Carbon dioxide"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 79,
+      "question": "Which of the following is a non-renewable energy source?",
+      "options": {
+        "A": "Solar",
+        "B": "Wind",
+        "C": "Coal",
+        "D": "Hydroelectric"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 80,
+      "question": "Which of the following is used as a dehydrating agent?",
+      "options": {
+        "A": "Water",
+        "B": "Concentrated sulfuric acid",
+        "C": "Sodium chloride",
+        "D": "Oxygen"
+      },
+      "answer": "B"
+    },
+
+    {
+      "number": 81,
+      "question": "Which of the following is an example of an ester?",
+      "options": {
+        "A": "Ethyl ethanoate",
+        "B": "Ethanol",
+        "C": "Methane",
+        "D": "Ethane"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 82,
+      "question": "Which of the following is used to measure gas pressure?",
+      "options": {
+        "A": "Barometer",
+        "B": "Manometer",
+        "C": "Thermometer",
+        "D": "Hygrometer"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 83,
+      "question": "Which of the following is an amphoteric oxide?",
+      "options": {
+        "A": "Na2O",
+        "B": "Al2O3",
+        "C": "CO2",
+        "D": "SO2"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 84,
+      "question": "Which of the following is a reducing agent?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Argon"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 85,
+      "question": "Which of the following is a product of photosynthesis?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Water",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 86,
+      "question": "Which of the following is used in the manufacture of soap?",
+      "options": {
+        "A": "Sodium hydroxide",
+        "B": "Hydrochloric acid",
+        "C": "Carbon dioxide",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 87,
+      "question": "Which of the following is a halogen?",
+      "options": {
+        "A": "Neon",
+        "B": "Fluorine",
+        "C": "Helium",
+        "D": "Argon"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 88,
+      "question": "Which of the following is used to preserve food?",
+      "options": {
+        "A": "Salt",
+        "B": "Oxygen",
+        "C": "Hydrogen",
+        "D": "Helium"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 89,
+      "question": "Which of the following is a characteristic of metals?",
+      "options": {
+        "A": "Poor conductor",
+        "B": "Dull",
+        "C": "Malleable",
+        "D": "Brittle"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 90,
+      "question": "Which of the following is used in the preparation of oxygen gas?",
+      "options": {
+        "A": "KClO3",
+        "B": "NaCl",
+        "C": "HCl",
+        "D": "CO2"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 91,
+      "question": "Which of the following is a property of bases?",
+      "options": {
+        "A": "Sour taste",
+        "B": "Turn red litmus blue",
+        "C": "Turn blue litmus red",
+        "D": "No effect on indicators"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 92,
+      "question": "Which of the following is used in bleaching powder?",
+      "options": {
+        "A": "Chlorine",
+        "B": "Oxygen",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 93,
+      "question": "Which of the following is a hydrocarbon?",
+      "options": {
+        "A": "CH4",
+        "B": "H2SO4",
+        "C": "NaOH",
+        "D": "HCl"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 94,
+      "question": "Which of the following is used to test for reducing sugars?",
+      "options": {
+        "A": "Benedict's solution",
+        "B": "Litmus paper",
+        "C": "Iodine solution",
+        "D": "Silver nitrate"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 95,
+      "question": "Which of the following is a property of covalent compounds?",
+      "options": {
+        "A": "High melting point",
+        "B": "Conduct electricity in solid state",
+        "C": "Low melting point",
+        "D": "Crystalline ionic lattice"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 96,
+      "question": "Which of the following is used in the production of glass?",
+      "options": {
+        "A": "Silicon dioxide",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Oxygen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 97,
+      "question": "Which of the following is a product of oxidation?",
+      "options": {
+        "A": "Loss of electrons",
+        "B": "Gain of electrons",
+        "C": "Gain of neutrons",
+        "D": "Loss of protons"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 98,
+      "question": "Which of the following is used in dry cleaning?",
+      "options": {
+        "A": "Tetrachloroethene",
+        "B": "Water",
+        "C": "Ethanol",
+        "D": "Acetone"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 99,
+      "question": "Which of the following is a saturated solution?",
+      "options": {
+        "A": "Contains no solute",
+        "B": "Contains maximum dissolved solute",
+        "C": "Contains only solvent",
+        "D": "Contains gas only"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 100,
+      "question": "Which of the following is used in the manufacture of ammonia?",
+      "options": {
+        "A": "Nitrogen and hydrogen",
+        "B": "Oxygen and hydrogen",
+        "C": "Carbon and oxygen",
+        "D": "Helium and nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 101,
+      "question": "Which of the following processes is reversible?",
+      "options": {
+        "A": "Burning of paper",
+        "B": "Melting of ice",
+        "C": "Rusting of iron",
+        "D": "Digestion of food"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 102,
+      "question": "Which of the following is an indicator of chemical equilibrium?",
+      "options": {
+        "A": "Reaction stops completely",
+        "B": "Forward and backward reactions occur at equal rates",
+        "C": "Only forward reaction occurs",
+        "D": "Only backward reaction occurs"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 103,
+      "question": "Which of the following affects the rate of a chemical reaction?",
+      "options": {
+        "A": "Color of reactants",
+        "B": "Temperature",
+        "C": "Shape of container",
+        "D": "Mass of products"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 104,
+      "question": "Which of the following is a factor that increases reaction rate?",
+      "options": {
+        "A": "Decreasing temperature",
+        "B": "Increasing surface area",
+        "C": "Decreasing pressure",
+        "D": "Using larger particles"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 105,
+      "question": "Which of the following is an example of an exothermic reaction?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Burning of fuel",
+        "C": "Melting ice",
+        "D": "Evaporation of water"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 106,
+      "question": "Which of the following is a product of complete combustion of hydrocarbons?",
+      "options": {
+        "A": "Carbon monoxide and water",
+        "B": "Carbon dioxide and water",
+        "C": "Carbon and hydrogen",
+        "D": "Oxygen and nitrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 107,
+      "question": "Which of the following is used as an oxidizing agent?",
+      "options": {
+        "A": "Hydrogen",
+        "B": "Oxygen",
+        "C": "Carbon",
+        "D": "Sulfur"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 108,
+      "question": "Which of the following is a characteristic of equilibrium in a closed system?",
+      "options": {
+        "A": "No reaction occurs",
+        "B": "Reaction is irreversible",
+        "C": "No change in concentration of reactants and products",
+        "D": "Only products are formed"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 109,
+      "question": "Which of the following is an example of an alkene?",
+      "options": {
+        "A": "Ethane",
+        "B": "Ethene",
+        "C": "Methane",
+        "D": "Propane"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 110,
+      "question": "The functional group of alcohols is?",
+      "options": {
+        "A": "-COOH",
+        "B": "-OH",
+        "C": "-CHO",
+        "D": "-COO"
+      },
+      "answer": "B"
+    },
+
+    {
+      "number": 111,
+      "question": "Which of the following is used in the manufacture of sulfuric acid?",
+      "options": {
+        "A": "Sulfur dioxide",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Carbon monoxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 112,
+      "question": "Which of the following is a property of alkanes?",
+      "options": {
+        "A": "Unsaturated",
+        "B": "Contain double bonds",
+        "C": "Saturated hydrocarbons",
+        "D": "Highly reactive"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 113,
+      "question": "Which of the following is used to prevent oxidation of food?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon dioxide",
+        "D": "Hydrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 114,
+      "question": "Which of the following is a property of transition metals?",
+      "options": {
+        "A": "Low density",
+        "B": "Colorless compounds",
+        "C": "Form colored compounds",
+        "D": "Non-conductors"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 115,
+      "question": "Which of the following is used in hydrogenation of oils?",
+      "options": {
+        "A": "Nickel",
+        "B": "Iron",
+        "C": "Copper",
+        "D": "Silver"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 116,
+      "question": "Which of the following is a characteristic of acids?",
+      "options": {
+        "A": "Produce hydroxide ions",
+        "B": "Produce hydrogen ions",
+        "C": "Produce oxygen ions",
+        "D": "Produce chloride ions"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 117,
+      "question": "Which of the following is used in the extraction of zinc?",
+      "options": {
+        "A": "Carbon monoxide",
+        "B": "Hydrogen",
+        "C": "Oxygen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 118,
+      "question": "Which of the following is an example of a polymer?",
+      "options": {
+        "A": "Ethene",
+        "B": "Polyethene",
+        "C": "Methane",
+        "D": "Ethanol"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 119,
+      "question": "Which of the following is used as a refrigerant?",
+      "options": {
+        "A": "Ammonia",
+        "B": "Oxygen",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 120,
+      "question": "Which of the following is a property of bases?",
+      "options": {
+        "A": "Sour taste",
+        "B": "Bitter taste",
+        "C": "Turn blue litmus red",
+        "D": "Release hydrogen ions"
+      },
+      "answer": "B"
+    },
+
+    {
+      "number": 121,
+      "question": "Which of the following is used in the production of fertilizers?",
+      "options": {
+        "A": "Ammonia",
+        "B": "Oxygen",
+        "C": "Helium",
+        "D": "Argon"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 122,
+      "question": "Which of the following is a characteristic of ionic bonding?",
+      "options": {
+        "A": "Sharing electrons",
+        "B": "Transfer of electrons",
+        "C": "No electron involvement",
+        "D": "Sharing neutrons"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 123,
+      "question": "Which of the following is used in water softening?",
+      "options": {
+        "A": "Sodium carbonate",
+        "B": "Hydrogen peroxide",
+        "C": "Carbon dioxide",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 124,
+      "question": "Which of the following is a product of neutralization?",
+      "options": {
+        "A": "Salt and water",
+        "B": "Oxygen and hydrogen",
+        "C": "Acid only",
+        "D": "Base only"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 125,
+      "question": "Which of the following is used in the preparation of soap?",
+      "options": {
+        "A": "Fat and NaOH",
+        "B": "Acid and water",
+        "C": "Salt and oxygen",
+        "D": "Hydrogen and nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 126,
+      "question": "Which of the following is an unsaturated hydrocarbon?",
+      "options": {
+        "A": "Ethane",
+        "B": "Ethene",
+        "C": "Methane",
+        "D": "Propane"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 127,
+      "question": "Which of the following is used in photography development?",
+      "options": {
+        "A": "Sodium chloride",
+        "B": "Silver bromide",
+        "C": "Carbon dioxide",
+        "D": "Hydrogen peroxide"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 128,
+      "question": "Which of the following is a property of noble gases?",
+      "options": {
+        "A": "Highly reactive",
+        "B": "Inert",
+        "C": "Corrosive",
+        "D": "Acidic"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 129,
+      "question": "Which of the following is used in making explosives?",
+      "options": {
+        "A": "Nitroglycerin",
+        "B": "Water",
+        "C": "Oxygen",
+        "D": "Helium"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 130,
+      "question": "Which of the following is a property of metals?",
+      "options": {
+        "A": "Non-lustrous",
+        "B": "Brittle",
+        "C": "Good conductors",
+        "D": "Poor conductors"
+      },
+      "answer": "C"
+    },
+
+    {
+      "number": 131,
+      "question": "Which of the following is used in the extraction of iron?",
+      "options": {
+        "A": "Carbon monoxide",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Oxygen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 132,
+      "question": "Which of the following is a product of electrolysis of water?",
+      "options": {
+        "A": "Carbon dioxide",
+        "B": "Hydrogen and oxygen",
+        "C": "Nitrogen",
+        "D": "Methane"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 133,
+      "question": "Which of the following is used in dry batteries?",
+      "options": {
+        "A": "Zinc and carbon",
+        "B": "Iron and copper",
+        "C": "Silver and gold",
+        "D": "Lead and tin"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 134,
+      "question": "Which of the following is a property of alkalis?",
+      "options": {
+        "A": "Sour taste",
+        "B": "Turn red litmus blue",
+        "C": "No effect on indicators",
+        "D": "Release hydrogen ions"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 135,
+      "question": "Which of the following is used in the Haber process?",
+      "options": {
+        "A": "Iron catalyst",
+        "B": "Copper catalyst",
+        "C": "Nickel catalyst",
+        "D": "Platinum catalyst"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 136,
+      "question": "Which of the following is a product of respiration?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon dioxide",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 137,
+      "question": "Which of the following is used in bleaching?",
+      "options": {
+        "A": "Chlorine",
+        "B": "Hydrogen",
+        "C": "Nitrogen",
+        "D": "Carbon dioxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 138,
+      "question": "Which of the following is a property of covalent compounds?",
+      "options": {
+        "A": "High melting point",
+        "B": "Low melting point",
+        "C": "Conduct electricity in solid state",
+        "D": "Ionic lattice structure"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 139,
+      "question": "Which of the following is used in soda production?",
+      "options": {
+        "A": "Sodium carbonate",
+        "B": "Calcium carbonate",
+        "C": "Potassium nitrate",
+        "D": "Hydrogen peroxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 140,
+      "question": "Which of the following is a greenhouse gas?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon dioxide",
+        "D": "Helium"
+      },
+      "answer": "C"
+    },
+
+    {
+      "number": 141,
+      "question": "Which of the following is used in rust prevention?",
+      "options": {
+        "A": "Painting",
+        "B": "Boiling",
+        "C": "Freezing",
+        "D": "Melting"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 142,
+      "question": "Which of the following is a characteristic of oxidation?",
+      "options": {
+        "A": "Gain of electrons",
+        "B": "Loss of electrons",
+        "C": "Gain of neutrons",
+        "D": "Loss of protons"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 143,
+      "question": "Which of the following is used in food preservation?",
+      "options": {
+        "A": "Salt",
+        "B": "Oxygen",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 144,
+      "question": "Which of the following is a property of acids?",
+      "options": {
+        "A": "Bitter taste",
+        "B": "Sour taste",
+        "C": "Slippery feel",
+        "D": "No taste"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 145,
+      "question": "Which of the following is used in petroleum refining?",
+      "options": {
+        "A": "Fractional distillation",
+        "B": "Filtration",
+        "C": "Sublimation",
+        "D": "Crystallization"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 146,
+      "question": "Which of the following is a property of metals?",
+      "options": {
+        "A": "Poor conductor",
+        "B": "Brittle",
+        "C": "Malleable",
+        "D": "Non-lustrous"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 147,
+      "question": "Which of the following is used in making nylon?",
+      "options": {
+        "A": "Hexamethylenediamine",
+        "B": "Methane",
+        "C": "Oxygen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 148,
+      "question": "Which of the following is a product of complete combustion?",
+      "options": {
+        "A": "CO and H2O",
+        "B": "CO2 and H2O",
+        "C": "C and O2",
+        "D": "H2 and CO2"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 149,
+      "question": "Which of the following is used in water testing?",
+      "options": {
+        "A": "Silver nitrate",
+        "B": "Sodium chloride",
+        "C": "Hydrogen peroxide",
+        "D": "Carbon dioxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 150,
+      "question": "Which of the following is a property of equilibrium?",
+      "options": {
+        "A": "Only forward reaction occurs",
+        "B": "Only backward reaction occurs",
+        "C": "Dynamic balance of reactions",
+        "D": "No reaction occurs"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 151,
+      "question": "Which of the following is used as a drying agent for gases?",
+      "options": {
+        "A": "Water",
+        "B": "Concentrated sulfuric acid",
+        "C": "Sodium chloride",
+        "D": "Carbon dioxide"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 152,
+      "question": "Which of the following is a product of cracking petroleum?",
+      "options": {
+        "A": "Only long-chain hydrocarbons",
+        "B": "Short-chain hydrocarbons and alkenes",
+        "C": "Water only",
+        "D": "Carbon dioxide only"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 153,
+      "question": "Which of the following is used in the manufacture of detergents?",
+      "options": {
+        "A": "Sodium hydroxide",
+        "B": "Carbon dioxide",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 154,
+      "question": "Which of the following is an environmental pollutant from vehicles?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Carbon monoxide",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 155,
+      "question": "Which of the following is a method of preventing corrosion?",
+      "options": {
+        "A": "Painting",
+        "B": "Heating",
+        "C": "Boiling",
+        "D": "Freezing"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 156,
+      "question": "Which of the following is used in electroplating?",
+      "options": {
+        "A": "Electric current",
+        "B": "Heat only",
+        "C": "Pressure only",
+        "D": "Light energy"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 157,
+      "question": "Which of the following is a property of electrolytes?",
+      "options": {
+        "A": "Do not conduct electricity in solution",
+        "B": "Conduct electricity in molten or aqueous state",
+        "C": "Always solid",
+        "D": "Always gaseous"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 158,
+      "question": "Which of the following is used in the extraction of aluminium?",
+      "options": {
+        "A": "Electrolysis",
+        "B": "Filtration",
+        "C": "Sublimation",
+        "D": "Crystallization"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 159,
+      "question": "Which of the following is the main component of LPG?",
+      "options": {
+        "A": "Propane and butane",
+        "B": "Methane only",
+        "C": "Hydrogen only",
+        "D": "Carbon dioxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 160,
+      "question": "Which of the following is used as a catalyst in catalytic converters?",
+      "options": {
+        "A": "Platinum",
+        "B": "Iron",
+        "C": "Zinc",
+        "D": "Aluminium"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 161,
+      "question": "Which of the following is a property of alkenes?",
+      "options": {
+        "A": "Saturated hydrocarbons",
+        "B": "Contain double bonds",
+        "C": "Do not react",
+        "D": "No carbon-carbon bonds"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 162,
+      "question": "Which of the following is used in the production of ethanol industrially?",
+      "options": {
+        "A": "Hydration of ethene",
+        "B": "Combustion of methane",
+        "C": "Oxidation of carbon",
+        "D": "Reduction of nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 163,
+      "question": "Which of the following is a feature of isotopes?",
+      "options": {
+        "A": "Same mass number",
+        "B": "Different atomic numbers",
+        "C": "Same atomic number, different mass number",
+        "D": "Different electrons only"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 164,
+      "question": "Which of the following is used in qualitative analysis of cations?",
+      "options": {
+        "A": "Flame test",
+        "B": "Distillation",
+        "C": "Filtration",
+        "D": "Sublimation"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 165,
+      "question": "Which of the following is a strong oxidizing agent?",
+      "options": {
+        "A": "Potassium permanganate",
+        "B": "Hydrogen gas",
+        "C": "Methane",
+        "D": "Carbon"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 166,
+      "question": "Which of the following is used in the manufacture of bleaching powder?",
+      "options": {
+        "A": "Chlorine gas",
+        "B": "Oxygen gas",
+        "C": "Hydrogen gas",
+        "D": "Nitrogen gas"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 167,
+      "question": "Which of the following is a product of anaerobic respiration in yeast?",
+      "options": {
+        "A": "Ethanol and carbon dioxide",
+        "B": "Oxygen and water",
+        "C": "Nitrogen and hydrogen",
+        "D": "Methane only"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 168,
+      "question": "Which of the following is used to identify chloride ions?",
+      "options": {
+        "A": "Silver nitrate solution",
+        "B": "Benedict's solution",
+        "C": "Iodine solution",
+        "D": "Litmus paper"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 169,
+      "question": "Which of the following is a property of transition elements?",
+      "options": {
+        "A": "Form only colorless compounds",
+        "B": "Do not form ions",
+        "C": "Show variable oxidation states",
+        "D": "Always non-metallic"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 170,
+      "question": "Which of the following is used in soap making process?",
+      "options": {
+        "A": "Saponification",
+        "B": "Fermentation",
+        "C": "Neutralization only",
+        "D": "Distillation"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 171,
+      "question": "Which of the following is a product of oxidation of ethanol?",
+      "options": {
+        "A": "Ethanoic acid",
+        "B": "Methane",
+        "C": "Propane",
+        "D": "Ethene"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 172,
+      "question": "Which of the following is used to remove temporary hardness of water?",
+      "options": {
+        "A": "Boiling",
+        "B": "Filtration",
+        "C": "Freezing",
+        "D": "Sublimation"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 173,
+      "question": "Which of the following is a property of ionic compounds?",
+      "options": {
+        "A": "Low melting point",
+        "B": "Conduct electricity when molten",
+        "C": "Do not dissolve in water",
+        "D": "Always gaseous"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 174,
+      "question": "Which of the following is used in the extraction of copper?",
+      "options": {
+        "A": "Electrolysis",
+        "B": "Filtration",
+        "C": "Sublimation",
+        "D": "Crystallization"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 175,
+      "question": "Which of the following is a feature of homologous series?",
+      "options": {
+        "A": "Different functional groups",
+        "B": "Same functional group",
+        "C": "Random structure",
+        "D": "No carbon atoms"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 176,
+      "question": "Which of the following is used in making glass?",
+      "options": {
+        "A": "Silica",
+        "B": "Carbon dioxide",
+        "C": "Hydrogen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 177,
+      "question": "Which of the following is a product of photosynthesis?",
+      "options": {
+        "A": "Glucose",
+        "B": "Carbon monoxide",
+        "C": "Methane",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 178,
+      "question": "Which of the following is used in nuclear reactions?",
+      "options": {
+        "A": "Uranium",
+        "B": "Iron",
+        "C": "Copper",
+        "D": "Zinc"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 179,
+      "question": "Which of the following is a property of bases?",
+      "options": {
+        "A": "Produce hydrogen ions",
+        "B": "Produce hydroxide ions",
+        "C": "Sour taste",
+        "D": "React with metals to produce oxygen"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 180,
+      "question": "Which of the following is used in chromatography?",
+      "options": {
+        "A": "Separation of mixtures",
+        "B": "Heating substances",
+        "C": "Melting solids",
+        "D": "Freezing liquids"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 181,
+      "question": "Which of the following is a property of carbon?",
+      "options": {
+        "A": "Only ionic bonding",
+        "B": "Catenation",
+        "C": "No bonding ability",
+        "D": "Always metallic"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 182,
+      "question": "Which of the following is used in electrolysis of brine?",
+      "options": {
+        "A": "Sodium chloride solution",
+        "B": "Water only",
+        "C": "Hydrogen peroxide",
+        "D": "Methane"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 183,
+      "question": "Which of the following is a product of electrolysis of brine?",
+      "options": {
+        "A": "Sodium hydroxide, chlorine, hydrogen",
+        "B": "Carbon dioxide only",
+        "C": "Water only",
+        "D": "Methane only"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 184,
+      "question": "Which of the following is used to detect water?",
+      "options": {
+        "A": "Cobalt chloride paper",
+        "B": "Litmus paper",
+        "C": "Silver nitrate",
+        "D": "Benedict's solution"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 185,
+      "question": "Which of the following is a property of organic compounds?",
+      "options": {
+        "A": "High melting point",
+        "B": "Conduct electricity",
+        "C": "Low melting point",
+        "D": "Ionic bonding"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 186,
+      "question": "Which of the following is used in fertilizers for nitrogen supply?",
+      "options": {
+        "A": "Ammonium nitrate",
+        "B": "Sodium chloride",
+        "C": "Carbon dioxide",
+        "D": "Oxygen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 187,
+      "question": "Which of the following is a property of gases?",
+      "options": {
+        "A": "Fixed shape",
+        "B": "Fixed volume",
+        "C": "Highly compressible",
+        "D": "Rigid structure"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 188,
+      "question": "Which of the following is used in making PVC?",
+      "options": {
+        "A": "Vinyl chloride",
+        "B": "Methane",
+        "C": "Ethane",
+        "D": "Propane"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 189,
+      "question": "Which of the following is a method of separating immiscible liquids?",
+      "options": {
+        "A": "Separating funnel",
+        "B": "Filtration",
+        "C": "Sublimation",
+        "D": "Evaporation"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 190,
+      "question": "Which of the following is used in treating sewage water?",
+      "options": {
+        "A": "Chlorination",
+        "B": "Freezing",
+        "C": "Heating only",
+        "D": "Melting"
+      },
+      "answer": "A"
+    },
+
+    {
+      "number": 191,
+      "question": "Which of the following is a product of cracking hydrocarbons?",
+      "options": {
+        "A": "Alkenes",
+        "B": "Water only",
+        "C": "Oxygen only",
+        "D": "Nitrogen only"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 192,
+      "question": "Which of the following is used in rust prevention by coating iron with tin?",
+      "options": {
+        "A": "Tinning",
+        "B": "Painting",
+        "C": "Boiling",
+        "D": "Sublimation"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 193,
+      "question": "Which of the following is a characteristic of equilibrium?",
+      "options": {
+        "A": "Dynamic but appears static",
+        "B": "Only forward reaction occurs",
+        "C": "Only backward reaction occurs",
+        "D": "No molecules present"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 194,
+      "question": "Which of the following is used in the production of nitric acid?",
+      "options": {
+        "A": "Ammonia",
+        "B": "Hydrogen",
+        "C": "Carbon dioxide",
+        "D": "Methane"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 195,
+      "question": "Which of the following is a property of acids in aqueous solution?",
+      "options": {
+        "A": "Produce OH- ions",
+        "B": "Produce H+ ions",
+        "C": "No ions produced",
+        "D": "Produce Na+ ions"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 196,
+      "question": "Which of the following is used in making rayon?",
+      "options": {
+        "A": "Cellulose",
+        "B": "Methane",
+        "C": "Oxygen",
+        "D": "Nitrogen"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 197,
+      "question": "Which of the following is a method of purification of water?",
+      "options": {
+        "A": "Distillation",
+        "B": "Freezing",
+        "C": "Sublimation",
+        "D": "Crushing"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 198,
+      "question": "Which of the following is a product of combustion of sulfur?",
+      "options": {
+        "A": "Sulfur dioxide",
+        "B": "Sulfur trioxide",
+        "C": "Hydrogen sulfide",
+        "D": "Carbon dioxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 199,
+      "question": "Which of the following is used in fertilizer production via Haber process?",
+      "options": {
+        "A": "Ammonia",
+        "B": "Oxygen",
+        "C": "Hydrogen peroxide",
+        "D": "Carbon monoxide"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 200,
+      "question": "Which of the following best describes JAMB Chemistry syllabus coverage?",
+      "options": {
+        "A": "Only organic chemistry",
+        "B": "Only physical chemistry",
+        "C": "All major areas including physical, organic, and inorganic chemistry",
+        "D": "Only laboratory techniques"
+      },
+      "answer": "C"
+    }
+ ]

@@ -1,0 +1,821 @@
+{
+  "1": {
+    "question": "Which of the following is a scalar quantity?",
+    "options": ["A. Force", "B. Velocity", "C. Speed", "D. Acceleration"]
+  },
+  "2": {
+    "question": "The SI unit of force is?",
+    "options": ["A. Joule", "B. Newton", "C. Watt", "D. Pascal"]
+  },
+  "3": {
+    "question": "A body moving with constant speed in a circle is said to have?",
+    "options": ["A. Linear motion", "B. Circular motion", "C. Random motion", "D. Projectile motion"]
+  },
+  "4": {
+    "question": "Which of the following is a vector quantity?",
+    "options": ["A. Mass", "B. Time", "C. Displacement", "D. Energy"]
+  },
+  "5": {
+    "question": "The slope of a velocity-time graph represents?",
+    "options": ["A. Distance", "B. Acceleration", "C. Speed", "D. Momentum"]
+  },
+  "6": {
+    "question": "Which law states that action and reaction are equal and opposite?",
+    "options": ["A. Newton's First Law", "B. Newton's Second Law", "C. Newton's Third Law", "D. Law of Gravitation"]
+  },
+  "7": {
+    "question": "The force that opposes motion between two surfaces is called?",
+    "options": ["A. Tension", "B. Friction", "C. Weight", "D. Thrust"]
+  },
+  "8": {
+    "question": "Work is said to be done when a force causes?",
+    "options": ["A. Temperature change", "B. Displacement", "C. Mass increase", "D. Pressure change"]
+  },
+  "9": {
+    "question": "The unit of work is?",
+    "options": ["A. Newton", "B. Watt", "C. Joule", "D. Pascal"]
+  },
+  "10": {
+    "question": "Power is defined as?",
+    "options": ["A. Force × distance", "B. Work done per unit time", "C. Mass × acceleration", "D. Energy × time"]
+  },
+
+  "11": {
+    "question": "Which of the following is an example of a non-contact force?",
+    "options": ["A. Friction", "B. Tension", "C. Magnetic force", "D. Normal reaction"]
+  },
+  "12": {
+    "question": "The acceleration due to gravity on Earth is approximately?",
+    "options": ["A. 9.8 m/s²", "B. 10 m/s", "C. 8.9 m/s²", "D. 12 m/s²"]
+  },
+  "13": {
+    "question": "A body at rest will remain at rest unless acted upon by?",
+    "options": ["A. Energy", "B. Force", "C. Heat", "D. Pressure"]
+  },
+  "14": {
+    "question": "The moment of a force is given by?",
+    "options": ["A. Force × velocity", "B. Force × distance", "C. Mass × acceleration", "D. Pressure × area"]
+  },
+  "15": {
+    "question": "Which instrument is used to measure mass?",
+    "options": ["A. Barometer", "B. Thermometer", "C. Beam balance", "D. Ammeter"]
+  },
+  "16": {
+    "question": "The density of a substance is defined as?",
+    "options": ["A. Mass × volume", "B. Mass per unit volume", "C. Volume per unit mass", "D. Weight per unit area"]
+  },
+  "17": {
+    "question": "Which of the following is a derived quantity?",
+    "options": ["A. Length", "B. Mass", "C. Velocity", "D. Time"]
+  },
+  "18": {
+    "question": "Pressure is defined as?",
+    "options": ["A. Force × area", "B. Force per unit area", "C. Mass per volume", "D. Work per time"]
+  },
+  "19": {
+    "question": "The unit of pressure is?",
+    "options": ["A. Joule", "B. Pascal", "C. Newton", "D. Watt"]
+  },
+  "20": {
+    "question": "Which of the following is an example of projectile motion?",
+    "options": ["A. Car moving straight", "B. Stone thrown into air", "C. Train on rail", "D. Elevator moving up"]
+  },
+
+  "21": {
+    "question": "The total energy of a system remains constant according to?",
+    "options": ["A. Newton's law", "B. Law of conservation of energy", "C. Ohm's law", "D. Hooke's law"]
+  },
+  "22": {
+    "question": "Which of the following is an example of potential energy?",
+    "options": ["A. Moving car", "B. Stretched spring", "C. Sound wave", "D. Light wave"]
+  },
+  "23": {
+    "question": "The SI unit of energy is?",
+    "options": ["A. Joule", "B. Watt", "C. Newton", "D. Volt"]
+  },
+  "24": {
+    "question": "Which of the following is a renewable energy source?",
+    "options": ["A. Coal", "B. Petroleum", "C. Solar energy", "D. Natural gas"]
+  },
+  "25": {
+    "question": "Heat transfer in solids mainly occurs by?",
+    "options": ["A. Convection", "B. Conduction", "C. Radiation", "D. Reflection"]
+  },
+  "26": {
+    "question": "Which of the following is a good conductor of heat?",
+    "options": ["A. Wood", "B. Plastic", "C. Copper", "D. Rubber"]
+  },
+  "27": {
+    "question": "The boiling point of water is?",
+    "options": ["A. 0°C", "B. 50°C", "C. 100°C", "D. 150°C"]
+  },
+  "28": {
+    "question": "Which instrument is used to measure temperature?",
+    "options": ["A. Barometer", "B. Thermometer", "C. Hygrometer", "D. Ammeter"]
+  },
+  "29": {
+    "question": "Sound travels fastest in?",
+    "options": ["A. Air", "B. Water", "C. Vacuum", "D. Solid"]
+  },
+  "30": {
+    "question": "The unit of frequency is?",
+    "options": ["A. Joule", "B. Hertz", "C. Newton", "D. Pascal"]
+  },
+
+  "31": {
+    "question": "Which of the following waves requires a medium to travel?",
+    "options": ["A. Light wave", "B. Radio wave", "C. Sound wave", "D. X-ray"]
+  },
+  "32": {
+    "question": "Light travels in straight lines in a phenomenon called?",
+    "options": ["A. Reflection", "B. Refraction", "C. Rectilinear propagation", "D. Diffraction"]
+  },
+  "33": {
+    "question": "The angle of incidence is equal to angle of reflection in?",
+    "options": ["A. Refraction", "B. Reflection", "C. Diffraction", "D. Dispersion"]
+  },
+  "34": {
+    "question": "Which of the following is used in optical fibres?",
+    "options": ["A. Reflection", "B. Total internal reflection", "C. Refraction", "D. Diffusion"]
+  },
+  "35": {
+    "question": "A convex lens is also called?",
+    "options": ["A. Diverging lens", "B. Converging lens", "C. Plane lens", "D. Concave lens"]
+  },
+  "36": {
+    "question": "The unit of electric current is?",
+    "options": ["A. Volt", "B. Ohm", "C. Ampere", "D. Watt"]
+  },
+  "37": {
+    "question": "Ohm's law states that?",
+    "options": ["A. V = IR", "B. P = VI", "C. F = ma", "D. E = mc²"]
+  },
+  "38": {
+    "question": "Which of the following is a good conductor of electricity?",
+    "options": ["A. Rubber", "B. Glass", "C. Copper", "D. Plastic"]
+  },
+  "39": {
+    "question": "The resistance of a wire depends on?",
+    "options": ["A. Length", "B. Area", "C. Material", "D. All of the above"]
+  },
+  "40": {
+    "question": "Electric power is measured in?",
+    "options": ["A. Joule", "B. Watt", "C. Ohm", "D. Volt"]
+  },
+
+  "41": {
+    "question": "A transformer works on the principle of?",
+    "options": ["A. Electrolysis", "B. Electromagnetic induction", "C. Heating effect", "D. Chemical reaction"]
+  },
+  "42": {
+    "question": "The SI unit of magnetic field is?",
+    "options": ["A. Tesla", "B. Weber", "C. Ampere", "D. Henry"]
+  },
+  "43": {
+    "question": "A magnet has how many poles?",
+    "options": ["A. 1", "B. 2", "C. 3", "D. 4"]
+  },
+  "44": {
+    "question": "Like poles of a magnet?",
+    "options": ["A. Attract", "B. Repel", "C. Neutralize", "D. Merge"]
+  },
+  "45": {
+    "question": "The nucleus of an atom contains?",
+    "options": ["A. Electrons", "B. Protons and neutrons", "C. Only electrons", "D. Only neutrons"]
+  },
+  "46": {
+    "question": "The negatively charged particle in an atom is?",
+    "options": ["A. Proton", "B. Neutron", "C. Electron", "D. Nucleus"]
+  },
+  "47": {
+    "question": "Radioactivity was discovered by?",
+    "options": ["A. Newton", "B. Einstein", "C. Becquerel", "D. Faraday"]
+  },
+  "48": {
+    "question": "Which radiation is most penetrating?",
+    "options": ["A. Alpha", "B. Beta", "C. Gamma", "D. X-ray"]
+  },
+  "49": {
+    "question": "The half-life of a radioactive substance is?",
+    "options": ["A. Time for full decay", "B. Time for half atoms to decay", "C. Time for doubling", "D. Infinite time"]
+  },
+  "50": {
+    "question": "Nuclear fusion occurs in the?",
+    "options": ["A. Earth", "B. Sun", "C. Moon", "D. Ocean"]
+  },
+  {
+  "51": {
+    "question": "Which of the following devices converts electrical energy to mechanical energy?",
+    "options": ["A. Generator", "B. Motor", "C. Transformer", "D. Rectifier"]
+  },
+  "52": {
+    "question": "The process of charging a body by rubbing is called?",
+    "options": ["A. Induction", "B. Conduction", "C. Friction", "D. Polarization"]
+  },
+  "53": {
+    "question": "Like charges?",
+    "options": ["A. Attract", "B. Repel", "C. Neutralize", "D. Combine"]
+  },
+  "54": {
+    "question": "The device used to measure electric current is?",
+    "options": ["A. Voltmeter", "B. Ammeter", "C. Ohmmeter", "D. Galvanometer"]
+  },
+  "55": {
+    "question": "The potential difference is measured in?",
+    "options": ["A. Ampere", "B. Volt", "C. Ohm", "D. Watt"]
+  },
+  "56": {
+    "question": "Which of the following is not a state of matter?",
+    "options": ["A. Solid", "B. Liquid", "C. Gas", "D. Energy"]
+  },
+  "57": {
+    "question": "The particles in a solid are?",
+    "options": ["A. Far apart", "B. Closely packed", "C. Free moving", "D. Randomly arranged"]
+  },
+  "58": {
+    "question": "Evaporation occurs at?",
+    "options": ["A. Only boiling point", "B. Any temperature", "C. Freezing point", "D. Melting point only"]
+  },
+  "59": {
+    "question": "Which of the following increases evaporation rate?",
+    "options": ["A. Low temperature", "B. High humidity", "C. Large surface area", "D. No wind"]
+  },
+  "60": {
+    "question": "The change of state from gas to liquid is called?",
+    "options": ["A. Evaporation", "B. Condensation", "C. Sublimation", "D. Fusion"]
+  },
+
+  "61": {
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "options": ["A. Thermometer", "B. Barometer", "C. Hygrometer", "D. Anemometer"]
+  },
+  "62": {
+    "question": "The pressure in liquids increases with?",
+    "options": ["A. Decrease in depth", "B. Increase in depth", "C. Decrease in density", "D. Temperature only"]
+  },
+  "63": {
+    "question": "Archimedes’ principle is related to?",
+    "options": ["A. Heat", "B. Upthrust", "C. Sound", "D. Electricity"]
+  },
+  "64": {
+    "question": "An object floats when its density is?",
+    "options": ["A. Greater than liquid", "B. Equal to liquid", "C. Less than liquid", "D. Zero"]
+  },
+  "65": {
+    "question": "The SI unit of work done is?",
+    "options": ["A. Watt", "B. Joule", "C. Newton", "D. Pascal"]
+  },
+  "66": {
+    "question": "Efficiency is given by?",
+    "options": ["A. Output/Input × 100%", "B. Input/Output × 100%", "C. Work × time", "D. Force × distance"]
+  },
+  "67": {
+    "question": "The principle of moments is used in?",
+    "options": ["A. Electricity", "B. Equilibrium", "C. Heat transfer", "D. Radioactivity"]
+  },
+  "68": {
+    "question": "A couple produces?",
+    "options": ["A. Linear motion", "B. Turning effect", "C. Heat", "D. Pressure"]
+  },
+  "69": {
+    "question": "Which of the following is a simple machine?",
+    "options": ["A. Battery", "B. Lever", "C. Wire", "D. Bulb"]
+  },
+  "70": {
+    "question": "The mechanical advantage of a machine is?",
+    "options": ["A. Load/Effort", "B. Effort/Load", "C. Distance/Time", "D. Power/Time"]
+  },
+
+  "71": {
+    "question": "Sound cannot travel in?",
+    "options": ["A. Air", "B. Water", "C. Solid", "D. Vacuum"]
+  },
+  "72": {
+    "question": "Echo is a result of?",
+    "options": ["A. Refraction", "B. Reflection of sound", "C. Diffraction", "D. Absorption"]
+  },
+  "73": {
+    "question": "The speed of light in vacuum is approximately?",
+    "options": ["A. 3 × 10^8 m/s", "B. 3 × 10^6 m/s", "C. 3 × 10^5 m/s", "D. 3 × 10^4 m/s"]
+  },
+  "74": {
+    "question": "Which color has the longest wavelength?",
+    "options": ["A. Blue", "B. Red", "C. Violet", "D. Green"]
+  },
+  "75": {
+    "question": "Dispersion of light produces?",
+    "options": ["A. Sound", "B. Rainbow", "C. Heat", "D. Shadow"]
+  },
+  "76": {
+    "question": "The image formed by a plane mirror is?",
+    "options": ["A. Real and inverted", "B. Virtual and upright", "C. Real and upright", "D. Magnified"]
+  },
+  "77": {
+    "question": "Which lens is used to correct short sightedness?",
+    "options": ["A. Convex lens", "B. Concave lens", "C. Cylindrical lens", "D. Flat lens"]
+  },
+  "78": {
+    "question": "The unit of wavelength is?",
+    "options": ["A. Meter", "B. Hertz", "C. Joule", "D. Newton"]
+  },
+  "79": {
+    "question": "The frequency of a wave is measured in?",
+    "options": ["A. Hertz", "B. Meter", "C. Joule", "D. Watt"]
+  },
+  "80": {
+    "question": "The energy of a photon depends on?",
+    "options": ["A. Speed", "B. Frequency", "C. Mass", "D. Volume"]
+  },
+
+  "81": {
+    "question": "Which of the following is used to detect radiation?",
+    "options": ["A. Thermometer", "B. Geiger counter", "C. Ammeter", "D. Barometer"]
+  },
+  "82": {
+    "question": "Alpha particles consist of?",
+    "options": ["A. Electrons", "B. Protons only", "C. Helium nuclei", "D. Photons"]
+  },
+  "83": {
+    "question": "Beta particles are?",
+    "options": ["A. Electrons", "B. Neutrons", "C. Protons", "D. Alpha particles"]
+  },
+  "84": {
+    "question": "Gamma rays are?",
+    "options": ["A. Charged particles", "B. Electromagnetic waves", "C. Protons", "D. Neutrons"]
+  },
+  "85": {
+    "question": "The process of splitting a heavy nucleus is called?",
+    "options": ["A. Fusion", "B. Fission", "C. Ionization", "D. Decay"]
+  },
+  "86": {
+    "question": "The main energy source of the sun is?",
+    "options": ["A. Fission", "B. Fusion", "C. Combustion", "D. Radiation"]
+  },
+  "87": {
+    "question": "Electric field lines move from?",
+    "options": ["A. Negative to positive", "B. Positive to negative", "C. Neutral to positive", "D. Randomly"]
+  },
+  "88": {
+    "question": "Capacitance is measured in?",
+    "options": ["A. Farad", "B. Ohm", "C. Volt", "D. Ampere"]
+  },
+  "89": {
+    "question": "A diode allows current to flow in?",
+    "options": ["A. Both directions", "B. One direction", "C. No direction", "D. Random direction"]
+  },
+  "90": {
+    "question": "A semiconductor is?",
+    "options": ["A. Good conductor", "B. Insulator", "C. Intermediate conductor", "D. Magnetic material"]
+  },
+
+  "91": {
+    "question": "Which device converts AC to DC?",
+    "options": ["A. Transformer", "B. Rectifier", "C. Motor", "D. Generator"]
+  },
+  "92": {
+    "question": "The earth is best described as?",
+    "options": ["A. Flat surface", "B. Sphere", "C. Cube", "D. Cylinder"]
+  },
+  "93": {
+    "question": "Gravity is strongest at?",
+    "options": ["A. Equator", "B. Poles", "C. Center", "D. Space"]
+  },
+  "94": {
+    "question": "Escape velocity is the speed needed to?",
+    "options": ["A. Enter orbit", "B. Leave Earth's gravity", "C. Slow down", "D. Increase mass"]
+  },
+  "95": {
+    "question": "Satellite motion is governed by?",
+    "options": ["A. Newton's laws", "B. Ohm's law", "C. Hooke's law", "D. Boyle's law"]
+  },
+  "96": {
+    "question": "Which quantity remains constant in uniform circular motion?",
+    "options": ["A. Velocity", "B. Speed", "C. Acceleration", "D. Displacement"]
+  },
+  "97": {
+    "question": "The force keeping a satellite in orbit is?",
+    "options": ["A. Friction", "B. Centripetal force", "C. Magnetic force", "D. Tension"]
+  },
+  "98": {
+    "question": "The boiling point decreases with?",
+    "options": ["A. Increase in pressure", "B. Decrease in pressure", "C. Increase in volume", "D. Decrease in temperature"]
+  },
+  "99": {
+    "question": "Which of the following is an insulator?",
+    "options": ["A. Copper", "B. Aluminum", "C. Rubber", "D. Iron"]
+  },
+  "100": {
+    "question": "The SI base unit of time is?",
+    "options": ["A. Hour", "B. Minute", "C. Second", "D. Day"]
+  },
+  {
+  "101": {
+    "question": "Which of the following quantities is conserved in all collisions?",
+    "options": ["A. Kinetic energy", "B. Momentum", "C. Speed", "D. Force"]
+  },
+  "102": {
+    "question": "The momentum of a body is given by?",
+    "options": ["A. mv", "B. ma", "C. m/v", "D. v/m"]
+  },
+  "103": {
+    "question": "Impulse is equal to?",
+    "options": ["A. Force × time", "B. Mass × velocity", "C. Energy × time", "D. Pressure × area"]
+  },
+  "104": {
+    "question": "A body is said to be in equilibrium when?",
+    "options": ["A. It is moving fast", "B. Net force is zero", "C. Acceleration is high", "D. Energy is increasing"]
+  },
+  "105": {
+    "question": "Which of the following affects gravitational force?",
+    "options": ["A. Distance", "B. Color", "C. Temperature", "D. Shape only"]
+  },
+  "106": {
+    "question": "The unit of gravitational constant is?",
+    "options": ["A. Nm²/kg²", "B. N/kg", "C. kg/m²", "D. N/m"]
+  },
+  "107": {
+    "question": "Which of the following increases friction?",
+    "options": ["A. Lubrication", "B. Smooth surfaces", "C. Rough surfaces", "D. Air cushion"]
+  },
+  "108": {
+    "question": "A body in free fall experiences?",
+    "options": ["A. No force", "B. Gravity only", "C. Friction only", "D. Normal force only"]
+  },
+  "109": {
+    "question": "Terminal velocity is reached when?",
+    "options": ["A. Gravity increases", "B. Air resistance equals weight", "C. Mass becomes zero", "D. Force increases"]
+  },
+  "110": {
+    "question": "Which of the following is a periodic motion?",
+    "options": ["A. Car movement", "B. Swinging pendulum", "C. Falling stone", "D. Rocket launch"]
+  },
+
+  "111": {
+    "question": "The time period of a pendulum depends on?",
+    "options": ["A. Mass", "B. Length", "C. Color", "D. Temperature"]
+  },
+  "112": {
+    "question": "The SI unit of angular velocity is?",
+    "options": ["A. rad/s", "B. m/s", "C. m²/s", "D. Hz"]
+  },
+  "113": {
+    "question": "Centripetal acceleration acts?",
+    "options": ["A. Outward", "B. Tangentially", "C. Toward center", "D. Upward"]
+  },
+  "114": {
+    "question": "The equation V = IR is known as?",
+    "options": ["A. Newton's law", "B. Ohm's law", "C. Boyle's law", "D. Hooke's law"]
+  },
+  "115": {
+    "question": "Electrical energy is measured in?",
+    "options": ["A. Watt", "B. Joule", "C. Ampere", "D. Volt"]
+  },
+  "116": {
+    "question": "A fuse is used to?",
+    "options": ["A. Increase current", "B. Protect circuit", "C. Store energy", "D. Measure voltage"]
+  },
+  "117": {
+    "question": "A series circuit has?",
+    "options": ["A. Multiple paths", "B. One path", "C. No path", "D. Infinite paths"]
+  },
+  "118": {
+    "question": "In a parallel circuit, voltage is?",
+    "options": ["A. Divided", "B. Same across all branches", "C. Zero", "D. Infinite"]
+  },
+  "119": {
+    "question": "The resistance of a conductor increases with?",
+    "options": ["A. Increase in length", "B. Decrease in length", "C. Increase in area", "D. Decrease in temperature"]
+  },
+  "120": {
+    "question": "Which of the following is used in electromagnets?",
+    "options": ["A. Copper only", "B. Soft iron", "C. Plastic", "D. Glass"]
+  },
+
+  "121": {
+    "question": "Magnetic field lines around a straight conductor are?",
+    "options": ["A. Straight lines", "B. Circular", "C. Zigzag", "D. Random"]
+  },
+  "122": {
+    "question": "The right-hand thumb rule is used to determine?",
+    "options": ["A. Gravity direction", "B. Magnetic field direction", "C. Light direction", "D. Heat flow"]
+  },
+  "123": {
+    "question": "Electric motor works on?",
+    "options": ["A. Heating effect", "B. Magnetic effect", "C. Chemical effect", "D. Light effect"]
+  },
+  "124": {
+    "question": "Which device converts mechanical energy to electrical energy?",
+    "options": ["A. Motor", "B. Generator", "C. Transformer", "D. Battery"]
+  },
+  "125": {
+    "question": "The unit of electromotive force (e.m.f) is?",
+    "options": ["A. Ohm", "B. Volt", "C. Ampere", "D. Watt"]
+  },
+  "126": {
+    "question": "The nucleus of an atom contains?",
+    "options": ["A. Electrons only", "B. Protons and neutrons", "C. Only electrons", "D. Neutrons only"]
+  },
+  "127": {
+    "question": "Isotopes are atoms with same number of protons but different?",
+    "options": ["A. Electrons", "B. Neutrons", "C. Energy levels", "D. Charges"]
+  },
+  "128": {
+    "question": "The atomic number is equal to number of?",
+    "options": ["A. Neutrons", "B. Protons", "C. Mass", "D. Orbitals"]
+  },
+  "129": {
+    "question": "The mass number is?",
+    "options": ["A. Protons only", "B. Neutrons only", "C. Protons + neutrons", "D. Electrons + neutrons"]
+  },
+  "130": {
+    "question": "Radioactive decay is a?",
+    "options": ["A. Physical change", "B. Chemical change", "C. Nuclear change", "D. Thermal change"]
+  },
+
+  "131": {
+    "question": "Half-life refers to?",
+    "options": ["A. Time for complete decay", "B. Time for half nuclei to decay", "C. Time for doubling", "D. Infinite time"]
+  },
+  "132": {
+    "question": "Which radiation is stopped by paper?",
+    "options": ["A. Gamma", "B. Beta", "C. Alpha", "D. X-ray"]
+  },
+  "133": {
+    "question": "Beta radiation consists of?",
+    "options": ["A. Helium nuclei", "B. Electrons", "C. Neutrons", "D. Photons"]
+  },
+  "134": {
+    "question": "Gamma rays are?",
+    "options": ["A. Particles", "B. Waves", "C. Protons", "D. Electrons"]
+  },
+  "135": {
+    "question": "Nuclear fission releases energy by?",
+    "options": ["A. Combining nuclei", "B. Splitting nucleus", "C. Evaporation", "D. Condensation"]
+  },
+  "136": {
+    "question": "The main hazard of radiation exposure is?",
+    "options": ["A. Headache only", "B. Cell damage", "C. Hunger", "D. Sleepiness"]
+  },
+  "137": {
+    "question": "Sound waves are?",
+    "options": ["A. Transverse", "B. Longitudinal", "C. Electromagnetic", "D. Stationary"]
+  },
+  "138": {
+    "question": "Pitch of sound depends on?",
+    "options": ["A. Amplitude", "B. Frequency", "C. Speed", "D. Wavelength"]
+  },
+  "139": {
+    "question": "Loudness depends on?",
+    "options": ["A. Frequency", "B. Amplitude", "C. Speed", "D. Wavelength"]
+  },
+  "140": {
+    "question": "Echo is heard when time delay is at least?",
+    "options": ["A. 0.01 s", "B. 0.1 s", "C. 1 s", "D. 10 s"]
+  },
+
+  "141": {
+    "question": "Which of the following is used in radar systems?",
+    "options": ["A. Sound waves", "B. Radio waves", "C. Water waves", "D. Heat waves"]
+  },
+  "142": {
+    "question": "Visible light is part of?",
+    "options": ["A. Radio waves", "B. Electromagnetic spectrum", "C. Sound spectrum", "D. Mechanical waves"]
+  },
+  "143": {
+    "question": "Infrared radiation is mainly associated with?",
+    "options": ["A. Heat", "B. Sound", "C. Electricity", "D. Magnetism"]
+  },
+  "144": {
+    "question": "Ultraviolet rays are used for?",
+    "options": ["A. Cooking", "B. Sterilization", "C. Hearing", "D. Cooling"]
+  },
+  "145": {
+    "question": "Which of the following has the highest frequency?",
+    "options": ["A. Radio waves", "B. Microwaves", "C. Gamma rays", "D. Infrared"]
+  },
+  "146": {
+    "question": "The speed of sound is highest in?",
+    "options": ["A. Air", "B. Vacuum", "C. Solid", "D. Gas"]
+  },
+  "147": {
+    "question": "Reflection of sound is called?",
+    "options": ["A. Echo", "B. Refraction", "C. Diffraction", "D. Absorption"]
+  },
+  "148": {
+    "question": "Which instrument is used to detect earthquakes?",
+    "options": ["A. Barometer", "B. Seismograph", "C. Thermometer", "D. Hygrometer"]
+  },
+  "149": {
+    "question": "Seismic waves are?",
+    "options": ["A. Electromagnetic", "B. Mechanical", "C. Light", "D. Radio"]
+  },
+  "150": {
+    "question": "The SI unit of frequency is?",
+    "options": ["A. Joule", "B. Hertz", "C. Newton", "D. Watt"]
+  },
+  {
+  "151": {
+    "question": "Which of the following is the correct unit of power?",
+    "options": ["A. Joule", "B. Watt", "C. Newton", "D. Volt"]
+  },
+  "152": {
+    "question": "Power is defined as?",
+    "options": ["A. Force × distance", "B. Work done per unit time", "C. Mass × velocity", "D. Energy × time"]
+  },
+  "153": {
+    "question": "A machine with efficiency less than 100% means?",
+    "options": ["A. No energy loss", "B. Energy is created", "C. Some energy is lost", "D. Work is infinite"]
+  },
+  "154": {
+    "question": "Which of the following is a vector quantity?",
+    "options": ["A. Energy", "B. Temperature", "C. Displacement", "D. Mass"]
+  },
+  "155": {
+    "question": "The resultant of two forces acting in opposite directions is?",
+    "options": ["A. Sum", "B. Difference", "C. Product", "D. Zero always"]
+  },
+  "156": {
+    "question": "Which of the following best describes inertia?",
+    "options": ["A. Ability to change motion", "B. Resistance to change in state of motion", "C. Force of motion", "D. Energy of motion"]
+  },
+  "157": {
+    "question": "A heavier object falls faster than a lighter one in vacuum because?",
+    "options": ["A. True", "B. False", "C. Depends on mass", "D. Depends on weight"]
+  },
+  "158": {
+    "question": "Work done is zero when force is?",
+    "options": ["A. Parallel to motion", "B. Perpendicular to motion", "C. Greater than motion", "D. Equal to motion"]
+  },
+  "159": {
+    "question": "Which of the following is a renewable source of energy?",
+    "options": ["A. Coal", "B. Petroleum", "C. Wind", "D. Diesel"]
+  },
+  "160": {
+    "question": "The SI unit of energy is also used for?",
+    "options": ["A. Work", "B. Power", "C. Pressure", "D. Force"]
+  },
+
+  "161": {
+    "question": "The boiling point of a liquid decreases when?",
+    "options": ["A. Pressure increases", "B. Pressure decreases", "C. Volume decreases", "D. Mass increases"]
+  },
+  "162": {
+    "question": "Which of the following is a good absorber of heat?",
+    "options": ["A. White surface", "B. Shiny surface", "C. Black surface", "D. Smooth glass"]
+  },
+  "163": {
+    "question": "Convection occurs in?",
+    "options": ["A. Solids", "B. Liquids and gases", "C. Vacuum", "D. Metals only"]
+  },
+  "164": {
+    "question": "Which instrument measures relative humidity?",
+    "options": ["A. Barometer", "B. Hygrometer", "C. Thermometer", "D. Anemometer"]
+  },
+  "165": {
+    "question": "The pressure at a point in a liquid depends on?",
+    "options": ["A. Depth", "B. Shape of container", "C. Color of liquid", "D. Temperature only"]
+  },
+  "166": {
+    "question": "Upthrust on a body is equal to?",
+    "options": ["A. Weight of body", "B. Weight of displaced fluid", "C. Mass of body", "D. Density of body"]
+  },
+  "167": {
+    "question": "A body will sink in a fluid when its density is?",
+    "options": ["A. Less than fluid", "B. Equal to fluid", "C. Greater than fluid", "D. Zero"]
+  },
+  "168": {
+    "question": "Which of the following is used in hydraulic systems?",
+    "options": ["A. Pascal’s principle", "B. Ohm’s law", "C. Newton’s law", "D. Hooke’s law"]
+  },
+  "169": {
+    "question": "The force in a hydraulic system is transmitted through?",
+    "options": ["A. Gas", "B. Solid rods", "C. Liquid", "D. Vacuum"]
+  },
+  "170": {
+    "question": "The unit of pressure is equivalent to?",
+    "options": ["A. N/m²", "B. Nm", "C. N/m", "D. J/m²"]
+  },
+
+  "171": {
+    "question": "Which of the following waves does NOT require a medium?",
+    "options": ["A. Sound waves", "B. Water waves", "C. Light waves", "D. Seismic waves"]
+  },
+  "172": {
+    "question": "Diffraction of waves is most noticeable when?",
+    "options": ["A. Wavelength is small", "B. Wavelength is large", "C. Frequency is zero", "D. Speed is zero"]
+  },
+  "173": {
+    "question": "The speed of a wave is given by?",
+    "options": ["A. Frequency × wavelength", "B. Mass × velocity", "C. Force × time", "D. Energy × time"]
+  },
+  "174": {
+    "question": "Which phenomenon explains why we see stars twinkle?",
+    "options": ["A. Reflection", "B. Refraction", "C. Dispersion", "D. Diffraction"]
+  },
+  "175": {
+    "question": "A concave mirror produces a real image when object is placed?",
+    "options": ["A. At focus", "B. Between focus and mirror", "C. Beyond center of curvature", "D. At pole only"]
+  },
+  "176": {
+    "question": "The focal length of a convex lens is?",
+    "options": ["A. Always negative", "B. Always positive", "C. Zero", "D. Infinite"]
+  },
+  "177": {
+    "question": "The human eye forms image on the?",
+    "options": ["A. Cornea", "B. Retina", "C. Iris", "D. Lens only"]
+  },
+  "178": {
+    "question": "Myopia is corrected using?",
+    "options": ["A. Convex lens", "B. Concave lens", "C. Prism", "D. Mirror"]
+  },
+  "179": {
+    "question": "Hypermetropia is also called?",
+    "options": ["A. Short sightedness", "B. Long sightedness", "C. Night blindness", "D. Color blindness"]
+  },
+  "180": {
+    "question": "The persistence of vision is used in?",
+    "options": ["A. Camera", "B. Cinema", "C. Telescope", "D. Microscope"]
+  },
+
+  "181": {
+    "question": "Electric current is defined as?",
+    "options": ["A. Flow of protons", "B. Flow of electrons", "C. Flow of neutrons", "D. Flow of atoms"]
+  },
+  "182": {
+    "question": "The SI unit of charge is?",
+    "options": ["A. Ampere", "B. Coulomb", "C. Volt", "D. Ohm"]
+  },
+  "183": {
+    "question": "One coulomb is equal to?",
+    "options": ["A. 1 ampere per second", "B. 1 ampere × 1 second", "C. 1 volt × 1 ohm", "D. 1 joule per second"]
+  },
+  "184": {
+    "question": "Resistance increases when?",
+    "options": ["A. Length decreases", "B. Area increases", "C. Temperature increases", "D. Current increases"]
+  },
+  "185": {
+    "question": "Ohmic materials obey?",
+    "options": ["A. Hooke’s law", "B. Ohm’s law", "C. Newton’s law", "D. Boyle’s law"]
+  },
+  "186": {
+    "question": "A step-up transformer increases?",
+    "options": ["A. Current", "B. Voltage", "C. Resistance", "D. Frequency"]
+  },
+  "187": {
+    "question": "A diode is used for?",
+    "options": ["A. Amplifying sound", "B. Rectification", "C. Heating", "D. Cooling"]
+  },
+  "188": {
+    "question": "Which of the following is a good insulator?",
+    "options": ["A. Copper", "B. Aluminium", "C. Rubber", "D. Iron"]
+  },
+  "189": {
+    "question": "The force between two charges is described by?",
+    "options": ["A. Newton’s law", "B. Coulomb’s law", "C. Ohm’s law", "D. Hooke’s law"]
+  },
+  "190": {
+    "question": "Electric field strength is measured in?",
+    "options": ["A. N/C", "B. Joule", "C. Watt", "D. Tesla"]
+  },
+
+  "191": {
+    "question": "Which of the following is a subatomic particle with no charge?",
+    "options": ["A. Proton", "B. Electron", "C. Neutron", "D. Positron"]
+  },
+  "192": {
+    "question": "Atomic models were first proposed by?",
+    "options": ["A. Dalton", "B. Einstein", "C. Rutherford", "D. Bohr"]
+  },
+  "193": {
+    "question": "Alpha particles are positively charged because they contain?",
+    "options": ["A. Electrons", "B. Protons", "C. Neutrons", "D. Photons"]
+  },
+  "194": {
+    "question": "The main difference between fission and fusion is?",
+    "options": ["A. Energy type", "B. Size of nucleus involved", "C. Temperature only", "D. Speed only"]
+  },
+  "195": {
+    "question": "Which radiation has the highest penetrating power?",
+    "options": ["A. Alpha", "B. Beta", "C. Gamma", "D. Infrared"]
+  },
+  "196": {
+    "question": "The energy released in nuclear reactions comes from?",
+    "options": ["A. Mass loss", "B. Heat only", "C. Chemical bonds", "D. Gravity"]
+  },
+  "197": {
+    "question": "The device used to measure radiation intensity is?",
+    "options": ["A. Barometer", "B. Geiger counter", "C. Ammeter", "D. Thermometer"]
+  },
+  "198": {
+    "question": "The main fuel used in nuclear reactors is?",
+    "options": ["A. Carbon", "B. Uranium", "C. Hydrogen", "D. Oxygen"]
+  },
+  "199": {
+    "question": "Which of the following is NOT electromagnetic radiation?",
+    "options": ["A. X-rays", "B. Gamma rays", "C. Sound waves", "D. Radio waves"]
+  },
+  "200": {
+    "question": "The SI unit of work and energy is the same as?",
+    "options": ["A. Force", "B. Power", "C. Joule", "D. Watt"]
+  }
+}
