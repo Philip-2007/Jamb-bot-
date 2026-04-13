@@ -1,0 +1,1998 @@
+[
+    {
+      "id": 1,
+      "question": "Which of the following is the basic unit of life?",
+      "options": {
+        "A": "Tissue",
+        "B": "Cell",
+        "C": "Organ",
+        "D": "System"
+      }
+    },
+    {
+      "id": 2,
+      "question": "The organelle responsible for respiration in cells is the:",
+      "options": {
+        "A": "Ribosome",
+        "B": "Mitochondrion",
+        "C": "Golgi body",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a characteristic of living things?",
+      "options": {
+        "A": "Rusting",
+        "B": "Movement",
+        "C": "Evaporation",
+        "D": "Burning"
+      }
+    },
+    {
+      "id": 4,
+      "question": "Photosynthesis occurs in the:",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Chloroplast",
+        "C": "Nucleus",
+        "D": "Ribosome"
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which gas is released during photosynthesis?",
+      "options": {
+        "A": "Carbon dioxide",
+        "B": "Nitrogen",
+        "C": "Oxygen",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 6,
+      "question": "The process by which plants lose water vapor is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Transpiration",
+        "C": "Diffusion",
+        "D": "Osmosis"
+      }
+    },
+    {
+      "id": 7,
+      "question": "The hereditary material in living organisms is:",
+      "options": {
+        "A": "RNA",
+        "B": "DNA",
+        "C": "Protein",
+        "D": "Fat"
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a vector of malaria?",
+      "options": {
+        "A": "Housefly",
+        "B": "Tsetse fly",
+        "C": "Mosquito",
+        "D": "Cockroach"
+      }
+    },
+    {
+      "id": 9,
+      "question": "The study of heredity is called:",
+      "options": {
+        "A": "Ecology",
+        "B": "Genetics",
+        "C": "Taxonomy",
+        "D": "Morphology"
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which kingdom does mushroom belong to?",
+      "options": {
+        "A": "Plantae",
+        "B": "Animalia",
+        "C": "Fungi",
+        "D": "Protista"
+      }
+    },
+    {
+      "id": 11,
+      "question": "The functional unit of the kidney is the:",
+      "options": {
+        "A": "Neuron",
+        "B": "Alveolus",
+        "C": "Nephron",
+        "D": "Villus"
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which blood cell helps in clotting?",
+      "options": {
+        "A": "Red blood cell",
+        "B": "White blood cell",
+        "C": "Platelet",
+        "D": "Plasma"
+      }
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is NOT a vertebrate?",
+      "options": {
+        "A": "Fish",
+        "B": "Bird",
+        "C": "Earthworm",
+        "D": "Frog"
+      }
+    },
+    {
+      "id": 14,
+      "question": "The pigment that gives plants their green color is:",
+      "options": {
+        "A": "Hemoglobin",
+        "B": "Chlorophyll",
+        "C": "Melanin",
+        "D": "Carotene"
+      }
+    },
+    {
+      "id": 15,
+      "question": "The process of breaking down food in the body is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Digestion",
+        "C": "Circulation",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 16,
+      "question": "Which part of the brain controls balance and coordination?",
+      "options": {
+        "A": "Cerebrum",
+        "B": "Medulla",
+        "C": "Cerebellum",
+        "D": "Spinal cord"
+      }
+    },
+    {
+      "id": 17,
+      "question": "A habitat is:",
+      "options": {
+        "A": "A group of animals",
+        "B": "A place where organisms live",
+        "C": "A food chain",
+        "D": "An ecosystem type"
+      }
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is a producer?",
+      "options": {
+        "A": "Lion",
+        "B": "Grass",
+        "C": "Snake",
+        "D": "Hawk"
+      }
+    },
+    {
+      "id": 19,
+      "question": "Osmosis is the movement of:",
+      "options": {
+        "A": "Solute molecules",
+        "B": "Water molecules",
+        "C": "Ions",
+        "D": "Proteins"
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which structure is found in plant cells but not animal cells?",
+      "options": {
+        "A": "Cell membrane",
+        "B": "Cell wall",
+        "C": "Mitochondria",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 21,
+      "question": "The heart is part of the:",
+      "options": {
+        "A": "Digestive system",
+        "B": "Circulatory system",
+        "C": "Respiratory system",
+        "D": "Excretory system"
+      }
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is an example of a monocot plant?",
+      "options": {
+        "A": "Bean",
+        "B": "Maize",
+        "C": "Mango",
+        "D": "Orange"
+      }
+    },
+    {
+      "id": 23,
+      "question": "The exchange of gases in humans takes place in the:",
+      "options": {
+        "A": "Bronchi",
+        "B": "Trachea",
+        "C": "Alveoli",
+        "D": "Nose"
+      }
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a decomposer?",
+      "options": {
+        "A": "Grass",
+        "B": "Fungus",
+        "C": "Goat",
+        "D": "Lion"
+      }
+    },
+    {
+      "id": 25,
+      "question": "The inheritance of traits is controlled by:",
+      "options": {
+        "A": "Hormones",
+        "B": "Genes",
+        "C": "Enzymes",
+        "D": "Cells"
+      }
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is a sexually transmitted disease?",
+      "options": {
+        "A": "Malaria",
+        "B": "Cholera",
+        "C": "HIV/AIDS",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 27,
+      "question": "The process of removing metabolic waste is called:",
+      "options": {
+        "A": "Digestion",
+        "B": "Excretion",
+        "C": "Respiration",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 28,
+      "question": "Which of the following is a carnivore?",
+      "options": {
+        "A": "Cow",
+        "B": "Goat",
+        "C": "Lion",
+        "D": "Rabbit"
+      }
+    },
+    {
+      "id": 29,
+      "question": "The female reproductive organ in flowering plants is the:",
+      "options": {
+        "A": "Stamen",
+        "B": "Anther",
+        "C": "Carpel",
+        "D": "Pollen grain"
+      }
+    },
+    {
+      "id": 30,
+      "question": "Which vitamin is produced when skin is exposed to sunlight?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin B",
+        "C": "Vitamin C",
+        "D": "Vitamin D"
+      }
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is NOT a function of the liver?",
+      "options": {
+        "A": "Detoxification",
+        "B": "Bile production",
+        "C": "Digestion of starch",
+        "D": "Storage of glycogen"
+      }
+    },
+    {
+      "id": 32,
+      "question": "The outermost layer of the skin is the:",
+      "options": {
+        "A": "Dermis",
+        "B": "Epidermis",
+        "C": "Hypodermis",
+        "D": "Cortex"
+      }
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is a characteristic of mammals?",
+      "options": {
+        "A": "Laying eggs",
+        "B": "Feathers",
+        "C": "Hair or fur",
+        "D": "Gills"
+      }
+    },
+    {
+      "id": 34,
+      "question": "The process of evolution was proposed by:",
+      "options": {
+        "A": "Mendel",
+        "B": "Darwin",
+        "C": "Pasteur",
+        "D": "Watson"
+      }
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a natural ecosystem?",
+      "options": {
+        "A": "Garden",
+        "B": "Farm",
+        "C": "Forest",
+        "D": "Zoo"
+      }
+    },
+    {
+      "id": 36,
+      "question": "Which blood vessel carries oxygenated blood away from the heart?",
+      "options": {
+        "A": "Vein",
+        "B": "Capillary",
+        "C": "Artery",
+        "D": "Venule"
+      }
+    },
+    {
+      "id": 37,
+      "question": "The breakdown of glucose during respiration produces:",
+      "options": {
+        "A": "Oxygen",
+        "B": "Energy",
+        "C": "Chlorophyll",
+        "D": "Water only"
+      }
+    },
+    {
+      "id": 38,
+      "question": "Which of the following organisms shows both plant and animal characteristics?",
+      "options": {
+        "A": "Mushroom",
+        "B": "Euglena",
+        "C": "Frog",
+        "D": "Earthworm"
+      }
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is a function of roots?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Reproduction",
+        "C": "Absorption of water",
+        "D": "Pollination"
+      }
+    },
+    {
+      "id": 40,
+      "question": "The study of interactions between organisms and their environment is:",
+      "options": {
+        "A": "Genetics",
+        "B": "Ecology",
+        "C": "Anatomy",
+        "D": "Physiology"
+      }
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is NOT a mammalian feature?",
+      "options": {
+        "A": "Mammary glands",
+        "B": "Hair",
+        "C": "Gills",
+        "D": "Warm blooded"
+      }
+    },
+    {
+      "id": 42,
+      "question": "Which organ filters blood in humans?",
+      "options": {
+        "A": "Heart",
+        "B": "Liver",
+        "C": "Kidney",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 43,
+      "question": "The male gamete in humans is the:",
+      "options": {
+        "A": "Egg",
+        "B": "Sperm",
+        "C": "Zygote",
+        "D": "Embryo"
+      }
+    },
+    {
+      "id": 44,
+      "question": "Which of the following is a disease caused by bacteria?",
+      "options": {
+        "A": "Measles",
+        "B": "Malaria",
+        "C": "Tuberculosis",
+        "D": "HIV"
+      }
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is the correct food chain?",
+      "options": {
+        "A": "Lion → Grass → Goat",
+        "B": "Grass → Goat → Lion",
+        "C": "Goat → Grass → Lion",
+        "D": "Grass → Lion → Goat"
+      }
+    },
+    {
+      "id": 46,
+      "question": "The site of fertilization in humans is the:",
+      "options": {
+        "A": "Uterus",
+        "B": "Ovary",
+        "C": "Fallopian tube",
+        "D": "Vagina"
+      }
+    },
+    {
+      "id": 47,
+      "question": "Which of the following is a symptom of deficiency of iron?",
+      "options": {
+        "A": "Scurvy",
+        "B": "Rickets",
+        "C": "Anemia",
+        "D": "Goiter"
+      }
+    },
+    {
+      "id": 48,
+      "question": "Which part of the plant transports water?",
+      "options": {
+        "A": "Phloem",
+        "B": "Xylem",
+        "C": "Cambium",
+        "D": "Stomata"
+      }
+    },
+    {
+      "id": 49,
+      "question": "Which of the following is an inherited trait?",
+      "options": {
+        "A": "Language",
+        "B": "Height",
+        "C": "Tattoos",
+        "D": "Skills"
+      }
+    },
+    {
+      "id": 50,
+      "question": "The smallest blood vessels are called:",
+      "options": {
+        "A": "Arteries",
+        "B": "Veins",
+        "C": "Capillaries",
+        "D": "Aorta"
+      },
+      {
+      "id": 51,
+      "question": "Which of the following is the primary function of chlorophyll?",
+      "options": {
+        "A": "Absorb water",
+        "B": "Trap light energy",
+        "C": "Transport food",
+        "D": "Release oxygen"
+      }
+    },
+    {
+      "id": 52,
+      "question": "The process by which green plants manufacture their food is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Transpiration",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 53,
+      "question": "Which of the following is NOT a component of the cell theory?",
+      "options": {
+        "A": "All living things are made of cells",
+        "B": "Cells are the basic unit of life",
+        "C": "Cells arise from pre-existing cells",
+        "D": "Cells are non-living structures"
+      }
+    },
+    {
+      "id": 54,
+      "question": "The process of cell division that produces identical daughter cells is:",
+      "options": {
+        "A": "Meiosis",
+        "B": "Mitosis",
+        "C": "Fertilization",
+        "D": "Gametogenesis"
+      }
+    },
+    {
+      "id": 55,
+      "question": "Which blood component transports oxygen?",
+      "options": {
+        "A": "Plasma",
+        "B": "Platelets",
+        "C": "Red blood cells",
+        "D": "White blood cells"
+      }
+    },
+    {
+      "id": 56,
+      "question": "The theory of evolution by natural selection was proposed by:",
+      "options": {
+        "A": "Gregor Mendel",
+        "B": "Charles Darwin",
+        "C": "Louis Pasteur",
+        "D": "Robert Hooke"
+      }
+    },
+    {
+      "id": 57,
+      "question": "Which of the following is a non-living component of an ecosystem?",
+      "options": {
+        "A": "Plants",
+        "B": "Animals",
+        "C": "Air",
+        "D": "Fungi"
+      }
+    },
+    {
+      "id": 58,
+      "question": "The inheritance of sex in humans is determined by:",
+      "options": {
+        "A": "Autosomes",
+        "B": "Sex chromosomes",
+        "C": "Genes in cytoplasm",
+        "D": "Hormones only"
+      }
+    },
+    {
+      "id": 59,
+      "question": "Which of the following is a function of the large intestine?",
+      "options": {
+        "A": "Protein digestion",
+        "B": "Water absorption",
+        "C": "Gas exchange",
+        "D": "Blood filtration"
+      }
+    },
+    {
+      "id": 60,
+      "question": "Which organism causes malaria?",
+      "options": {
+        "A": "Plasmodium",
+        "B": "Trypanosoma",
+        "C": "Bacteria",
+        "D": "Virus"
+      }
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is a feature of monocotyledonous plants?",
+      "options": {
+        "A": "Two cotyledons",
+        "B": "Net venation",
+        "C": "Parallel venation",
+        "D": "Tap root system"
+      }
+    },
+    {
+      "id": 62,
+      "question": "The site of gaseous exchange in leaves is the:",
+      "options": {
+        "A": "Cuticle",
+        "B": "Stomata",
+        "C": "Xylem",
+        "D": "Phloem"
+      }
+    },
+    {
+      "id": 63,
+      "question": "Which of the following is a water-borne disease?",
+      "options": {
+        "A": "Cholera",
+        "B": "HIV/AIDS",
+        "C": "Influenza",
+        "D": "Measles"
+      }
+    },
+    {
+      "id": 64,
+      "question": "The structure that connects bone to bone is called:",
+      "options": {
+        "A": "Tendon",
+        "B": "Ligament",
+        "C": "Cartilage",
+        "D": "Muscle"
+      }
+    },
+    {
+      "id": 65,
+      "question": "Which of the following is responsible for immunity?",
+      "options": {
+        "A": "Red blood cells",
+        "B": "White blood cells",
+        "C": "Platelets",
+        "D": "Plasma"
+      }
+    },
+    {
+      "id": 66,
+      "question": "The part of the eye responsible for controlling light entry is the:",
+      "options": {
+        "A": "Retina",
+        "B": "Cornea",
+        "C": "Iris",
+        "D": "Lens"
+      }
+    },
+    {
+      "id": 67,
+      "question": "Which of the following is a symptom of diabetes?",
+      "options": {
+        "A": "High blood sugar",
+        "B": "Low iron",
+        "C": "Bone weakness",
+        "D": "High blood pressure only"
+      }
+    },
+    {
+      "id": 68,
+      "question": "The movement of molecules from a region of high concentration to low concentration is:",
+      "options": {
+        "A": "Osmosis",
+        "B": "Diffusion",
+        "C": "Active transport",
+        "D": "Filtration"
+      }
+    },
+    {
+      "id": 69,
+      "question": "Which of the following organisms is a protozoan?",
+      "options": {
+        "A": "Amoeba",
+        "B": "Mushroom",
+        "C": "Maize",
+        "D": "Earthworm"
+      }
+    },
+    {
+      "id": 70,
+      "question": "Which of the following is the correct order of levels of organization?",
+      "options": {
+        "A": "Cell → Organ → Tissue → System",
+        "B": "Cell → Tissue → Organ → System",
+        "C": "Tissue → Cell → Organ → System",
+        "D": "Organ → Cell → Tissue → System"
+      }
+    },
+    {
+      "id": 71,
+      "question": "The pigment responsible for red color in blood is:",
+      "options": {
+        "A": "Chlorophyll",
+        "B": "Haemoglobin",
+        "C": "Melanin",
+        "D": "Carotene"
+      }
+    },
+    {
+      "id": 72,
+      "question": "Which of the following is a function of the skeletal system?",
+      "options": {
+        "A": "Digestion",
+        "B": "Support and movement",
+        "C": "Respiration",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 73,
+      "question": "Which of the following is an example of artificial immunity?",
+      "options": {
+        "A": "Vaccination",
+        "B": "Recovery from disease",
+        "C": "Breastfeeding",
+        "D": "Inherited immunity"
+      }
+    },
+    {
+      "id": 74,
+      "question": "Which part of the plant is mainly responsible for transpiration?",
+      "options": {
+        "A": "Roots",
+        "B": "Stem",
+        "C": "Leaves",
+        "D": "Flowers"
+      }
+    },
+    {
+      "id": 75,
+      "question": "The process of fusion of gametes is called:",
+      "options": {
+        "A": "Pollination",
+        "B": "Fertilization",
+        "C": "Germination",
+        "D": "Meiosis"
+      }
+    },
+    {
+      "id": 76,
+      "question": "Which of the following is a greenhouse gas?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon dioxide",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 77,
+      "question": "The smallest unit of classification is:",
+      "options": {
+        "A": "Kingdom",
+        "B": "Phylum",
+        "C": "Species",
+        "D": "Class"
+      }
+    },
+    {
+      "id": 78,
+      "question": "Which of the following diseases is caused by a virus?",
+      "options": {
+        "A": "Tuberculosis",
+        "B": "Cholera",
+        "C": "Measles",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 79,
+      "question": "Which organelle is responsible for protein synthesis?",
+      "options": {
+        "A": "Ribosome",
+        "B": "Lysosome",
+        "C": "Golgi body",
+        "D": "Vacuole"
+      }
+    },
+    {
+      "id": 80,
+      "question": "Which of the following is a characteristic of enzymes?",
+      "options": {
+        "A": "They are used up in reactions",
+        "B": "They increase activation energy",
+        "C": "They are biological catalysts",
+        "D": "They are always lipids"
+      }
+    },
+    {
+      "id": 81,
+      "question": "Which of the following is a function of the pancreas?",
+      "options": {
+        "A": "Produces insulin",
+        "B": "Stores bile",
+        "C": "Filters blood",
+        "D": "Produces red blood cells"
+      }
+    },
+    {
+      "id": 82,
+      "question": "The study of fossils is called:",
+      "options": {
+        "A": "Ecology",
+        "B": "Paleontology",
+        "C": "Taxonomy",
+        "D": "Anatomy"
+      }
+    },
+    {
+      "id": 83,
+      "question": "Which of the following is a function of the root hairs?",
+      "options": {
+        "A": "Reproduction",
+        "B": "Absorption of water",
+        "C": "Photosynthesis",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 84,
+      "question": "Which of the following is a vector of sleeping sickness?",
+      "options": {
+        "A": "Mosquito",
+        "B": "Tsetse fly",
+        "C": "Housefly",
+        "D": "Flea"
+      }
+    },
+    {
+      "id": 85,
+      "question": "Which of the following is a characteristic of amphibians?",
+      "options": {
+        "A": "Dry skin",
+        "B": "Feathers",
+        "C": "Moist skin",
+        "D": "Scales only"
+      }
+    },
+    {
+      "id": 86,
+      "question": "The organ responsible for pumping blood is the:",
+      "options": {
+        "A": "Liver",
+        "B": "Heart",
+        "C": "Kidney",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 87,
+      "question": "Which of the following is the correct sequence in human nutrition?",
+      "options": {
+        "A": "Ingestion → Digestion → Absorption → Egestion",
+        "B": "Digestion → Ingestion → Absorption → Egestion",
+        "C": "Absorption → Digestion → Ingestion → Egestion",
+        "D": "Ingestion → Absorption → Digestion → Egestion"
+      }
+    },
+    {
+      "id": 88,
+      "question": "Which of the following is NOT a function of blood?",
+      "options": {
+        "A": "Transport of gases",
+        "B": "Regulation of temperature",
+        "C": "Photosynthesis",
+        "D": "Transport of nutrients"
+      }
+    },
+    {
+      "id": 89,
+      "question": "Which of the following is a correct example of a food chain?",
+      "options": {
+        "A": "Grass → Goat → Lion",
+        "B": "Lion → Goat → Grass",
+        "C": "Goat → Lion → Grass",
+        "D": "Grass → Lion → Goat"
+      }
+    },
+    {
+      "id": 90,
+      "question": "Which of the following is a function of the kidney?",
+      "options": {
+        "A": "Blood clotting",
+        "B": "Urine formation",
+        "C": "Digestion",
+        "D": "Oxygen transport"
+      }
+    },
+    {
+      "id": 91,
+      "question": "Which of the following is a characteristic of viruses?",
+      "options": {
+        "A": "Cellular structure",
+        "B": "Independent life",
+        "C": "Obligate parasites",
+        "D": "Photosynthetic"
+      }
+    },
+    {
+      "id": 92,
+      "question": "Which of the following is used for classification of organisms?",
+      "options": {
+        "A": "Color",
+        "B": "Habitat only",
+        "C": "Morphological features",
+        "D": "Size only"
+      }
+    },
+    {
+      "id": 93,
+      "question": "Which of the following is a function of stomata?",
+      "options": {
+        "A": "Food storage",
+        "B": "Gas exchange",
+        "C": "Reproduction",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 94,
+      "question": "The fusion of male and female nuclei results in:",
+      "options": {
+        "A": "Zygote",
+        "B": "Gamete",
+        "C": "Embryo only",
+        "D": "Seed"
+      }
+    },
+    {
+      "id": 95,
+      "question": "Which of the following is a feature of adaptation?",
+      "options": {
+        "A": "Random change",
+        "B": "Helps survival",
+        "C": "Always harmful",
+        "D": "Occurs only in plants"
+      }
+    },
+    {
+      "id": 96,
+      "question": "Which of the following is a product of anaerobic respiration in yeast?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Alcohol",
+        "C": "Water",
+        "D": "Glucose"
+      }
+    },
+    {
+      "id": 97,
+      "question": "Which of the following is a function of tendons?",
+      "options": {
+        "A": "Connect bone to bone",
+        "B": "Connect muscle to bone",
+        "C": "Produce blood cells",
+        "D": "Store calcium"
+      }
+    },
+    {
+      "id": 98,
+      "question": "Which of the following is a correct definition of ecology?",
+      "options": {
+        "A": "Study of cells",
+        "B": "Study of environment and organisms",
+        "C": "Study of fossils",
+        "D": "Study of blood"
+      }
+    },
+    {
+      "id": 99,
+      "question": "Which of the following is responsible for heredity?",
+      "options": {
+        "A": "Hormones",
+        "B": "Genes",
+        "C": "Enzymes",
+        "D": "Blood cells"
+      }
+    },
+    {
+      "id": 100,
+      "question": "Which of the following is NOT a vertebrate class?",
+      "options": {
+        "A": "Mammalia",
+        "B": "Aves",
+        "C": "Insecta",
+        "D": "Reptilia"
+      },
+      {
+      "id": 101,
+      "question": "The study of genes and inheritance is known as:",
+      "options": {
+        "A": "Ecology",
+        "B": "Genetics",
+        "C": "Morphology",
+        "D": "Physiology"
+      }
+    },
+    {
+      "id": 102,
+      "question": "In a monohybrid cross, the phenotypic ratio of F2 generation is usually:",
+      "options": {
+        "A": "1:1",
+        "B": "3:1",
+        "C": "9:3:3:1",
+        "D": "2:1"
+      }
+    },
+    {
+      "id": 103,
+      "question": "Which of the following represents a heterozygous genotype?",
+      "options": {
+        "A": "TT",
+        "B": "tt",
+        "C": "Tt",
+        "D": "TTtt"
+      }
+    },
+    {
+      "id": 104,
+      "question": "The part of the flower that develops into fruit is the:",
+      "options": {
+        "A": "Petal",
+        "B": "Ovary",
+        "C": "Stamen",
+        "D": "Sepal"
+      }
+    },
+    {
+      "id": 105,
+      "question": "Which of the following is a product of photosynthesis?",
+      "options": {
+        "A": "Carbon dioxide and water",
+        "B": "Glucose and oxygen",
+        "C": "Oxygen and carbon dioxide",
+        "D": "Water and oxygen"
+      }
+    },
+    {
+      "id": 106,
+      "question": "The pigment responsible for capturing light energy is located in the:",
+      "options": {
+        "A": "Nucleus",
+        "B": "Chloroplast",
+        "C": "Cell wall",
+        "D": "Mitochondria"
+      }
+    },
+    {
+      "id": 107,
+      "question": "Which type of respiration occurs in the absence of oxygen?",
+      "options": {
+        "A": "Aerobic respiration",
+        "B": "Anaerobic respiration",
+        "C": "Cellular respiration",
+        "D": "Gaseous respiration"
+      }
+    },
+    {
+      "id": 108,
+      "question": "The end product of anaerobic respiration in muscles is:",
+      "options": {
+        "A": "Alcohol",
+        "B": "Carbon dioxide",
+        "C": "Lactic acid",
+        "D": "Glucose"
+      }
+    },
+    {
+      "id": 109,
+      "question": "Which of the following best describes natural selection?",
+      "options": {
+        "A": "Random survival of organisms",
+        "B": "Survival of the fittest",
+        "C": "Artificial breeding",
+        "D": "Sudden mutation"
+      }
+    },
+    {
+      "id": 110,
+      "question": "Which gas is required for combustion and respiration?",
+      "options": {
+        "A": "Carbon dioxide",
+        "B": "Oxygen",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 111,
+      "question": "The movement of water molecules across a semi-permeable membrane is:",
+      "options": {
+        "A": "Diffusion",
+        "B": "Osmosis",
+        "C": "Active transport",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 112,
+      "question": "Which of the following structures is found in plant cells only?",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Cell membrane",
+        "C": "Chloroplast",
+        "D": "Ribosome"
+      }
+    },
+    {
+      "id": 113,
+      "question": "The process of pollination refers to:",
+      "options": {
+        "A": "Fusion of gametes",
+        "B": "Transfer of pollen grains",
+        "C": "Seed formation",
+        "D": "Germination"
+      }
+    },
+    {
+      "id": 114,
+      "question": "Which of the following is NOT a function of the skeleton?",
+      "options": {
+        "A": "Support",
+        "B": "Protection",
+        "C": "Movement",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 115,
+      "question": "Which of the following organisms is autotrophic?",
+      "options": {
+        "A": "Human",
+        "B": "Fungus",
+        "C": "Green plant",
+        "D": "Cow"
+      }
+    },
+    {
+      "id": 116,
+      "question": "Which of the following is a structural adaptation in desert plants?",
+      "options": {
+        "A": "Broad leaves",
+        "B": "Thick cuticle",
+        "C": "Large stomata",
+        "D": "Thin stem"
+      }
+    },
+    {
+      "id": 117,
+      "question": "The breakdown of food into simpler substances is called:",
+      "options": {
+        "A": "Absorption",
+        "B": "Digestion",
+        "C": "Assimilation",
+        "D": "Egestion"
+      }
+    },
+    {
+      "id": 118,
+      "question": "Which hormone regulates blood sugar level?",
+      "options": {
+        "A": "Adrenaline",
+        "B": "Insulin",
+        "C": "Thyroxine",
+        "D": "Estrogen"
+      }
+    },
+    {
+      "id": 119,
+      "question": "Which of the following is a function of the lymphatic system?",
+      "options": {
+        "A": "Digestion of fats",
+        "B": "Transport of oxygen",
+        "C": "Defense against infection",
+        "D": "Production of hormones"
+      }
+    },
+    {
+      "id": 120,
+      "question": "Which of the following is an example of an ecosystem?",
+      "options": {
+        "A": "A tree",
+        "B": "A forest",
+        "C": "A lion",
+        "D": "A leaf"
+      }
+    },
+    {
+      "id": 121,
+      "question": "The structure that allows fish to breathe underwater is the:",
+      "options": {
+        "A": "Lungs",
+        "B": "Gills",
+        "C": "Skin",
+        "D": "Spiracles"
+      }
+    },
+    {
+      "id": 122,
+      "question": "Which of the following is a symptom of tuberculosis?",
+      "options": {
+        "A": "Excessive sweating and coughing",
+        "B": "Blindness",
+        "C": "Skin rash",
+        "D": "Joint pain only"
+      }
+    },
+    {
+      "id": 123,
+      "question": "Which of the following is a method of asexual reproduction?",
+      "options": {
+        "A": "Fertilization",
+        "B": "Budding",
+        "C": "Pollination",
+        "D": "Meiosis"
+      }
+    },
+    {
+      "id": 124,
+      "question": "Which organelle is responsible for waste breakdown in cells?",
+      "options": {
+        "A": "Lysosome",
+        "B": "Ribosome",
+        "C": "Chloroplast",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 125,
+      "question": "Which of the following is a characteristic of enzymes?",
+      "options": {
+        "A": "They are permanently changed after reaction",
+        "B": "They are proteins",
+        "C": "They increase activation energy",
+        "D": "They are inorganic"
+      }
+    },
+    {
+      "id": 126,
+      "question": "The process of seed germination requires:",
+      "options": {
+        "A": "Water, oxygen, and warmth",
+        "B": "Light only",
+        "C": "Carbon dioxide only",
+        "D": "Salinity"
+      }
+    },
+    {
+      "id": 127,
+      "question": "Which of the following is NOT a characteristic of living things?",
+      "options": {
+        "A": "Respiration",
+        "B": "Growth",
+        "C": "Rusting",
+        "D": "Reproduction"
+      }
+    },
+    {
+      "id": 128,
+      "question": "The part of the brain that controls breathing is the:",
+      "options": {
+        "A": "Cerebrum",
+        "B": "Cerebellum",
+        "C": "Medulla oblongata",
+        "D": "Hypothalamus"
+      }
+    },
+    {
+      "id": 129,
+      "question": "Which of the following is a fungal disease in plants?",
+      "options": {
+        "A": "Rust",
+        "B": "Measles",
+        "C": "Malaria",
+        "D": "Cholera"
+      }
+    },
+    {
+      "id": 130,
+      "question": "Which of the following is a function of the ribosome?",
+      "options": {
+        "A": "Energy production",
+        "B": "Protein synthesis",
+        "C": "Digestion",
+        "D": "Waste removal"
+      }
+    },
+    {
+      "id": 131,
+      "question": "Which of the following represents a food web?",
+      "options": {
+        "A": "Single linear chain",
+        "B": "Interconnected food chains",
+        "C": "Only producers",
+        "D": "Only carnivores"
+      }
+    },
+    {
+      "id": 132,
+      "question": "Which of the following is a cause of soil erosion?",
+      "options": {
+        "A": "Afforestation",
+        "B": "Overgrazing",
+        "C": "Mulching",
+        "D": "Terracing"
+      }
+    },
+    {
+      "id": 133,
+      "question": "Which of the following is the function of the placenta?",
+      "options": {
+        "A": "Digestion",
+        "B": "Exchange of nutrients and gases",
+        "C": "Movement",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 134,
+      "question": "Which of the following is a vertebrate class with feathers?",
+      "options": {
+        "A": "Mammalia",
+        "B": "Aves",
+        "C": "Reptilia",
+        "D": "Amphibia"
+      }
+    },
+    {
+      "id": 135,
+      "question": "Which of the following is used in respiration?",
+      "options": {
+        "A": "Glucose",
+        "B": "Oxygen",
+        "C": "Both glucose and oxygen",
+        "D": "Carbon dioxide only"
+      }
+    },
+    {
+      "id": 136,
+      "question": "Which of the following is NOT part of the alimentary canal?",
+      "options": {
+        "A": "Mouth",
+        "B": "Esophagus",
+        "C": "Pancreas",
+        "D": "Stomach"
+      }
+    },
+    {
+      "id": 137,
+      "question": "Which of the following is an inherited disorder?",
+      "options": {
+        "A": "Diabetes",
+        "B": "Haemophilia",
+        "C": "Malaria",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 138,
+      "question": "The movement of food in plants is through:",
+      "options": {
+        "A": "Xylem",
+        "B": "Phloem",
+        "C": "Stomata",
+        "D": "Root hairs"
+      }
+    },
+    {
+      "id": 139,
+      "question": "Which of the following is a biotic factor?",
+      "options": {
+        "A": "Water",
+        "B": "Air",
+        "C": "Plants",
+        "D": "Sunlight"
+      }
+    },
+    {
+      "id": 140,
+      "question": "Which of the following is a method of controlling malaria?",
+      "options": {
+        "A": "Drinking clean water",
+        "B": "Use of mosquito nets",
+        "C": "Vaccination",
+        "D": "Proper sanitation only"
+      }
+    },
+    {
+      "id": 141,
+      "question": "Which of the following is NOT a function of the liver?",
+      "options": {
+        "A": "Detoxification",
+        "B": "Storage of glycogen",
+        "C": "Production of insulin",
+        "D": "Production of bile"
+      }
+    },
+    {
+      "id": 142,
+      "question": "Which of the following is a feature of vertebrates?",
+      "options": {
+        "A": "No backbone",
+        "B": "Exoskeleton only",
+        "C": "Backbone",
+        "D": "No nervous system"
+      }
+    },
+    {
+      "id": 143,
+      "question": "The main excretory organ in humans is the:",
+      "options": {
+        "A": "Liver",
+        "B": "Kidney",
+        "C": "Skin",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 144,
+      "question": "Which of the following is a function of the circulatory system?",
+      "options": {
+        "A": "Transport of materials",
+        "B": "Digestion",
+        "C": "Reproduction",
+        "D": "Photosynthesis"
+      }
+    },
+    {
+      "id": 145,
+      "question": "Which of the following is a characteristic of insects?",
+      "options": {
+        "A": "Eight legs",
+        "B": "Six legs",
+        "C": "No legs",
+        "D": "Ten legs"
+      }
+    },
+    {
+      "id": 146,
+      "question": "Which of the following is used for classification of plants?",
+      "options": {
+        "A": "Color of leaves",
+        "B": "Root type and leaf venation",
+        "C": "Height only",
+        "D": "Age"
+      }
+    },
+    {
+      "id": 147,
+      "question": "Which of the following is NOT a function of the skin?",
+      "options": {
+        "A": "Protection",
+        "B": "Temperature regulation",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 148,
+      "question": "Which of the following is a result of overpopulation?",
+      "options": {
+        "A": "Abundant resources",
+        "B": "Increased pollution",
+        "C": "Less competition",
+        "D": "Stable ecosystem"
+      }
+    },
+    {
+      "id": 149,
+      "question": "Which of the following is a disease transmitted by contaminated food?",
+      "options": {
+        "A": "Cholera",
+        "B": "Malaria",
+        "C": "Measles",
+        "D": "AIDS"
+      }
+    },
+    {
+      "id": 150,
+      "question": "Which of the following is a function of hormones?",
+      "options": {
+        "A": "Digestion of food",
+        "B": "Chemical coordination",
+        "C": "Transport of oxygen",
+        "D": "Protection of body"
+      },
+      {
+      "id": 151,
+      "question": "Which of the following is the main function of red blood cells?",
+      "options": {
+        "A": "Defense against infection",
+        "B": "Blood clotting",
+        "C": "Transport of oxygen",
+        "D": "Digestion of food"
+      }
+    },
+    {
+      "id": 152,
+      "question": "Which of the following structures is involved in movement in organisms?",
+      "options": {
+        "A": "Chloroplast",
+        "B": "Muscles",
+        "C": "Cell wall",
+        "D": "Vacuole"
+      }
+    },
+    {
+      "id": 153,
+      "question": "Which of the following is a function of the mitochondrion?",
+      "options": {
+        "A": "Protein synthesis",
+        "B": "Energy production",
+        "C": "Storage of water",
+        "D": "Cell division only"
+      }
+    },
+    {
+      "id": 154,
+      "question": "Which of the following is NOT a characteristic of mammals?",
+      "options": {
+        "A": "Warm-blooded",
+        "B": "Hair on body",
+        "C": "Laying eggs only",
+        "D": "Mammary glands"
+      }
+    },
+    {
+      "id": 155,
+      "question": "Which of the following is the correct order of human respiration?",
+      "options": {
+        "A": "Nose → Trachea → Bronchi → Lungs",
+        "B": "Lungs → Nose → Trachea → Bronchi",
+        "C": "Trachea → Nose → Lungs → Bronchi",
+        "D": "Bronchi → Nose → Trachea → Lungs"
+      }
+    },
+    {
+      "id": 156,
+      "question": "Which of the following is a function of the cerebrum?",
+      "options": {
+        "A": "Balance",
+        "B": "Thinking and memory",
+        "C": "Breathing control",
+        "D": "Heart rate regulation"
+      }
+    },
+    {
+      "id": 157,
+      "question": "Which of the following is a vector of yellow fever?",
+      "options": {
+        "A": "Housefly",
+        "B": "Mosquito",
+        "C": "Tsetse fly",
+        "D": "Flea"
+      }
+    },
+    {
+      "id": 158,
+      "question": "Which of the following is the main function of xylem?",
+      "options": {
+        "A": "Transport of food",
+        "B": "Transport of water",
+        "C": "Photosynthesis",
+        "D": "Reproduction"
+      }
+    },
+    {
+      "id": 159,
+      "question": "Which of the following is a symptom of malaria?",
+      "options": {
+        "A": "High fever and chills",
+        "B": "Blindness",
+        "C": "Skin rash only",
+        "D": "Joint dislocation"
+      }
+    },
+    {
+      "id": 160,
+      "question": "Which of the following is NOT a component of blood?",
+      "options": {
+        "A": "Plasma",
+        "B": "Platelets",
+        "C": "Chlorophyll",
+        "D": "Red blood cells"
+      }
+    },
+    {
+      "id": 161,
+      "question": "Which of the following is responsible for plant growth?",
+      "options": {
+        "A": "Hormones",
+        "B": "Enzymes only",
+        "C": "Genes only",
+        "D": "Minerals only"
+      }
+    },
+    {
+      "id": 162,
+      "question": "Which of the following is a function of the skin?",
+      "options": {
+        "A": "Protection",
+        "B": "Photosynthesis",
+        "C": "Blood production",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 163,
+      "question": "Which of the following is a method of preventing HIV transmission?",
+      "options": {
+        "A": "Sharing needles",
+        "B": "Unprotected sex",
+        "C": "Use of condoms",
+        "D": "Mosquito nets"
+      }
+    },
+    {
+      "id": 164,
+      "question": "Which of the following is a feature of plant cells?",
+      "options": {
+        "A": "No nucleus",
+        "B": "Cell wall",
+        "C": "No vacuole",
+        "D": "No chloroplast"
+      }
+    },
+    {
+      "id": 165,
+      "question": "Which of the following is the function of white blood cells?",
+      "options": {
+        "A": "Oxygen transport",
+        "B": "Defense against pathogens",
+        "C": "Clotting blood",
+        "D": "Hormone production"
+      }
+    },
+    {
+      "id": 166,
+      "question": "Which of the following is NOT a type of nutrition?",
+      "options": {
+        "A": "Autotrophic",
+        "B": "Heterotrophic",
+        "C": "Parasitic",
+        "D": "Synthetic"
+      }
+    },
+    {
+      "id": 167,
+      "question": "Which of the following is a function of the testes?",
+      "options": {
+        "A": "Production of eggs",
+        "B": "Production of sperm",
+        "C": "Digestion",
+        "D": "Blood formation"
+      }
+    },
+    {
+      "id": 168,
+      "question": "Which of the following is a function of chloroplast?",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 169,
+      "question": "Which of the following is a characteristic of fungi?",
+      "options": {
+        "A": "Autotrophic",
+        "B": "Chlorophyll present",
+        "C": "Heterotrophic",
+        "D": "Motile"
+      }
+    },
+    {
+      "id": 170,
+      "question": "Which of the following is a function of the spinal cord?",
+      "options": {
+        "A": "Thinking",
+        "B": "Reflex actions",
+        "C": "Vision",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 171,
+      "question": "Which of the following is a disease caused by protozoa?",
+      "options": {
+        "A": "Malaria",
+        "B": "Tuberculosis",
+        "C": "Cholera",
+        "D": "Measles"
+      }
+    },
+    {
+      "id": 172,
+      "question": "Which of the following is a function of the ovary?",
+      "options": {
+        "A": "Production of sperm",
+        "B": "Production of eggs",
+        "C": "Digestion",
+        "D": "Transport of oxygen"
+      }
+    },
+    {
+      "id": 173,
+      "question": "Which of the following is NOT a characteristic of enzymes?",
+      "options": {
+        "A": "Specific",
+        "B": "Reusable",
+        "C": "Destroyed after reaction",
+        "D": "Protein in nature"
+      }
+    },
+    {
+      "id": 174,
+      "question": "Which of the following is a function of the kidney?",
+      "options": {
+        "A": "Hormone production",
+        "B": "Urine formation",
+        "C": "Digestion",
+        "D": "Photosynthesis"
+      }
+    },
+    {
+      "id": 175,
+      "question": "Which of the following is a characteristic of bacteria?",
+      "options": {
+        "A": "Multicellular",
+        "B": "No nucleus",
+        "C": "Chlorophyll present",
+        "D": "Complex organelles"
+      }
+    },
+    {
+      "id": 176,
+      "question": "Which of the following is a function of the placenta?",
+      "options": {
+        "A": "Movement",
+        "B": "Exchange of nutrients and gases",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 177,
+      "question": "Which of the following is a type of ecological relationship?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Parasitism",
+        "C": "Digestion",
+        "D": "Respiration"
+      }
+    },
+    {
+      "id": 178,
+      "question": "Which of the following is a function of stomata?",
+      "options": {
+        "A": "Food storage",
+        "B": "Gas exchange",
+        "C": "Reproduction",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 179,
+      "question": "Which of the following is a function of tendons?",
+      "options": {
+        "A": "Connect bone to muscle",
+        "B": "Connect bone to bone",
+        "C": "Produce hormones",
+        "D": "Transport oxygen"
+      }
+    },
+    {
+      "id": 180,
+      "question": "Which of the following is a function of the large intestine?",
+      "options": {
+        "A": "Digestion of proteins",
+        "B": "Absorption of water",
+        "C": "Production of enzymes",
+        "D": "Gas exchange"
+      }
+    },
+    {
+      "id": 181,
+      "question": "Which of the following is a method of dispersal of seeds?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Wind",
+        "C": "Digestion",
+        "D": "Respiration"
+      }
+    },
+    {
+      "id": 182,
+      "question": "Which of the following is a function of the iris?",
+      "options": {
+        "A": "Controls pupil size",
+        "B": "Forms image",
+        "C": "Produces tears",
+        "D": "Detects sound"
+      }
+    },
+    {
+      "id": 183,
+      "question": "Which of the following is a characteristic of viruses?",
+      "options": {
+        "A": "Living cells",
+        "B": "Non-cellular",
+        "C": "Free-living",
+        "D": "Autotrophic"
+      }
+    },
+    {
+      "id": 184,
+      "question": "Which of the following is a function of the pancreas?",
+      "options": {
+        "A": "Insulin production",
+        "B": "Blood filtration",
+        "C": "Oxygen transport",
+        "D": "Movement"
+      }
+    },
+    {
+      "id": 185,
+      "question": "Which of the following is a symptom of typhoid?",
+      "options": {
+        "A": "High fever",
+        "B": "Blindness",
+        "C": "Skin rash only",
+        "D": "Bone fracture"
+      }
+    },
+    {
+      "id": 186,
+      "question": "Which of the following is a function of the respiratory system?",
+      "options": {
+        "A": "Transport of food",
+        "B": "Exchange of gases",
+        "C": "Excretion",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 187,
+      "question": "Which of the following is a type of joint in the human body?",
+      "options": {
+        "A": "Fixed joint",
+        "B": "Hinge joint",
+        "C": "Rigid joint",
+        "D": "Dead joint"
+      }
+    },
+    {
+      "id": 188,
+      "question": "Which of the following is a function of auxins in plants?",
+      "options": {
+        "A": "Seed dispersal",
+        "B": "Cell elongation",
+        "C": "Respiration",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 189,
+      "question": "Which of the following is a cause of extinction?",
+      "options": {
+        "A": "Conservation",
+        "B": "Habitat destruction",
+        "C": "Afforestation",
+        "D": "Breeding"
+      }
+    },
+    {
+      "id": 190,
+      "question": "Which of the following is a function of the cerebellum?",
+      "options": {
+        "A": "Thinking",
+        "B": "Balance and coordination",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 191,
+      "question": "Which of the following is a feature of vertebrates?",
+      "options": {
+        "A": "No skeleton",
+        "B": "Backbone",
+        "C": "Exoskeleton only",
+        "D": "No nervous system"
+      }
+    },
+    {
+      "id": 192,
+      "question": "Which of the following is a method of conserving water in plants?",
+      "options": {
+        "A": "Large leaves",
+        "B": "Thick cuticle",
+        "C": "High transpiration",
+        "D": "Open stomata all day"
+      }
+    },
+    {
+      "id": 193,
+      "question": "Which of the following is a function of enzymes in digestion?",
+      "options": {
+        "A": "Increase food size",
+        "B": "Speed up reactions",
+        "C": "Store nutrients",
+        "D": "Destroy food"
+      }
+    },
+    {
+      "id": 194,
+      "question": "Which of the following is a characteristic of arthropods?",
+      "options": {
+        "A": "Soft body",
+        "B": "Jointed legs",
+        "C": "No exoskeleton",
+        "D": "No segmentation"
+      }
+    },
+    {
+      "id": 195,
+      "question": "Which of the following is a function of the liver?",
+      "options": {
+        "A": "Digestion of proteins",
+        "B": "Detoxification",
+        "C": "Transport of oxygen",
+        "D": "Movement"
+      }
+    },
+    {
+      "id": 196,
+      "question": "Which of the following is a characteristic of monocot plants?",
+      "options": {
+        "A": "Net venation",
+        "B": "Two cotyledons",
+        "C": "Parallel venation",
+        "D": "Tap root system"
+      }
+    },
+    {
+      "id": 197,
+      "question": "Which of the following is a cause of pollution?",
+      "options": {
+        "A": "Afforestation",
+        "B": "Industrial waste",
+        "C": "Conservation",
+        "D": "Recycling"
+      }
+    },
+    {
+      "id": 198,
+      "question": "Which of the following is a function of red blood cells?",
+      "options": {
+        "A": "Clotting blood",
+        "B": "Transport oxygen",
+        "C": "Fighting infection",
+        "D": "Producing hormones"
+      }
+    },
+    {
+      "id": 199,
+      "question": "Which of the following is a feature of adaptation?",
+      "options": {
+        "A": "Reduces survival",
+        "B": "Helps organisms survive",
+        "C": "Occurs only in animals",
+        "D": "Is always harmful"
+      }
+    },
+    {
+      "id": 200,
+      "question": "Which of the following is the final product of respiration?",
+      "options": {
+        "A": "Glucose",
+        "B": "Energy, water, and carbon dioxide",
+        "C": "Oxygen",
+        "D": "Starch"
+      }
+  ]
