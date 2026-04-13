@@ -32,35 +32,40 @@ EMOJIS = {"English": "📖", "Mathematics": "🧮", "Physics": "⚡", "Chemistry
 def parse_options(options_data):
     """Convert ANY options format to a list ['A', 'B', 'C', 'D']"""
     if isinstance(options_data, list):
-        # Already a list
-        return options_data
+        cleaned = []
+        for opt in options_data:
+            if isinstance(opt, str):
+                if ". " in opt:
+                    opt = opt.split(". ", 1)[1]
+                elif ") " in opt:
+                    opt = opt.split(") ", 1)[1]
+                cleaned.append(opt)
+            else:
+                cleaned.append(str(opt))
+        return cleaned
     elif isinstance(options_data, dict):
-        # Convert dict to list, sorted by key (A, B, C, D)
         result = []
         for key in sorted(options_data.keys()):
-            result.append(options_data[key])
+            result.append(str(options_data[key]))
         return result
     else:
         return ["A", "B", "C", "D"]
 
 def get_correct_index(question_data):
-    """Get the correct answer index from ANY format"""
-    # Try different field names
+    """Get the correct answer index - default to 0 if not found"""
     answer = question_data.get("answer") or question_data.get("correct") or question_data.get("ans")
     
     if answer is None:
         return 0
     
     if isinstance(answer, int):
-        return answer
+        return min(answer, 3)
     elif isinstance(answer, str):
-        # Convert letter to index: 'A' -> 0, 'B' -> 1, etc.
         answer = answer.strip().upper()
         if answer in "ABCD":
             return ord(answer) - ord('A')
-        # Try to parse as number
         try:
-            return int(answer)
+            return min(int(answer), 3)
         except:
             return 0
     return 0
@@ -72,21 +77,28 @@ def load_questions(s):
             all_q = []
             
             if isinstance(data, list):
-                all_q = data
+                # Check if it's Physics format: [{"1": {...}, "2": {...}}]
+                if len(data) == 1 and isinstance(data[0], dict):
+                    inner = data[0]
+                    # Check if keys are numbers like "1", "2"
+                    if any(k.isdigit() for k in inner.keys()):
+                        for key, value in inner.items():
+                            if isinstance(value, dict):
+                                all_q.append(value)
+                    else:
+                        all_q = data
+                else:
+                    all_q = data
             elif isinstance(data, dict):
-                # Check if it's {"biology": [...]} or {"1": {...}}
                 for key, value in data.items():
                     if isinstance(value, list):
-                        # Format: {"biology": [questions]}
                         all_q.extend(value)
                     elif isinstance(value, dict):
-                        # Format: {"1": question, "2": question}
                         all_q.append(value)
             
-            # Convert each question to standard format
             standardized = []
             for q in all_q:
-                if "question" in q:
+                if isinstance(q, dict) and "question" in q:
                     options = parse_options(q.get("options", {}))
                     correct = get_correct_index(q)
                     
@@ -96,13 +108,15 @@ def load_questions(s):
                         "correct": correct
                     })
             
-            logger.info(f"Loaded {len(standardized)} questions for {s}")
+            logger.info(f"✅ Loaded {len(standardized)} questions for {s}")
             return standardized
     except Exception as e:
-        logger.error(f"Error loading {s}: {e}")
+        logger.error(f"❌ Error loading {s}: {e}")
         return []
 
 ALL_Q = {s: load_questions(s) for s in SUBJECTS}
+for s, qs in ALL_Q.items():
+    print(f"📚 {s}: {len(qs)} questions")
 
 DB = {"users": {}, "attempts": []}
 RESULT_FILE = "results.json"
@@ -127,11 +141,10 @@ dp = updater.dispatcher
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
-        "🎓 *JAMB 2026 CBT PRO BOT*\n\n"
+        "🎓 JAMB 2026 CBT PRO BOT\n\n"
         "/start_quiz - Begin test\n"
         "/leaderboard - Top students\n"
-        "/myresult - Your last score",
-        parse_mode="Markdown"
+        "/myresult - Your last score"
     )
 
 def my_result(update: Update, context: CallbackContext):
@@ -148,10 +161,10 @@ def leaderboard(update: Update, context: CallbackContext):
         update.message.reply_text("No attempts yet!")
         return
     top = sorted(DB["attempts"], key=lambda x: x["percent"], reverse=True)[:10]
-    txt = "🏆 *TOP 10*\n\n"
+    txt = "🏆 TOP 10\n\n"
     for i, t in enumerate(top, 1):
         txt += f"{i}. {t['name']} - {t['percent']}%\n"
-    update.message.reply_text(txt, parse_mode="Markdown")
+    update.message.reply_text(txt)
 
 def start_quiz(update: Update, context: CallbackContext):
     kb = [
@@ -166,12 +179,16 @@ def mode(update: Update, context: CallbackContext):
     q.answer()
     if q.data == "exam":
         kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s} ({len(ALL_Q[s])} Qs)", callback_data=s)] for s in SUBJECTS if ALL_Q[s]]
+        if not kb:
+            q.edit_message_text("No subjects available!")
+            return ConversationHandler.END
         q.edit_message_text("Pick subject:", reply_markup=InlineKeyboardMarkup(kb))
         return SUBJECT
     context.user_data["sub"] = ["English"]
-    kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in SUBJECTS if s != "English" and ALL_Q[s]]
+    available = [s for s in SUBJECTS if s != "English" and ALL_Q[s]]
+    kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in available]
     kb.append([InlineKeyboardButton("✅ Done", callback_data="done")])
-    q.edit_message_text("Select 3 more subjects:", reply_markup=InlineKeyboardMarkup(kb))
+    q.edit_message_text(f"Select 3 more subjects:", reply_markup=InlineKeyboardMarkup(kb))
     return CBT
 
 def cbt(update: Update, context: CallbackContext):
@@ -180,7 +197,7 @@ def cbt(update: Update, context: CallbackContext):
     if q.data == "done":
         subs = context.user_data["sub"]
         if len(subs) != 4:
-            q.answer("Select exactly 3 more!", show_alert=True)
+            q.answer(f"Select exactly 3 more! (Now: {len(subs)-1})", show_alert=True)
             return CBT
         return start_session(q, context, subs, "cbt")
     subs = context.user_data["sub"]
@@ -207,6 +224,11 @@ def start_session(q, context, subjects, mode):
             for item in random.sample(available, num):
                 item["subject"] = s
                 qs.append(item)
+    
+    if not qs:
+        q.edit_message_text("❌ No questions available!")
+        return ConversationHandler.END
+    
     random.shuffle(qs)
     sessions[user] = {"mode": mode, "subjects": subjects, "q": qs, "i": 0, "score": 0, "start": time.time()}
     q.edit_message_text(f"Starting! {len(qs)} questions. Good luck!")
@@ -224,7 +246,6 @@ def send_q(q, context, user):
     opts = question.get("options", ["A", "B", "C", "D"])
     correct = question.get("correct", 0)
     
-    # Shuffle options
     pairs = list(enumerate(opts))
     random.shuffle(pairs)
     shuffled = []
@@ -237,8 +258,8 @@ def send_q(q, context, user):
     
     kb = [[InlineKeyboardButton(f"{chr(65+idx)}. {opt[:40]}", callback_data=str(idx))] for idx, opt in enumerate(shuffled)]
     
-    txt = f"*Q{i+1}/{len(s['q'])}*\n📖 {question.get('subject', '')}\n\n{question['question']}"
-    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb), parse_mode="Markdown")
+    txt = f"Q{i+1}/{len(s['q'])}\n📖 {question.get('subject', '')}\n\n{question['question']}"
+    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
     return QUIZ
 
 def answer(update: Update, context: CallbackContext):
@@ -271,8 +292,8 @@ def finish(q, context, user):
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M")
     })
     save_db()
-    txt = f"🏁 *FINISHED!*\n\nScore: {score}/{total}\nPercent: {percent}%"
-    q.edit_message_text(txt, parse_mode="Markdown")
+    txt = f"🏁 FINISHED!\n\nScore: {score}/{total}\nPercent: {percent}%"
+    q.edit_message_text(txt)
     return ConversationHandler.END
 
 conv = ConversationHandler(
