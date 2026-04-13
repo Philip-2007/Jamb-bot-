@@ -1,0 +1,2233 @@
+[
+  {
+    "number": 1,
+    "question": "Which organelle is responsible for protein synthesis in a cell?",
+    "options": {
+      "A": "Mitochondrion",
+      "B": "Ribosome",
+      "C": "Golgi apparatus",
+      "D": "Lysosome"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 2,
+    "question": "The basic unit of life is known as?",
+    "options": {
+      "A": "Tissue",
+      "B": "Organ",
+      "C": "Cell",
+      "D": "System"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 3,
+    "question": "Which of the following processes involves the movement of water across a semi-permeable membrane?",
+    "options": {
+      "A": "Diffusion",
+      "B": "Osmosis",
+      "C": "Active transport",
+      "D": "Translocation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 4,
+    "question": "The green pigment responsible for photosynthesis is?",
+    "options": {
+      "A": "Carotene",
+      "B": "Xanthophyll",
+      "C": "Chlorophyll",
+      "D": "Melanin"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 5,
+    "question": "Which of the following is NOT a function of the cell membrane?",
+    "options": {
+      "A": "Protection",
+      "B": "Support",
+      "C": "Selective permeability",
+      "D": "Storage of DNA"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 6,
+    "question": "The process by which plants manufacture food is called?",
+    "options": {
+      "A": "Respiration",
+      "B": "Photosynthesis",
+      "C": "Transpiration",
+      "D": "Fermentation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 7,
+    "question": "Which gas is released during photosynthesis?",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "Oxygen",
+      "C": "Nitrogen",
+      "D": "Hydrogen"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 8,
+    "question": "The site of aerobic respiration in a cell is the?",
+    "options": {
+      "A": "Nucleus",
+      "B": "Mitochondrion",
+      "C": "Ribosome",
+      "D": "Chloroplast"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 9,
+    "question": "Which of the following is a characteristic of living organisms?",
+    "options": {
+      "A": "Photosynthesis only",
+      "B": "Movement only",
+      "C": "Respiration",
+      "D": "Evaporation"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 10,
+    "question": "The loss of water vapor from plant leaves is called?",
+    "options": {
+      "A": "Translocation",
+      "B": "Transpiration",
+      "C": "Diffusion",
+      "D": "Osmosis"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 11,
+    "question": "Which of the following tissues transports water in plants?",
+    "options": {
+      "A": "Phloem",
+      "B": "Xylem",
+      "C": "Cambium",
+      "D": "Epidermis"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 12,
+    "question": "Which of the following tissues transports food in plants?",
+    "options": {
+      "A": "Xylem",
+      "B": "Phloem",
+      "C": "Cortex",
+      "D": "Pith"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 13,
+    "question": "The control center of the cell is the?",
+    "options": {
+      "A": "Nucleus",
+      "B": "Cytoplasm",
+      "C": "Cell wall",
+      "D": "Vacuole"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 14,
+    "question": "Which of the following is a unicellular organism?",
+    "options": {
+      "A": "Earthworm",
+      "B": "Amoeba",
+      "C": "Frog",
+      "D": "Maize plant"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 15,
+    "question": "The process of cell division that produces identical daughter cells is?",
+    "options": {
+      "A": "Meiosis",
+      "B": "Mitosis",
+      "C": "Fertilization",
+      "D": "Budding"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 16,
+    "question": "Which of the following is responsible for inheritance?",
+    "options": {
+      "A": "Protein",
+      "B": "Genes",
+      "C": "Lipids",
+      "D": "Enzymes"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 17,
+    "question": "The functional unit of the kidney is the?",
+    "options": {
+      "A": "Neuron",
+      "B": "Nephron",
+      "C": "Alveolus",
+      "D": "Glomerulus"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 18,
+    "question": "Which of the following is a product of respiration?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Carbon dioxide",
+      "C": "Nitrogen",
+      "D": "Glucose"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 19,
+    "question": "The largest organ in the human body is?",
+    "options": {
+      "A": "Liver",
+      "B": "Skin",
+      "C": "Heart",
+      "D": "Brain"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 20,
+    "question": "Which of the following organs is responsible for pumping blood?",
+    "options": {
+      "A": "Lungs",
+      "B": "Heart",
+      "C": "Kidney",
+      "D": "Liver"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 21,
+    "question": "Which of the following blood vessels carries oxygenated blood?",
+    "options": {
+      "A": "Vein",
+      "B": "Artery",
+      "C": "Capillary",
+      "D": "Venule"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 22,
+    "question": "The process by which organisms maintain a stable internal environment is called?",
+    "options": {
+      "A": "Respiration",
+      "B": "Homeostasis",
+      "C": "Excretion",
+      "D": "Digestion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 23,
+    "question": "Which of the following is responsible for coordination in the body?",
+    "options": {
+      "A": "Digestive system",
+      "B": "Nervous system",
+      "C": "Respiratory system",
+      "D": "Circulatory system"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 24,
+    "question": "The unit of inheritance is?",
+    "options": {
+      "A": "Chromosome",
+      "B": "Gene",
+      "C": "Cell",
+      "D": "Protein"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 25,
+    "question": "Which of the following is a producer in an ecosystem?",
+    "options": {
+      "A": "Lion",
+      "B": "Grass",
+      "C": "Goat",
+      "D": "Human"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 26,
+    "question": "Which of the following organisms is a decomposer?",
+    "options": {
+      "A": "Fungi",
+      "B": "Grasshopper",
+      "C": "Fish",
+      "D": "Bird"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 27,
+    "question": "Energy flow in an ecosystem is?",
+    "options": {
+      "A": "Cyclic",
+      "B": "One-way",
+      "C": "Random",
+      "D": "Static"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 28,
+    "question": "Which of the following is a primary consumer?",
+    "options": {
+      "A": "Lion",
+      "B": "Goat",
+      "C": "Snake",
+      "D": "Eagle"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 29,
+    "question": "Which of the following is an abiotic factor?",
+    "options": {
+      "A": "Plants",
+      "B": "Animals",
+      "C": "Temperature",
+      "D": "Fungi"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 30,
+    "question": "The study of organisms and their environment is called?",
+    "options": {
+      "A": "Genetics",
+      "B": "Ecology",
+      "C": "Physiology",
+      "D": "Anatomy"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 31,
+    "question": "Which of the following is a function of the skeleton?",
+    "options": {
+      "A": "Digestion",
+      "B": "Support",
+      "C": "Respiration",
+      "D": "Excretion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 32,
+    "question": "The joint found in the shoulder is?",
+    "options": {
+      "A": "Hinge joint",
+      "B": "Ball and socket joint",
+      "C": "Pivot joint",
+      "D": "Gliding joint"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 33,
+    "question": "Which of the following is responsible for movement in humans?",
+    "options": {
+      "A": "Bones only",
+      "B": "Muscles only",
+      "C": "Muscles and bones",
+      "D": "Skin only"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 34,
+    "question": "Which of the following vitamins is produced in the skin?",
+    "options": {
+      "A": "Vitamin A",
+      "B": "Vitamin B",
+      "C": "Vitamin C",
+      "D": "Vitamin D"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 35,
+    "question": "Deficiency of vitamin C causes?",
+    "options": {
+      "A": "Rickets",
+      "B": "Scurvy",
+      "C": "Kwashiorkor",
+      "D": "Beriberi"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 36,
+    "question": "Which of the following is a component of blood?",
+    "options": {
+      "A": "Nephron",
+      "B": "Red blood cell",
+      "C": "Neuron",
+      "D": "Alveolus"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 37,
+    "question": "Which blood cells are responsible for immunity?",
+    "options": {
+      "A": "Red blood cells",
+      "B": "White blood cells",
+      "C": "Platelets",
+      "D": "Plasma"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 38,
+    "question": "Which organ is responsible for gas exchange in humans?",
+    "options": {
+      "A": "Heart",
+      "B": "Lungs",
+      "C": "Kidney",
+      "D": "Liver"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 39,
+    "question": "Which of the following is excretory product in humans?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Urea",
+      "C": "Glucose",
+      "D": "Protein"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 40,
+    "question": "Which of the following organs removes urea from the body?",
+    "options": {
+      "A": "Lungs",
+      "B": "Kidney",
+      "C": "Heart",
+      "D": "Skin"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 41,
+    "question": "The male reproductive cell is called?",
+    "options": {
+      "A": "Ovum",
+      "B": "Sperm",
+      "C": "Zygote",
+      "D": "Embryo"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 42,
+    "question": "Fertilization occurs in the?",
+    "options": {
+      "A": "Ovary",
+      "B": "Fallopian tube",
+      "C": "Uterus",
+      "D": "Vagina"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 43,
+    "question": "Which of the following is a form of asexual reproduction?",
+    "options": {
+      "A": "Fusion",
+      "B": "Budding",
+      "C": "Fertilization",
+      "D": "Copulation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 44,
+    "question": "The fusion of gametes results in the formation of?",
+    "options": {
+      "A": "Embryo",
+      "B": "Zygote",
+      "C": "Fetus",
+      "D": "Cell"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 45,
+    "question": "Which of the following is an example of a reflex action?",
+    "options": {
+      "A": "Walking",
+      "B": "Blinking",
+      "C": "Thinking",
+      "D": "Writing"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 46,
+    "question": "Which part of the brain controls balance?",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Medulla",
+      "D": "Spinal cord"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 47,
+    "question": "The process of evolution involves?",
+    "options": {
+      "A": "Sudden change",
+      "B": "Gradual change over time",
+      "C": "No change",
+      "D": "Instant mutation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 48,
+    "question": "Which scientist proposed the theory of evolution by natural selection?",
+    "options": {
+      "A": "Mendel",
+      "B": "Darwin",
+      "C": "Pasteur",
+      "D": "Newton"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 49,
+    "question": "Variation in organisms is important because it?",
+    "options": {
+      "A": "Causes disease",
+      "B": "Ensures survival",
+      "C": "Stops reproduction",
+      "D": "Reduces population"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 50,
+    "question": "Which of the following best describes adaptation?",
+    "options": {
+      "A": "Temporary change",
+      "B": "Structural or behavioral change for survival",
+      "C": "Random mutation",
+      "D": "Reproduction only"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 51,
+    "question": "Which of the following organelles is involved in intracellular digestion?",
+    "options": {
+      "A": "Ribosome",
+      "B": "Lysosome",
+      "C": "Chloroplast",
+      "D": "Nucleus"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 52,
+    "question": "The process by which green plants convert light energy into chemical energy is called?",
+    "options": {
+      "A": "Respiration",
+      "B": "Photosynthesis",
+      "C": "Transpiration",
+      "D": "Osmosis"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 53,
+    "question": "Which of the following is a function of the Golgi apparatus?",
+    "options": {
+      "A": "Protein synthesis",
+      "B": "Packaging and secretion",
+      "C": "Energy production",
+      "D": "DNA replication"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 54,
+    "question": "The movement of molecules from a region of high concentration to low concentration is called?",
+    "options": {
+      "A": "Osmosis",
+      "B": "Diffusion",
+      "C": "Active transport",
+      "D": "Translocation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 55,
+    "question": "Which of the following is NOT a carbohydrate?",
+    "options": {
+      "A": "Glucose",
+      "B": "Starch",
+      "C": "Protein",
+      "D": "Cellulose"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 56,
+    "question": "Which mineral element is essential for chlorophyll formation?",
+    "options": {
+      "A": "Iron",
+      "B": "Magnesium",
+      "C": "Calcium",
+      "D": "Potassium"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 57,
+    "question": "Which of the following structures controls entry and exit of substances in a cell?",
+    "options": {
+      "A": "Nucleus",
+      "B": "Cell membrane",
+      "C": "Cytoplasm",
+      "D": "Mitochondrion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 58,
+    "question": "Which of the following processes requires energy?",
+    "options": {
+      "A": "Diffusion",
+      "B": "Osmosis",
+      "C": "Active transport",
+      "D": "Evaporation"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 59,
+    "question": "Which of the following is a storage polysaccharide in animals?",
+    "options": {
+      "A": "Cellulose",
+      "B": "Starch",
+      "C": "Glycogen",
+      "D": "Glucose"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 60,
+    "question": "Which part of the plant is mainly responsible for photosynthesis?",
+    "options": {
+      "A": "Root",
+      "B": "Stem",
+      "C": "Leaf",
+      "D": "Flower"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 61,
+    "question": "Which hormone regulates blood sugar level?",
+    "options": {
+      "A": "Adrenaline",
+      "B": "Insulin",
+      "C": "Thyroxine",
+      "D": "Estrogen"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 62,
+    "question": "Which gland produces thyroxine?",
+    "options": {
+      "A": "Pituitary gland",
+      "B": "Thyroid gland",
+      "C": "Adrenal gland",
+      "D": "Pancreas"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 63,
+    "question": "Which of the following is a function of the liver?",
+    "options": {
+      "A": "Pumping blood",
+      "B": "Detoxification",
+      "C": "Gas exchange",
+      "D": "Filtration"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 64,
+    "question": "Which part of the nephron is responsible for filtration?",
+    "options": {
+      "A": "Loop of Henle",
+      "B": "Glomerulus",
+      "C": "Collecting duct",
+      "D": "Distal tubule"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 65,
+    "question": "Which blood component is responsible for clotting?",
+    "options": {
+      "A": "Red blood cells",
+      "B": "White blood cells",
+      "C": "Platelets",
+      "D": "Plasma"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 66,
+    "question": "Which of the following is a function of red blood cells?",
+    "options": {
+      "A": "Defense",
+      "B": "Transport oxygen",
+      "C": "Clotting",
+      "D": "Digestion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 67,
+    "question": "Which part of the respiratory system contains alveoli?",
+    "options": {
+      "A": "Trachea",
+      "B": "Bronchus",
+      "C": "Lungs",
+      "D": "Nasal cavity"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 68,
+    "question": "The diaphragm functions in?",
+    "options": {
+      "A": "Digestion",
+      "B": "Respiration",
+      "C": "Circulation",
+      "D": "Excretion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 69,
+    "question": "Which of the following is an example of negative feedback?",
+    "options": {
+      "A": "Growth",
+      "B": "Blood sugar regulation",
+      "C": "Reproduction",
+      "D": "Mutation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 70,
+    "question": "Which vitamin helps in blood clotting?",
+    "options": {
+      "A": "Vitamin A",
+      "B": "Vitamin B",
+      "C": "Vitamin C",
+      "D": "Vitamin K"
+    },
+    "answer": "D"
+  },
+
+  {
+    "number": 71,
+    "question": "Which type of reproduction involves only one parent?",
+    "options": {
+      "A": "Sexual",
+      "B": "Asexual",
+      "C": "Fertilization",
+      "D": "Crossing over"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 72,
+    "question": "Which stage of meiosis involves crossing over?",
+    "options": {
+      "A": "Prophase I",
+      "B": "Metaphase I",
+      "C": "Anaphase I",
+      "D": "Telophase I"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 73,
+    "question": "Which blood group is a universal donor?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "AB",
+      "D": "O"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 74,
+    "question": "Which blood group is a universal recipient?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "AB",
+      "D": "O"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 75,
+    "question": "Which structure carries sperm in males?",
+    "options": {
+      "A": "Urethra",
+      "B": "Vas deferens",
+      "C": "Testis",
+      "D": "Penis"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 76,
+    "question": "Which of the following is a sexually transmitted infection?",
+    "options": {
+      "A": "Malaria",
+      "B": "Tuberculosis",
+      "C": "Gonorrhea",
+      "D": "Cholera"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 77,
+    "question": "Which of the following organisms causes malaria?",
+    "options": {
+      "A": "Virus",
+      "B": "Bacteria",
+      "C": "Protozoa",
+      "D": "Fungi"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 78,
+    "question": "Which mosquito transmits malaria?",
+    "options": {
+      "A": "Male Anopheles",
+      "B": "Female Anopheles",
+      "C": "Male Culex",
+      "D": "Female Aedes"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 79,
+    "question": "Which of the following is an example of a vector?",
+    "options": {
+      "A": "Dog",
+      "B": "Mosquito",
+      "C": "Fish",
+      "D": "Goat"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 80,
+    "question": "Which of the following diseases is caused by bacteria?",
+    "options": {
+      "A": "Malaria",
+      "B": "Cholera",
+      "C": "Measles",
+      "D": "AIDS"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 81,
+    "question": "Which of the following is a viral disease?",
+    "options": {
+      "A": "Tuberculosis",
+      "B": "Cholera",
+      "C": "Measles",
+      "D": "Typhoid"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 82,
+    "question": "Which of the following organisms causes tuberculosis?",
+    "options": {
+      "A": "Virus",
+      "B": "Bacteria",
+      "C": "Fungi",
+      "D": "Protozoa"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 83,
+    "question": "Which of the following is a characteristic of mammals?",
+    "options": {
+      "A": "Lay eggs",
+      "B": "Cold-blooded",
+      "C": "Have mammary glands",
+      "D": "No hair"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 84,
+    "question": "Which of the following animals is an amphibian?",
+    "options": {
+      "A": "Lizard",
+      "B": "Frog",
+      "C": "Snake",
+      "D": "Bird"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 85,
+    "question": "Which of the following is a characteristic of reptiles?",
+    "options": {
+      "A": "Feathers",
+      "B": "Moist skin",
+      "C": "Scaly skin",
+      "D": "Fur"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 86,
+    "question": "Which of the following is an example of an arthropod?",
+    "options": {
+      "A": "Earthworm",
+      "B": "Snail",
+      "C": "Cockroach",
+      "D": "Fish"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 87,
+    "question": "Which of the following has a closed circulatory system?",
+    "options": {
+      "A": "Insect",
+      "B": "Fish",
+      "C": "Snail",
+      "D": "Earthworm"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 88,
+    "question": "Which of the following is a characteristic of birds?",
+    "options": {
+      "A": "Hair",
+      "B": "Feathers",
+      "C": "Scales only",
+      "D": "Moist skin"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 89,
+    "question": "Which of the following organisms exhibits complete metamorphosis?",
+    "options": {
+      "A": "Grasshopper",
+      "B": "Cockroach",
+      "C": "Butterfly",
+      "D": "Lizard"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 90,
+    "question": "Incomplete metamorphosis is seen in?",
+    "options": {
+      "A": "Butterfly",
+      "B": "Mosquito",
+      "C": "Cockroach",
+      "D": "Housefly"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 91,
+    "question": "Which of the following is a renewable resource?",
+    "options": {
+      "A": "Coal",
+      "B": "Petroleum",
+      "C": "Solar energy",
+      "D": "Natural gas"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 92,
+    "question": "Which of the following is a non-renewable resource?",
+    "options": {
+      "A": "Wind",
+      "B": "Water",
+      "C": "Coal",
+      "D": "Sunlight"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 93,
+    "question": "Which of the following is an example of pollution?",
+    "options": {
+      "A": "Plant growth",
+      "B": "Clean water",
+      "C": "Smoke emission",
+      "D": "Photosynthesis"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 94,
+    "question": "Which of the following conserves biodiversity?",
+    "options": {
+      "A": "Deforestation",
+      "B": "Afforestation",
+      "C": "Burning",
+      "D": "Overgrazing"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 95,
+    "question": "Which of the following is an example of mutualism?",
+    "options": {
+      "A": "Tick and dog",
+      "B": "Lichen",
+      "C": "Tapeworm and human",
+      "D": "Lion and zebra"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 96,
+    "question": "Parasitism involves?",
+    "options": {
+      "A": "Both benefit",
+      "B": "One benefits, one harmed",
+      "C": "Neither benefits",
+      "D": "Both harmed"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 97,
+    "question": "Commensalism involves?",
+    "options": {
+      "A": "Both benefit",
+      "B": "One benefits, other unaffected",
+      "C": "Both harmed",
+      "D": "One harmed"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 98,
+    "question": "Which of the following is a food chain example?",
+    "options": {
+      "A": "Grass → Goat → Lion",
+      "B": "Lion → Goat → Grass",
+      "C": "Goat → Grass → Lion",
+      "D": "Lion → Grass → Goat"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 99,
+    "question": "The highest trophic level is occupied by?",
+    "options": {
+      "A": "Producers",
+      "B": "Primary consumers",
+      "C": "Top predators",
+      "D": "Decomposers"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 100,
+    "question": "Which of the following best defines ecology?",
+    "options": {
+      "A": "Study of cells",
+      "B": "Study of genes",
+      "C": "Study of organisms and environment",
+      "D": "Study of tissues"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 101,
+    "question": "Which of the following structures is present in plant cells but absent in animal cells?",
+    "options": {
+      "A": "Nucleus",
+      "B": "Mitochondrion",
+      "C": "Cell wall",
+      "D": "Cytoplasm"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 102,
+    "question": "Which of the following processes occurs in the chloroplast?",
+    "options": {
+      "A": "Respiration",
+      "B": "Photosynthesis",
+      "C": "Excretion",
+      "D": "Digestion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 103,
+    "question": "Which of the following is a function of the vacuole in plant cells?",
+    "options": {
+      "A": "Protein synthesis",
+      "B": "Storage and turgidity",
+      "C": "Energy production",
+      "D": "Cell division"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 104,
+    "question": "Which stage of mitosis involves alignment of chromosomes at the equator?",
+    "options": {
+      "A": "Prophase",
+      "B": "Metaphase",
+      "C": "Anaphase",
+      "D": "Telophase"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 105,
+    "question": "Which of the following is a feature of meiosis?",
+    "options": {
+      "A": "Produces identical cells",
+      "B": "Occurs in somatic cells",
+      "C": "Reduces chromosome number",
+      "D": "No crossing over"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 106,
+    "question": "Which of the following macromolecules is made up of amino acids?",
+    "options": {
+      "A": "Carbohydrate",
+      "B": "Protein",
+      "C": "Lipid",
+      "D": "Nucleic acid"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 107,
+    "question": "Enzymes are best described as?",
+    "options": {
+      "A": "Hormones",
+      "B": "Catalysts",
+      "C": "Carbohydrates",
+      "D": "Lipids"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 108,
+    "question": "Which factor does NOT affect enzyme activity?",
+    "options": {
+      "A": "Temperature",
+      "B": "pH",
+      "C": "Substrate concentration",
+      "D": "Color of enzyme"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 109,
+    "question": "Which of the following is an end product of protein digestion?",
+    "options": {
+      "A": "Glucose",
+      "B": "Fatty acids",
+      "C": "Amino acids",
+      "D": "Glycerol"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 110,
+    "question": "Which organ produces bile?",
+    "options": {
+      "A": "Pancreas",
+      "B": "Liver",
+      "C": "Gall bladder",
+      "D": "Stomach"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 111,
+    "question": "Which enzyme digests starch into maltose?",
+    "options": {
+      "A": "Lipase",
+      "B": "Protease",
+      "C": "Amylase",
+      "D": "Pepsin"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 112,
+    "question": "Where does most absorption of digested food occur?",
+    "options": {
+      "A": "Stomach",
+      "B": "Large intestine",
+      "C": "Small intestine",
+      "D": "Esophagus"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 113,
+    "question": "Which structure increases the surface area for absorption in the small intestine?",
+    "options": {
+      "A": "Cilia",
+      "B": "Villi",
+      "C": "Alveoli",
+      "D": "Nephrons"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 114,
+    "question": "Which gas is mainly transported by hemoglobin?",
+    "options": {
+      "A": "Carbon dioxide",
+      "B": "Oxygen",
+      "C": "Nitrogen",
+      "D": "Hydrogen"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 115,
+    "question": "Which chamber of the heart pumps blood to the lungs?",
+    "options": {
+      "A": "Left atrium",
+      "B": "Right atrium",
+      "C": "Left ventricle",
+      "D": "Right ventricle"
+    },
+    "answer": "D"
+  },
+
+  {
+    "number": 116,
+    "question": "Which process removes nitrogenous waste from the body?",
+    "options": {
+      "A": "Respiration",
+      "B": "Digestion",
+      "C": "Excretion",
+      "D": "Circulation"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 117,
+    "question": "Which organ removes carbon dioxide from the body?",
+    "options": {
+      "A": "Kidney",
+      "B": "Lungs",
+      "C": "Liver",
+      "D": "Skin"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 118,
+    "question": "Which of the following is responsible for voluntary actions?",
+    "options": {
+      "A": "Medulla",
+      "B": "Cerebellum",
+      "C": "Cerebrum",
+      "D": "Spinal cord"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 119,
+    "question": "Which part of the eye controls the amount of light entering?",
+    "options": {
+      "A": "Lens",
+      "B": "Retina",
+      "C": "Iris",
+      "D": "Cornea"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 120,
+    "question": "The image is formed on which part of the eye?",
+    "options": {
+      "A": "Cornea",
+      "B": "Lens",
+      "C": "Retina",
+      "D": "Iris"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 121,
+    "question": "Which hormone prepares the body for fight or flight?",
+    "options": {
+      "A": "Insulin",
+      "B": "Adrenaline",
+      "C": "Thyroxine",
+      "D": "Progesterone"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 122,
+    "question": "Which gland is known as the master gland?",
+    "options": {
+      "A": "Thyroid",
+      "B": "Adrenal",
+      "C": "Pituitary",
+      "D": "Pancreas"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 123,
+    "question": "Which process results in the formation of gametes?",
+    "options": {
+      "A": "Mitosis",
+      "B": "Meiosis",
+      "C": "Binary fission",
+      "D": "Budding"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 124,
+    "question": "Which genetic cross produces a 3:1 ratio?",
+    "options": {
+      "A": "Test cross",
+      "B": "Monohybrid cross",
+      "C": "Dihybrid cross",
+      "D": "Back cross"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 125,
+    "question": "Which term describes different forms of a gene?",
+    "options": {
+      "A": "Alleles",
+      "B": "Chromosomes",
+      "C": "Gametes",
+      "D": "Genes"
+    },
+    "answer": "A"
+  },
+
+  {
+    "number": 126,
+    "question": "Which of the following is a dominant trait?",
+    "options": {
+      "A": "Expressed only in homozygous condition",
+      "B": "Masked by recessive allele",
+      "C": "Expressed in presence of another allele",
+      "D": "Not inherited"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 127,
+    "question": "Which of the following is an example of continuous variation?",
+    "options": {
+      "A": "Blood group",
+      "B": "Height",
+      "C": "Tongue rolling",
+      "D": "Eye color"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 128,
+    "question": "Which of the following is a discontinuous variation?",
+    "options": {
+      "A": "Weight",
+      "B": "Height",
+      "C": "Blood group",
+      "D": "Skin color"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 129,
+    "question": "Mutation is defined as?",
+    "options": {
+      "A": "Normal variation",
+      "B": "Sudden change in genetic material",
+      "C": "Slow adaptation",
+      "D": "Reproduction process"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 130,
+    "question": "Which of the following can cause mutation?",
+    "options": {
+      "A": "Radiation",
+      "B": "Water",
+      "C": "Air",
+      "D": "Soil"
+    },
+    "answer": "A"
+  },
+
+  {
+    "number": 131,
+    "question": "Which of the following is an example of natural selection?",
+    "options": {
+      "A": "Artificial breeding",
+      "B": "Survival of the fittest",
+      "C": "Mutation only",
+      "D": "Cloning"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 132,
+    "question": "Which of the following is a producer?",
+    "options": {
+      "A": "Human",
+      "B": "Goat",
+      "C": "Grass",
+      "D": "Lion"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 133,
+    "question": "Which of the following is a secondary consumer?",
+    "options": {
+      "A": "Grass",
+      "B": "Goat",
+      "C": "Snake",
+      "D": "Bacteria"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 134,
+    "question": "Which level has the highest energy in an energy pyramid?",
+    "options": {
+      "A": "Top predators",
+      "B": "Secondary consumers",
+      "C": "Primary consumers",
+      "D": "Producers"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 135,
+    "question": "Which of the following cycles involves nitrogen fixation?",
+    "options": {
+      "A": "Carbon cycle",
+      "B": "Water cycle",
+      "C": "Nitrogen cycle",
+      "D": "Oxygen cycle"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 136,
+    "question": "Nitrogen fixation is mainly carried out by?",
+    "options": {
+      "A": "Fungi",
+      "B": "Bacteria",
+      "C": "Viruses",
+      "D": "Protozoa"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 137,
+    "question": "Which of the following processes returns carbon dioxide to the atmosphere?",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Respiration",
+      "C": "Transpiration",
+      "D": "Absorption"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 138,
+    "question": "Which of the following is a characteristic of population?",
+    "options": {
+      "A": "Different species",
+      "B": "Same species in an area",
+      "C": "Only plants",
+      "D": "Only animals"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 139,
+    "question": "Which of the following factors limits population growth?",
+    "options": {
+      "A": "Food availability",
+      "B": "Water",
+      "C": "Shelter",
+      "D": "All of the above"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 140,
+    "question": "Which of the following is a density-dependent factor?",
+    "options": {
+      "A": "Temperature",
+      "B": "Competition",
+      "C": "Flood",
+      "D": "Fire"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 141,
+    "question": "Which of the following is an example of succession?",
+    "options": {
+      "A": "Deforestation",
+      "B": "Growth of plants on bare rock",
+      "C": "Pollution",
+      "D": "Flooding"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 142,
+    "question": "The first organisms to colonize a barren land are called?",
+    "options": {
+      "A": "Consumers",
+      "B": "Pioneer species",
+      "C": "Decomposers",
+      "D": "Predators"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 143,
+    "question": "Which of the following is a climax community?",
+    "options": {
+      "A": "Temporary vegetation",
+      "B": "Stable ecosystem",
+      "C": "Bare land",
+      "D": "Desert only"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 144,
+    "question": "Which of the following is an adaptation for desert plants?",
+    "options": {
+      "A": "Broad leaves",
+      "B": "Large stomata",
+      "C": "Thick cuticle",
+      "D": "Soft stem"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 145,
+    "question": "Which of the following is an adaptation for aquatic animals?",
+    "options": {
+      "A": "Feathers",
+      "B": "Gills",
+      "C": "Fur",
+      "D": "Scales only"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 146,
+    "question": "Which of the following is an example of mimicry?",
+    "options": {
+      "A": "Camouflage",
+      "B": "Imitating another organism",
+      "C": "Hibernation",
+      "D": "Migration"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 147,
+    "question": "Camouflage helps organisms to?",
+    "options": {
+      "A": "Reproduce faster",
+      "B": "Avoid predators",
+      "C": "Increase size",
+      "D": "Produce food"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 148,
+    "question": "Which of the following is a behavioral adaptation?",
+    "options": {
+      "A": "Thick fur",
+      "B": "Migration",
+      "C": "Sharp teeth",
+      "D": "Strong bones"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 149,
+    "question": "Which of the following is a structural adaptation?",
+    "options": {
+      "A": "Hibernation",
+      "B": "Migration",
+      "C": "Thick skin",
+      "D": "Courtship behavior"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 150,
+    "question": "Which of the following best describes evolution?",
+    "options": {
+      "A": "Sudden change in organisms",
+      "B": "Gradual change over generations",
+      "C": "No change over time",
+      "D": "Only mutation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 151,
+    "question": "Which of the following is the primary source of energy for ecosystems?",
+    "options": {
+      "A": "Wind",
+      "B": "Sun",
+      "C": "Water",
+      "D": "Soil"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 152,
+    "question": "Which process converts solar energy into chemical energy?",
+    "options": {
+      "A": "Respiration",
+      "B": "Photosynthesis",
+      "C": "Digestion",
+      "D": "Excretion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 153,
+    "question": "Which of the following is NOT a component of the ecosystem?",
+    "options": {
+      "A": "Biotic factors",
+      "B": "Abiotic factors",
+      "C": "Genetic factors",
+      "D": "Energy flow"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 154,
+    "question": "Which level of organization involves a group of organisms of the same species?",
+    "options": {
+      "A": "Community",
+      "B": "Population",
+      "C": "Ecosystem",
+      "D": "Biosphere"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 155,
+    "question": "Which of the following is an example of a habitat?",
+    "options": {
+      "A": "Lion",
+      "B": "Forest",
+      "C": "Predation",
+      "D": "Competition"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 156,
+    "question": "Which of the following is a niche?",
+    "options": {
+      "A": "Place where organism lives",
+      "B": "Role of organism in ecosystem",
+      "C": "Population size",
+      "D": "Physical environment"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 157,
+    "question": "Which of the following represents a food web?",
+    "options": {
+      "A": "Single feeding relationship",
+      "B": "Multiple interconnected food chains",
+      "C": "Energy pyramid",
+      "D": "Population graph"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 158,
+    "question": "Which of the following organisms is autotrophic?",
+    "options": {
+      "A": "Goat",
+      "B": "Lion",
+      "C": "Grass",
+      "D": "Human"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 159,
+    "question": "Which of the following is heterotrophic?",
+    "options": {
+      "A": "Algae",
+      "B": "Grass",
+      "C": "Human",
+      "D": "Maize"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 160,
+    "question": "Which process leads to loss of water in plants?",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Transpiration",
+      "C": "Respiration",
+      "D": "Absorption"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 161,
+    "question": "Which of the following conditions increases transpiration rate?",
+    "options": {
+      "A": "High humidity",
+      "B": "Low temperature",
+      "C": "High wind speed",
+      "D": "Darkness"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 162,
+    "question": "Which mineral deficiency causes yellowing of leaves?",
+    "options": {
+      "A": "Nitrogen",
+      "B": "Iron",
+      "C": "Magnesium",
+      "D": "All of the above"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 163,
+    "question": "Which of the following is NOT a function of roots?",
+    "options": {
+      "A": "Absorption",
+      "B": "Anchorage",
+      "C": "Photosynthesis",
+      "D": "Storage"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 164,
+    "question": "Which plant hormone promotes growth?",
+    "options": {
+      "A": "Auxin",
+      "B": "Ethylene",
+      "C": "Abscisic acid",
+      "D": "Gibberellin"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 165,
+    "question": "Which hormone is responsible for fruit ripening?",
+    "options": {
+      "A": "Auxin",
+      "B": "Ethylene",
+      "C": "Cytokinin",
+      "D": "Gibberellin"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 166,
+    "question": "Which of the following is an example of tropism?",
+    "options": {
+      "A": "Plant growth towards light",
+      "B": "Animal movement",
+      "C": "Cell division",
+      "D": "Respiration"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 167,
+    "question": "Which of the following is phototropism?",
+    "options": {
+      "A": "Growth towards gravity",
+      "B": "Growth towards light",
+      "C": "Growth towards water",
+      "D": "Growth towards touch"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 168,
+    "question": "Which of the following is geotropism?",
+    "options": {
+      "A": "Response to light",
+      "B": "Response to gravity",
+      "C": "Response to water",
+      "D": "Response to touch"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 169,
+    "question": "Which of the following structures protects the brain?",
+    "options": {
+      "A": "Rib cage",
+      "B": "Skull",
+      "C": "Vertebrae",
+      "D": "Pelvis"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 170,
+    "question": "Which of the following bones protects the heart and lungs?",
+    "options": {
+      "A": "Skull",
+      "B": "Femur",
+      "C": "Rib cage",
+      "D": "Pelvis"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 171,
+    "question": "Which of the following is a hinge joint?",
+    "options": {
+      "A": "Shoulder",
+      "B": "Elbow",
+      "C": "Hip",
+      "D": "Neck"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 172,
+    "question": "Which of the following is a pivot joint?",
+    "options": {
+      "A": "Neck",
+      "B": "Knee",
+      "C": "Shoulder",
+      "D": "Hip"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 173,
+    "question": "Which of the following is responsible for muscle contraction?",
+    "options": {
+      "A": "Calcium ions",
+      "B": "Oxygen",
+      "C": "Carbon dioxide",
+      "D": "Glucose"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 174,
+    "question": "Which type of muscle is involuntary?",
+    "options": {
+      "A": "Skeletal",
+      "B": "Smooth",
+      "C": "Cardiac",
+      "D": "Both B and C"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 175,
+    "question": "Which of the following diseases affects the immune system?",
+    "options": {
+      "A": "Malaria",
+      "B": "AIDS",
+      "C": "Cholera",
+      "D": "Typhoid"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 176,
+    "question": "HIV attacks which cells?",
+    "options": {
+      "A": "Red blood cells",
+      "B": "White blood cells",
+      "C": "Platelets",
+      "D": "Plasma"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 177,
+    "question": "Which of the following is a preventive measure against diseases?",
+    "options": {
+      "A": "Poor hygiene",
+      "B": "Vaccination",
+      "C": "Pollution",
+      "D": "Overcrowding"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 178,
+    "question": "Which of the following is an example of immunity?",
+    "options": {
+      "A": "Infection",
+      "B": "Resistance to disease",
+      "C": "Disease spread",
+      "D": "Mutation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 179,
+    "question": "Which of the following is artificial immunity?",
+    "options": {
+      "A": "Natural infection",
+      "B": "Vaccination",
+      "C": "Breathing",
+      "D": "Feeding"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 180,
+    "question": "Which of the following is natural immunity?",
+    "options": {
+      "A": "Vaccination",
+      "B": "Injection",
+      "C": "Recovery from disease",
+      "D": "Drug intake"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 181,
+    "question": "Which of the following is a characteristic of living organisms?",
+    "options": {
+      "A": "Movement",
+      "B": "Respiration",
+      "C": "Growth",
+      "D": "All of the above"
+    },
+    "answer": "D"
+  },
+  {
+    "number": 182,
+    "question": "Which of the following is an example of irritability?",
+    "options": {
+      "A": "Growth",
+      "B": "Response to stimulus",
+      "C": "Reproduction",
+      "D": "Excretion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 183,
+    "question": "Which of the following processes releases energy?",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Respiration",
+      "C": "Excretion",
+      "D": "Transpiration"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 184,
+    "question": "Which of the following stores genetic information?",
+    "options": {
+      "A": "RNA",
+      "B": "DNA",
+      "C": "Protein",
+      "D": "Enzyme"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 185,
+    "question": "DNA is located in the?",
+    "options": {
+      "A": "Cytoplasm",
+      "B": "Nucleus",
+      "C": "Cell membrane",
+      "D": "Vacuole"
+    },
+    "answer": "B"
+  },
+
+  {
+    "number": 186,
+    "question": "Which of the following is a base in DNA?",
+    "options": {
+      "A": "Uracil",
+      "B": "Thymine",
+      "C": "Ribose",
+      "D": "Phosphate"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 187,
+    "question": "Which base pairs with adenine in DNA?",
+    "options": {
+      "A": "Cytosine",
+      "B": "Guanine",
+      "C": "Thymine",
+      "D": "Uracil"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 188,
+    "question": "Which of the following is RNA base?",
+    "options": {
+      "A": "Thymine",
+      "B": "Uracil",
+      "C": "Guanine",
+      "D": "Cytosine"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 189,
+    "question": "Which process copies DNA?",
+    "options": {
+      "A": "Translation",
+      "B": "Replication",
+      "C": "Transcription",
+      "D": "Mutation"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 190,
+    "question": "Which process forms RNA from DNA?",
+    "options": {
+      "A": "Replication",
+      "B": "Translation",
+      "C": "Transcription",
+      "D": "Mutation"
+    },
+    "answer": "C"
+  },
+
+  {
+    "number": 191,
+    "question": "Which process forms protein from RNA?",
+    "options": {
+      "A": "Replication",
+      "B": "Transcription",
+      "C": "Translation",
+      "D": "Mutation"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 192,
+    "question": "Which of the following is a codon?",
+    "options": {
+      "A": "Single base",
+      "B": "Two bases",
+      "C": "Three bases",
+      "D": "Four bases"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 193,
+    "question": "Which of the following determines protein structure?",
+    "options": {
+      "A": "DNA sequence",
+      "B": "Water",
+      "C": "Air",
+      "D": "Temperature"
+    },
+    "answer": "A"
+  },
+  {
+    "number": 194,
+    "question": "Which of the following is a mutation effect?",
+    "options": {
+      "A": "No change",
+      "B": "Genetic variation",
+      "C": "Death only",
+      "D": "Growth only"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 195,
+    "question": "Which of the following is biotechnology application?",
+    "options": {
+      "A": "Fermentation",
+      "B": "Photosynthesis",
+      "C": "Respiration",
+      "D": "Excretion"
+    },
+    "answer": "A"
+  },
+
+  {
+    "number": 196,
+    "question": "Which organism is used in fermentation?",
+    "options": {
+      "A": "Bacteria only",
+      "B": "Yeast",
+      "C": "Virus",
+      "D": "Algae"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 197,
+    "question": "Which of the following produces alcohol?",
+    "options": {
+      "A": "Photosynthesis",
+      "B": "Fermentation",
+      "C": "Respiration",
+      "D": "Digestion"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 198,
+    "question": "Which of the following is genetic engineering?",
+    "options": {
+      "A": "Natural selection",
+      "B": "Artificial manipulation of genes",
+      "C": "Mutation only",
+      "D": "Reproduction"
+    },
+    "answer": "B"
+  },
+  {
+    "number": 199,
+    "question": "Which of the following improves crop yield?",
+    "options": {
+      "A": "Pests",
+      "B": "Weeds",
+      "C": "Fertilizers",
+      "D": "Diseases"
+    },
+    "answer": "C"
+  },
+  {
+    "number": 200,
+    "question": "Which of the following best describes biology?",
+    "options": {
+      "A": "Study of matter",
+      "B": "Study of life",
+      "C": "Study of energy",
+      "D": "Study of force"
+    },
+    "answer": "B"
+  }
+]
