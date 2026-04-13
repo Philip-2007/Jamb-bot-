@@ -30,7 +30,6 @@ SUBJECTS = {
 EMOJIS = {"English": "📖", "Mathematics": "🧮", "Physics": "⚡", "Chemistry": "🧪", "Biology": "🧬"}
 
 def parse_options(options_data):
-    """Convert ANY options format to a list ['A', 'B', 'C', 'D']"""
     if isinstance(options_data, list):
         cleaned = []
         for opt in options_data:
@@ -52,12 +51,9 @@ def parse_options(options_data):
         return ["A", "B", "C", "D"]
 
 def get_correct_index(question_data):
-    """Get the correct answer index - default to 0 if not found"""
     answer = question_data.get("answer") or question_data.get("correct") or question_data.get("ans")
-    
     if answer is None:
         return 0
-    
     if isinstance(answer, int):
         return min(answer, 3)
     elif isinstance(answer, str):
@@ -77,10 +73,8 @@ def load_questions(s):
             all_q = []
             
             if isinstance(data, list):
-                # Check if it's Physics format: [{"1": {...}, "2": {...}}]
                 if len(data) == 1 and isinstance(data[0], dict):
                     inner = data[0]
-                    # Check if keys are numbers like "1", "2"
                     if any(k.isdigit() for k in inner.keys()):
                         for key, value in inner.items():
                             if isinstance(value, dict):
@@ -101,7 +95,6 @@ def load_questions(s):
                 if isinstance(q, dict) and "question" in q:
                     options = parse_options(q.get("options", {}))
                     correct = get_correct_index(q)
-                    
                     standardized.append({
                         "question": q["question"],
                         "options": options,
@@ -144,7 +137,9 @@ def start(update: Update, context: CallbackContext):
         "🎓 JAMB 2026 CBT PRO BOT\n\n"
         "/start_quiz - Begin test\n"
         "/leaderboard - Top students\n"
-        "/myresult - Your last score"
+        "/myresult - Your last score\n"
+        "/admin_stats - Admin dashboard\n"
+        "/export - Download all results (Admin)"
     )
 
 def my_result(update: Update, context: CallbackContext):
@@ -165,6 +160,74 @@ def leaderboard(update: Update, context: CallbackContext):
     for i, t in enumerate(top, 1):
         txt += f"{i}. {t['name']} - {t['percent']}%\n"
     update.message.reply_text(txt)
+
+def admin_stats(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    if user_id != ADMIN_ID:
+        update.message.reply_text("⛔ Admin only!")
+        return
+    
+    if not DB["attempts"]:
+        update.message.reply_text("No attempts yet!")
+        return
+    
+    participants = len(DB["users"])
+    attempts = len(DB["attempts"])
+    avg = sum(a["percent"] for a in DB["attempts"]) / attempts
+    
+    # Mode breakdown
+    exam_attempts = [a for a in DB["attempts"] if a.get("mode") == "exam"]
+    cbt_attempts = [a for a in DB["attempts"] if a.get("mode") == "cbt"]
+    
+    # Subject popularity
+    subject_counts = {}
+    for a in DB["attempts"]:
+        for s in a.get("subjects", "").split(", "):
+            subject_counts[s] = subject_counts.get(s, 0) + 1
+    
+    top = sorted(DB["attempts"], key=lambda x: x["percent"], reverse=True)[:10]
+    
+    txt = "📊 ADMIN DASHBOARD\n\n"
+    txt += f"👥 Participants: {participants}\n"
+    txt += f"📝 Total Attempts: {attempts}\n"
+    txt += f"   └ Exam Mode: {len(exam_attempts)}\n"
+    txt += f"   └ CBT Mode: {len(cbt_attempts)}\n"
+    txt += f"📈 Average Score: {avg:.1f}%\n\n"
+    
+    txt += "📚 SUBJECT POPULARITY:\n"
+    for s, count in sorted(subject_counts.items(), key=lambda x: x[1], reverse=True):
+        txt += f"   {s}: {count} attempts\n"
+    
+    txt += "\n🏆 TOP PERFORMERS:\n"
+    for i, t in enumerate(top, 1):
+        medal = "🥇" if i==1 else "🥈" if i==2 else "🥉" if i==3 else f"{i}."
+        txt += f"{medal} {t['name']} - {t['percent']}% ({t['mode']})\n"
+    
+    update.message.reply_text(txt)
+
+def export(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    if user_id != ADMIN_ID:
+        update.message.reply_text("⛔ Admin only!")
+        return
+    
+    if not DB["attempts"]:
+        update.message.reply_text("No data to export!")
+        return
+    
+    csv = "Name,Username,Mode,Subjects,Score,Total,Percent,Time,Date\n"
+    for a in DB["attempts"]:
+        time_str = a.get("timestamp", "N/A")
+        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},{a.get('subjects','')},{a['score']},{a['total']},{a['percent']}%,{time_str}\n"
+    
+    filename = f"jamb_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    with open(filename, "w") as f:
+        f.write(csv)
+    
+    with open(filename, "rb") as f:
+        update.message.reply_document(document=f, filename=filename, caption=f"📊 {len(DB['attempts'])} attempts")
+    
+    os.remove(filename)
 
 def start_quiz(update: Update, context: CallbackContext):
     kb = [
@@ -281,18 +344,34 @@ def finish(q, context, user):
     total = len(s["q"])
     score = s["score"]
     percent = round(score / total * 100, 1) if total > 0 else 0
-    DB["users"][str(user)] = q.from_user.first_name
+    
+    user_obj = q.from_user
+    DB["users"][str(user)] = {"name": user_obj.first_name, "username": user_obj.username}
     DB["attempts"].append({
         "user_id": str(user),
-        "name": q.from_user.first_name,
+        "name": user_obj.first_name,
+        "username": user_obj.username,
         "mode": s["mode"],
+        "subjects": ", ".join(s["subjects"]),
         "score": score,
         "total": total,
         "percent": percent,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M")
     })
     save_db()
-    txt = f"🏁 FINISHED!\n\nScore: {score}/{total}\nPercent: {percent}%"
+    
+    if percent >= 80:
+        fb = "🌟 Outstanding!"
+    elif percent >= 70:
+        fb = "👍 Excellent!"
+    elif percent >= 60:
+        fb = "📚 Good effort!"
+    elif percent >= 50:
+        fb = "📖 Fair performance!"
+    else:
+        fb = "🌱 Keep practicing!"
+    
+    txt = f"🏁 FINISHED!\n\nScore: {score}/{total}\nPercent: {percent}%\n\n{fb}"
     q.edit_message_text(txt)
     return ConversationHandler.END
 
@@ -310,6 +389,8 @@ conv = ConversationHandler(
 dp.add_handler(CommandHandler("start", start))
 dp.add_handler(CommandHandler("myresult", my_result))
 dp.add_handler(CommandHandler("leaderboard", leaderboard))
+dp.add_handler(CommandHandler("admin_stats", admin_stats))
+dp.add_handler(CommandHandler("export", export))
 dp.add_handler(conv)
 
 @app.route("/", methods=["GET"])
