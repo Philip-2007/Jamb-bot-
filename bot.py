@@ -29,24 +29,80 @@ SUBJECTS = {
 
 EMOJIS = {"English": "📖", "Mathematics": "🧮", "Physics": "⚡", "Chemistry": "🧪", "Biology": "🧬"}
 
+def parse_options(options_data):
+    """Convert ANY options format to a list ['A', 'B', 'C', 'D']"""
+    if isinstance(options_data, list):
+        # Already a list
+        return options_data
+    elif isinstance(options_data, dict):
+        # Convert dict to list, sorted by key (A, B, C, D)
+        result = []
+        for key in sorted(options_data.keys()):
+            result.append(options_data[key])
+        return result
+    else:
+        return ["A", "B", "C", "D"]
+
+def get_correct_index(question_data):
+    """Get the correct answer index from ANY format"""
+    # Try different field names
+    answer = question_data.get("answer") or question_data.get("correct") or question_data.get("ans")
+    
+    if answer is None:
+        return 0
+    
+    if isinstance(answer, int):
+        return answer
+    elif isinstance(answer, str):
+        # Convert letter to index: 'A' -> 0, 'B' -> 1, etc.
+        answer = answer.strip().upper()
+        if answer in "ABCD":
+            return ord(answer) - ord('A')
+        # Try to parse as number
+        try:
+            return int(answer)
+        except:
+            return 0
+    return 0
+
 def load_questions(s):
     try:
         with open(SUBJECTS[s], "r", encoding="utf-8") as f:
             data = json.load(f)
-            if isinstance(data, list):
-                return data
             all_q = []
-            for topic, qs in data.items():
-                for q in qs:
-                    q["topic"] = topic
-                    all_q.append(q)
-            return all_q
-    except:
+            
+            if isinstance(data, list):
+                all_q = data
+            elif isinstance(data, dict):
+                # Check if it's {"biology": [...]} or {"1": {...}}
+                for key, value in data.items():
+                    if isinstance(value, list):
+                        # Format: {"biology": [questions]}
+                        all_q.extend(value)
+                    elif isinstance(value, dict):
+                        # Format: {"1": question, "2": question}
+                        all_q.append(value)
+            
+            # Convert each question to standard format
+            standardized = []
+            for q in all_q:
+                if "question" in q:
+                    options = parse_options(q.get("options", {}))
+                    correct = get_correct_index(q)
+                    
+                    standardized.append({
+                        "question": q["question"],
+                        "options": options,
+                        "correct": correct
+                    })
+            
+            logger.info(f"Loaded {len(standardized)} questions for {s}")
+            return standardized
+    except Exception as e:
+        logger.error(f"Error loading {s}: {e}")
         return []
 
 ALL_Q = {s: load_questions(s) for s in SUBJECTS}
-for s, qs in ALL_Q.items():
-    logger.info(f"Loaded {len(qs)} questions for {s}")
 
 DB = {"users": {}, "attempts": []}
 RESULT_FILE = "results.json"
@@ -109,11 +165,11 @@ def mode(update: Update, context: CallbackContext):
     q = update.callback_query
     q.answer()
     if q.data == "exam":
-        kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in SUBJECTS]
+        kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s} ({len(ALL_Q[s])} Qs)", callback_data=s)] for s in SUBJECTS if ALL_Q[s]]
         q.edit_message_text("Pick subject:", reply_markup=InlineKeyboardMarkup(kb))
         return SUBJECT
     context.user_data["sub"] = ["English"]
-    kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in SUBJECTS if s != "English"]
+    kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in SUBJECTS if s != "English" and ALL_Q[s]]
     kb.append([InlineKeyboardButton("✅ Done", callback_data="done")])
     q.edit_message_text("Select 3 more subjects:", reply_markup=InlineKeyboardMarkup(kb))
     return CBT
@@ -163,9 +219,12 @@ def send_q(q, context, user):
     i = s["i"]
     if i >= len(s["q"]):
         return finish(q, context, user)
+    
     question = s["q"][i]
-    opts = question["options"].copy()
+    opts = question.get("options", ["A", "B", "C", "D"])
     correct = question.get("correct", 0)
+    
+    # Shuffle options
     pairs = list(enumerate(opts))
     random.shuffle(pairs)
     shuffled = []
@@ -175,8 +234,10 @@ def send_q(q, context, user):
         if old == correct:
             new_correct = idx
     s["_correct"] = new_correct
+    
     kb = [[InlineKeyboardButton(f"{chr(65+idx)}. {opt[:40]}", callback_data=str(idx))] for idx, opt in enumerate(shuffled)]
-    txt = f"*Q{i+1}/{len(s['q'])}*\n{question.get('subject', '')}\n\n{question['question']}"
+    
+    txt = f"*Q{i+1}/{len(s['q'])}*\n📖 {question.get('subject', '')}\n\n{question['question']}"
     q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb), parse_mode="Markdown")
     return QUIZ
 
