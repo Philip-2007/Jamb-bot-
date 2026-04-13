@@ -175,15 +175,14 @@ def admin_stats(update: Update, context: CallbackContext):
     attempts = len(DB["attempts"])
     avg = sum(a["percent"] for a in DB["attempts"]) / attempts
     
-    # Mode breakdown
     exam_attempts = [a for a in DB["attempts"] if a.get("mode") == "exam"]
     cbt_attempts = [a for a in DB["attempts"] if a.get("mode") == "cbt"]
     
-    # Subject popularity
     subject_counts = {}
     for a in DB["attempts"]:
         for s in a.get("subjects", "").split(", "):
-            subject_counts[s] = subject_counts.get(s, 0) + 1
+            if s:
+                subject_counts[s] = subject_counts.get(s, 0) + 1
     
     top = sorted(DB["attempts"], key=lambda x: x["percent"], reverse=True)[:10]
     
@@ -194,9 +193,10 @@ def admin_stats(update: Update, context: CallbackContext):
     txt += f"   └ CBT Mode: {len(cbt_attempts)}\n"
     txt += f"📈 Average Score: {avg:.1f}%\n\n"
     
-    txt += "📚 SUBJECT POPULARITY:\n"
-    for s, count in sorted(subject_counts.items(), key=lambda x: x[1], reverse=True):
-        txt += f"   {s}: {count} attempts\n"
+    if subject_counts:
+        txt += "📚 SUBJECT POPULARITY:\n"
+        for s, count in sorted(subject_counts.items(), key=lambda x: x[1], reverse=True):
+            txt += f"   {s}: {count}\n"
     
     txt += "\n🏆 TOP PERFORMERS:\n"
     for i, t in enumerate(top, 1):
@@ -215,13 +215,12 @@ def export(update: Update, context: CallbackContext):
         update.message.reply_text("No data to export!")
         return
     
-    csv = "Name,Username,Mode,Subjects,Score,Total,Percent,Time,Date\n"
+    csv = "Name,Username,Mode,Subjects,Score,Total,Percent,Date\n"
     for a in DB["attempts"]:
-        time_str = a.get("timestamp", "N/A")
-        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},{a.get('subjects','')},{a['score']},{a['total']},{a['percent']}%,{time_str}\n"
+        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},{a.get('subjects','')},{a['score']},{a['total']},{a['percent']}%,{a.get('timestamp','')}\n"
     
     filename = f"jamb_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(csv)
     
     with open(filename, "rb") as f:
@@ -234,42 +233,74 @@ def start_quiz(update: Update, context: CallbackContext):
         [InlineKeyboardButton("📝 EXAM MODE", callback_data="exam")],
         [InlineKeyboardButton("💻 CBT MODE", callback_data="cbt")],
     ]
-    update.message.reply_text("Select mode:", reply_markup=InlineKeyboardMarkup(kb))
+    update.message.reply_text("🎯 SELECT TEST MODE:", reply_markup=InlineKeyboardMarkup(kb))
     return CHOOSING_MODE
 
 def mode(update: Update, context: CallbackContext):
     q = update.callback_query
     q.answer()
+    
     if q.data == "exam":
-        kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s} ({len(ALL_Q[s])} Qs)", callback_data=s)] for s in SUBJECTS if ALL_Q[s]]
+        kb = []
+        for s in SUBJECTS:
+            if ALL_Q.get(s):
+                kb.append([InlineKeyboardButton(f"{EMOJIS[s]} {s} ({len(ALL_Q[s])} Qs)", callback_data=s)])
         if not kb:
-            q.edit_message_text("No subjects available!")
+            q.edit_message_text("❌ No subjects available!")
             return ConversationHandler.END
-        q.edit_message_text("Pick subject:", reply_markup=InlineKeyboardMarkup(kb))
+        q.edit_message_text("📝 EXAM MODE\n\nPick a subject:", reply_markup=InlineKeyboardMarkup(kb))
         return SUBJECT
-    context.user_data["sub"] = ["English"]
-    available = [s for s in SUBJECTS if s != "English" and ALL_Q[s]]
-    kb = [[InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)] for s in available]
-    kb.append([InlineKeyboardButton("✅ Done", callback_data="done")])
-    q.edit_message_text(f"Select 3 more subjects:", reply_markup=InlineKeyboardMarkup(kb))
+    
+    # CBT MODE
+    context.user_data["cbt_subs"] = ["English"]
+    available = [s for s in SUBJECTS if s != "English" and ALL_Q.get(s)]
+    
+    kb = []
+    for s in available:
+        kb.append([InlineKeyboardButton(f"{EMOJIS[s]} {s}", callback_data=s)])
+    kb.append([InlineKeyboardButton("✅ DONE", callback_data="done")])
+    
+    q.edit_message_text(
+        "💻 CBT MODE\n\n📖 English (Compulsory) ✅\n\nSelect 3 additional subjects:\n(0/3 selected)",
+        reply_markup=InlineKeyboardMarkup(kb)
+    )
     return CBT
 
 def cbt(update: Update, context: CallbackContext):
     q = update.callback_query
     q.answer()
+    
     if q.data == "done":
-        subs = context.user_data["sub"]
+        subs = context.user_data.get("cbt_subs", ["English"])
         if len(subs) != 4:
             q.answer(f"Select exactly 3 more! (Now: {len(subs)-1})", show_alert=True)
             return CBT
         return start_session(q, context, subs, "cbt")
-    subs = context.user_data["sub"]
+    
+    subs = context.user_data.get("cbt_subs", ["English"])
+    
     if q.data in subs:
         subs.remove(q.data)
     elif len(subs) < 4:
         subs.append(q.data)
-    selected = ", ".join([s for s in subs if s != "English"]) or "None"
-    q.edit_message_text(f"Selected: {selected} ({len(subs)-1}/3)")
+    else:
+        q.answer("Maximum 3 additional subjects!", show_alert=True)
+        return CBT
+    
+    context.user_data["cbt_subs"] = subs
+    
+    available = [s for s in SUBJECTS if s != "English" and ALL_Q.get(s)]
+    kb = []
+    for s in available:
+        check = "✅ " if s in subs else ""
+        kb.append([InlineKeyboardButton(f"{check}{EMOJIS[s]} {s}", callback_data=s)])
+    kb.append([InlineKeyboardButton("✅ DONE", callback_data="done")])
+    
+    selected_display = ", ".join([s for s in subs if s != "English"]) or "None"
+    q.edit_message_text(
+        f"💻 CBT MODE\n\n📖 English (Compulsory) ✅\n\nSelected: {selected_display}\n({len(subs)-1}/3 selected)\n\nTap subjects to add/remove:",
+        reply_markup=InlineKeyboardMarkup(kb)
+    )
     return CBT
 
 def subject(update: Update, context: CallbackContext):
@@ -293,14 +324,23 @@ def start_session(q, context, subjects, mode):
         return ConversationHandler.END
     
     random.shuffle(qs)
-    sessions[user] = {"mode": mode, "subjects": subjects, "q": qs, "i": 0, "score": 0, "start": time.time()}
-    q.edit_message_text(f"Starting! {len(qs)} questions. Good luck!")
+    sessions[user] = {
+        "mode": mode,
+        "subjects": subjects,
+        "q": qs,
+        "i": 0,
+        "score": 0,
+        "start": time.time()
+    }
+    q.edit_message_text(f"🎯 Starting! {len(qs)} questions. Good luck! 🍀")
+    time.sleep(1)
     return send_q(q, context, user)
 
 def send_q(q, context, user):
     s = sessions.get(user)
     if not s:
         return ConversationHandler.END
+    
     i = s["i"]
     if i >= len(s["q"]):
         return finish(q, context, user)
@@ -319,9 +359,15 @@ def send_q(q, context, user):
             new_correct = idx
     s["_correct"] = new_correct
     
-    kb = [[InlineKeyboardButton(f"{chr(65+idx)}. {opt[:40]}", callback_data=str(idx))] for idx, opt in enumerate(shuffled)]
+    kb = []
+    for idx, opt in enumerate(shuffled):
+        display = opt[:50] + "..." if len(opt) > 50 else opt
+        kb.append([InlineKeyboardButton(f"{chr(65+idx)}. {display}", callback_data=str(idx))])
     
-    txt = f"Q{i+1}/{len(s['q'])}\n📖 {question.get('subject', '')}\n\n{question['question']}"
+    progress = int((i+1) / len(s["q"]) * 20)
+    bar = "█" * progress + "░" * (20 - progress)
+    
+    txt = f"{bar}\nQ{i+1}/{len(s['q'])}\n📖 {question.get('subject', '')}\n\n{question['question']}"
     q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
     return QUIZ
 
@@ -330,10 +376,17 @@ def answer(update: Update, context: CallbackContext):
     q.answer()
     user = q.from_user.id
     s = sessions.get(user)
+    
     if not s:
+        q.edit_message_text("❌ Session expired. Use /start_quiz")
         return ConversationHandler.END
+    
     if int(q.data) == s["_correct"]:
         s["score"] += 1
+        q.answer("✅ Correct!")
+    else:
+        q.answer("❌ Incorrect!")
+    
     s["i"] += 1
     return send_q(q, context, user)
 
@@ -341,9 +394,11 @@ def finish(q, context, user):
     s = sessions.pop(user, {})
     if not s:
         return ConversationHandler.END
+    
     total = len(s["q"])
     score = s["score"]
     percent = round(score / total * 100, 1) if total > 0 else 0
+    time_taken = int(time.time() - s["start"])
     
     user_obj = q.from_user
     DB["users"][str(user)] = {"name": user_obj.first_name, "username": user_obj.username}
@@ -356,22 +411,35 @@ def finish(q, context, user):
         "score": score,
         "total": total,
         "percent": percent,
+        "time_taken": time_taken,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M")
     })
     save_db()
     
     if percent >= 80:
-        fb = "🌟 Outstanding!"
+        fb, emoji = "🌟 Outstanding!", "🏆"
     elif percent >= 70:
-        fb = "👍 Excellent!"
+        fb, emoji = "👍 Excellent!", "🎯"
     elif percent >= 60:
-        fb = "📚 Good effort!"
+        fb, emoji = "📚 Good effort!", "💪"
     elif percent >= 50:
-        fb = "📖 Fair performance!"
+        fb, emoji = "📖 Fair performance!", "📝"
     else:
-        fb = "🌱 Keep practicing!"
+        fb, emoji = "🌱 Keep practicing!", "🌱"
     
-    txt = f"🏁 FINISHED!\n\nScore: {score}/{total}\nPercent: {percent}%\n\n{fb}"
+    mins = time_taken // 60
+    secs = time_taken % 60
+    
+    txt = f"{emoji} FINISHED! {emoji}\n\n"
+    txt += f"📊 Mode: {s['mode'].upper()}\n"
+    txt += f"📚 Subjects: {', '.join(s['subjects'])}\n"
+    txt += f"🎯 Score: {score}/{total}\n"
+    txt += f"📈 Percent: {percent}%\n"
+    txt += f"⏱️ Time: {mins}:{secs:02d}\n\n"
+    txt += f"{fb}\n\n"
+    txt += "/start_quiz - Try again\n"
+    txt += "/myresult - View again"
+    
     q.edit_message_text(txt)
     return ConversationHandler.END
 
@@ -380,10 +448,11 @@ conv = ConversationHandler(
     states={
         CHOOSING_MODE: [CallbackQueryHandler(mode, pattern="^(exam|cbt)$")],
         SUBJECT: [CallbackQueryHandler(subject, pattern=f"^({'|'.join(SUBJECTS.keys())})$")],
-        CBT: [CallbackQueryHandler(cbt, pattern=f"^({'|'.join(SUBJECTS.keys())}|done)$")],
+        CBT: [CallbackQueryHandler(cbt, pattern=f"^({'|'.join([s for s in SUBJECTS.keys() if s != 'English'])})$"), CallbackQueryHandler(cbt, pattern="^done$")],
         QUIZ: [CallbackQueryHandler(answer, pattern="^[0-9]$")],
     },
     fallbacks=[],
+    allow_reentry=True
 )
 
 dp.add_handler(CommandHandler("start", start))
@@ -407,5 +476,10 @@ if __name__ == "__main__":
     render_url = os.environ.get("RENDER_EXTERNAL_URL", "")
     if render_url:
         bot.set_webhook(f"{render_url}/telegram")
-        logger.info(f"Webhook set to {render_url}/telegram")
+        logger.info(f"✅ Webhook set to {render_url}/telegram")
+    print(f"\n📊 Questions loaded:")
+    for s, qs in ALL_Q.items():
+        print(f"   {EMOJIS.get(s, '📚')} {s}: {len(qs)}")
+    print(f"\n👑 Admin ID: {ADMIN_ID}")
+    print(f"\n🚀 Bot starting on port {PORT}...")
     app.run(host="0.0.0.0", port=PORT)
