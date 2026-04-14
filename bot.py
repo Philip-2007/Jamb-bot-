@@ -372,7 +372,7 @@ def handle_answer(update: Update, context: CallbackContext):
         return ConversationHandler.END
     
     data = q.data
-    logger.info(f"🔥 CALLBACK: {data}")  # DEBUG
+    logger.info(f"🔥 CALLBACK: {data}")
     
     if data == "quit":
         return confirm_quit(q, context)
@@ -428,6 +428,13 @@ def check_before_submit(q, context, user):
         return REVIEW_MISSED
     else:
         return submit_quiz(q, context, user)
+
+def force_submit(update: Update, context: CallbackContext):
+    q = update.callback_query
+    q.answer()
+    user = q.from_user.id
+    logger.info(f"🔥 FORCE SUBMIT from user {user}")
+    return submit_quiz(q, context, user)
 
 def submit_quiz(q, context, user, time_up=False):
     s = sessions.get(user)
@@ -547,7 +554,7 @@ conv = ConversationHandler(
             CallbackQueryHandler(cbt, pattern="^cbt_done$")
         ],
         QUIZ: [
-            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)"),  # FIXED: removed $
+            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)"),
         ],
         CONFIRM_QUIT: [
             CallbackQueryHandler(force_quit, pattern="^force_quit$"),
@@ -555,7 +562,7 @@ conv = ConversationHandler(
         ],
         REVIEW_MISSED: [
             CallbackQueryHandler(resume, pattern="^back$"),
-            CallbackQueryHandler(submit_quiz, pattern="^force_submit$"),
+            CallbackQueryHandler(force_submit, pattern="^force_submit$"),
         ],
     },
     fallbacks=[],
