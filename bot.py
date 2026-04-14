@@ -344,14 +344,8 @@ def send_q(q, context, user):
         check = "✅ " if current_answer == idx else ""
         kb.append([InlineKeyboardButton(f"{check}{chr(65+idx)}. {display}", callback_data=f"ans_{idx}")])
     
-    nav_row = []
-    if i > 0:
-        nav_row.append(InlineKeyboardButton("◀️ PREV", callback_data="prev"))
-    nav_row.append(InlineKeyboardButton("📝 SUBMIT", callback_data="submit"))
-    if i < len(s["q"]) - 1:
-        nav_row.append(InlineKeyboardButton("NEXT ▶️", callback_data="next"))
-    kb.append(nav_row)
-    
+    # Only SUBMIT and QUIT buttons
+    kb.append([InlineKeyboardButton("📝 SUBMIT QUIZ", callback_data="submit")])
     kb.append([InlineKeyboardButton("⏸️ QUIT", callback_data="quit")])
     
     progress = int((i+1) / len(s["q"]) * 20)
@@ -384,23 +378,17 @@ def handle_answer(update: Update, context: CallbackContext):
         return confirm_quit(q, context)
     elif data == "submit":
         return check_before_submit(q, context, user)
-    elif data == "prev":
-        if s["i"] > 0:
-            s["i"] -= 1
-        return send_q(q, context, user)
-    elif data == "next":
-        if s["i"] < len(s["q"]) - 1:
-            s["i"] += 1
-        return send_q(q, context, user)
     elif data.startswith("ans_"):
         idx = int(data.replace("ans_", ""))
         s["answers"][s["i"]] = idx
         q.answer(f"✅ Selected {chr(65+idx)}")
         
+        # Auto-advance to next question
         if s["i"] < len(s["q"]) - 1:
             s["i"] += 1
             return send_q(q, context, user)
         else:
+            # Last question - stay on it but show selection
             return send_q(q, context, user)
     
     return QUIZ
@@ -561,7 +549,7 @@ conv = ConversationHandler(
             CallbackQueryHandler(cbt, pattern="^cbt_done$")
         ],
         QUIZ: [
-            CallbackQueryHandler(handle_answer, pattern="^(ans_|prev|next|submit|quit)$"),
+            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)$"),
         ],
         CONFIRM_QUIT: [
             CallbackQueryHandler(force_quit, pattern="^force_quit$"),
