@@ -150,7 +150,7 @@ def start(update: Update, context: CallbackContext):
         "/start_quiz - Begin test\n"
         "/leaderboard - Top students\n"
         "/myresult - Your last score\n"
-        "/admin - Admin dashboard (Full results)"
+        "/admin - Admin dashboard"
     )
 
 def my_result(update: Update, context: CallbackContext):
@@ -182,7 +182,6 @@ def leaderboard(update: Update, context: CallbackContext):
         update.message.reply_text("No attempts yet!")
         return
     
-    # Get unique users' best attempts
     user_best = {}
     for a in DB["attempts"]:
         uid = a["user_id"]
@@ -211,7 +210,6 @@ def admin(update: Update, context: CallbackContext):
     participants = len(DB["users"])
     attempts = len(DB["attempts"])
     
-    # Calculate averages
     exam_attempts = [a for a in DB["attempts"] if a.get("mode") == "exam"]
     cbt_attempts = [a for a in DB["attempts"] if a.get("mode") == "cbt"]
     
@@ -229,7 +227,6 @@ def admin(update: Update, context: CallbackContext):
     txt += f"   Exam: {avg_exam:.1f}%\n"
     txt += f"   CBT: {avg_cbt:.1f}%\n\n"
     
-    # Subject performance
     subject_stats = {}
     for a in DB["attempts"]:
         if a.get('subject_scores'):
@@ -247,12 +244,10 @@ def admin(update: Update, context: CallbackContext):
             emoji = EMOJIS.get(subj, "📚")
             txt += f"   {emoji} {subj}: {avg_pct}% ({data['attempts']} attempts)\n"
     
-    # Recent attempts
     txt += f"\n📋 RECENT ATTEMPTS:\n"
     for a in DB["attempts"][-5:]:
         txt += f"   • {a['name']}: {a['percent']}% ({a['mode']})\n"
     
-    # Top performers
     user_best = {}
     for a in DB["attempts"]:
         uid = a["user_id"]
@@ -298,40 +293,6 @@ def export_csv(update: Update, context: CallbackContext):
     
     os.remove(filename)
     q.edit_message_text("✅ Export complete! Check above for the CSV file.")
-
-def view_participant(update: Update, context: CallbackContext):
-    user_id = update.effective_user.id
-    if user_id != ADMIN_ID:
-        update.message.reply_text("⛔ Admin only!")
-        return
-    
-    if not context.args:
-        update.message.reply_text("Usage: /view [username or user_id]")
-        return
-    
-    search = " ".join(context.args).lower()
-    
-    found = []
-    for a in DB["attempts"]:
-        if (search in a.get('name', '').lower() or 
-            search in a.get('username', '').lower() or 
-            search == str(a.get('user_id', ''))):
-            found.append(a)
-    
-    if not found:
-        update.message.reply_text(f"No results found for '{search}'")
-        return
-    
-    txt = f"📊 RESULTS FOR '{search}'\n\n"
-    for i, a in enumerate(found[-5:], 1):
-        time_str = format_time(a.get('time_taken'))
-        txt += f"{i}. {a['timestamp']}\n"
-        txt += f"   Mode: {a['mode'].upper()}\n"
-        txt += f"   Score: {a['percent']}% ({a['raw_score']}/{a['total_questions']})\n"
-        txt += f"   Marks: {a['total_marks_earned']:.1f}/{a['total_marks']}\n"
-        txt += f"   Time: {time_str}\n\n"
-    
-    update.message.reply_text(txt)
 
 def start_quiz(update: Update, context: CallbackContext):
     kb = [
@@ -476,7 +437,16 @@ def send_q(q, context, user):
         check = "✅ " if current_answer == idx else ""
         kb.append([InlineKeyboardButton(f"{check}{chr(65+idx)}. {display}", callback_data=f"ans_{idx}")])
     
-    kb.append([InlineKeyboardButton("📝 SUBMIT QUIZ", callback_data="submit")])
+    # Navigation row with PREV button
+    nav_row = []
+    if i > 0:
+        nav_row.append(InlineKeyboardButton("◀️ PREV", callback_data="prev"))
+    nav_row.append(InlineKeyboardButton("📝 SUBMIT", callback_data="submit"))
+    if i < len(s["q"]) - 1:
+        nav_row.append(InlineKeyboardButton("NEXT ▶️", callback_data="next"))
+    if nav_row:
+        kb.append(nav_row)
+    
     kb.append([InlineKeyboardButton("⏸️ QUIT", callback_data="quit")])
     
     progress = int((i+1) / len(s["q"]) * 20)
@@ -510,11 +480,20 @@ def handle_answer(update: Update, context: CallbackContext):
         return confirm_quit(q, context)
     elif data == "submit":
         return check_before_submit(q, context, user)
+    elif data == "prev":
+        if s["i"] > 0:
+            s["i"] -= 1
+        return send_q(q, context, user)
+    elif data == "next":
+        if s["i"] < len(s["q"]) - 1:
+            s["i"] += 1
+        return send_q(q, context, user)
     elif data.startswith("ans_"):
         idx = int(data.replace("ans_", ""))
         s["answers"][s["i"]] = idx
         q.answer(f"✅ Selected {chr(65+idx)}")
         
+        # Auto-advance to next question if not at end
         if s["i"] < len(s["q"]) - 1:
             s["i"] += 1
             return send_q(q, context, user)
@@ -591,7 +570,6 @@ def submit_quiz(q, context, user, time_up=False):
                 raw_score += 1
                 subject_scores[subject]['correct'] += 1
     
-    # Calculate percentages for each subject
     for subj in subject_scores:
         subject_scores[subj]['percent'] = round(
             subject_scores[subj]['correct'] / subject_scores[subj]['total'] * 100, 1
@@ -691,7 +669,7 @@ conv = ConversationHandler(
             CallbackQueryHandler(cbt, pattern="^cbt_done$")
         ],
         QUIZ: [
-            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)"),
+            CallbackQueryHandler(handle_answer, pattern="^(ans_|prev|next|submit|quit)"),
         ],
         CONFIRM_QUIT: [
             CallbackQueryHandler(force_quit, pattern="^force_quit$"),
@@ -710,7 +688,6 @@ dp.add_handler(CommandHandler("start", start))
 dp.add_handler(CommandHandler("myresult", my_result))
 dp.add_handler(CommandHandler("leaderboard", leaderboard))
 dp.add_handler(CommandHandler("admin", admin))
-dp.add_handler(CommandHandler("view", view_participant))
 dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
 dp.add_handler(conv)
 
