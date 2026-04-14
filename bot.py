@@ -150,7 +150,7 @@ def start(update: Update, context: CallbackContext):
         "/start_quiz - Begin test\n"
         "/leaderboard - Top students\n"
         "/myresult - Your last score\n"
-        "/admin_stats - Admin dashboard"
+        "/admin - Admin dashboard (Full results)"
     )
 
 def my_result(update: Update, context: CallbackContext):
@@ -168,19 +168,37 @@ def my_result(update: Update, context: CallbackContext):
     txt += f"Marks: {a['total_marks_earned']:.1f}/{a['total_marks']}\n"
     txt += f"Percent: {a['percent']}%\n"
     txt += f"Time: {time_str}"
+    
+    if a.get('subject_scores'):
+        txt += f"\n\n📚 SUBJECT BREAKDOWN:\n"
+        for subj, data in a['subject_scores'].items():
+            emoji = EMOJIS.get(subj, "📚")
+            txt += f"{emoji} {subj}: {data['correct']}/{data['total']} ({data['percent']}%)\n"
+    
     update.message.reply_text(txt)
 
 def leaderboard(update: Update, context: CallbackContext):
     if not DB["attempts"]:
         update.message.reply_text("No attempts yet!")
         return
-    top = sorted(DB["attempts"], key=lambda x: x["percent"], reverse=True)[:10]
-    txt = "🏆 TOP 10\n\n"
+    
+    # Get unique users' best attempts
+    user_best = {}
+    for a in DB["attempts"]:
+        uid = a["user_id"]
+        if uid not in user_best or a["percent"] > user_best[uid]["percent"]:
+            user_best[uid] = a
+    
+    top = sorted(user_best.values(), key=lambda x: x["percent"], reverse=True)[:10]
+    
+    txt = "🏆 TOP 10 LEADERBOARD\n\n"
     for i, t in enumerate(top, 1):
-        txt += f"{i}. {t['name']} - {t['percent']}%\n"
+        medal = "🥇" if i==1 else "🥈" if i==2 else "🥉" if i==3 else f"{i}."
+        txt += f"{medal} {t['name']} - {t['percent']}% ({t['mode'].upper()})\n"
+    
     update.message.reply_text(txt)
 
-def admin_stats(update: Update, context: CallbackContext):
+def admin(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     if user_id != ADMIN_ID:
         update.message.reply_text("⛔ Admin only!")
@@ -192,12 +210,126 @@ def admin_stats(update: Update, context: CallbackContext):
     
     participants = len(DB["users"])
     attempts = len(DB["attempts"])
-    avg = sum(a["percent"] for a in DB["attempts"]) / attempts
+    
+    # Calculate averages
+    exam_attempts = [a for a in DB["attempts"] if a.get("mode") == "exam"]
+    cbt_attempts = [a for a in DB["attempts"] if a.get("mode") == "cbt"]
+    
+    avg_all = sum(a["percent"] for a in DB["attempts"]) / attempts
+    avg_exam = sum(a["percent"] for a in exam_attempts) / len(exam_attempts) if exam_attempts else 0
+    avg_cbt = sum(a["percent"] for a in cbt_attempts) / len(cbt_attempts) if cbt_attempts else 0
     
     txt = f"📊 ADMIN DASHBOARD\n\n"
-    txt += f"👥 Participants: {participants}\n"
+    txt += f"👥 Total Participants: {participants}\n"
     txt += f"📝 Total Attempts: {attempts}\n"
-    txt += f"📈 Average Score: {avg:.1f}%\n"
+    txt += f"   └ Exam Mode: {len(exam_attempts)}\n"
+    txt += f"   └ CBT Mode: {len(cbt_attempts)}\n\n"
+    txt += f"📈 AVERAGE SCORES:\n"
+    txt += f"   Overall: {avg_all:.1f}%\n"
+    txt += f"   Exam: {avg_exam:.1f}%\n"
+    txt += f"   CBT: {avg_cbt:.1f}%\n\n"
+    
+    # Subject performance
+    subject_stats = {}
+    for a in DB["attempts"]:
+        if a.get('subject_scores'):
+            for subj, data in a['subject_scores'].items():
+                if subj not in subject_stats:
+                    subject_stats[subj] = {'correct': 0, 'total': 0, 'attempts': 0}
+                subject_stats[subj]['correct'] += data['correct']
+                subject_stats[subj]['total'] += data['total']
+                subject_stats[subj]['attempts'] += 1
+    
+    if subject_stats:
+        txt += f"📚 SUBJECT PERFORMANCE:\n"
+        for subj, data in sorted(subject_stats.items()):
+            avg_pct = round(data['correct'] / data['total'] * 100, 1) if data['total'] > 0 else 0
+            emoji = EMOJIS.get(subj, "📚")
+            txt += f"   {emoji} {subj}: {avg_pct}% ({data['attempts']} attempts)\n"
+    
+    # Recent attempts
+    txt += f"\n📋 RECENT ATTEMPTS:\n"
+    for a in DB["attempts"][-5:]:
+        txt += f"   • {a['name']}: {a['percent']}% ({a['mode']})\n"
+    
+    # Top performers
+    user_best = {}
+    for a in DB["attempts"]:
+        uid = a["user_id"]
+        if uid not in user_best or a["percent"] > user_best[uid]["percent"]:
+            user_best[uid] = a
+    
+    top = sorted(user_best.values(), key=lambda x: x["percent"], reverse=True)[:5]
+    
+    txt += f"\n🏆 TOP 5 PERFORMERS:\n"
+    for i, t in enumerate(top, 1):
+        medal = "🥇" if i==1 else "🥈" if i==2 else "🥉" if i==3 else f"{i}."
+        txt += f"{medal} {t['name']}: {t['percent']}% ({t['mode']})\n"
+    
+    kb = [[InlineKeyboardButton("📥 EXPORT ALL RESULTS", callback_data="export_csv")]]
+    update.message.reply_text(txt, reply_markup=InlineKeyboardMarkup(kb))
+
+def export_csv(update: Update, context: CallbackContext):
+    q = update.callback_query
+    q.answer()
+    user_id = q.from_user.id
+    
+    if user_id != ADMIN_ID:
+        q.edit_message_text("⛔ Admin only!")
+        return
+    
+    if not DB["attempts"]:
+        q.edit_message_text("No data to export!")
+        return
+    
+    csv = "Name,Username,Mode,Subjects,Correct,Total Questions,Marks Earned,Total Marks,Percent,Time,Date\n"
+    for a in DB["attempts"]:
+        time_str = format_time(a.get('time_taken'))
+        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},{a.get('subjects','')},"
+        csv += f"{a['raw_score']},{a['total_questions']},{a['total_marks_earned']:.1f},{a['total_marks']},"
+        csv += f"{a['percent']}%,{time_str},{a.get('timestamp','')}\n"
+    
+    filename = f"jamb_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(csv)
+    
+    with open(filename, "rb") as f:
+        q.message.reply_document(document=f, filename=filename, caption=f"📊 {len(DB['attempts'])} attempts from {len(DB['users'])} participants")
+    
+    os.remove(filename)
+    q.edit_message_text("✅ Export complete! Check above for the CSV file.")
+
+def view_participant(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    if user_id != ADMIN_ID:
+        update.message.reply_text("⛔ Admin only!")
+        return
+    
+    if not context.args:
+        update.message.reply_text("Usage: /view [username or user_id]")
+        return
+    
+    search = " ".join(context.args).lower()
+    
+    found = []
+    for a in DB["attempts"]:
+        if (search in a.get('name', '').lower() or 
+            search in a.get('username', '').lower() or 
+            search == str(a.get('user_id', ''))):
+            found.append(a)
+    
+    if not found:
+        update.message.reply_text(f"No results found for '{search}'")
+        return
+    
+    txt = f"📊 RESULTS FOR '{search}'\n\n"
+    for i, a in enumerate(found[-5:], 1):
+        time_str = format_time(a.get('time_taken'))
+        txt += f"{i}. {a['timestamp']}\n"
+        txt += f"   Mode: {a['mode'].upper()}\n"
+        txt += f"   Score: {a['percent']}% ({a['raw_score']}/{a['total_questions']})\n"
+        txt += f"   Marks: {a['total_marks_earned']:.1f}/{a['total_marks']}\n"
+        txt += f"   Time: {time_str}\n\n"
     
     update.message.reply_text(txt)
 
@@ -459,6 +591,12 @@ def submit_quiz(q, context, user, time_up=False):
                 raw_score += 1
                 subject_scores[subject]['correct'] += 1
     
+    # Calculate percentages for each subject
+    for subj in subject_scores:
+        subject_scores[subj]['percent'] = round(
+            subject_scores[subj]['correct'] / subject_scores[subj]['total'] * 100, 1
+        ) if subject_scores[subj]['total'] > 0 else 0
+    
     total_questions = len(s["q"])
     total_marks = total_questions * marks_per_q
     earned_marks = raw_score * marks_per_q
@@ -471,7 +609,7 @@ def submit_quiz(q, context, user, time_up=False):
     DB["attempts"].append({
         "user_id": str(user),
         "name": user_obj.first_name,
-        "username": user_obj.username,
+        "username": user_obj.username or "N/A",
         "mode": s["mode"],
         "subjects": ", ".join(s["subjects"]),
         "raw_score": raw_score,
@@ -510,8 +648,7 @@ def submit_quiz(q, context, user, time_up=False):
         emoji = EMOJIS.get(subj, "📚")
         subj_marks = data['correct'] * marks_per_q
         subj_total = data['total'] * marks_per_q
-        subj_pct = round(data['correct'] / data['total'] * 100, 1) if data['total'] > 0 else 0
-        txt += f"{emoji} {subj}: {data['correct']}/{data['total']} ({subj_marks:.1f}/{subj_total:.1f} marks) - {subj_pct}%\n"
+        txt += f"{emoji} {subj}: {data['correct']}/{data['total']} ({subj_marks:.1f}/{subj_total:.1f} marks) - {data['percent']}%\n"
     
     txt += f"\n{fb}\n\n"
     txt += "/start_quiz - Try again\n"
@@ -572,7 +709,9 @@ conv = ConversationHandler(
 dp.add_handler(CommandHandler("start", start))
 dp.add_handler(CommandHandler("myresult", my_result))
 dp.add_handler(CommandHandler("leaderboard", leaderboard))
-dp.add_handler(CommandHandler("admin_stats", admin_stats))
+dp.add_handler(CommandHandler("admin", admin))
+dp.add_handler(CommandHandler("view", view_participant))
+dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
 dp.add_handler(conv)
 
 @app.route("/", methods=["GET"])
