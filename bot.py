@@ -344,7 +344,6 @@ def send_q(q, context, user):
         check = "✅ " if current_answer == idx else ""
         kb.append([InlineKeyboardButton(f"{check}{chr(65+idx)}. {display}", callback_data=f"ans_{idx}")])
     
-    # Only SUBMIT and QUIT buttons
     kb.append([InlineKeyboardButton("📝 SUBMIT QUIZ", callback_data="submit")])
     kb.append([InlineKeyboardButton("⏸️ QUIT", callback_data="quit")])
     
@@ -373,6 +372,7 @@ def handle_answer(update: Update, context: CallbackContext):
         return ConversationHandler.END
     
     data = q.data
+    logger.info(f"🔥 CALLBACK: {data}")  # DEBUG
     
     if data == "quit":
         return confirm_quit(q, context)
@@ -383,12 +383,10 @@ def handle_answer(update: Update, context: CallbackContext):
         s["answers"][s["i"]] = idx
         q.answer(f"✅ Selected {chr(65+idx)}")
         
-        # Auto-advance to next question
         if s["i"] < len(s["q"]) - 1:
             s["i"] += 1
             return send_q(q, context, user)
         else:
-            # Last question - stay on it but show selection
             return send_q(q, context, user)
     
     return QUIZ
@@ -549,7 +547,7 @@ conv = ConversationHandler(
             CallbackQueryHandler(cbt, pattern="^cbt_done$")
         ],
         QUIZ: [
-            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)$"),
+            CallbackQueryHandler(handle_answer, pattern="^(ans_|submit|quit)"),  # FIXED: removed $
         ],
         CONFIRM_QUIT: [
             CallbackQueryHandler(force_quit, pattern="^force_quit$"),
