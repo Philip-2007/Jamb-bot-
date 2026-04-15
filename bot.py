@@ -198,7 +198,7 @@ def ask_phone(update: Update, context: CallbackContext):
     user_id = str(update.effective_user.id)
     
     if user_id in phone_db:
-        return start_quiz(update, context)
+        return start_quiz_direct(update, context)
     
     update.message.reply_text(
         "📱 *Quick Registration*\n\n"
@@ -216,7 +216,7 @@ def save_phone(update: Update, context: CallbackContext):
     text = update.message.text.strip()
     
     if text == "/skip":
-        phone_db[user_id] = "Not provided"
+        phone_db[user_id] = "Skipped"
         save_phones(phone_db)
         update.message.reply_text("✅ No problem! You can start the quiz now.\n\nUse /start_quiz to begin!")
         return ConversationHandler.END
@@ -236,6 +236,14 @@ def save_phone(update: Update, context: CallbackContext):
             "Please enter a valid Nigerian number (e.g., 08123456789) or /skip"
         )
         return GET_PHONE
+
+def start_quiz_direct(update: Update, context: CallbackContext):
+    kb = [
+        [InlineKeyboardButton("📝 EXAM MODE (60 Qs, 60 Marks)", callback_data="exam")],
+        [InlineKeyboardButton("💻 CBT MODE (160 Qs, 400 Marks)", callback_data="cbt")],
+    ]
+    update.message.reply_text("🎯 SELECT TEST MODE:", reply_markup=InlineKeyboardMarkup(kb))
+    return CHOOSING_MODE
 
 def my_result(update: Update, context: CallbackContext):
     uid = str(update.effective_user.id)
@@ -453,12 +461,7 @@ def start_quiz(update: Update, context: CallbackContext):
     if user_id not in phone_db:
         return ask_phone(update, context)
     
-    kb = [
-        [InlineKeyboardButton("📝 EXAM MODE (60 Qs, 60 Marks)", callback_data="exam")],
-        [InlineKeyboardButton("💻 CBT MODE (160 Qs, 400 Marks)", callback_data="cbt")],
-    ]
-    update.message.reply_text("🎯 SELECT TEST MODE:", reply_markup=InlineKeyboardMarkup(kb))
-    return CHOOSING_MODE
+    return start_quiz_direct(update, context)
 
 def mode(update: Update, context: CallbackContext):
     q = update.callback_query
@@ -712,19 +715,34 @@ def submit_quiz(q, context, user, time_up=False):
     marks_per_q = CBT_MARKS_PER_QUESTION if s["mode"] == "cbt" else EXAM_MARKS_PER_QUESTION
     
     subject_scores = {}
+    answers_detail = []
     
     for i, ans in enumerate(s["answers"]):
         question = s["q"][i]
         subject = question.get('subject', 'General')
+        correct_idx = question.get("correct", 0)
+        correct_answer = question["options"][correct_idx] if correct_idx < len(question["options"]) else "N/A"
+        user_answer_text = question["options"][ans] if ans is not None and ans < len(question["options"]) else "Not answered"
         
         if subject not in subject_scores:
             subject_scores[subject] = {'correct': 0, 'total': 0}
         subject_scores[subject]['total'] += 1
         
+        is_correct = False
         if ans is not None:
-            if ans == question.get("correct", 0):
+            if ans == correct_idx:
                 raw_score += 1
                 subject_scores[subject]['correct'] += 1
+                is_correct = True
+        
+        answers_detail.append({
+            "q_num": i + 1,
+            "question": question["question"],
+            "subject": subject,
+            "user_answer": user_answer_text,
+            "correct_answer": correct_answer,
+            "is_correct": is_correct
+        })
     
     for subj in subject_scores:
         subject_scores[subj]['percent'] = round(
@@ -753,6 +771,7 @@ def submit_quiz(q, context, user, time_up=False):
         "percent": percent,
         "time_taken": time_taken,
         "subject_scores": subject_scores,
+        "answers_detail": answers_detail,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M")
     })
     save_db()
@@ -785,12 +804,47 @@ def submit_quiz(q, context, user, time_up=False):
         txt += f"{emoji} {subj}: {data['correct']}/{data['total']} ({subj_marks:.1f}/{subj_total:.1f} marks) - {data['percent']}%\n"
     
     txt += f"\n{fb}\n\n"
+    
+    # Add view answers button
+    kb = [[InlineKeyboardButton("📋 VIEW ANSWERS", callback_data=f"view_answers_{user}")]]
+    
     txt += "/start_quiz - Try again\n"
     txt += "/myresult - View again"
     
     del sessions[user]
-    q.edit_message_text(txt)
+    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
     return ConversationHandler.END
+
+def view_answers(update: Update, context: CallbackContext):
+    q = update.callback_query
+    q.answer()
+    user = q.from_user.id
+    
+    attempts = [a for a in DB["attempts"] if a.get("user_id") == str(user)]
+    if not attempts:
+        q.edit_message_text("No attempts found!")
+        return
+    
+    latest = attempts[-1]
+    answers_detail = latest.get("answers_detail", [])
+    
+    if not answers_detail:
+        q.edit_message_text("No answer details available!")
+        return
+    
+    txt = f"📋 YOUR ANSWERS - {latest['mode'].upper()}\n\n"
+    
+    for ans in answers_detail[:20]:  # Show first 20
+        emoji = "✅" if ans["is_correct"] else "❌"
+        txt += f"{emoji} Q{ans['q_num']}: {ans['question'][:40]}...\n"
+        txt += f"   Your answer: {ans['user_answer']}\n"
+        txt += f"   Correct: {ans['correct_answer']}\n\n"
+    
+    if len(answers_detail) > 20:
+        txt += f"...and {len(answers_detail) - 20} more questions.\n"
+    
+    kb = [[InlineKeyboardButton("🔄 NEW QUIZ", callback_data="new_quiz")]]
+    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
 
 def confirm_quit(q, context):
     kb = [
@@ -862,6 +916,8 @@ dp.add_handler(CommandHandler("admin", admin))
 dp.add_handler(CommandHandler("broadcast", broadcast))
 dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
 dp.add_handler(CallbackQueryHandler(broadcast_prompt, pattern="^broadcast_prompt$"))
+dp.add_handler(CallbackQueryHandler(view_answers, pattern="^view_answers_"))
+dp.add_handler(CallbackQueryHandler(lambda u, c: start_quiz_direct(u, c), pattern="^new_quiz$"))
 
 @app.route("/", methods=["GET"])
 def home():
