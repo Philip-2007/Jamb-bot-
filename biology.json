@@ -1,0 +1,6001 @@
+{
+  "biology": [
+    {
+      "id": 1,
+      "question": "Which of the following is the basic unit of life?",
+      "options": {
+        "A": "Tissue",
+        "B": "Cell",
+        "C": "Organ",
+        "D": "System"
+      }
+    },
+    {
+      "id": 2,
+      "question": "The organelle responsible for respiration in cells is the:",
+      "options": {
+        "A": "Ribosome",
+        "B": "Mitochondrion",
+        "C": "Golgi body",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a characteristic of living things?",
+      "options": {
+        "A": "Rusting",
+        "B": "Movement",
+        "C": "Evaporation",
+        "D": "Burning"
+      }
+    },
+    {
+      "id": 4,
+      "question": "Photosynthesis occurs in the:",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Chloroplast",
+        "C": "Nucleus",
+        "D": "Ribosome"
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which gas is released during photosynthesis?",
+      "options": {
+        "A": "Carbon dioxide",
+        "B": "Nitrogen",
+        "C": "Oxygen",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 6,
+      "question": "The process by which plants lose water vapor is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Transpiration",
+        "C": "Diffusion",
+        "D": "Osmosis"
+      }
+    },
+    {
+      "id": 7,
+      "question": "The hereditary material in living organisms is:",
+      "options": {
+        "A": "RNA",
+        "B": "DNA",
+        "C": "Protein",
+        "D": "Fat"
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a vector of malaria?",
+      "options": {
+        "A": "Housefly",
+        "B": "Tsetse fly",
+        "C": "Mosquito",
+        "D": "Cockroach"
+      }
+    },
+    {
+      "id": 9,
+      "question": "The study of heredity is called:",
+      "options": {
+        "A": "Ecology",
+        "B": "Genetics",
+        "C": "Taxonomy",
+        "D": "Morphology"
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which kingdom does mushroom belong to?",
+      "options": {
+        "A": "Plantae",
+        "B": "Animalia",
+        "C": "Fungi",
+        "D": "Protista"
+      }
+    },
+    {
+      "id": 11,
+      "question": "The functional unit of the kidney is the:",
+      "options": {
+        "A": "Neuron",
+        "B": "Alveolus",
+        "C": "Nephron",
+        "D": "Villus"
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which blood cell helps in clotting?",
+      "options": {
+        "A": "Red blood cell",
+        "B": "White blood cell",
+        "C": "Platelet",
+        "D": "Plasma"
+      }
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is NOT a vertebrate?",
+      "options": {
+        "A": "Fish",
+        "B": "Bird",
+        "C": "Earthworm",
+        "D": "Frog"
+      }
+    },
+    {
+      "id": 14,
+      "question": "The pigment that gives plants their green color is:",
+      "options": {
+        "A": "Hemoglobin",
+        "B": "Chlorophyll",
+        "C": "Melanin",
+        "D": "Carotene"
+      }
+    },
+    {
+      "id": 15,
+      "question": "The process of breaking down food in the body is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Digestion",
+        "C": "Circulation",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 16,
+      "question": "Which part of the brain controls balance and coordination?",
+      "options": {
+        "A": "Cerebrum",
+        "B": "Medulla",
+        "C": "Cerebellum",
+        "D": "Spinal cord"
+      }
+    },
+    {
+      "id": 17,
+      "question": "A habitat is:",
+      "options": {
+        "A": "A group of animals",
+        "B": "A place where organisms live",
+        "C": "A food chain",
+        "D": "An ecosystem type"
+      }
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is a producer?",
+      "options": {
+        "A": "Lion",
+        "B": "Grass",
+        "C": "Snake",
+        "D": "Hawk"
+      }
+    },
+    {
+      "id": 19,
+      "question": "Osmosis is the movement of:",
+      "options": {
+        "A": "Solute molecules",
+        "B": "Water molecules",
+        "C": "Ions",
+        "D": "Proteins"
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which structure is found in plant cells but not animal cells?",
+      "options": {
+        "A": "Cell membrane",
+        "B": "Cell wall",
+        "C": "Mitochondria",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 21,
+      "question": "The heart is part of the:",
+      "options": {
+        "A": "Digestive system",
+        "B": "Circulatory system",
+        "C": "Respiratory system",
+        "D": "Excretory system"
+      }
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is an example of a monocot plant?",
+      "options": {
+        "A": "Bean",
+        "B": "Maize",
+        "C": "Mango",
+        "D": "Orange"
+      }
+    },
+    {
+      "id": 23,
+      "question": "The exchange of gases in humans takes place in the:",
+      "options": {
+        "A": "Bronchi",
+        "B": "Trachea",
+        "C": "Alveoli",
+        "D": "Nose"
+      }
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a decomposer?",
+      "options": {
+        "A": "Grass",
+        "B": "Fungus",
+        "C": "Goat",
+        "D": "Lion"
+      }
+    },
+    {
+      "id": 25,
+      "question": "The inheritance of traits is controlled by:",
+      "options": {
+        "A": "Hormones",
+        "B": "Genes",
+        "C": "Enzymes",
+        "D": "Cells"
+      }
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is a sexually transmitted disease?",
+      "options": {
+        "A": "Malaria",
+        "B": "Cholera",
+        "C": "HIV/AIDS",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 27,
+      "question": "The process of removing metabolic waste is called:",
+      "options": {
+        "A": "Digestion",
+        "B": "Excretion",
+        "C": "Respiration",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 28,
+      "question": "Which of the following is a carnivore?",
+      "options": {
+        "A": "Cow",
+        "B": "Goat",
+        "C": "Lion",
+        "D": "Rabbit"
+      }
+    },
+    {
+      "id": 29,
+      "question": "The female reproductive organ in flowering plants is the:",
+      "options": {
+        "A": "Stamen",
+        "B": "Anther",
+        "C": "Carpel",
+        "D": "Pollen grain"
+      }
+    },
+    {
+      "id": 30,
+      "question": "Which vitamin is produced when skin is exposed to sunlight?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin B",
+        "C": "Vitamin C",
+        "D": "Vitamin D"
+      }
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is NOT a function of the liver?",
+      "options": {
+        "A": "Detoxification",
+        "B": "Bile production",
+        "C": "Digestion of starch",
+        "D": "Storage of glycogen"
+      }
+    },
+    {
+      "id": 32,
+      "question": "The outermost layer of the skin is the:",
+      "options": {
+        "A": "Dermis",
+        "B": "Epidermis",
+        "C": "Hypodermis",
+        "D": "Cortex"
+      }
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is a characteristic of mammals?",
+      "options": {
+        "A": "Laying eggs",
+        "B": "Feathers",
+        "C": "Hair or fur",
+        "D": "Gills"
+      }
+    },
+    {
+      "id": 34,
+      "question": "The process of evolution was proposed by:",
+      "options": {
+        "A": "Mendel",
+        "B": "Darwin",
+        "C": "Pasteur",
+        "D": "Watson"
+      }
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a natural ecosystem?",
+      "options": {
+        "A": "Garden",
+        "B": "Farm",
+        "C": "Forest",
+        "D": "Zoo"
+      }
+    },
+    {
+      "id": 36,
+      "question": "Which blood vessel carries oxygenated blood away from the heart?",
+      "options": {
+        "A": "Vein",
+        "B": "Capillary",
+        "C": "Artery",
+        "D": "Venule"
+      }
+    },
+    {
+      "id": 37,
+      "question": "The breakdown of glucose during respiration produces:",
+      "options": {
+        "A": "Oxygen",
+        "B": "Energy",
+        "C": "Chlorophyll",
+        "D": "Water only"
+      }
+    },
+    {
+      "id": 38,
+      "question": "Which of the following organisms shows both plant and animal characteristics?",
+      "options": {
+        "A": "Mushroom",
+        "B": "Euglena",
+        "C": "Frog",
+        "D": "Earthworm"
+      }
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is a function of roots?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Reproduction",
+        "C": "Absorption of water",
+        "D": "Pollination"
+      }
+    },
+    {
+      "id": 40,
+      "question": "The study of interactions between organisms and their environment is:",
+      "options": {
+        "A": "Genetics",
+        "B": "Ecology",
+        "C": "Anatomy",
+        "D": "Physiology"
+      }
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is NOT a mammalian feature?",
+      "options": {
+        "A": "Mammary glands",
+        "B": "Hair",
+        "C": "Gills",
+        "D": "Warm blooded"
+      }
+    },
+    {
+      "id": 42,
+      "question": "Which organ filters blood in humans?",
+      "options": {
+        "A": "Heart",
+        "B": "Liver",
+        "C": "Kidney",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 43,
+      "question": "The male gamete in humans is the:",
+      "options": {
+        "A": "Egg",
+        "B": "Sperm",
+        "C": "Zygote",
+        "D": "Embryo"
+      }
+    },
+    {
+      "id": 44,
+      "question": "Which of the following is a disease caused by bacteria?",
+      "options": {
+        "A": "Measles",
+        "B": "Malaria",
+        "C": "Tuberculosis",
+        "D": "HIV"
+      }
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is the correct food chain?",
+      "options": {
+        "A": "Lion → Grass → Goat",
+        "B": "Grass → Goat → Lion",
+        "C": "Goat → Grass → Lion",
+        "D": "Grass → Lion → Goat"
+      }
+    },
+    {
+      "id": 46,
+      "question": "The site of fertilization in humans is the:",
+      "options": {
+        "A": "Uterus",
+        "B": "Ovary",
+        "C": "Fallopian tube",
+        "D": "Vagina"
+      }
+    },
+    {
+      "id": 47,
+      "question": "Which of the following is a symptom of deficiency of iron?",
+      "options": {
+        "A": "Scurvy",
+        "B": "Rickets",
+        "C": "Anemia",
+        "D": "Goiter"
+      }
+    },
+    {
+      "id": 48,
+      "question": "Which part of the plant transports water?",
+      "options": {
+        "A": "Phloem",
+        "B": "Xylem",
+        "C": "Cambium",
+        "D": "Stomata"
+      }
+    },
+    {
+      "id": 49,
+      "question": "Which of the following is an inherited trait?",
+      "options": {
+        "A": "Language",
+        "B": "Height",
+        "C": "Tattoos",
+        "D": "Skills"
+      }
+    },
+    {
+      "id": 50,
+      "question": "The smallest blood vessels are called:",
+      "options": {
+        "A": "Arteries",
+        "B": "Veins",
+        "C": "Capillaries",
+        "D": "Aorta"
+      },
+      {
+      "id": 51,
+      "question": "Which of the following is the primary function of chlorophyll?",
+      "options": {
+        "A": "Absorb water",
+        "B": "Trap light energy",
+        "C": "Transport food",
+        "D": "Release oxygen"
+      }
+    },
+    {
+      "id": 52,
+      "question": "The process by which green plants manufacture their food is called:",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Transpiration",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 53,
+      "question": "Which of the following is NOT a component of the cell theory?",
+      "options": {
+        "A": "All living things are made of cells",
+        "B": "Cells are the basic unit of life",
+        "C": "Cells arise from pre-existing cells",
+        "D": "Cells are non-living structures"
+      }
+    },
+    {
+      "id": 54,
+      "question": "The process of cell division that produces identical daughter cells is:",
+      "options": {
+        "A": "Meiosis",
+        "B": "Mitosis",
+        "C": "Fertilization",
+        "D": "Gametogenesis"
+      }
+    },
+    {
+      "id": 55,
+      "question": "Which blood component transports oxygen?",
+      "options": {
+        "A": "Plasma",
+        "B": "Platelets",
+        "C": "Red blood cells",
+        "D": "White blood cells"
+      }
+    },
+    {
+      "id": 56,
+      "question": "The theory of evolution by natural selection was proposed by:",
+      "options": {
+        "A": "Gregor Mendel",
+        "B": "Charles Darwin",
+        "C": "Louis Pasteur",
+        "D": "Robert Hooke"
+      }
+    },
+    {
+      "id": 57,
+      "question": "Which of the following is a non-living component of an ecosystem?",
+      "options": {
+        "A": "Plants",
+        "B": "Animals",
+        "C": "Air",
+        "D": "Fungi"
+      }
+    },
+    {
+      "id": 58,
+      "question": "The inheritance of sex in humans is determined by:",
+      "options": {
+        "A": "Autosomes",
+        "B": "Sex chromosomes",
+        "C": "Genes in cytoplasm",
+        "D": "Hormones only"
+      }
+    },
+    {
+      "id": 59,
+      "question": "Which of the following is a function of the large intestine?",
+      "options": {
+        "A": "Protein digestion",
+        "B": "Water absorption",
+        "C": "Gas exchange",
+        "D": "Blood filtration"
+      }
+    },
+    {
+      "id": 60,
+      "question": "Which organism causes malaria?",
+      "options": {
+        "A": "Plasmodium",
+        "B": "Trypanosoma",
+        "C": "Bacteria",
+        "D": "Virus"
+      }
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is a feature of monocotyledonous plants?",
+      "options": {
+        "A": "Two cotyledons",
+        "B": "Net venation",
+        "C": "Parallel venation",
+        "D": "Tap root system"
+      }
+    },
+    {
+      "id": 62,
+      "question": "The site of gaseous exchange in leaves is the:",
+      "options": {
+        "A": "Cuticle",
+        "B": "Stomata",
+        "C": "Xylem",
+        "D": "Phloem"
+      }
+    },
+    {
+      "id": 63,
+      "question": "Which of the following is a water-borne disease?",
+      "options": {
+        "A": "Cholera",
+        "B": "HIV/AIDS",
+        "C": "Influenza",
+        "D": "Measles"
+      }
+    },
+    {
+      "id": 64,
+      "question": "The structure that connects bone to bone is called:",
+      "options": {
+        "A": "Tendon",
+        "B": "Ligament",
+        "C": "Cartilage",
+        "D": "Muscle"
+      }
+    },
+    {
+      "id": 65,
+      "question": "Which of the following is responsible for immunity?",
+      "options": {
+        "A": "Red blood cells",
+        "B": "White blood cells",
+        "C": "Platelets",
+        "D": "Plasma"
+      }
+    },
+    {
+      "id": 66,
+      "question": "The part of the eye responsible for controlling light entry is the:",
+      "options": {
+        "A": "Retina",
+        "B": "Cornea",
+        "C": "Iris",
+        "D": "Lens"
+      }
+    },
+    {
+      "id": 67,
+      "question": "Which of the following is a symptom of diabetes?",
+      "options": {
+        "A": "High blood sugar",
+        "B": "Low iron",
+        "C": "Bone weakness",
+        "D": "High blood pressure only"
+      }
+    },
+    {
+      "id": 68,
+      "question": "The movement of molecules from a region of high concentration to low concentration is:",
+      "options": {
+        "A": "Osmosis",
+        "B": "Diffusion",
+        "C": "Active transport",
+        "D": "Filtration"
+      }
+    },
+    {
+      "id": 69,
+      "question": "Which of the following organisms is a protozoan?",
+      "options": {
+        "A": "Amoeba",
+        "B": "Mushroom",
+        "C": "Maize",
+        "D": "Earthworm"
+      }
+    },
+    {
+      "id": 70,
+      "question": "Which of the following is the correct order of levels of organization?",
+      "options": {
+        "A": "Cell → Organ → Tissue → System",
+        "B": "Cell → Tissue → Organ → System",
+        "C": "Tissue → Cell → Organ → System",
+        "D": "Organ → Cell → Tissue → System"
+      }
+    },
+    {
+      "id": 71,
+      "question": "The pigment responsible for red color in blood is:",
+      "options": {
+        "A": "Chlorophyll",
+        "B": "Haemoglobin",
+        "C": "Melanin",
+        "D": "Carotene"
+      }
+    },
+    {
+      "id": 72,
+      "question": "Which of the following is a function of the skeletal system?",
+      "options": {
+        "A": "Digestion",
+        "B": "Support and movement",
+        "C": "Respiration",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 73,
+      "question": "Which of the following is an example of artificial immunity?",
+      "options": {
+        "A": "Vaccination",
+        "B": "Recovery from disease",
+        "C": "Breastfeeding",
+        "D": "Inherited immunity"
+      }
+    },
+    {
+      "id": 74,
+      "question": "Which part of the plant is mainly responsible for transpiration?",
+      "options": {
+        "A": "Roots",
+        "B": "Stem",
+        "C": "Leaves",
+        "D": "Flowers"
+      }
+    },
+    {
+      "id": 75,
+      "question": "The process of fusion of gametes is called:",
+      "options": {
+        "A": "Pollination",
+        "B": "Fertilization",
+        "C": "Germination",
+        "D": "Meiosis"
+      }
+    },
+    {
+      "id": 76,
+      "question": "Which of the following is a greenhouse gas?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon dioxide",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 77,
+      "question": "The smallest unit of classification is:",
+      "options": {
+        "A": "Kingdom",
+        "B": "Phylum",
+        "C": "Species",
+        "D": "Class"
+      }
+    },
+    {
+      "id": 78,
+      "question": "Which of the following diseases is caused by a virus?",
+      "options": {
+        "A": "Tuberculosis",
+        "B": "Cholera",
+        "C": "Measles",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 79,
+      "question": "Which organelle is responsible for protein synthesis?",
+      "options": {
+        "A": "Ribosome",
+        "B": "Lysosome",
+        "C": "Golgi body",
+        "D": "Vacuole"
+      }
+    },
+    {
+      "id": 80,
+      "question": "Which of the following is a characteristic of enzymes?",
+      "options": {
+        "A": "They are used up in reactions",
+        "B": "They increase activation energy",
+        "C": "They are biological catalysts",
+        "D": "They are always lipids"
+      }
+    },
+    {
+      "id": 81,
+      "question": "Which of the following is a function of the pancreas?",
+      "options": {
+        "A": "Produces insulin",
+        "B": "Stores bile",
+        "C": "Filters blood",
+        "D": "Produces red blood cells"
+      }
+    },
+    {
+      "id": 82,
+      "question": "The study of fossils is called:",
+      "options": {
+        "A": "Ecology",
+        "B": "Paleontology",
+        "C": "Taxonomy",
+        "D": "Anatomy"
+      }
+    },
+    {
+      "id": 83,
+      "question": "Which of the following is a function of the root hairs?",
+      "options": {
+        "A": "Reproduction",
+        "B": "Absorption of water",
+        "C": "Photosynthesis",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 84,
+      "question": "Which of the following is a vector of sleeping sickness?",
+      "options": {
+        "A": "Mosquito",
+        "B": "Tsetse fly",
+        "C": "Housefly",
+        "D": "Flea"
+      }
+    },
+    {
+      "id": 85,
+      "question": "Which of the following is a characteristic of amphibians?",
+      "options": {
+        "A": "Dry skin",
+        "B": "Feathers",
+        "C": "Moist skin",
+        "D": "Scales only"
+      }
+    },
+    {
+      "id": 86,
+      "question": "The organ responsible for pumping blood is the:",
+      "options": {
+        "A": "Liver",
+        "B": "Heart",
+        "C": "Kidney",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 87,
+      "question": "Which of the following is the correct sequence in human nutrition?",
+      "options": {
+        "A": "Ingestion → Digestion → Absorption → Egestion",
+        "B": "Digestion → Ingestion → Absorption → Egestion",
+        "C": "Absorption → Digestion → Ingestion → Egestion",
+        "D": "Ingestion → Absorption → Digestion → Egestion"
+      }
+    },
+    {
+      "id": 88,
+      "question": "Which of the following is NOT a function of blood?",
+      "options": {
+        "A": "Transport of gases",
+        "B": "Regulation of temperature",
+        "C": "Photosynthesis",
+        "D": "Transport of nutrients"
+      }
+    },
+    {
+      "id": 89,
+      "question": "Which of the following is a correct example of a food chain?",
+      "options": {
+        "A": "Grass → Goat → Lion",
+        "B": "Lion → Goat → Grass",
+        "C": "Goat → Lion → Grass",
+        "D": "Grass → Lion → Goat"
+      }
+    },
+    {
+      "id": 90,
+      "question": "Which of the following is a function of the kidney?",
+      "options": {
+        "A": "Blood clotting",
+        "B": "Urine formation",
+        "C": "Digestion",
+        "D": "Oxygen transport"
+      }
+    },
+    {
+      "id": 91,
+      "question": "Which of the following is a characteristic of viruses?",
+      "options": {
+        "A": "Cellular structure",
+        "B": "Independent life",
+        "C": "Obligate parasites",
+        "D": "Photosynthetic"
+      }
+    },
+    {
+      "id": 92,
+      "question": "Which of the following is used for classification of organisms?",
+      "options": {
+        "A": "Color",
+        "B": "Habitat only",
+        "C": "Morphological features",
+        "D": "Size only"
+      }
+    },
+    {
+      "id": 93,
+      "question": "Which of the following is a function of stomata?",
+      "options": {
+        "A": "Food storage",
+        "B": "Gas exchange",
+        "C": "Reproduction",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 94,
+      "question": "The fusion of male and female nuclei results in:",
+      "options": {
+        "A": "Zygote",
+        "B": "Gamete",
+        "C": "Embryo only",
+        "D": "Seed"
+      }
+    },
+    {
+      "id": 95,
+      "question": "Which of the following is a feature of adaptation?",
+      "options": {
+        "A": "Random change",
+        "B": "Helps survival",
+        "C": "Always harmful",
+        "D": "Occurs only in plants"
+      }
+    },
+    {
+      "id": 96,
+      "question": "Which of the following is a product of anaerobic respiration in yeast?",
+      "options": {
+        "A": "Oxygen",
+        "B": "Alcohol",
+        "C": "Water",
+        "D": "Glucose"
+      }
+    },
+    {
+      "id": 97,
+      "question": "Which of the following is a function of tendons?",
+      "options": {
+        "A": "Connect bone to bone",
+        "B": "Connect muscle to bone",
+        "C": "Produce blood cells",
+        "D": "Store calcium"
+      }
+    },
+    {
+      "id": 98,
+      "question": "Which of the following is a correct definition of ecology?",
+      "options": {
+        "A": "Study of cells",
+        "B": "Study of environment and organisms",
+        "C": "Study of fossils",
+        "D": "Study of blood"
+      }
+    },
+    {
+      "id": 99,
+      "question": "Which of the following is responsible for heredity?",
+      "options": {
+        "A": "Hormones",
+        "B": "Genes",
+        "C": "Enzymes",
+        "D": "Blood cells"
+      }
+    },
+    {
+      "id": 100,
+      "question": "Which of the following is NOT a vertebrate class?",
+      "options": {
+        "A": "Mammalia",
+        "B": "Aves",
+        "C": "Insecta",
+        "D": "Reptilia"
+      },
+      {
+      "id": 101,
+      "question": "The study of genes and inheritance is known as:",
+      "options": {
+        "A": "Ecology",
+        "B": "Genetics",
+        "C": "Morphology",
+        "D": "Physiology"
+      }
+    },
+    {
+      "id": 102,
+      "question": "In a monohybrid cross, the phenotypic ratio of F2 generation is usually:",
+      "options": {
+        "A": "1:1",
+        "B": "3:1",
+        "C": "9:3:3:1",
+        "D": "2:1"
+      }
+    },
+    {
+      "id": 103,
+      "question": "Which of the following represents a heterozygous genotype?",
+      "options": {
+        "A": "TT",
+        "B": "tt",
+        "C": "Tt",
+        "D": "TTtt"
+      }
+    },
+    {
+      "id": 104,
+      "question": "The part of the flower that develops into fruit is the:",
+      "options": {
+        "A": "Petal",
+        "B": "Ovary",
+        "C": "Stamen",
+        "D": "Sepal"
+      }
+    },
+    {
+      "id": 105,
+      "question": "Which of the following is a product of photosynthesis?",
+      "options": {
+        "A": "Carbon dioxide and water",
+        "B": "Glucose and oxygen",
+        "C": "Oxygen and carbon dioxide",
+        "D": "Water and oxygen"
+      }
+    },
+    {
+      "id": 106,
+      "question": "The pigment responsible for capturing light energy is located in the:",
+      "options": {
+        "A": "Nucleus",
+        "B": "Chloroplast",
+        "C": "Cell wall",
+        "D": "Mitochondria"
+      }
+    },
+    {
+      "id": 107,
+      "question": "Which type of respiration occurs in the absence of oxygen?",
+      "options": {
+        "A": "Aerobic respiration",
+        "B": "Anaerobic respiration",
+        "C": "Cellular respiration",
+        "D": "Gaseous respiration"
+      }
+    },
+    {
+      "id": 108,
+      "question": "The end product of anaerobic respiration in muscles is:",
+      "options": {
+        "A": "Alcohol",
+        "B": "Carbon dioxide",
+        "C": "Lactic acid",
+        "D": "Glucose"
+      }
+    },
+    {
+      "id": 109,
+      "question": "Which of the following best describes natural selection?",
+      "options": {
+        "A": "Random survival of organisms",
+        "B": "Survival of the fittest",
+        "C": "Artificial breeding",
+        "D": "Sudden mutation"
+      }
+    },
+    {
+      "id": 110,
+      "question": "Which gas is required for combustion and respiration?",
+      "options": {
+        "A": "Carbon dioxide",
+        "B": "Oxygen",
+        "C": "Nitrogen",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "id": 111,
+      "question": "The movement of water molecules across a semi-permeable membrane is:",
+      "options": {
+        "A": "Diffusion",
+        "B": "Osmosis",
+        "C": "Active transport",
+        "D": "Transpiration"
+      }
+    },
+    {
+      "id": 112,
+      "question": "Which of the following structures is found in plant cells only?",
+      "options": {
+        "A": "Mitochondria",
+        "B": "Cell membrane",
+        "C": "Chloroplast",
+        "D": "Ribosome"
+      }
+    },
+    {
+      "id": 113,
+      "question": "The process of pollination refers to:",
+      "options": {
+        "A": "Fusion of gametes",
+        "B": "Transfer of pollen grains",
+        "C": "Seed formation",
+        "D": "Germination"
+      }
+    },
+    {
+      "id": 114,
+      "question": "Which of the following is NOT a function of the skeleton?",
+      "options": {
+        "A": "Support",
+        "B": "Protection",
+        "C": "Movement",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 115,
+      "question": "Which of the following organisms is autotrophic?",
+      "options": {
+        "A": "Human",
+        "B": "Fungus",
+        "C": "Green plant",
+        "D": "Cow"
+      }
+    },
+    {
+      "id": 116,
+      "question": "Which of the following is a structural adaptation in desert plants?",
+      "options": {
+        "A": "Broad leaves",
+        "B": "Thick cuticle",
+        "C": "Large stomata",
+        "D": "Thin stem"
+      }
+    },
+    {
+      "id": 117,
+      "question": "The breakdown of food into simpler substances is called:",
+      "options": {
+        "A": "Absorption",
+        "B": "Digestion",
+        "C": "Assimilation",
+        "D": "Egestion"
+      }
+    },
+    {
+      "id": 118,
+      "question": "Which hormone regulates blood sugar level?",
+      "options": {
+        "A": "Adrenaline",
+        "B": "Insulin",
+        "C": "Thyroxine",
+        "D": "Estrogen"
+      }
+    },
+    {
+      "id": 119,
+      "question": "Which of the following is a function of the lymphatic system?",
+      "options": {
+        "A": "Digestion of fats",
+        "B": "Transport of oxygen",
+        "C": "Defense against infection",
+        "D": "Production of hormones"
+      }
+    },
+    {
+      "id": 120,
+      "question": "Which of the following is an example of an ecosystem?",
+      "options": {
+        "A": "A tree",
+        "B": "A forest",
+        "C": "A lion",
+        "D": "A leaf"
+      }
+    },
+    {
+      "id": 121,
+      "question": "The structure that allows fish to breathe underwater is the:",
+      "options": {
+        "A": "Lungs",
+        "B": "Gills",
+        "C": "Skin",
+        "D": "Spiracles"
+      }
+    },
+    {
+      "id": 122,
+      "question": "Which of the following is a symptom of tuberculosis?",
+      "options": {
+        "A": "Excessive sweating and coughing",
+        "B": "Blindness",
+        "C": "Skin rash",
+        "D": "Joint pain only"
+      }
+    },
+    {
+      "id": 123,
+      "question": "Which of the following is a method of asexual reproduction?",
+      "options": {
+        "A": "Fertilization",
+        "B": "Budding",
+        "C": "Pollination",
+        "D": "Meiosis"
+      }
+    },
+    {
+      "id": 124,
+      "question": "Which organelle is responsible for waste breakdown in cells?",
+      "options": {
+        "A": "Lysosome",
+        "B": "Ribosome",
+        "C": "Chloroplast",
+        "D": "Nucleus"
+      }
+    },
+    {
+      "id": 125,
+      "question": "Which of the following is a characteristic of enzymes?",
+      "options": {
+        "A": "They are permanently changed after reaction",
+        "B": "They are proteins",
+        "C": "They increase activation energy",
+        "D": "They are inorganic"
+      }
+    },
+    {
+      "id": 126,
+      "question": "The process of seed germination requires:",
+      "options": {
+        "A": "Water, oxygen, and warmth",
+        "B": "Light only",
+        "C": "Carbon dioxide only",
+        "D": "Salinity"
+      }
+    },
+    {
+      "id": 127,
+      "question": "Which of the following is NOT a characteristic of living things?",
+      "options": {
+        "A": "Respiration",
+        "B": "Growth",
+        "C": "Rusting",
+        "D": "Reproduction"
+      }
+    },
+    {
+      "id": 128,
+      "question": "The part of the brain that controls breathing is the:",
+      "options": {
+        "A": "Cerebrum",
+        "B": "Cerebellum",
+        "C": "Medulla oblongata",
+        "D": "Hypothalamus"
+      }
+    },
+    {
+      "id": 129,
+      "question": "Which of the following is a fungal disease in plants?",
+      "options": {
+        "A": "Rust",
+        "B": "Measles",
+        "C": "Malaria",
+        "D": "Cholera"
+      }
+    },
+    {
+      "id": 130,
+      "question": "Which of the following is a function of the ribosome?",
+      "options": {
+        "A": "Energy production",
+        "B": "Protein synthesis",
+        "C": "Digestion",
+        "D": "Waste removal"
+      }
+    },
+    {
+      "id": 131,
+      "question": "Which of the following represents a food web?",
+      "options": {
+        "A": "Single linear chain",
+        "B": "Interconnected food chains",
+        "C": "Only producers",
+        "D": "Only carnivores"
+      }
+    },
+    {
+      "id": 132,
+      "question": "Which of the following is a cause of soil erosion?",
+      "options": {
+        "A": "Afforestation",
+        "B": "Overgrazing",
+        "C": "Mulching",
+        "D": "Terracing"
+      }
+    },
+    {
+      "id": 133,
+      "question": "Which of the following is the function of the placenta?",
+      "options": {
+        "A": "Digestion",
+        "B": "Exchange of nutrients and gases",
+        "C": "Movement",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 134,
+      "question": "Which of the following is a vertebrate class with feathers?",
+      "options": {
+        "A": "Mammalia",
+        "B": "Aves",
+        "C": "Reptilia",
+        "D": "Amphibia"
+      }
+    },
+    {
+      "id": 135,
+      "question": "Which of the following is used in respiration?",
+      "options": {
+        "A": "Glucose",
+        "B": "Oxygen",
+        "C": "Both glucose and oxygen",
+        "D": "Carbon dioxide only"
+      }
+    },
+    {
+      "id": 136,
+      "question": "Which of the following is NOT part of the alimentary canal?",
+      "options": {
+        "A": "Mouth",
+        "B": "Esophagus",
+        "C": "Pancreas",
+        "D": "Stomach"
+      }
+    },
+    {
+      "id": 137,
+      "question": "Which of the following is an inherited disorder?",
+      "options": {
+        "A": "Diabetes",
+        "B": "Haemophilia",
+        "C": "Malaria",
+        "D": "Typhoid"
+      }
+    },
+    {
+      "id": 138,
+      "question": "The movement of food in plants is through:",
+      "options": {
+        "A": "Xylem",
+        "B": "Phloem",
+        "C": "Stomata",
+        "D": "Root hairs"
+      }
+    },
+    {
+      "id": 139,
+      "question": "Which of the following is a biotic factor?",
+      "options": {
+        "A": "Water",
+        "B": "Air",
+        "C": "Plants",
+        "D": "Sunlight"
+      }
+    },
+    {
+      "id": 140,
+      "question": "Which of the following is a method of controlling malaria?",
+      "options": {
+        "A": "Drinking clean water",
+        "B": "Use of mosquito nets",
+        "C": "Vaccination",
+        "D": "Proper sanitation only"
+      }
+    },
+    {
+      "id": 141,
+      "question": "Which of the following is NOT a function of the liver?",
+      "options": {
+        "A": "Detoxification",
+        "B": "Storage of glycogen",
+        "C": "Production of insulin",
+        "D": "Production of bile"
+      }
+    },
+    {
+      "id": 142,
+      "question": "Which of the following is a feature of vertebrates?",
+      "options": {
+        "A": "No backbone",
+        "B": "Exoskeleton only",
+        "C": "Backbone",
+        "D": "No nervous system"
+      }
+    },
+    {
+      "id": 143,
+      "question": "The main excretory organ in humans is the:",
+      "options": {
+        "A": "Liver",
+        "B": "Kidney",
+        "C": "Skin",
+        "D": "Lungs"
+      }
+    },
+    {
+      "id": 144,
+      "question": "Which of the following is a function of the circulatory system?",
+      "options": {
+        "A": "Transport of materials",
+        "B": "Digestion",
+        "C": "Reproduction",
+        "D": "Photosynthesis"
+      }
+    },
+    {
+      "id": 145,
+      "question": "Which of the following is a characteristic of insects?",
+      "options": {
+        "A": "Eight legs",
+        "B": "Six legs",
+        "C": "No legs",
+        "D": "Ten legs"
+      }
+    },
+    {
+      "id": 146,
+      "question": "Which of the following is used for classification of plants?",
+      "options": {
+        "A": "Color of leaves",
+        "B": "Root type and leaf venation",
+        "C": "Height only",
+        "D": "Age"
+      }
+    },
+    {
+      "id": 147,
+      "question": "Which of the following is NOT a function of the skin?",
+      "options": {
+        "A": "Protection",
+        "B": "Temperature regulation",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 148,
+      "question": "Which of the following is a result of overpopulation?",
+      "options": {
+        "A": "Abundant resources",
+        "B": "Increased pollution",
+        "C": "Less competition",
+        "D": "Stable ecosystem"
+      }
+    },
+    {
+      "id": 149,
+      "question": "Which of the following is a disease transmitted by contaminated food?",
+      "options": {
+        "A": "Cholera",
+        "B": "Malaria",
+        "C": "Measles",
+        "D": "AIDS"
+      }
+    },
+    {
+      "id": 150,
+      "question": "Which of the following is a function of hormones?",
+      "options": {
+        "A": "Digestion of food",
+        "B": "Chemical coordination",
+        "C": "Transport of oxygen",
+        "D": "Protection of body"
+      },
+      {
+      "id": 151,
+      "question": "Which of the following is the main function of red blood cells?",
+      "options": {
+        "A": "Defense against infection",
+        "B": "Blood clotting",
+        "C": "Transport of oxygen",
+        "D": "Digestion of food"
+      }
+    },
+    {
+      "id": 152,
+      "question": "Which of the following structures is involved in movement in organisms?",
+      "options": {
+        "A": "Chloroplast",
+        "B": "Muscles",
+        "C": "Cell wall",
+        "D": "Vacuole"
+      }
+    },
+    {
+      "id": 153,
+      "question": "Which of the following is a function of the mitochondrion?",
+      "options": {
+        "A": "Protein synthesis",
+        "B": "Energy production",
+        "C": "Storage of water",
+        "D": "Cell division only"
+      }
+    },
+    {
+      "id": 154,
+      "question": "Which of the following is NOT a characteristic of mammals?",
+      "options": {
+        "A": "Warm-blooded",
+        "B": "Hair on body",
+        "C": "Laying eggs only",
+        "D": "Mammary glands"
+      }
+    },
+    {
+      "id": 155,
+      "question": "Which of the following is the correct order of human respiration?",
+      "options": {
+        "A": "Nose → Trachea → Bronchi → Lungs",
+        "B": "Lungs → Nose → Trachea → Bronchi",
+        "C": "Trachea → Nose → Lungs → Bronchi",
+        "D": "Bronchi → Nose → Trachea → Lungs"
+      }
+    },
+    {
+      "id": 156,
+      "question": "Which of the following is a function of the cerebrum?",
+      "options": {
+        "A": "Balance",
+        "B": "Thinking and memory",
+        "C": "Breathing control",
+        "D": "Heart rate regulation"
+      }
+    },
+    {
+      "id": 157,
+      "question": "Which of the following is a vector of yellow fever?",
+      "options": {
+        "A": "Housefly",
+        "B": "Mosquito",
+        "C": "Tsetse fly",
+        "D": "Flea"
+      }
+    },
+    {
+      "id": 158,
+      "question": "Which of the following is the main function of xylem?",
+      "options": {
+        "A": "Transport of food",
+        "B": "Transport of water",
+        "C": "Photosynthesis",
+        "D": "Reproduction"
+      }
+    },
+    {
+      "id": 159,
+      "question": "Which of the following is a symptom of malaria?",
+      "options": {
+        "A": "High fever and chills",
+        "B": "Blindness",
+        "C": "Skin rash only",
+        "D": "Joint dislocation"
+      }
+    },
+    {
+      "id": 160,
+      "question": "Which of the following is NOT a component of blood?",
+      "options": {
+        "A": "Plasma",
+        "B": "Platelets",
+        "C": "Chlorophyll",
+        "D": "Red blood cells"
+      }
+    },
+    {
+      "id": 161,
+      "question": "Which of the following is responsible for plant growth?",
+      "options": {
+        "A": "Hormones",
+        "B": "Enzymes only",
+        "C": "Genes only",
+        "D": "Minerals only"
+      }
+    },
+    {
+      "id": 162,
+      "question": "Which of the following is a function of the skin?",
+      "options": {
+        "A": "Protection",
+        "B": "Photosynthesis",
+        "C": "Blood production",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 163,
+      "question": "Which of the following is a method of preventing HIV transmission?",
+      "options": {
+        "A": "Sharing needles",
+        "B": "Unprotected sex",
+        "C": "Use of condoms",
+        "D": "Mosquito nets"
+      }
+    },
+    {
+      "id": 164,
+      "question": "Which of the following is a feature of plant cells?",
+      "options": {
+        "A": "No nucleus",
+        "B": "Cell wall",
+        "C": "No vacuole",
+        "D": "No chloroplast"
+      }
+    },
+    {
+      "id": 165,
+      "question": "Which of the following is the function of white blood cells?",
+      "options": {
+        "A": "Oxygen transport",
+        "B": "Defense against pathogens",
+        "C": "Clotting blood",
+        "D": "Hormone production"
+      }
+    },
+    {
+      "id": 166,
+      "question": "Which of the following is NOT a type of nutrition?",
+      "options": {
+        "A": "Autotrophic",
+        "B": "Heterotrophic",
+        "C": "Parasitic",
+        "D": "Synthetic"
+      }
+    },
+    {
+      "id": 167,
+      "question": "Which of the following is a function of the testes?",
+      "options": {
+        "A": "Production of eggs",
+        "B": "Production of sperm",
+        "C": "Digestion",
+        "D": "Blood formation"
+      }
+    },
+    {
+      "id": 168,
+      "question": "Which of the following is a function of chloroplast?",
+      "options": {
+        "A": "Respiration",
+        "B": "Photosynthesis",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 169,
+      "question": "Which of the following is a characteristic of fungi?",
+      "options": {
+        "A": "Autotrophic",
+        "B": "Chlorophyll present",
+        "C": "Heterotrophic",
+        "D": "Motile"
+      }
+    },
+    {
+      "id": 170,
+      "question": "Which of the following is a function of the spinal cord?",
+      "options": {
+        "A": "Thinking",
+        "B": "Reflex actions",
+        "C": "Vision",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 171,
+      "question": "Which of the following is a disease caused by protozoa?",
+      "options": {
+        "A": "Malaria",
+        "B": "Tuberculosis",
+        "C": "Cholera",
+        "D": "Measles"
+      }
+    },
+    {
+      "id": 172,
+      "question": "Which of the following is a function of the ovary?",
+      "options": {
+        "A": "Production of sperm",
+        "B": "Production of eggs",
+        "C": "Digestion",
+        "D": "Transport of oxygen"
+      }
+    },
+    {
+      "id": 173,
+      "question": "Which of the following is NOT a characteristic of enzymes?",
+      "options": {
+        "A": "Specific",
+        "B": "Reusable",
+        "C": "Destroyed after reaction",
+        "D": "Protein in nature"
+      }
+    },
+    {
+      "id": 174,
+      "question": "Which of the following is a function of the kidney?",
+      "options": {
+        "A": "Hormone production",
+        "B": "Urine formation",
+        "C": "Digestion",
+        "D": "Photosynthesis"
+      }
+    },
+    {
+      "id": 175,
+      "question": "Which of the following is a characteristic of bacteria?",
+      "options": {
+        "A": "Multicellular",
+        "B": "No nucleus",
+        "C": "Chlorophyll present",
+        "D": "Complex organelles"
+      }
+    },
+    {
+      "id": 176,
+      "question": "Which of the following is a function of the placenta?",
+      "options": {
+        "A": "Movement",
+        "B": "Exchange of nutrients and gases",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 177,
+      "question": "Which of the following is a type of ecological relationship?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Parasitism",
+        "C": "Digestion",
+        "D": "Respiration"
+      }
+    },
+    {
+      "id": 178,
+      "question": "Which of the following is a function of stomata?",
+      "options": {
+        "A": "Food storage",
+        "B": "Gas exchange",
+        "C": "Reproduction",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 179,
+      "question": "Which of the following is a function of tendons?",
+      "options": {
+        "A": "Connect bone to muscle",
+        "B": "Connect bone to bone",
+        "C": "Produce hormones",
+        "D": "Transport oxygen"
+      }
+    },
+    {
+      "id": 180,
+      "question": "Which of the following is a function of the large intestine?",
+      "options": {
+        "A": "Digestion of proteins",
+        "B": "Absorption of water",
+        "C": "Production of enzymes",
+        "D": "Gas exchange"
+      }
+    },
+    {
+      "id": 181,
+      "question": "Which of the following is a method of dispersal of seeds?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Wind",
+        "C": "Digestion",
+        "D": "Respiration"
+      }
+    },
+    {
+      "id": 182,
+      "question": "Which of the following is a function of the iris?",
+      "options": {
+        "A": "Controls pupil size",
+        "B": "Forms image",
+        "C": "Produces tears",
+        "D": "Detects sound"
+      }
+    },
+    {
+      "id": 183,
+      "question": "Which of the following is a characteristic of viruses?",
+      "options": {
+        "A": "Living cells",
+        "B": "Non-cellular",
+        "C": "Free-living",
+        "D": "Autotrophic"
+      }
+    },
+    {
+      "id": 184,
+      "question": "Which of the following is a function of the pancreas?",
+      "options": {
+        "A": "Insulin production",
+        "B": "Blood filtration",
+        "C": "Oxygen transport",
+        "D": "Movement"
+      }
+    },
+    {
+      "id": 185,
+      "question": "Which of the following is a symptom of typhoid?",
+      "options": {
+        "A": "High fever",
+        "B": "Blindness",
+        "C": "Skin rash only",
+        "D": "Bone fracture"
+      }
+    },
+    {
+      "id": 186,
+      "question": "Which of the following is a function of the respiratory system?",
+      "options": {
+        "A": "Transport of food",
+        "B": "Exchange of gases",
+        "C": "Excretion",
+        "D": "Support"
+      }
+    },
+    {
+      "id": 187,
+      "question": "Which of the following is a type of joint in the human body?",
+      "options": {
+        "A": "Fixed joint",
+        "B": "Hinge joint",
+        "C": "Rigid joint",
+        "D": "Dead joint"
+      }
+    },
+    {
+      "id": 188,
+      "question": "Which of the following is a function of auxins in plants?",
+      "options": {
+        "A": "Seed dispersal",
+        "B": "Cell elongation",
+        "C": "Respiration",
+        "D": "Digestion"
+      }
+    },
+    {
+      "id": 189,
+      "question": "Which of the following is a cause of extinction?",
+      "options": {
+        "A": "Conservation",
+        "B": "Habitat destruction",
+        "C": "Afforestation",
+        "D": "Breeding"
+      }
+    },
+    {
+      "id": 190,
+      "question": "Which of the following is a function of the cerebellum?",
+      "options": {
+        "A": "Thinking",
+        "B": "Balance and coordination",
+        "C": "Digestion",
+        "D": "Excretion"
+      }
+    },
+    {
+      "id": 191,
+      "question": "Which of the following is a feature of vertebrates?",
+      "options": {
+        "A": "No skeleton",
+        "B": "Backbone",
+        "C": "Exoskeleton only",
+        "D": "No nervous system"
+      }
+    },
+    {
+      "id": 192,
+      "question": "Which of the following is a method of conserving water in plants?",
+      "options": {
+        "A": "Large leaves",
+        "B": "Thick cuticle",
+        "C": "High transpiration",
+        "D": "Open stomata all day"
+      }
+    },
+    {
+      "id": 193,
+      "question": "Which of the following is a function of enzymes in digestion?",
+      "options": {
+        "A": "Increase food size",
+        "B": "Speed up reactions",
+        "C": "Store nutrients",
+        "D": "Destroy food"
+      }
+    },
+    {
+      "id": 194,
+      "question": "Which of the following is a characteristic of arthropods?",
+      "options": {
+        "A": "Soft body",
+        "B": "Jointed legs",
+        "C": "No exoskeleton",
+        "D": "No segmentation"
+      }
+    },
+    {
+      "id": 195,
+      "question": "Which of the following is a function of the liver?",
+      "options": {
+        "A": "Digestion of proteins",
+        "B": "Detoxification",
+        "C": "Transport of oxygen",
+        "D": "Movement"
+      }
+    },
+    {
+      "id": 196,
+      "question": "Which of the following is a characteristic of monocot plants?",
+      "options": {
+        "A": "Net venation",
+        "B": "Two cotyledons",
+        "C": "Parallel venation",
+        "D": "Tap root system"
+      }
+    },
+    {
+      "id": 197,
+      "question": "Which of the following is a cause of pollution?",
+      "options": {
+        "A": "Afforestation",
+        "B": "Industrial waste",
+        "C": "Conservation",
+        "D": "Recycling"
+      }
+    },
+    {
+      "id": 198,
+      "question": "Which of the following is a function of red blood cells?",
+      "options": {
+        "A": "Clotting blood",
+        "B": "Transport oxygen",
+        "C": "Fighting infection",
+        "D": "Producing hormones"
+      }
+    },
+    {
+      "id": 199,
+      "question": "Which of the following is a feature of adaptation?",
+      "options": {
+        "A": "Reduces survival",
+        "B": "Helps organisms survive",
+        "C": "Occurs only in animals",
+        "D": "Is always harmful"
+      }
+    },
+    {
+      "id": 200,
+      "question": "Which of the following is the final product of respiration?",
+      "options": {
+        "A": "Glucose",
+        "B": "Energy, water, and carbon dioxide",
+        "C": "Oxygen",
+        "D": "Starch"
+      },
+     {
+    "id": 201,
+    "question": "Root hairs are developed from the ...",
+    "A": "root apex",
+    "B": "epidermis of roots",
+    "C": "vascular bundles",
+    "D": "endodermis",
+    "E": "pericycle",
+    "answer": "B"
+  },
+  {
+    "id": 202,
+    "question": "Which of the following features can be used to identify Fig 1?",
+    "A": "Position of 7",
+    "B": "Its circular nature",
+    "C": "Number of 5",
+    "D": "Presence of 3",
+    "E": "Width of 2",
+    "answer": "C"
+  },
+  {
+    "id": 203,
+    "question": "The main function of 6 is to",
+    "A": "separate 5 from 7",
+    "B": "produce more of 5 and 7",
+    "C": "produce cork",
+    "D": "translocate water and mineral salt",
+    "E": "conduct carbon dioxide to the other parts",
+    "answer": "D"
+  },
+  {
+    "id": 204,
+    "question": "The main function of 4 is to",
+    "A": "surround the inner tissues",
+    "B": "produce cork",
+    "C": "produce root hairs",
+    "D": "produce lateral roots",
+    "E": "produce more of 3",
+    "answer": "D"
+  },
+  {
+    "id": 205,
+    "question": "In a dicot leaf, guard cells differ from other epidermal cells because they",
+    "A": "have no definite shape",
+    "B": "lack nuclei",
+    "C": "are smaller",
+    "D": "contain chloroplasts",
+    "E": "lack vacuole",
+    "answer": "D"
+  },
+  {
+    "id": 206,
+    "question": "Which of the following structures is NOT found in the female agama lizard?",
+    "A": "Pre-anal pads",
+    "B": "Eardrum",
+    "C": "Gular fold",
+    "D": "Nasal scale",
+    "E": "Nuchal crest",
+    "answer": "A"
+  },
+  {
+    "id": 207,
+    "question": "Herbs differ from shrubs because they",
+    "A": "do not produce fruits",
+    "B": "are useful to herbatists",
+    "C": "do not become woody",
+    "D": "are only annuals",
+    "E": "are only perennials",
+    "answer": "C"
+  },
+  {
+    "id": 208,
+    "question": "If an isolated living cell is left in distilled water for two hours, it is likely to",
+    "A": "lose some of its water to the surrounding water",
+    "B": "lose all of its water to the surrounding water",
+    "C": "reproduce by binary fission",
+    "D": "become more turgid",
+    "E": "die due to excess water",
+    "answer": "D"
+  },
+  {
+    "id": 209,
+    "question": "If an organic compound has its Hydrogen: Oxygen ratio as 2:1, it is likely to be",
+    "A": "a protein",
+    "B": "a carbohydrate",
+    "C": "a fat",
+    "D": "a fatty acid and glycerol",
+    "E": "an amino acid",
+    "answer": "B"
+  },
+  {
+    "id": 210,
+    "question": "Which of the following elements are necessary for the formation of chlorophyll in a plant?",
+    "A": "Magnesium and iron",
+    "B": "Calcium and potassium",
+    "C": "Calcium and sulphur",
+    "D": "Potassium and sulphur",
+    "E": "Phosphorus and potassium",
+    "answer": "A"
+  },
+  {
+    "id": 211,
+    "question": "Which of the following statements is NOT true of mammalian erythrocytes?",
+    "A": "They have haemoglobin",
+    "B": "They appear yellow when looked at singly",
+    "C": "They are disc-shaped",
+    "D": "The cells are more numerous than leucocytes",
+    "E": "They have nuclei at maturity",
+    "answer": "E"
+  },
+  {
+    "id": 212,
+    "question": "In woody plants, gases and water vapour are transported across the stems by the",
+    "A": "xylem fibres",
+    "B": "medullary fibres",
+    "C": "medullary rays",
+    "D": "phloem fibres",
+    "E": "phloem parenchyma",
+    "answer": "C"
+  },
+  {
+    "id": 213,
+    "question": "Which of the following substances is NOT found in urine?",
+    "A": "Water",
+    "B": "Sodium chloride",
+    "C": "Nitrogenous compounds",
+    "D": "Calcium chloride",
+    "E": "Nitrogenous salts",
+    "answer": "D"
+  },
+  {
+    "id": 214,
+    "question": "The kidneys of all vertebrates act as osmoregulators. This means that they",
+    "A": "keep the composition of the plasma constant",
+    "B": "regulate osmotic processes",
+    "C": "control the volume of blood entering the kidneys",
+    "D": "decrease the osmotic pressure of blood",
+    "E": "increase the osmotic pressure of blood",
+    "answer": "B"
+  },
+  {
+    "id": 215,
+    "question": "The movement of part of a plant in response to external stimulus of no particular direction is",
+    "A": "taxism",
+    "B": "tropism",
+    "C": "haptotropic movement",
+    "D": "nastic movement",
+    "E": "phototropism",
+    "answer": "D"
+  },
+  {
+    "id": 216,
+    "question": "The part of the mammalian brain responsible for maintaining balance is the",
+    "A": "medulla oblongata",
+    "B": "olfactory lobe",
+    "C": "cerebellum",
+    "D": "cerebrum",
+    "E": "frontal lobe",
+    "answer": "C"
+  },
+  {
+    "id": 217,
+    "question": "Which of the labelled parts in Fig 2 will develop into a new bulb?",
+    "A": "1",
+    "B": "4",
+    "C": "2",
+    "D": "3",
+    "E": "5",
+    "answer": "B"
+  },
+  {
+    "id": 218,
+    "question": "In the onion bulb, food is stored in the",
+    "A": "stem",
+    "B": "lateral buds",
+    "C": "cotyledons",
+    "D": "outer scale leaves",
+    "E": "leaf bases",
+    "answer": "D"
+  },
+  {
+    "id": 219,
+    "question": "Groundnut is not really a 'nut' in the biological sense because",
+    "A": "it is harvested from inside the ground",
+    "B": "its pericarp is not hard and tough",
+    "C": "the fruit is succulent",
+    "D": "it is an achene",
+    "E": "none of the above",
+    "answer": "B"
+  },
+  {
+    "id": 220,
+    "question": "What type of fruit is formed from a single flower having several free carpels?",
+    "A": "multiple fruit",
+    "B": "simple fruit",
+    "C": "aggregate fruit",
+    "D": "dehiscent fruit",
+    "E": "indehiscent fruit",
+    "answer": "C"
+  },
+  {
+    "id": 221,
+    "question": "A 28g soil sample was heated to a constant weight of 24g. When further heated to red hot and cooled, it weighed 18g. What is the percentage of humus in the soil?",
+    "A": "22.2",
+    "B": "55.6",
+    "C": "75.0",
+    "D": "25.9",
+    "E": "35.7",
+    "answer": "D"
+  },
+  {
+    "id": 222,
+    "question": "Which of the following diseases is NOT caused by a virus?",
+    "A": "Rinderpest",
+    "B": "Maize rust",
+    "C": "Newcastle disease",
+    "D": "Swine fever",
+    "E": "Cassava mosaic disease",
+    "answer": "B"
+  },
+  {
+    "id": 223,
+    "question": "A centipede differs from a millipede by its",
+    "A": "colour",
+    "B": "numerous abdominal segments",
+    "C": "paired legs on each abdominal segment",
+    "D": "poison claws",
+    "E": "cylindrical body",
+    "answer": "D"
+  },
+  {
+    "id": 224,
+    "question": "An organism having one pair of identical genes is",
+    "A": "a heterozygote",
+    "B": "a hybrid",
+    "C": "an allomorph",
+    "D": "a homozygote",
+    "E": "a diploid",
+    "answer": "D"
+  },
+  {
+    "id": 225,
+    "question": "Plants which can survive in places where the water supply is limited are",
+    "A": "bryophytes",
+    "B": "mesophytes",
+    "C": "xerophytes",
+    "D": "hydrophytes",
+    "E": "pteridophytes",
+    "answer": "C"
+  },
+  {
+    "id": 226,
+    "question": "Banana, plantain and pineapple can be grouped together because they",
+    "A": "produce small seeds",
+    "B": "are multiple fruits",
+    "C": "produce suckers",
+    "D": "have runners",
+    "E": "have bulbs",
+    "answer": "C"
+  },
+  {
+    "id": 227,
+    "question": "One disease NOT caused directly by bacteria is",
+    "A": "malaria",
+    "B": "tuberculosis",
+    "C": "pneumonia",
+    "D": "tetanus",
+    "E": "cholera",
+    "answer": "A"
+  },
+  {
+    "id": 228,
+    "question": "In what order do the following structures develop during the metamorphosis of the toad? 1. External gills 2. Internal gills 3. Forelimbs 4. Hindlimbs 5. Mouth.",
+    "A": "12345",
+    "B": "15243",
+    "C": "13452",
+    "D": "53412",
+    "E": "54321",
+    "answer": "B"
+  },
+  {
+    "id": 229,
+    "question": "The dental formula i 3/3: c 1/1: pm4/4: m2/3 = 42 represents that of a",
+    "A": "rabbit",
+    "B": "full grown man",
+    "C": "young child",
+    "D": "dog",
+    "E": "sheep",
+    "answer": "B"
+  },
+  {
+    "id": 230,
+    "question": "Which of the following statements is NOT true of insectivorous plants?",
+    "A": "They obtain part of their food by trapping and feeding on insects",
+    "B": "They attract insects simply because of pollination",
+    "C": "They can grow in soils poor in nitrogenous salts",
+    "D": "They can supplement the nitrogen supply by feeding on insects",
+    "E": "Examples include butterworts, sundews and pitcher plants",
+    "answer": "B"
+  },
+  {
+    "id": 231,
+    "question": "Which of these worms is beneficial to man?",
+    "A": "Hookworm",
+    "B": "Tapeworm",
+    "C": "Roundworm",
+    "D": "Earthworm",
+    "E": "Guinea worm",
+    "answer": "D"
+  },
+  {
+    "id": 232,
+    "question": "Starting from the skull end, the vertebrae are arranged in the following order:",
+    "A": "axis, atlas, cervical, thoracic and lumbar",
+    "B": "atlas, cervical, axis, thoracic and lumbar",
+    "C": "atlas, axis, thoracic, cervical and lumbar",
+    "D": "atlas, axis, cervical, thoracic and lumbar",
+    "E": "atlas, thoracic, cervical, axis and lumbar",
+    "answer": "D"
+  },
+  {
+    "id": 233,
+    "question": "Which of the following diseases could be exclusively associated with a river basin?",
+    "A": "Malaria",
+    "B": "Syphilis",
+    "C": "Onchocerciasis",
+    "D": "Cholera",
+    "E": "Poliomyelitis",
+    "answer": "C"
+  },
+  {
+    "id": 234,
+    "question": "Which of the following represents the evolutionary sequence in these plants? 1. Flowering plants, 2. Ferns, 3. Mosses, 4. Algae, 5. Conifers.",
+    "A": "2,1,4,3,5",
+    "B": "5,4,3,2,1",
+    "C": "2,4,5,1,3",
+    "D": "3,2,4,5,1",
+    "E": "4,3,2,5,1",
+    "answer": "E"
+  },
+  {
+    "id": 235,
+    "question": "Which of the following will NOT allow osmosis to take place?",
+    "A": "pig's bladder",
+    "B": "Cellophane",
+    "C": "Parchment paper",
+    "D": "Transparent polythene",
+    "E": "Cow's bladder",
+    "answer": "D"
+  },
+  {
+    "id": 236,
+    "question": "Which of the following statements on the mammalian circulatory system is NOT true?",
+    "A": "Blood in the pulmonary artery is richer in oxygen content than blood in the pulmonary vein",
+    "B": "The blood in the hepatic portal vein is the richest in food substances",
+    "C": "Blood flow is controlled by valves in the veins",
+    "D": "Arteries are generally thicker and larger than veins",
+    "E": "Fibrin helps in the formation of blood clot",
+    "answer": "A"
+  },
+  {
+    "id": 237,
+    "question": "In a positive phototropic response of a coleoptile, the region of greatest curvature is brought about by the",
+    "A": "movement of auxins away from the region of curvature",
+    "B": "even distribution of auxins in all parts of the coleoptile",
+    "C": "inhibition of growth by auxins in the region of smaller curvature",
+    "D": "concentration of auxins in the region of curvature",
+    "E": "absence of auxins in the coleoptile",
+    "answer": "D"
+  },
+  {
+    "id": 238,
+    "question": "The tuber of cassava is NOT a stem tuber because it",
+    "A": "is distended with food reserve",
+    "B": "has an aerial shoot portion",
+    "C": "has other structures that could be called roots",
+    "D": "lacks axillary buds",
+    "E": "has a bark over its stored food",
+    "answer": "D"
+  },
+  {
+    "id": 239,
+    "question": "The function of the ossicles (malleus, incus and stapes) in the mammalian ear is the",
+    "A": "transmission of vibrations",
+    "B": "regulation of pressures",
+    "C": "support of the inner ear",
+    "D": "maintenance of balance during motion",
+    "E": "secretion of oil",
+    "answer": "A"
+  },
+  {
+    "id": 240,
+    "question": "Which of the following instruments is used for determining turbidity of water?",
+    "A": "Thermometer",
+    "B": "Secchi Disc",
+    "C": "Rain gauge",
+    "D": "Hygrometer",
+    "E": "Wind vane",
+    "answer": "B"
+  },
+  {
+    "id": 241,
+    "question": "Which of the following is NOT a characteristic of monocot plants?",
+    "A": "occurrence of secondary thickening",
+    "B": "Parallel venation",
+    "C": "Scattered vascular bundles",
+    "D": "Floral parts arranged in threes",
+    "E": "Perianth is usually insignificant",
+    "answer": "A"
+  },
+  {
+    "id": 242,
+    "question": "Which sequence represents the correct order of organisms in a food chain? 1. Toad, 2. Mucuna, 3. Grasshopper, 4. Snake, 5. Hawk.",
+    "A": "5-4-1-3-2",
+    "B": "1-2-3-4-5",
+    "C": "2-1-3-4-5",
+    "D": "2-3-1-5-4",
+    "E": "2-3-1-4-5",
+    "answer": "E"
+  },
+  {
+    "id": 243,
+    "question": "In Rhizopus, carbohydrate is stored in the form of",
+    "A": "glucose",
+    "B": "paramylon",
+    "C": "glycogen",
+    "D": "starch",
+    "E": "oil",
+    "answer": "D"
+  },
+  {
+    "id": 244,
+    "question": "Which of the following statements about the rate of transpiration is INCORRECT?",
+    "A": "dependent on temperature",
+    "B": "affected by changes in light intensity",
+    "C": "unaffected by humidity",
+    "D": "dependent on air movement",
+    "E": "affected by availability of water",
+    "answer": "C"
+  },
+  {
+    "id": 245,
+    "question": "'Jointed skeleton' is absent in the",
+    "A": "cockroach",
+    "B": "spider",
+    "C": "millipede",
+    "D": "snail",
+    "E": "dragon fly",
+    "answer": "D"
+  },
+  {
+    "id": 246,
+    "question": "Which of the following statements about the dentition of man is Incorrect? Man has",
+    "A": "more molars than incisors",
+    "B": "no diastema",
+    "C": "the same number of teeth on upper and lower jaws",
+    "D": "a total of thirty-two teeth",
+    "E": "a total of six molars",
+    "answer": "C"
+  },
+  {
+    "id": 247,
+    "question": "In Fig 1 (quill feather), the structure labelled 'M' is the",
+    "A": "quill",
+    "B": "rachis",
+    "C": "superior umbilicus",
+    "D": "inferior umbilicus",
+    "E": "aftershaft",
+    "answer": "B"
+  },
+  {
+    "id": 248,
+    "question": "Osmosis can be defined as the movement of",
+    "A": "molecules from solution of high concentration to low concentration",
+    "B": "molecules from solution of low concentration to high concentration",
+    "C": "water from solution of high concentration to low concentration",
+    "D": "water across a semi-permeable membrane from solution of low concentration to high concentration",
+    "E": "water across a semi-permeable membrane from solution of high concentration to low concentration",
+    "answer": "E"
+  },
+  {
+    "id": 249,
+    "question": "Which of the following statements is NOT true of enzymes? They",
+    "A": "are proteins",
+    "B": "need cofactors to activate them",
+    "C": "are sensitive to hydrogen ion concentration",
+    "D": "are specific in their action",
+    "E": "can withstand high temperatures",
+    "answer": "E"
+  },
+  {
+    "id": 250,
+    "question": "The dorsal and anal fins of fish are used for",
+    "A": "upward movements",
+    "B": "controlling rolling movements",
+    "C": "downward movements",
+    "D": "steering",
+    "E": "buoyancy",
+    "answer": "B"
+  },
+  {
+    "id": 251,
+    "question": "Exoskeleton is NOT found in the",
+    "A": "maggot",
+    "B": "mosquito larva",
+    "C": "earthworm",
+    "D": "caterpillar",
+    "E": "termite",
+    "answer": "C"
+  },
+  {
+    "id": 252,
+    "question": "Blood clotting is initiated by",
+    "A": "leucocytes",
+    "B": "platelets",
+    "C": "haemolymph",
+    "D": "haemoglobin",
+    "E": "erythrocytes",
+    "answer": "B"
+  },
+  {
+    "id": 253,
+    "question": "Pepsin is a digestive enzyme which breaks",
+    "A": "cellulose into glucose molecules",
+    "B": "carbohydrates into simple sugars",
+    "C": "protein into peptones",
+    "D": "fats into glycerol and fatty acids",
+    "E": "sucrose into glucose and fructose",
+    "answer": "C"
+  },
+  {
+    "id": 254,
+    "question": "Anaerobic respiration in yeast produces",
+    "A": "carbon dioxide and ethanol",
+    "B": "carbon dioxide and water",
+    "C": "carbon dioxide and oxygen",
+    "D": "carbon dioxide and glucose",
+    "E": "ethanol and water",
+    "answer": "A"
+  },
+  {
+    "id": 255,
+    "question": "Underground stems which grow horizontally through the soil are",
+    "A": "bulbs",
+    "B": "rhizomes",
+    "C": "runners",
+    "D": "corms",
+    "E": "stolons",
+    "answer": "B"
+  },
+  {
+    "id": 256,
+    "question": "A man with a normal haemoglobin (AA) marries a woman who has sickle-cell haemoglobin (SS). They have a child who has sickle-cell trait. Which of the following genotypes could be associated with the child's haemoglobin?",
+    "A": "AA",
+    "B": "O",
+    "C": "AO",
+    "D": "AS",
+    "E": "SS",
+    "answer": "D"
+  },
+  {
+    "id": 257,
+    "question": "In a Biuret test, some protein was mixed with sodium hydroxide solution. Which of the following chemicals should be added to the mixture for a positive result?",
+    "A": "Mercuroxine nitrate",
+    "B": "Copper sulphate",
+    "C": "Mercuroxine nitrate",
+    "D": "Sodium carbonate",
+    "E": "Ammonium hydroxide",
+    "answer": "B"
+  },
+  {
+    "id": 258,
+    "question": "The removal of a man's pancreas by surgical operation can affect only the digestion of",
+    "A": "starch",
+    "B": "starch, protein and fats",
+    "C": "oils and fats",
+    "D": "proteins",
+    "E": "carbohydrate and fats",
+    "answer": "B"
+  },
+  {
+    "id": 259,
+    "question": "The parts used by tapeworm to fasten itself to the host's intestine are the",
+    "A": "neck and suckers",
+    "B": "hooks and suckers",
+    "C": "rostellum and suckers",
+    "D": "young proglottis and neck",
+    "E": "rostellum, hooks and suckers",
+    "answer": "E"
+  },
+  {
+    "id": 260,
+    "question": "In a transverse section of a fowl's egg, the young chick is formed from",
+    "A": "3",
+    "B": "3 and 4",
+    "C": "1,3 and 5",
+    "D": "2",
+    "E": "4",
+    "answer": "A"
+  },
+  {
+    "id": 261,
+    "question": "Which parts provide food for the developing chick?",
+    "A": "2 and 3",
+    "B": "4 and 5",
+    "C": "3 and 4",
+    "D": "2 and 5",
+    "E": "1 and 2",
+    "answer": "D"
+  },
+  {
+    "id": 262,
+    "question": "Which of the following types of vertebrae occur in equal numbers in the rabbit, rat and man?",
+    "A": "Caudal",
+    "B": "Thoracic",
+    "C": "Lumbar",
+    "D": "Cervical",
+    "E": "Sacral",
+    "answer": "D"
+  },
+  {
+    "id": 263,
+    "question": "Which of the following statements is NOT true of the piliferous layer of a root? It",
+    "A": "has a very thin cuticle",
+    "B": "is the outermost layer of the cortex",
+    "C": "may bear root hairs",
+    "D": "breaks down as the root ages",
+    "E": "is replaced by cork in old roots",
+    "answer": "B"
+  },
+  {
+    "id": 264,
+    "question": "A flowering plant is monoecious if",
+    "A": "the androecium is found on one plant",
+    "B": "the gynoecium is monocarpous",
+    "C": "it produces essential organs",
+    "D": "the gynoecium and androecium are on the same plant",
+    "E": "the flowers are unisexual",
+    "answer": "D"
+  },
+  {
+    "id": 265,
+    "question": "How many nuclei are found in a pollen tube during fertilization?",
+    "A": "2",
+    "B": "3",
+    "C": "5",
+    "D": "6",
+    "E": "7",
+    "answer": "B"
+  },
+  {
+    "id": 266,
+    "question": "Which of the following is NOT a waste product of plants?",
+    "A": "Tannins",
+    "B": "Oxygen",
+    "C": "Carbon dioxide",
+    "D": "Sap",
+    "E": "Alkaloids",
+    "answer": "D"
+  },
+  {
+    "id": 267,
+    "question": "If an animal is very active and has good muscular control, it is likely to have well-developed",
+    "A": "olfactory lobes",
+    "B": "cerebral hemispheres",
+    "C": "optic lobes",
+    "D": "cerebellum",
+    "E": "spinal cord",
+    "answer": "D"
+  },
+  {
+    "id": 268,
+    "question": "Which of the following adaptations is NOT concerned with the flight of birds?",
+    "A": "Streamlined shape",
+    "B": "Presence of powerful muscles",
+    "C": "Reduced body weight",
+    "D": "Broad sternum",
+    "E": "Webbed feet",
+    "answer": "E"
+  },
+  {
+    "id": 269,
+    "question": "The transect method can be used in ecology to show the",
+    "A": "number of plants and animals in a habitat",
+    "B": "population of a plant species",
+    "C": "distribution of organisms along a line",
+    "D": "heights of trees in a section of a forest",
+    "E": "number of young plants across a forest",
+    "answer": "C"
+  },
+  {
+    "id": 270,
+    "question": "Asexual reproduction does NOT occur in",
+    "A": "Mucor, Spirogyra and Paramecium",
+    "B": "Penicillium, Paramecium and Amoeba",
+    "C": "Mucor, Rhizopus and Penicillium",
+    "D": "Amoeba, Spirogyra and Mucor",
+    "E": "Rhizopus, Ascaris and Amoeba",
+    "answer": "E"
+  },
+  {
+    "id": 271,
+    "question": "Fehling's solution will readily change colour from blue to a reddish colour when it is",
+    "A": "mixed with sugar solution in the cold",
+    "B": "warmed or heated by itself",
+    "C": "mixed with reducing sugar in the cold",
+    "D": "warmed or heated with a complex solution",
+    "E": "warmed with a solution of reducing sugar",
+    "answer": "E"
+  },
+  {
+    "id": 272,
+    "question": "Normally the flow of blood is NEVER from",
+    "A": "artery to arterioles",
+    "B": "arterioles to capillaries",
+    "C": "capillaries to venules",
+    "D": "arterioles to the artery",
+    "E": "venules to the vein",
+    "answer": "D"
+  },
+  {
+    "id": 273,
+    "question": "Heat produced in tissue respiration in plants is",
+    "A": "a chemical form of energy",
+    "B": "the only form of energy",
+    "C": "the main form of energy",
+    "D": "a useful form of energy",
+    "E": "a waste form of energy",
+    "answer": "E"
+  },
+  {
+    "id": 274,
+    "question": "The axial skeleton of a mammal does not include the bones of the",
+    "A": "skull",
+    "B": "tail",
+    "C": "limbs",
+    "D": "back",
+    "E": "neck",
+    "answer": "C"
+  },
+  {
+    "id": 275,
+    "question": "Which of the following sequences represents the process of blood clotting? 1. Fibrin forms a network of threads 2. Red blood cells are caught and a clot is formed 3. Fibrinogen in plasma changes into soluble fibrin 4. Blood is exposed to air.",
+    "A": "4,3,2,1",
+    "B": "4,3,1,2",
+    "C": "3,1,4,2",
+    "D": "1,2,3,4",
+    "E": "3,1,2,4",
+    "answer": "B"
+  },
+  {
+    "id": 276,
+    "question": "Green plants are important in the ecosystem because they are",
+    "A": "primary consumers",
+    "B": "producers",
+    "C": "decomposers",
+    "D": "secondary consumers",
+    "E": "scavengers",
+    "answer": "B"
+  },
+  {
+    "id": 277,
+    "question": "An anemometer is an instrument for measuring",
+    "A": "relative humidity",
+    "B": "altitude",
+    "C": "wind speed",
+    "D": "turbidity",
+    "E": "salinity",
+    "answer": "C"
+  },
+  {
+    "id": 278,
+    "question": "Which of the following is NOT regarded as a pollutant on land or in the air?",
+    "A": "Noise",
+    "B": "Smoke",
+    "C": "Sulphur dioxide",
+    "D": "Carbon monoxide",
+    "E": "Nitrogen",
+    "answer": "E"
+  },
+  {
+    "id": 279,
+    "question": "Which of the following groups of factors is completely abiotic?",
+    "A": "salinity, tide, plankton, turbidity",
+    "B": "Temperature, pH, soil insect",
+    "C": "Wind, altitude, humidity, light",
+    "D": "Conifers, winds, pH, rainfall",
+    "E": "Soil, water, bacteria, salinity",
+    "answer": "C"
+  },
+  {
+    "id": 280,
+    "question": "Which of the following lists of diseases, their causes and transmission is CORRECT?",
+    "A": "Cholera, virus, severe diarrhoea, infected water",
+    "B": "Malaria, protozoan, high fever, contact with infected person",
+    "C": "Syphilis, virus, venereal disease, sexual intercourse",
+    "D": "Smallpox, virus, skin with blister, close contact with infected person",
+    "E": "Sleeping sickness, bacteria, tiredness, headaches and dozing, tsetse fly bite",
+    "answer": "D"
+  },
+  {
+    "id": 281,
+    "question": "Erosion can be reduced along a slope by",
+    "A": "ridging across slope",
+    "B": "ridging up slope",
+    "C": "ridging down slope",
+    "D": "crop rotation",
+    "E": "bush fallowing system",
+    "answer": "A"
+  },
+  {
+    "id": 282,
+    "question": "If a handful of soil is shaken with water and left to settle, the soil particles will settle from light to heavy particles as follows:",
+    "A": "humus, clay, silt, sand, stones",
+    "B": "humus, silt, clay, sand, stones",
+    "C": "humus, clay, silt, stones, sand",
+    "D": "humus, sand, silt, clay, stones",
+    "E": "clay, humus, silt, sand, stones",
+    "answer": "A"
+  },
+  {
+    "id": 283,
+    "question": "Denitrifying bacteria in nature liberate gaseous nitrogen directly from",
+    "A": "ammonium salts",
+    "B": "soil nitrates",
+    "C": "thunderstorms",
+    "D": "soil nitrites",
+    "E": "plant and animal proteins",
+    "answer": "B"
+  },
+  {
+    "id": 284,
+    "question": "Leaching is",
+    "A": "washing away of humus from the soil surface",
+    "B": "reduction of soil aeration by pressure",
+    "C": "soil erosion by means other than rainfall",
+    "D": "loss of organic matter due to exposure to direct sunlight",
+    "E": "washing out of chalk and limestone from upper layers of soil by heavy rains",
+    "answer": "E"
+  },
+  {
+    "id": 285,
+    "question": "The process of soil erosion is usually from",
+    "A": "rill → sheet → gully",
+    "B": "gully → rill → sheet",
+    "C": "sheet → gully → rill",
+    "D": "sheet → rill → gully",
+    "E": "rill → gully → sheet",
+    "answer": "D"
+  },
+  {
+    "id": 286,
+    "question": "In Spirogyra, the pyrenoid",
+    "A": "excrete waste products",
+    "B": "is suspended by cytoplasmic strands",
+    "C": "is mainly used for respiration",
+    "D": "usually contains starch",
+    "E": "makes the plant slimy to touch",
+    "answer": "D"
+  },
+  {
+    "id": 287,
+    "question": "In which of the following groups of animals are flagella and cilia found?",
+    "A": "Flatworms",
+    "B": "Annelids",
+    "C": "Coelenterates",
+    "D": "Protozoa",
+    "E": "Nematodes",
+    "answer": "D"
+  },
+  {
+    "id": 288,
+    "question": "Which of the following is seed bearing?",
+    "A": "Mosses",
+    "B": "Whistling pine",
+    "C": "Algal filaments",
+    "D": "Liverwort",
+    "E": "Fern fronds",
+    "answer": "B"
+  },
+  {
+    "id": 289,
+    "question": "Each of the following is an arthropod EXCEPT the",
+    "A": "crab",
+    "B": "spider",
+    "C": "snail",
+    "D": "millipede",
+    "E": "cockroach",
+    "answer": "C"
+  },
+  {
+    "id": 290,
+    "question": "In fish the sense organs which detect movements in the water are located within the",
+    "A": "gills",
+    "B": "operculum",
+    "C": "nostrils",
+    "D": "median fins",
+    "E": "lateral line",
+    "answer": "E"
+  },
+  {
+    "id": 291,
+    "question": "Euglena is an autotrophic organism because it",
+    "A": "has flagella",
+    "B": "has plant and animal features",
+    "C": "is found in water",
+    "D": "can manufacture its food",
+    "E": "moves fast",
+    "answer": "D"
+  },
+  {
+    "id": 292,
+    "question": "Which of the following is NOT true of Mucor? It",
+    "A": "contains chlorophyll",
+    "B": "grows saprophytically",
+    "C": "bears spores in sporangium",
+    "D": "consists of hyphae",
+    "E": "reproduces by conjugation",
+    "answer": "A"
+  },
+  {
+    "id": 293,
+    "question": "Bryophytes are different from flowering plants because they",
+    "A": "live in moist habitats",
+    "B": "are small plants",
+    "C": "reproduce sexually and asexually",
+    "D": "have small leaves",
+    "E": "have no vascular tissues",
+    "answer": "E"
+  },
+  {
+    "id": 294,
+    "question": "At what stage in the life history of a toad is its mode of breathing similar to that of a fish?",
+    "A": "Tadpole stage",
+    "B": "External gill stage",
+    "C": "Adult stage",
+    "D": "Internal gill stage",
+    "E": "Larval stage",
+    "answer": "A"
+  },
+  {
+    "id": 295,
+    "question": "In lower plants like mosses, the structure which performs the functions of roots of higher plants is called",
+    "A": "root hairs",
+    "B": "rootlets",
+    "C": "hyphae",
+    "D": "rhizoids",
+    "E": "thalli",
+    "answer": "D"
+  },
+  {
+    "id": 296,
+    "question": "In an angiosperm leaf, the xylem is",
+    "A": "beside the phloem",
+    "B": "surrounded by the phloem",
+    "C": "above the phloem",
+    "D": "around the phloem",
+    "E": "in separate bundles from the phloem",
+    "answer": "A"
+  },
+  {
+    "id": 297,
+    "question": "A group of similar cells performing the same function is",
+    "A": "an organ",
+    "B": "a system",
+    "C": "a tissue",
+    "D": "an organelle",
+    "E": "an enzyme",
+    "answer": "C"
+  },
+  {
+    "id": 298,
+    "question": "Which of the following is common to a dicotyledonous stem and a monocotyledonous root?",
+    "A": "Medullary rays",
+    "B": "Central pith",
+    "C": "Wide cortex",
+    "D": "Narrow cortex",
+    "E": "Pericyclic fibres",
+    "answer": "B"
+  },
+  {
+    "id": 299,
+    "question": "Which of the following represents the sequence of protein hydrolysis? 1. Polypeptides 2. Amino acids 3. Proteins 4. Peptides",
+    "A": "3,1,2,4",
+    "B": "3,2,4,1",
+    "C": "3,4,2,1",
+    "D": "3,4,1,2",
+    "E": "3,1,4,2",
+    "answer": "D"
+  },
+  {
+    "id": 300,
+    "question": "A food substance which produces red colouration with Sudan III contains",
+    "A": "protein",
+    "B": "sugar",
+    "C": "starch",
+    "D": "cellulose",
+    "E": "fat",
+    "answer": "E"
+  },
+  {
+    "id": 301,
+    "question": "If calcium is deficient in food this may cause",
+    "A": "anaemia",
+    "B": "retarded growth",
+    "C": "sterility",
+    "D": "goitre",
+    "E": "beri-beri",
+    "answer": "B"
+  },
+  {
+    "id": 302,
+    "question": "Partially digested food ready to leave the stomach is referred to as",
+    "A": "chyme",
+    "B": "curd",
+    "C": "glycogen",
+    "D": "paste",
+    "E": "roughage",
+    "answer": "A"
+  },
+  {
+    "id": 303,
+    "question": "The function of lymph nodes is to",
+    "A": "supply oxygen",
+    "B": "filter out bacteria",
+    "C": "form red blood cells",
+    "D": "supply amino acids",
+    "E": "supply simple sugars",
+    "answer": "B"
+  },
+  {
+    "id": 304,
+    "question": "The vein which returns blood from the head and arms to the heart is called",
+    "A": "aorta",
+    "B": "inferior vena cava",
+    "C": "superior vena cava",
+    "D": "pulmonary vein",
+    "E": "pulmonary artery",
+    "answer": "C"
+  },
+  {
+    "id": 305,
+    "question": "Blood platelets are important because they",
+    "A": "are amoeboid and nucleated",
+    "B": "produce antitoxins",
+    "C": "produce antibodies",
+    "D": "digest harmful bacteria",
+    "E": "release thrombokinase for blood clotting",
+    "answer": "E"
+  },
+  {
+    "id": 306,
+    "question": "If a child can receive blood from all donors, he belongs to the blood group",
+    "A": "O",
+    "B": "A",
+    "C": "B",
+    "D": "AB",
+    "E": "AS",
+    "answer": "D"
+  },
+  {
+    "id": 307,
+    "question": "Which of the following events does NOT occur during anaerobic respiration of glucose?",
+    "A": "Muscle cells produce lactic acid",
+    "B": "Carbon dioxide is produced",
+    "C": "Milk bacteria produce lactic acid",
+    "D": "Energy is not produced",
+    "E": "Germinating seeds produce alcohol",
+    "answer": "D"
+  },
+  {
+    "id": 308,
+    "question": "Identify which of the following are characteristics of the vertebrate respiratory surface 1. Moist 2. Vascularized 3. Semipneumate 4. Freely permeable 5. Dry",
+    "A": "1,2,3",
+    "B": "1,2,5",
+    "C": "2,3,5",
+    "D": "2,4,5",
+    "E": "1,3,5",
+    "answer": "A"
+  },
+  {
+    "id": 309,
+    "question": "In mammals, the function of the sebaceous gland is to",
+    "A": "produce sweat",
+    "B": "secrete sodium",
+    "C": "secrete water",
+    "D": "produce an oily substance",
+    "E": "manufacture vitamin D for the skin",
+    "answer": "D"
+  },
+  {
+    "id": 310,
+    "question": "Which of the following organs regulates the amount of amino acids and glucose in the body?",
+    "A": "Kidney",
+    "B": "Liver",
+    "C": "Pancreas",
+    "D": "Spleen",
+    "E": "Stomach",
+    "answer": "B"
+  },
+  {
+    "id": 311,
+    "question": "Bowman's capsules are located in the part labelled (Fig 1)",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "E": "5",
+    "answer": "C"
+  },
+  {
+    "id": 312,
+    "question": "Re-absorption of useful materials takes place in the parts labelled (Fig 1)",
+    "A": "1 and 3",
+    "B": "3 and 5",
+    "C": "5 and 6",
+    "D": "6 and 7",
+    "E": "2 and 4",
+    "answer": "C"
+  },
+  {
+    "id": 313,
+    "question": "Movements and positions of the head in man are detected by the",
+    "A": "cochlea",
+    "B": "malleus",
+    "C": "utriculus",
+    "D": "semicircular canals",
+    "E": "outer ear",
+    "answer": "D"
+  },
+  {
+    "id": 314,
+    "question": "The appendicular skeleton is made up of the",
+    "A": "limbs",
+    "B": "skull and limbs",
+    "C": "phalanges",
+    "D": "ulna and radius",
+    "E": "girdles and limbs",
+    "answer": "E"
+  },
+  {
+    "id": 315,
+    "question": "The maize grain is a fruit and not a seed because it",
+    "A": "has a large endosperm",
+    "B": "is formed from an ovary",
+    "C": "is a monocotyledon",
+    "D": "has no plumule and radicle",
+    "E": "has hypogeal germination",
+    "answer": "B"
+  },
+  {
+    "id": 316,
+    "question": "If a flower is protandrous then it",
+    "A": "must be unisexual",
+    "B": "has an undeveloped androecium",
+    "C": "has no androecium",
+    "D": "must be insect pollinated",
+    "E": "can prevent self-pollination",
+    "answer": "E"
+  },
+  {
+    "id": 317,
+    "question": "For pollen to be released in Crotalaria the insect must depress the",
+    "A": "wing",
+    "B": "keel",
+    "C": "standard",
+    "D": "antepetalous stamen",
+    "E": "antesepalous stamen",
+    "answer": "B"
+  },
+  {
+    "id": 318,
+    "question": "Irish potato is a",
+    "A": "bulb",
+    "B": "tap root",
+    "C": "rhizome",
+    "D": "root tuber",
+    "E": "stem tuber",
+    "answer": "E"
+  },
+  {
+    "id": 319,
+    "question": "The characters by which an organism is recognized are termed its",
+    "A": "phenotype",
+    "B": "genotype",
+    "C": "morphology",
+    "D": "anatomy",
+    "E": "physiology",
+    "answer": "A"
+  },
+  {
+    "id": 320,
+    "question": "The hereditary material in a cell is known as",
+    "A": "ADP",
+    "B": "CNS",
+    "C": "RNA",
+    "D": "ATP",
+    "E": "DNA",
+    "answer": "E"
+  },
+  {
+    "id": 321,
+    "question": "A young plant showing yellow leaves is likely to be deficient in",
+    "A": "calcium",
+    "B": "magnesium",
+    "C": "potassium",
+    "D": "boron",
+    "E": "molybdenum",
+    "answer": "B"
+  },
+  {
+    "id": 322,
+    "question": "Germination which results in the cotyledons being brought above ground is called",
+    "A": "hypocotyl",
+    "B": "epicotyl",
+    "C": "epigeal",
+    "D": "hypogeal",
+    "E": "plumule",
+    "answer": "C"
+  },
+  {
+    "id": 323,
+    "question": "The mammalian endocrine system is responsible for",
+    "A": "transmitting impulses",
+    "B": "regulating body temperature",
+    "C": "regulating osmotic pressure of blood",
+    "D": "chemical co-ordination",
+    "E": "the manufacture of blood",
+    "answer": "D"
+  },
+  {
+    "id": 324,
+    "question": "An old man is likely to be long-sighted because age affects the",
+    "A": "optic nerves",
+    "B": "retina",
+    "C": "ciliary muscles",
+    "D": "cornea",
+    "E": "aqueous humour",
+    "answer": "C"
+  },
+  {
+    "id": 325,
+    "question": "In a mammal, stimulus is transferred from the receptor to the central nervous system through the",
+    "A": "motor neurons",
+    "B": "effector muscles",
+    "C": "dendrites",
+    "D": "sensory neurons",
+    "E": "synapses",
+    "answer": "D"
+  },
+  {
+    "id": 326,
+    "question": "A relationship between living organisms which is of mutual benefit is",
+    "A": "parasitism",
+    "B": "saprophytism",
+    "C": "ecosystem",
+    "D": "symbiosis",
+    "E": "commensalism",
+    "answer": "D"
+  },
+  {
+    "id": 327,
+    "question": "Which of the following food chains is in the correct sequence?",
+    "A": "Weeds → Tadpoles → Beetles → Fish → Man",
+    "B": "Weeds → Tadpoles → Fish → Beetles → Man",
+    "C": "Tadpoles → Beetles → Weeds → Man → Fish",
+    "D": "Man → Fish → Beetles → Tadpoles → Weeds",
+    "E": "Fish → Beetles → Tadpoles → Weeds",
+    "answer": "A"
+  },
+  {
+    "id": 328,
+    "question": "The primary and secondary hosts respectively of bilharzia are",
+    "A": "fish and man",
+    "B": "man and dog",
+    "C": "snail and man",
+    "D": "man and snail",
+    "E": "fish and snail",
+    "answer": "D"
+  },
+  {
+    "id": 329,
+    "question": "Which of the following is NOT caused by bacteria?",
+    "A": "Cholera",
+    "B": "Gonorrhoea",
+    "C": "Tuberculosis",
+    "D": "Onchocerciasis",
+    "E": "Typhoid",
+    "answer": "D"
+  },
+  {
+    "id": 330,
+    "question": "Tsetse fly is harmful to man because it is associated with the spread of",
+    "A": "river blindness",
+    "B": "malaria",
+    "C": "sleeping sickness",
+    "D": "leprosy",
+    "E": "dysentery",
+    "answer": "C"
+  },
+  {
+    "id": 331,
+    "question": "Soil erosion CANNOT be controlled by",
+    "A": "planting cover crops",
+    "B": "contouring of sloping ground",
+    "C": "terracing of slopes",
+    "D": "laying of mulch",
+    "E": "burning of bush",
+    "answer": "E"
+  },
+  {
+    "id": 332,
+    "question": "Water retention is highest in soils which are rich in",
+    "A": "sand, poor in humus and devoid of clay",
+    "B": "clay and sand, but poor in humus",
+    "C": "clay and humus, but poor in sand",
+    "D": "clay, poor in humus and devoid of sand",
+    "E": "sand and humus, but poor in clay",
+    "answer": "C"
+  },
+  {
+    "id": 333,
+    "question": "The origin of mineral particles in the soil is",
+    "A": "humus",
+    "B": "water",
+    "C": "micro-organisms",
+    "D": "weathered rock",
+    "E": "organic matter",
+    "answer": "D"
+  },
+  {
+    "id": 334,
+    "question": "Atmospheric nitrogen is directly replenished in nature through",
+    "A": "the activities of denitrifying bacteria",
+    "B": "the breakdown of ammonium salts in the soil",
+    "C": "the activities of nitrifying bacteria",
+    "D": "the activities of nitrogen-fixing bacteria in root nodules",
+    "E": "egestion, death and decay",
+    "answer": "D"
+  },
+  {
+    "id": 335,
+    "question": "The initial volume of water poured into a bag of dry soil was 50ml and the amount that drained through was 35ml. The percentage water content of the fully soaked soil is therefore",
+    "A": "46.7",
+    "B": "25.0",
+    "C": "20.0",
+    "D": "30.0",
+    "E": "58.3",
+    "answer": "D"
+  },
+  {
+    "id": 336,
+    "question": "Viruses are regarded as non-living because they",
+    "A": "can neither reproduce asexually nor sexually",
+    "B": "cannot survive in their respective environments",
+    "C": "do not possess characteristics",
+    "D": "can neither respire nor excrete",
+    "E": "none of the above",
+    "answer": "D"
+  },
+  {
+    "id": 337,
+    "question": "Which of the following pairs are fully adapted to terrestrial life?",
+    "A": "Ferns and algae",
+    "B": "Ferns and mosses",
+    "C": "Bryophytes and flowering plants",
+    "D": "Flowering plants and conifers",
+    "E": "Mosses and conifers",
+    "answer": "D"
+  },
+  {
+    "id": 338,
+    "question": "Which of these animals is radically symmetrical?",
+    "A": "Squid",
+    "B": "Hydra",
+    "C": "Snail",
+    "D": "Cockroach",
+    "E": "Earthworm",
+    "answer": "B"
+  },
+  {
+    "id": 339,
+    "question": "Which of the following has cones?",
+    "A": "Angiosperm",
+    "B": "Gymnosperm",
+    "C": "Pteridophyte",
+    "D": "Bryophyte",
+    "E": "Algae",
+    "answer": "B"
+  },
+  {
+    "id": 340,
+    "question": "For effective functioning of a bird's quill feather, hooks fit on the ridges of the",
+    "A": "vane",
+    "B": "rachis",
+    "C": "barbules",
+    "D": "barbs",
+    "E": "quill",
+    "answer": "C"
+  },
+  {
+    "id": 341,
+    "question": "Which of the following is NOT true of Spirogyra?",
+    "A": "Reproduces by conjugation",
+    "B": "Reproduces by fragmentation",
+    "C": "Consists of branched filaments",
+    "D": "Consists of unbranched filaments",
+    "E": "Has spiral chloroplasts",
+    "answer": "C"
+  },
+  {
+    "id": 342,
+    "question": "Which of the following lacks chaetae, tentacles and antennae?",
+    "A": "Snail",
+    "B": "Crab",
+    "C": "Millipede",
+    "D": "Earthworm",
+    "E": "Cockroach",
+    "answer": "A"
+  },
+  {
+    "id": 343,
+    "question": "Incomplete metamorphosis occurs in the",
+    "A": "butterfly",
+    "B": "grasshopper",
+    "C": "mosquito",
+    "D": "housefly",
+    "E": "bee",
+    "answer": "B"
+  },
+  {
+    "id": 344,
+    "question": "Fishes are cold-blooded because their body temperature is",
+    "A": "constantly low",
+    "B": "constantly high",
+    "C": "dependent on that of their surroundings",
+    "D": "regulated at will",
+    "E": "independent of the environment",
+    "answer": "C"
+  },
+  {
+    "id": 345,
+    "question": "When the original king and queen of termites die, they are replaced by",
+    "A": "the king and queen of another colony",
+    "B": "some adult reproducers from the same colony",
+    "C": "some adult workers which are specially fed to breed",
+    "D": "developing nymphs nurtured as secondary reproducers",
+    "E": "soldiers that develop wings",
+    "answer": "D"
+  },
+  {
+    "id": 346,
+    "question": "The male cockroach differs from the female by having",
+    "A": "mandibles",
+    "B": "a pair of styles",
+    "C": "spiracles",
+    "D": "a pair of cerci",
+    "E": "wings",
+    "answer": "B"
+  },
+  {
+    "id": 347,
+    "question": "The fins making up the limbs of the bony fish are",
+    "A": "caudal and ventral",
+    "B": "ventral and pelvic",
+    "C": "pelvic and pectoral",
+    "D": "pectoral and dorsal",
+    "E": "anal and caudal",
+    "answer": "C"
+  },
+  {
+    "id": 348,
+    "question": "The stem differs from the root in having the xylem and phloem strands",
+    "A": "on the same radii",
+    "B": "scattered",
+    "C": "on alternate radii",
+    "D": "towards the pith",
+    "E": "in a ring",
+    "answer": "A"
+  },
+  {
+    "id": 349,
+    "question": "Oxygen liberated during photosynthesis has been demonstrated to come from",
+    "A": "carbon dioxide",
+    "B": "air",
+    "C": "water",
+    "D": "chlorophyll",
+    "E": "glucose",
+    "answer": "C"
+  },
+  {
+    "id": 350,
+    "question": "Which of these is a trace element?",
+    "A": "Iron",
+    "B": "Copper",
+    "C": "Calcium",
+    "D": "Sulphur",
+    "E": "Magnesium",
+    "answer": "B"
+  },
+  {
+    "id": 351,
+    "question": "The main organic substances found in the human body are",
+    "A": "carbohydrates, proteins and salts",
+    "B": "salts, fats and proteins",
+    "C": "fats, carbohydrates and proteins",
+    "D": "salts, fats and carbohydrates",
+    "E": "minerals, vitamins and water",
+    "answer": "C"
+  },
+  {
+    "id": 352,
+    "question": "Which of the following elements is essential for the formation of haemoglobin?",
+    "A": "Sodium",
+    "B": "Potassium",
+    "C": "Calcium",
+    "D": "Iron",
+    "E": "Magnesium",
+    "answer": "D"
+  },
+  {
+    "id": 353,
+    "question": "The severe deficiency of vitamin C leads to",
+    "A": "kwashiorkor",
+    "B": "beriberi",
+    "C": "pellagra",
+    "D": "scurvy",
+    "E": "rickets",
+    "answer": "D"
+  },
+  {
+    "id": 354,
+    "question": "In addition to the high calories derived from fats and oils, they are",
+    "A": "used in producing new cells",
+    "B": "necessary for enzyme formation",
+    "C": "used as insulators from cold",
+    "D": "required for growth",
+    "E": "essential for hormone production",
+    "answer": "C"
+  },
+  {
+    "id": 355,
+    "question": "The extract from a food substance reacting with sodium hydroxide and copper sulphate solutions will produce violet to purple coloration if",
+    "A": "fats are present",
+    "B": "carbohydrate is present",
+    "C": "protein is present",
+    "D": "reducing sugar is present",
+    "E": "starch is present",
+    "answer": "C"
+  },
+  {
+    "id": 356,
+    "question": "The three important organs that are situated close to the stomach are",
+    "A": "kidney, liver and gall bladder",
+    "B": "pancreas, liver and kidney",
+    "C": "liver, kidney and spleen",
+    "D": "gall bladder, pancreas and spleen",
+    "E": "liver, pancreas and spleen",
+    "answer": "D"
+  },
+  {
+    "id": 357,
+    "question": "Evidence that a tooth is a living part of the mammalian body can be found within the",
+    "A": "gum",
+    "B": "pulp cavity",
+    "C": "cement",
+    "D": "enamel",
+    "E": "dentine",
+    "answer": "B"
+  },
+  {
+    "id": 358,
+    "question": "Blood circulation in a mammal is said to be double because",
+    "A": "it passes twice through the heart in the complete circuit",
+    "B": "it moves in both arteries and veins",
+    "C": "it circulates in both the heart and other organs",
+    "D": "the heart contains auricles and ventricles",
+    "E": "there are two circulatory pathways",
+    "answer": "A"
+  },
+  {
+    "id": 359,
+    "question": "Which is the correct order of water loss from the leaf? 1 Mesophyll 2 Veins 3 Substomatal cavity 4 Stomata",
+    "A": "3-2-1-4",
+    "B": "2-3-1-4",
+    "C": "2-1-3-4",
+    "D": "1-2-3-4",
+    "E": "3-1-2-4",
+    "answer": "C"
+  },
+  {
+    "id": 360,
+    "question": "The aperture between the left auricle and the left ventricle is guarded by the",
+    "A": "auricular valve",
+    "B": "tricuspid valve",
+    "C": "ventricular valve",
+    "D": "bicuspid valve",
+    "E": "semilunar valve",
+    "answer": "D"
+  },
+  {
+    "id": 361,
+    "question": "A major limitation in the use of the potometer for measuring the rate of transpiration is that",
+    "A": "it is made of breakable glass material",
+    "B": "it measures the rate of water intake",
+    "C": "it measures the rate of water loss through the stem only",
+    "D": "the movement of the air bubble in the potometer cannot be used accurately",
+    "E": "it does not measure transpiration directly",
+    "answer": "B"
+  },
+  {
+    "id": 362,
+    "question": "Which of the following statements is not correct with respect to inhalation in mammals?",
+    "A": "intercostal muscles contract",
+    "B": "diaphragm is raised",
+    "C": "ribs are raised",
+    "D": "pressure of the thoracic cavity decreases",
+    "E": "volume of thoracic cavity increases",
+    "answer": "B"
+  },
+  {
+    "id": 363,
+    "question": "The equation that can be used to summarize the process of anaerobic breakdown of sugar is",
+    "A": "C6H12O6 → 2C2H5OH + 2CO2 + energy",
+    "B": "6CO2 + 6H2O → C6H12O6 + 6O2",
+    "C": "C6H12O6 + 6O2 → 6CO2 + 6H2O + energy",
+    "D": "C6H12O6 → 2C2H5OH + 2CO2",
+    "E": "C6H12O6 → lactic acid + energy",
+    "answer": "D"
+  },
+  {
+    "id": 364,
+    "question": "If a person is bitten by a snake on the leg, it is advisable for the person to",
+    "A": "keep moving so that the venom will ooze out with bleeding",
+    "B": "wash the wound with water containing antiseptic",
+    "C": "bandage the wound so that germs do not get in through it",
+    "D": "keep still and apply a tourniquet above the wound",
+    "E": "suck the venom out immediately",
+    "answer": "D"
+  },
+  {
+    "id": 365,
+    "question": "Deamination occurs in the",
+    "A": "kidney",
+    "B": "pancreas",
+    "C": "spleen",
+    "D": "liver",
+    "E": "stomach",
+    "answer": "D"
+  },
+  {
+    "id": 366,
+    "question": "In the mammalian skin, melanin and keratin are contained in the",
+    "A": "sebaceous gland",
+    "B": "sweat gland",
+    "C": "subcutaneous layer",
+    "D": "malpighian layer",
+    "E": "dermis",
+    "answer": "D"
+  },
+  {
+    "id": 367,
+    "question": "Two main distinguishing features of the cervical vertebra are the presence of",
+    "A": "short neural spine and vertebral canal",
+    "B": "prezygapophysis and cervical ribs",
+    "C": "large centrum and cervical ribs",
+    "D": "vertebral canal and large centrum",
+    "E": "transverse processes and neural spine",
+    "answer": "B"
+  },
+  {
+    "id": 368,
+    "question": "Nastic movement is",
+    "A": "response to light stimulus",
+    "B": "non-directional",
+    "C": "directional",
+    "D": "response to internal stimulus",
+    "E": "growth movement",
+    "answer": "B"
+  },
+  {
+    "id": 369,
+    "question": "Which of the labelled parts will develop into a new maize plant? (Fig)",
+    "A": "2",
+    "B": "3",
+    "C": "4",
+    "D": "5",
+    "E": "1",
+    "answer": "A"
+  },
+  {
+    "id": 370,
+    "question": "The structure labelled 1 is the",
+    "A": "plumule",
+    "B": "radicle",
+    "C": "cell membrane",
+    "D": "seed coat",
+    "E": "cotyledon",
+    "answer": "D"
+  },
+  {
+    "id": 371,
+    "question": "The main function of the structure labelled 2 is to",
+    "A": "protect the inner parts of the seed",
+    "B": "nourish the embryo and the growing parts",
+    "C": "keep the inner parts moist",
+    "D": "maintain the shape of the seed",
+    "E": "store food",
+    "answer": "B"
+  },
+  {
+    "id": 372,
+    "question": "Gestation in mammals is the period",
+    "A": "required for growth after birth",
+    "B": "between the formation of the foetus and birth",
+    "C": "of development from zygote to birth",
+    "D": "before the formation of the zygote",
+    "E": "of lactation",
+    "answer": "C"
+  },
+  {
+    "id": 373,
+    "question": "If a woman who is a carrier of sickle cell trait (AS) married a man who is a sickler (SS) and they had four children, how many of them would be normal?",
+    "A": "Three",
+    "B": "Two",
+    "C": "One",
+    "D": "None",
+    "E": "Four",
+    "answer": "D"
+  },
+  {
+    "id": 374,
+    "question": "Which of the following is an example of discontinuous variation?",
+    "A": "Skin coloration",
+    "B": "Left-handedness",
+    "C": "Body weight",
+    "D": "Height",
+    "E": "Blood group",
+    "answer": "E"
+  },
+  {
+    "id": 375,
+    "question": "The hormone which regulates the amount of glucose in the blood is called",
+    "A": "adrenalin",
+    "B": "auxin",
+    "C": "insulin",
+    "D": "thyroxine",
+    "E": "glucagon",
+    "answer": "C"
+  },
+  {
+    "id": 376,
+    "question": "An instrument that can be used to demonstrate phototropism and geotropism in plants is the",
+    "A": "auxanometer",
+    "B": "potometer",
+    "C": "clinostat",
+    "D": "photometer",
+    "E": "hygrometer",
+    "answer": "C"
+  },
+  {
+    "id": 377,
+    "question": "In an ecosystem, animals which feed directly on plants are called",
+    "A": "secondary consumers",
+    "B": "primary consumers",
+    "C": "producers",
+    "D": "predators",
+    "E": "decomposers",
+    "answer": "B"
+  },
+  {
+    "id": 378,
+    "question": "In an agricultural ecosystem, the biotic component consists of",
+    "A": "crops, pests and beneficial insects",
+    "B": "crops, temperature and humidity",
+    "C": "pests, beneficial insects and water",
+    "D": "crops, water and soil",
+    "E": "sunlight, soil and crops",
+    "answer": "A"
+  },
+  {
+    "id": 379,
+    "question": "Which of these diseases CANNOT be prevented by immunization?",
+    "A": "Poliomyelitis",
+    "B": "Tuberculosis",
+    "C": "Cholera",
+    "D": "Onchocerciasis",
+    "E": "Tetanus",
+    "answer": "D"
+  },
+  {
+    "id": 380,
+    "question": "Which of the following ecological factors are common to both terrestrial and aquatic habitats?",
+    "A": "Rainfall, temperature, light and wind",
+    "B": "Salinity, rainfall, temperature and light",
+    "C": "Tides, wind, rainfall and altitude",
+    "D": "pH, salinity, rainfall and humidity",
+    "E": "Temperature, light, pH and wind",
+    "answer": "A"
+  },
+  {
+    "id": 381,
+    "question": "In a community, bacteria and fungi are referred to as",
+    "A": "producers",
+    "B": "decomposers",
+    "C": "scavengers",
+    "D": "consumers",
+    "E": "parasites",
+    "answer": "B"
+  },
+  {
+    "id": 382,
+    "question": "The swollen shoot disease of cocoa tree is caused by a",
+    "A": "virus",
+    "B": "fungus",
+    "C": "bacterium",
+    "D": "protozoan",
+    "E": "nematode",
+    "answer": "A"
+  },
+  {
+    "id": 383,
+    "question": "A large percentage of tropical soils tend to be acidic because they",
+    "A": "contain large quantities of potash",
+    "B": "contain large quantities of lime",
+    "C": "lose a high proportion of their organic matter to running water",
+    "D": "lose lime and potash from the top soil through rain action",
+    "E": "have high rainfall and leaching",
+    "answer": "D"
+  },
+  {
+    "id": 384,
+    "question": "The following are methods of soil conservation EXCEPT",
+    "A": "contour terracing",
+    "B": "strip cropping",
+    "C": "contour ploughing",
+    "D": "mixed grazing",
+    "E": "mulching",
+    "answer": "D"
+  },
+  {
+    "id": 385,
+    "question": "Samples of different soil types are packed in glass tubes whose lower ends are plugged with cotton wool. If these tubes are suspended in a trough of water, water will rise highest after a few hours in",
+    "A": "sand",
+    "B": "loam",
+    "C": "clay",
+    "D": "humus",
+    "E": "gravel",
+    "answer": "C"
+  },
+  {
+    "id": 386,
+    "question": "The function of endoplasmic reticulum is",
+    "A": "protein synthesis",
+    "B": "intracellular transport of materials",
+    "C": "digestion and destruction of foreign bodies",
+    "D": "production of energy from glucose",
+    "E": "lipid synthesis",
+    "answer": "B"
+  },
+  {
+    "id": 387,
+    "question": "Which of the following features of Euglena is found only in animals?",
+    "A": "Paramylum granules",
+    "B": "Flagellum",
+    "C": "Pellicle",
+    "D": "Pyrenoid",
+    "E": "Chloroplast",
+    "answer": "C"
+  },
+  {
+    "id": 388,
+    "question": "An organism found on a bare rock surface has features of algae and fungi. The organism is",
+    "A": "an epiphyte",
+    "B": "a lichen",
+    "C": "a bryophyte",
+    "D": "a fern",
+    "E": "a moss",
+    "answer": "B"
+  },
+  {
+    "id": 389,
+    "question": "In a plant exhibiting alternation of generations, the diploid multicellular stage is known as",
+    "A": "gametophyte",
+    "B": "spermatophyte",
+    "C": "holophyte",
+    "D": "sporophyte",
+    "E": "zygophyte",
+    "answer": "D"
+  },
+  {
+    "id": 390,
+    "question": "A characteristic that distinguishes bryophytes from flowering plants is the",
+    "A": "possession of true stems and leaves",
+    "B": "ability to reproduce asexually",
+    "C": "absence of vascular tissues",
+    "D": "ability to grow in moist habitats",
+    "E": "presence of rhizoids",
+    "answer": "C"
+  },
+  {
+    "id": 391,
+    "question": "A good example of a diploblastic organism is",
+    "A": "Amoeba",
+    "B": "Hydra",
+    "C": "Earthworm",
+    "D": "Roundworm",
+    "E": "Planaria",
+    "answer": "B"
+  },
+  {
+    "id": 392,
+    "question": "The function of the clitellum in the earthworm is to",
+    "A": "aid digestion",
+    "B": "prevent desiccation",
+    "C": "assist locomotion",
+    "D": "secrete cocoon",
+    "E": "store sperm",
+    "answer": "D"
+  },
+  {
+    "id": 393,
+    "question": "The crayfish is an arthropod because",
+    "A": "its body consists of a cephalothorax and an abdomen",
+    "B": "it has a pair each of antennae and antennules",
+    "C": "every segment of its body carries a pair of appendages",
+    "D": "its body is covered with an exoskeleton made of chitin",
+    "E": "it has jointed appendages",
+    "answer": "D"
+  },
+  {
+    "id": 394,
+    "question": "The hypha of Rhizopus is said to be coenocytic because it",
+    "A": "does not contain chlorophyll",
+    "B": "has no cross walls",
+    "C": "is vacuolated",
+    "D": "stores oil globules",
+    "E": "is multinucleate",
+    "answer": "B"
+  },
+  {
+    "id": 395,
+    "question": "In most true ferns sporangia are grouped into",
+    "A": "indusium",
+    "B": "fronds",
+    "C": "prothalli",
+    "D": "sori",
+    "E": "spores",
+    "answer": "D"
+  },
+  {
+    "id": 396,
+    "question": "In the reproduction of mosses, water is essential because",
+    "A": "they live in moist habitats",
+    "B": "they cannot reproduce without water",
+    "C": "the male gametes must swim to fertilize the ovum",
+    "D": "they produce spores",
+    "E": "they need water for germination",
+    "answer": "C"
+  },
+  {
+    "id": 397,
+    "question": "In tapeworm, the two structures that run through the length of the body are the",
+    "A": "nerve cord and the excretory duct",
+    "B": "sperm duct and the nerve cord",
+    "C": "genital pore and the excretory duct",
+    "D": "sperm duct and the genital pore",
+    "E": "nerve cord and the genital pore",
+    "answer": "A"
+  },
+  {
+    "id": 398,
+    "question": "Which of the following is NOT a characteristic of snails?",
+    "A": "Bilateral symmetry",
+    "B": "Chitinous exoskeleton",
+    "C": "Muscular foot",
+    "D": "Soft unsegmented body in a mantle",
+    "E": "Radula",
+    "answer": "B"
+  },
+  {
+    "id": 399,
+    "question": "In the life history of a butterfly, destruction of crops is caused by the",
+    "A": "maggot",
+    "B": "nymph",
+    "C": "caterpillar",
+    "D": "pupa",
+    "E": "adult",
+    "answer": "C"
+  },
+  {
+    "id": 400,
+    "question": "The correct sequence of tissues in the anatomy of a young dicotyledonous stem from the inside to the outside is",
+    "A": "pith, phloem, cambium, xylem, parenchyma, collenchyma and epidermis",
+    "B": "xylem, phloem, cambium, cortex, endodermis, collenchyma and epidermis",
+    "C": "pith, xylem, cambium, phloem, collenchyma, parenchyma and epidermis",
+    "D": "phloem, xylem, cambium, cortex, endodermis, collenchyma and epidermis",
+    "E": "pith, xylem, cambium, phloem, cortex, endodermis, epidermis",
+    "answer": "C"
+  },
+ {
+    "id": 401,
+    "question": "Secondary thickening is initiated in a dicotyledonous stem by the",
+    "A": "xylem parenchyma",
+    "B": "secondary phloem",
+    "C": "endodermis",
+    "D": "cambium",
+    "E": "pericycle",
+    "answer": "D"
+  },
+  {
+    "id": 402,
+    "question": "In demonstrating the importance of mineral elements in plants, the culture bottle must be darkened to",
+    "A": "prevent algal growth in culture solution",
+    "B": "allow root growth",
+    "C": "prevent breakdown of mineral elements",
+    "D": "prevent photosynthesis in the root",
+    "E": "keep the solution cool",
+    "answer": "A"
+  },
+  {
+    "id": 403,
+    "question": "The vitamin which is important in the formation of the retina pigments is",
+    "A": "vitamin A",
+    "B": "vitamin B",
+    "C": "vitamin C",
+    "D": "vitamin D",
+    "E": "vitamin E",
+    "answer": "A"
+  },
+  {
+    "id": 404,
+    "question": "Which of the following lists of organs is directly involved in nutrition?",
+    "A": "Oesophagus, bronchus, stomach, pancreas and anus",
+    "B": "Spleen, pharynx, duodenum, jejunum and rectum",
+    "C": "Teeth, oesophagus, ileum, lungs and large intestine",
+    "D": "Salivary gland, liver, stomach, villi and colon",
+    "E": "Mouth, oesophagus, stomach, small intestine, large intestine",
+    "answer": "D"
+  },
+  {
+    "id": 405,
+    "question": "In the standard experiment to show that oxygen is given off during photosynthesis, sodium bicarbonate is used to",
+    "A": "neutralize the acid in water",
+    "B": "supply mineral salts to water plant",
+    "C": "supply carbon dioxide for photosynthesis",
+    "D": "kill micro-organisms in water",
+    "E": "buffer the solution",
+    "answer": "C"
+  },
+  {
+    "id": 406,
+    "question": "One cubic centimeter of lymph is richer than an equal volume of blood in",
+    "A": "erythrocytes",
+    "B": "leucocytes",
+    "C": "amino acids",
+    "D": "glucose",
+    "E": "platelets",
+    "answer": "B"
+  },
+  {
+    "id": 407,
+    "question": "The oxidative part of the respiration process takes place in the",
+    "A": "mitochondria",
+    "B": "ribosomes",
+    "C": "endoplasmic reticulum",
+    "D": "Golgi bodies",
+    "E": "nucleus",
+    "answer": "A"
+  },
+  {
+    "id": 408,
+    "question": "Fatigue of leg muscles may occur after riding many kilometers on a bicycle because of",
+    "A": "insufficient glucose",
+    "B": "excess carbon dioxide",
+    "C": "excess protein",
+    "D": "insufficient oxygen",
+    "E": "lactic acid accumulation",
+    "answer": "D"
+  },
+  {
+    "id": 409,
+    "question": "The function of the loop of Henle is to",
+    "A": "increase the flow of urine",
+    "B": "concentrate amino acids in the kidney tissue",
+    "C": "concentrate sodium chloride in the medulla of the kidney",
+    "D": "increase the volume of urine",
+    "E": "reabsorb water",
+    "answer": "C"
+  },
+  {
+    "id": 410,
+    "question": "Which of the plants is likely to have broad leaves with thin cuticle? (from graph)",
+    "A": "R",
+    "B": "S",
+    "C": "T",
+    "D": "U",
+    "E": "None",
+    "answer": "A"
+  },
+  {
+    "id": 411,
+    "question": "Which of the plants is likely to be a desert species? (from graph)",
+    "A": "U",
+    "B": "T",
+    "C": "S",
+    "D": "R",
+    "E": "None",
+    "answer": "A"
+  },
+  {
+    "id": 412,
+    "question": "Sclerenchyma cells are lignified to",
+    "A": "strengthen and support the plant",
+    "B": "transport synthesized food",
+    "C": "conduct water and salt",
+    "D": "protect the plant from injury",
+    "E": "store food",
+    "answer": "A"
+  },
+  {
+    "id": 413,
+    "question": "The pineapple fruit is best described as",
+    "A": "aggregate, succulent and indehiscent",
+    "B": "aggregate, succulent and dehiscent",
+    "C": "multiple, succulent and indehiscent",
+    "D": "multiple, succulent and dehiscent",
+    "E": "simple, succulent and indehiscent",
+    "answer": "C"
+  },
+  {
+    "id": 414,
+    "question": "The flower shown above is",
+    "A": "complete, regular, hermaphroditic with inferior ovary",
+    "B": "incomplete, regular, staminate with inferior ovary",
+    "C": "complete, regular, hermaphroditic with superior ovary",
+    "D": "incomplete, irregular, pistillate with superior ovary",
+    "E": "complete, irregular, hermaphroditic with inferior ovary",
+    "answer": "A"
+  },
+  {
+    "id": 415,
+    "question": "A flower showing radial symmetry is said to be",
+    "A": "pentamerous",
+    "B": "protandrous",
+    "C": "protogynous",
+    "D": "actinomorphic",
+    "E": "zygomorphic",
+    "answer": "D"
+  },
+  {
+    "id": 416,
+    "question": "A samara differs from a cypsela by having",
+    "A": "an extended pericarp",
+    "B": "a hard pericarp",
+    "C": "a pericarp fused with the seed coat",
+    "D": "some hairy outgrowths on the pericarp",
+    "E": "a fleshy pericarp",
+    "answer": "A"
+  },
+  {
+    "id": 417,
+    "question": "The plantain reproduces asexually by",
+    "A": "suckers",
+    "B": "buds",
+    "C": "fragments",
+    "D": "spores",
+    "E": "rhizomes",
+    "answer": "A"
+  },
+  {
+    "id": 418,
+    "question": "Growth can best be determined in a population of Spirogyra by measuring the",
+    "A": "total lengths of the filaments",
+    "B": "total widths of the filaments",
+    "C": "rate of photosynthesis in the population",
+    "D": "dry weight of the organism",
+    "E": "number of cells",
+    "answer": "D"
+  },
+  {
+    "id": 419,
+    "question": "Most cells in higher animals retain their power of division EXCEPT",
+    "A": "lymphocytes",
+    "B": "nerve cells",
+    "C": "malpighian cells",
+    "D": "germ cells",
+    "E": "epithelial cells",
+    "answer": "B"
+  },
+  {
+    "id": 420,
+    "question": "A severe deficiency of thyroxin results in",
+    "A": "diabetes mellitus",
+    "B": "sexual underdevelopment",
+    "C": "cretinism",
+    "D": "gigantism",
+    "E": "myxedema",
+    "answer": "C"
+  },
+  {
+    "id": 421,
+    "question": "The growth of a coleoptile towards unilateral light source is due to",
+    "A": "rapid rate of photosynthesis",
+    "B": "unequal distribution of auxin",
+    "C": "the effect of geotropism",
+    "D": "the effect of photolysis",
+    "E": "cell elongation",
+    "answer": "B"
+  },
+  {
+    "id": 422,
+    "question": "The sequence of ear ossicles from the fenestra ovalis is",
+    "A": "malleus, incus and stapes",
+    "B": "malleus, stapes and incus",
+    "C": "stapes, incus and malleus",
+    "D": "stapes, malleus and incus",
+    "E": "incus, malleus and stapes",
+    "answer": "C"
+  },
+  {
+    "id": 423,
+    "question": "The centre for controlling body temperature in the brain is the",
+    "A": "cerebrum",
+    "B": "cerebellum",
+    "C": "medulla oblongata",
+    "D": "hypothalamus",
+    "E": "pituitary gland",
+    "answer": "D"
+  },
+  {
+    "id": 424,
+    "question": "Unlike auxins, gibberellins",
+    "A": "induce the formation of adventitious roots",
+    "B": "do not affect leaf and fruit abscission",
+    "C": "cannot stimulate stem elongation",
+    "D": "are quite effective as herbicides",
+    "E": promote seed germination",
+    "answer": "B"
+  },
+  {
+    "id": 425,
+    "question": "A gene which expresses itself only in the homozygous condition is",
+    "A": "a mutant",
+    "B": "dominant",
+    "C": "recessive",
+    "D": "lethal",
+    "E": "epistatic",
+    "answer": "C"
+  },
+  {
+    "id": 426,
+    "question": "An example of monohybrid inheritance in man is",
+    "A": "astigmatism",
+    "B": "cretinism",
+    "C": "hyperthyroidism",
+    "D": "albinism",
+    "E": "diabetes",
+    "answer": "D"
+  },
+  {
+    "id": 427,
+    "question": "If a plant, homozygous for round and yellow (RR;YY), is crossed with a wrinkled green type (rr;yy) all of the resulting seeds will be",
+    "A": "blue and wrinkled",
+    "B": "round and yellow",
+    "C": "wrinkled and yellow",
+    "D": "round and greenish-yellow",
+    "E": "wrinkled and green",
+    "answer": "B"
+  },
+  {
+    "id": 428,
+    "question": "The ratio of carriers to sicklers in the F1 generation derived from a parental cross of two carriers of haemoglobin S gene is",
+    "A": "3:1",
+    "B": "1:3",
+    "C": "2:1",
+    "D": "1:2",
+    "E": "1:1",
+    "answer": "C"
+  },
+  {
+    "id": 429,
+    "question": "In which of the following crosses will all the female offspring be colour blind?",
+    "A": "colour blind mother x colour blind father",
+    "B": "colour blind mother x normal father",
+    "C": "carrier mother x colour blind father",
+    "D": "carrier mother x normal father",
+    "E": "normal mother x colour blind father",
+    "answer": "A"
+  },
+  {
+    "id": 430,
+    "question": "Which of the following relates to edaphic factors?",
+    "A": "The structure of the earth's surface",
+    "B": "The influence of living organisms on each other",
+    "C": "Temperature, rainfall and humidity",
+    "D": "The influence of soils on plants and animals",
+    "E": "Wind and light intensity",
+    "answer": "D"
+  },
+  {
+    "id": 431,
+    "question": "Epiphytes growing on the branches of trees provide an example of the relationship known as",
+    "A": "parasitism",
+    "B": "commensalism",
+    "C": "apophytism",
+    "D": "holophytism",
+    "E": "symbiosis",
+    "answer": "B"
+  },
+  {
+    "id": 432,
+    "question": "Poliomyelitis is an infectious disease caused by",
+    "A": "virus",
+    "B": "protozoan",
+    "C": "bacterium",
+    "D": "fungus",
+    "E": "rickettsia",
+    "answer": "A"
+  },
+  {
+    "id": 433,
+    "question": "One of the functions of UNICEF is to",
+    "A": "prevent and control major diseases",
+    "B": "prevent disease outbreak by administering vaccines",
+    "C": "improve the health and nutrition of children and nursing mothers",
+    "D": "monitor environment pollution",
+    "E": "provide education for all",
+    "answer": "C"
+  },
+  {
+    "id": 434,
+    "question": "Nitrifying bacteria are important because they",
+    "A": "release nitrogen to the atmosphere",
+    "B": "convert atmospheric nitrogen to ammonia",
+    "C": "combine ammonia with nitrogen",
+    "D": "oxidize ammonium salts to nitrates",
+    "E": "reduce nitrates to nitrogen",
+    "answer": "D"
+  },
+  {
+    "id": 435,
+    "question": "The process by which lime is added to clay soils is known as",
+    "A": "sedimentation",
+    "B": "flocculation",
+    "C": "leaching",
+    "D": "manuring",
+    "E": "aeration",
+    "answer": "B"
+  },
+  {
+    "id": 436,
+    "question": "The function of ribosomes in cells is",
+    "A": "protein synthesis",
+    "B": "starch synthesis",
+    "C": "transport of materials",
+    "D": "lipid storage",
+    "E": "energy production",
+    "answer": "A"
+  },
+  {
+    "id": 437,
+    "question": "Which of the following structures is common to Euglena, white blood cell and Amoeba?",
+    "A": "Vacuole",
+    "B": "Cell wall",
+    "C": "Cilia",
+    "D": "Cell membrane",
+    "E": "Chloroplast",
+    "answer": "D"
+  },
+  {
+    "id": 438,
+    "question": "The term 'Thallophyta' refers to",
+    "A": "ferns and mosses",
+    "B": "algae and fungi",
+    "C": "mosses and liverworts",
+    "D": "fungi and ferns",
+    "E": "lichens and mosses",
+    "answer": "B"
+  },
+  {
+    "id": 439,
+    "question": "The following organisms are hermaphrodites EXCEPT",
+    "A": "snail",
+    "B": "Taenia",
+    "C": "Schistosoma",
+    "D": "earthworm",
+    "E": "Ascaris",
+    "answer": "E"
+  },
+  {
+    "id": 440,
+    "question": "Parasitic forms are NOT found among",
+    "A": "Platyhelminthes",
+    "B": "Nematodes",
+    "C": "Molluscs",
+    "D": "Annelids",
+    "E": "Protozoa",
+    "answer": "C"
+  },
+  {
+    "id": 441,
+    "question": "Which of the following sets of organisms represents the correct trend from simple to complex structural organization? 1 Mollusca 2 Platyhelminthes 3 Nematoda 4 Protozoa",
+    "A": "4→1→2→3",
+    "B": "4→3→2→1",
+    "C": "4→2→1→3",
+    "D": "4→2→3→1",
+    "E": "4→1→3→2",
+    "answer": "D"
+  },
+  {
+    "id": 442,
+    "question": "Spirogyra, Euglena and Chlamydomonas share many characteristics EXCEPT",
+    "A": "nutrition",
+    "B": "reproduction",
+    "C": "mobility",
+    "D": "irritability",
+    "E": "photosynthesis",
+    "answer": "C"
+  },
+  {
+    "id": 443,
+    "question": "The prothallus of a fern is equivalent to the gametophyte generation of a moss because it",
+    "A": "is inconspicuous",
+    "B": "has rhizoids",
+    "C": "bears sexual organs",
+    "D": "is multicellular",
+    "E": "is photosynthetic",
+    "answer": "C"
+  },
+  {
+    "id": 444,
+    "question": "What is the function of trichocyst in Paramecium?",
+    "A": "Movement",
+    "B": "Defence",
+    "C": "Excretion",
+    "D": "Reproduction",
+    "E": "Feeding",
+    "answer": "B"
+  },
+  {
+    "id": 445,
+    "question": "At which stage in this cycle can man be infected?",
+    "A": "2",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "E": "3",
+    "answer": "C"
+  },
+  {
+    "id": 446,
+    "question": "Which stage is found in the muscle of an infected pig?",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "E": "2",
+    "answer": "B"
+  },
+  {
+    "id": 447,
+    "question": "The long and coiled intestine of a young tadpole is an adaptation to its",
+    "A": "herbivorous diet",
+    "B": "carnivorous diet",
+    "C": "aquatic habitat",
+    "D": "insectivorous habit",
+    "E": "omnivorous diet",
+    "answer": "A"
+  },
+  {
+    "id": 448,
+    "question": "Book lungs are used for respiration in",
+    "A": "spiders",
+    "B": "insects",
+    "C": "millipedes",
+    "D": "snails",
+    "E": "crustaceans",
+    "answer": "A"
+  },
+  {
+    "id": 449,
+    "question": "Insects and millipedes have many features in common EXCEPT",
+    "A": "exoskeleton",
+    "B": "jointed appendages",
+    "C": "compound eyes",
+    "D": "segmented body",
+    "E": "antennae",
+    "answer": "C"
+  },
+  {
+    "id": 450,
+    "question": "The major function of the swim-bladder in fishes is",
+    "A": "breathing",
+    "B": "buoyancy",
+    "C": "swimming",
+    "D": "diving",
+    "E": "sound production",
+    "answer": "B"
+  },
+  {
+    "id": 451,
+    "question": "Which of the following statements gives the BEST description of bark?",
+    "A": "Tissues outside the vascular cambium",
+    "B": "Cork-like tissues found only in stems",
+    "C": "Brown tissues never found in primary growth",
+    "D": "Cork-like tissues of old trees",
+    "E": "Dead outer layer of stems and roots",
+    "answer": "A"
+  },
+  {
+    "id": 452,
+    "question": "In the transverse section of the leaf of maize, vascular bundles are arranged in",
+    "A": "a row",
+    "B": "one circle",
+    "C": "alternate positions",
+    "D": "two circles",
+    "E": "scattered",
+    "answer": "A"
+  },
+  {
+    "id": 453,
+    "question": "If an animal has diastema, it would NOT possess",
+    "A": "incisors",
+    "B": "canines",
+    "C": "premolars",
+    "D": "molars",
+    "E": "all teeth",
+    "answer": "B"
+  },
+  {
+    "id": 454,
+    "question": "If the gall bladder of a mammal is damaged, which of the following will be most seriously affected?",
+    "A": "Glycolysis",
+    "B": "Digestion of starch",
+    "C": "Digestion of fats and oils",
+    "D": "Digestion of proteins",
+    "E": "Absorption of vitamins",
+    "answer": "C"
+  },
+  {
+    "id": 455,
+    "question": "Which of the following will be first digested if ingested at the same time?",
+    "A": "Cooked beans",
+    "B": "Cooked rice",
+    "C": "Cod liver oil",
+    "D": "Roasted beef",
+    "E": "Bread",
+    "answer": "B"
+  },
+  {
+    "id": 456,
+    "question": "If the phloem of a healthy plant is killed by heat treatment the",
+    "A": "upward movement of salts will cease",
+    "B": "food manufacture in the leaves will accumulate",
+    "C": "whole plant will die immediately",
+    "D": "leaves of the plant will become yellow",
+    "E": "roots will die first",
+    "answer": "E"
+  },
+  {
+    "id": 457,
+    "question": "In the mammalian respiratory system, exchange of gases occurs in the",
+    "A": "lungs",
+    "B": "bronchi",
+    "C": "bronchioles",
+    "D": "alveoli",
+    "E": "trachea",
+    "answer": "D"
+  },
+  {
+    "id": 458,
+    "question": "The main waste products formed in plants are",
+    "A": "alkaloids, tannins and resins",
+    "B": "water, alkaloids and carbon dioxide",
+    "C": "water, carbon dioxide and oxygen",
+    "D": "nitrogenous compounds and oxygen",
+    "E": "oxygen and water",
+    "answer": "C"
+  },
+  {
+    "id": 459,
+    "question": "In the kidney the malpighian corpuscle is located in the",
+    "A": "medulla",
+    "B": "hilum",
+    "C": "cortex",
+    "D": "pelvis",
+    "E": "ureter",
+    "answer": "C"
+  },
+  {
+    "id": 460,
+    "question": "The skin, through the sweat glands, functions as",
+    "A": "an excretory organ",
+    "B": "a respiratory organ",
+    "C": "a sensory organ",
+    "D": "a protective organ",
+    "E": "a thermoregulatory organ",
+    "answer": "A"
+  },
+  {
+    "id": 461,
+    "question": "Parenchyma cells serve as supporting tissue when they",
+    "A": "contain chloroplasts",
+    "B": "have crystals",
+    "C": "become flaccid",
+    "D": "become turgid",
+    "E": "become lignified",
+    "answer": "D"
+  },
+  {
+    "id": 462,
+    "question": "Taxism differs from tropism because",
+    "A": "the whole organism is affected",
+    "B": "it is a directional movement",
+    "C": "it is a response to multi-directional stimuli",
+    "D": "part of the organism is affected",
+    "E": "it is a growth movement",
+    "answer": "A"
+  },
+  {
+    "id": 463,
+    "question": "A dry dehiscent fruit which breaks up into one-seeded parts is",
+    "A": "schizocarp",
+    "B": "capsule",
+    "C": "follicle",
+    "D": "legume",
+    "E": "siliqua",
+    "answer": "A"
+  },
+  {
+    "id": 464,
+    "question": "Airspaces are characteristic of seeds or fruits dispersed by",
+    "A": "birds",
+    "B": "water",
+    "C": "wind",
+    "D": "explosive mechanism",
+    "E": "animals",
+    "answer": "B"
+  },
+  {
+    "id": 465,
+    "question": "In vegetative propagation, which of the following requires part of another plant to develop?",
+    "A": "Scion",
+    "B": "Bulb",
+    "C": "Rhizome",
+    "D": "Sucker",
+    "E": "Corm",
+    "answer": "A"
+  },
+  {
+    "id": 466,
+    "question": "Which of these plant groups are normally propagated by asexual means?",
+    "A": "Banana, yam, pineapple and cassava",
+    "B": "Yam, cassava, rubber and banana",
+    "C": "Yam, cassava, orange and banana",
+    "D": "Banana, cassava, coffee and pineapple",
+    "E": "Maize, rice, wheat and millet",
+    "answer": "A"
+  },
+  {
+    "id": 467,
+    "question": "In a mammal, the placenta performs functions similar to those of the",
+    "A": "lungs, kidneys and digestive system",
+    "B": "lungs, heart and nervous system",
+    "C": "liver, intestines and reproductive system",
+    "D": "intestines, heart and digestive system",
+    "E": "lungs, liver and kidneys",
+    "answer": "A"
+  },
+  {
+    "id": 468,
+    "question": "The radicle of a bean seedling grows most rapidly in the region",
+    "A": "of the root tip",
+    "B": "just above the root tip",
+    "C": "just around the root tip",
+    "D": "just below the root tip",
+    "E": "of the root cap",
+    "answer": "B"
+  },
+  {
+    "id": 469,
+    "question": "The main function of the choroid is",
+    "A": "protection of the eyeball",
+    "B": "transmission of light",
+    "C": "supply of nutrients to tissues of the eye",
+    "D": "converging light",
+    "E": "absorbing stray light",
+    "answer": "E"
+  },
+  {
+    "id": 470,
+    "question": "What part of the central nervous system is concerned with answering an examination question?",
+    "A": "Cerebrum",
+    "B": "Cerebellum",
+    "C": "Medulla oblongata",
+    "D": "Spinal cord",
+    "E": "Hypothalamus",
+    "answer": "A"
+  },
+  {
+    "id": 471,
+    "question": "If a dark-skinned woman (Bb) marries an albino man (bb) and they have four children, how many of the children will be dark-skinned?",
+    "A": "3",
+    "B": "2",
+    "C": "1",
+    "D": "0",
+    "E": "4",
+    "answer": "B"
+  },
+  {
+    "id": 472,
+    "question": "A red-coloured flower when crossed with a white-coloured one produced pink flowers. This is an example of",
+    "A": "complete dominance",
+    "B": "blending inheritance",
+    "C": "interaction of genes",
+    "D": "back crossing",
+    "E": "incomplete dominance",
+    "answer": "E"
+  },
+  {
+    "id": 473,
+    "question": "The turbidity of a pond can be measured using the",
+    "A": "anemometer",
+    "B": "Secchi disc",
+    "C": "theodolite",
+    "D": "hydrometer",
+    "E": "barometer",
+    "answer": "B"
+  },
+  {
+    "id": 474,
+    "question": "The most important substances necessary for the maintenance of life are carbon, oxygen,",
+    "A": "hydrogen, soil and enzymes",
+    "B": "hydrogen, salt and water",
+    "C": "nitrogen, salt and soil",
+    "D": "nitrogen, salt and water",
+    "E": "hydrogen, nitrogen and water",
+    "answer": "B"
+  },
+  {
+    "id": 475,
+    "question": "If an organism obtains its food by means of haustoria, it is said to be",
+    "A": "holophytic",
+    "B": "heterophytic",
+    "C": "saprophytic",
+    "D": "parasitic",
+    "E": "autotrophic",
+    "answer": "D"
+  },
+  {
+    "id": 476,
+    "question": "Which of the following relationships involves only one organism?",
+    "A": "Saprophytism",
+    "B": "Commensalism",
+    "C": "Parasitism",
+    "D": "Symbiosis",
+    "E": "Mutualism",
+    "answer": "A"
+  },
+  {
+    "id": 477,
+    "question": "Which of the following has the greatest influence on the distribution of animals in marine and fresh water habitats?",
+    "A": "pH",
+    "B": "Salinity",
+    "C": "Water current",
+    "D": "Turbidity",
+    "E": "Temperature",
+    "answer": "B"
+  },
+  {
+    "id": 478,
+    "question": "Which of these groups of animals is likely to be found in fresh water?",
+    "A": "Blood worm, pond skater and scorpion",
+    "B": "Blood worm, pond skater and dragonfly larva",
+    "C": "Pond skater, scorpion and dragonfly larva",
+    "D": "Pond skater, blood worm and ant-lion",
+    "E": "Crab, shrimp and lobster",
+    "answer": "B"
+  },
+  {
+    "id": 479,
+    "question": "One of the characteristics of plants in the savanna is the",
+    "A": "possession of thin, smooth barks",
+    "B": "possession of large tap roots",
+    "C": "production of seedlings on mother plant",
+    "D": "possession of thick, flaky barks",
+    "E": "possession of broad leaves",
+    "answer": "D"
+  },
+  {
+    "id": 480,
+    "question": "Which of the following diseases can be contracted in areas with fast flowing rivers?",
+    "A": "Schistosomiasis",
+    "B": "Elephantiasis",
+    "C": "Syphilis",
+    "D": "Onchocerciasis",
+    "E": "Malaria",
+    "answer": "D"
+  },
+  {
+    "id": 481,
+    "question": "Which of the following causes pollution?",
+    "A": "Consumption of canned drinks",
+    "B": "The addition of fertilizer to farmland",
+    "C": "Respiration of living organisms",
+    "D": "Burning of refuse",
+    "E": "Photosynthesis",
+    "answer": "D"
+  },
+  {
+    "id": 482,
+    "question": "The mineral nutrient that is most bound to the soil is",
+    "A": "phosphorus",
+    "B": "calcium",
+    "C": "iron",
+    "D": "potassium",
+    "E": "nitrogen",
+    "answer": "A"
+  },
+  {
+    "id": 483,
+    "question": "The mineral nutrient that easily gets leached out of the soil is",
+    "A": "phosphorus",
+    "B": "calcium",
+    "C": "magnesium",
+    "D": "nitrate",
+    "E": "potassium",
+    "answer": "D"
+  },
+  {
+    "id": 484,
+    "question": "Most commercial fertilizers are rich in salts of",
+    "A": "sodium, iron and calcium",
+    "B": "nitrogen, phosphorus and potassium",
+    "C": "iron, copper and nitrogen",
+    "D": "calcium, sodium and phosphorus",
+    "E": "magnesium, sulphur and calcium",
+    "answer": "B"
+  },
+  {
+    "id": 485,
+    "question": "Dead plants and animals are decomposed by bacteria and fungi into",
+    "A": "simple organic compounds",
+    "B": "complex organic compounds",
+    "C": "nitrogen gas",
+    "D": "oxygen and water",
+    "E": "carbon dioxide and water",
+    "answer": "A"
+  },
+  {
+    "id": 486,
+    "question": "The structure labelled 5 is the (cell diagram)",
+    "A": "nucleolus",
+    "B": "Golgi body",
+    "C": "mitochondrion",
+    "D": "vacuole",
+    "E": "ribosome",
+    "answer": "C"
+  },
+  {
+    "id": 487,
+    "question": "Which of the labelled parts of the cell contains ribonucleic acid?",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "5",
+    "E": "4",
+    "answer": "A"
+  },
+  {
+    "id": 488,
+    "question": "Which structure is known as the power house of the cell?",
+    "A": "6",
+    "B": "5",
+    "C": "4",
+    "D": "3",
+    "E": "2",
+    "answer": "B"
+  },
+  {
+    "id": 489,
+    "question": "When a virus is placed in a non-living medium it",
+    "A": "becomes dehydrated",
+    "B": "forms spores",
+    "C": "forms flagella",
+    "D": "becomes crystallized",
+    "E": "dies",
+    "answer": "D"
+  },
+  {
+    "id": 490,
+    "question": "A characteristic of the phylum Coelenterata is that",
+    "A": "most of them are marine",
+    "B": "they possess a gut with a single opening",
+    "C": "they possess numerous pores on their body",
+    "D": "they are bilaterally symmetrical",
+    "E": "they have a mesoderm",
+    "answer": "B"
+  },
+  {
+    "id": 491,
+    "question": "A multinucleate body without internal cell boundaries is characteristic of",
+    "A": "bryophytes",
+    "B": "fungi",
+    "C": "algae",
+    "D": "gymnosperms",
+    "E": "angiosperms",
+    "answer": "B"
+  },
+  {
+    "id": 492,
+    "question": "Double fertilization is a unique feature of",
+    "A": "angiosperms",
+    "B": "bryophytes",
+    "C": "pteridophytes",
+    "D": "algae",
+    "E": "gymnosperms",
+    "answer": "A"
+  },
+  {
+    "id": 493,
+    "question": "Which of the following phyla have members with both internal and external segmentation?",
+    "A": "Platyhelminthes",
+    "B": "Nematoda",
+    "C": "Annelida",
+    "D": "Mollusca",
+    "E": "Coelenterata",
+    "answer": "C"
+  },
+  {
+    "id": 494,
+    "question": "Mineral salts can be absorbed into the roots by",
+    "A": "osmosis only",
+    "B": "osmosis and diffusion",
+    "C": "diffusion and active transport",
+    "D": "imbibition only",
+    "E": "active transport only",
+    "answer": "C"
+  },
+  {
+    "id": 495,
+    "question": "Which of the following is a common characteristic of crustaceans?",
+    "A": "Possession of a pair of antennae",
+    "B": "Possession of two pairs of antennae",
+    "C": "Each segment has a pair of walking legs",
+    "D": "Four pairs of walking legs on the cephalothorax",
+    "E": "Possession of compound eyes",
+    "answer": "B"
+  },
+  {
+    "id": 496,
+    "question": "The pedipalpi in spiders are used for",
+    "A": "grasping",
+    "B": "walking",
+    "C": "feeling",
+    "D": "web spinning",
+    "E": "feeding",
+    "answer": "A"
+  },
+  {
+    "id": 497,
+    "question": "The body of a snail is divided into head,",
+    "A": "thorax and abdomen",
+    "B": "visceral mass and abdomen",
+    "C": "thorax and foot",
+    "D": "visceral mass and foot",
+    "E": "cephalothorax and abdomen",
+    "answer": "D"
+  },
+  {
+    "id": 498,
+    "question": "Which of the labelled parts is used for feeling? (snail diagram)",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "E": "5",
+    "answer": "C"
+  },
+  {
+    "id": 499,
+    "question": "The structure labelled 2 is the",
+    "A": "compound eye",
+    "B": "ocellus",
+    "C": "antenna",
+    "D": "labial palp",
+    "E": "maxilla",
+    "answer": "C"
+  },
+  {
+    "id": 500,
+    "question": "In a dicotyledonous stem, each companion cell is found beside the",
+    "A": "endodermal cell",
+    "B": "xylem vessel",
+    "C": "sieve tube",
+    "D": "pericyclic fibre",
+    "E": "cortex cell",
+    "answer": "C"
+  },
+  {
+    "id": 501,
+    "question": "Which of the structures is the molar? (tooth diagram)",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "E": "5",
+    "answer": "D"
+  },
+  {
+    "id": 502,
+    "question": "What is the function of 3? (tooth diagram)",
+    "A": "Cutting off large pieces of food",
+    "B": "Seizure and tearing of prey",
+    "C": "Grinding of food",
+    "D": "Tearing of flesh only",
+    "E": "Crushing of food",
+    "answer": "C"
+  },
+  {
+    "id": 503,
+    "question": "If a healthy potted plant is continuously kept in dim light",
+    "A": "the rate of respiration may equal that of photosynthesis",
+    "B": "more carbon dioxide and water are taken in",
+    "C": "respiration may be halted",
+    "D": "the volume of oxygen released increases",
+    "E": "the plant dies quickly",
+    "answer": "A"
+  },
+  {
+    "id": 504,
+    "question": "The pancreatic juice contains the enzymes amylopsin,",
+    "A": "pepsin and trypsinogen",
+    "B": "rennin and steapsin",
+    "C": "steapsin and trypsinogen",
+    "D": "steapsin and ptyalin",
+    "E": "maltase and pepsin",
+    "answer": "C"
+  },
+  {
+    "id": 505,
+    "question": "Aged erythrocytes are destroyed in the",
+    "A": "pancreas",
+    "B": "liver",
+    "C": "lymph nodes",
+    "D": "kidney",
+    "E": "spleen",
+    "answer": "B"
+  },
+  {
+    "id": 506,
+    "question": "The seedlings in a rice field were found to have thin lanky growth with reddish leaves and poor root development. This is because the soil lacks",
+    "A": "sulphur",
+    "B": "phosphorus",
+    "C": "potassium",
+    "D": "iron",
+    "E": "nitrogen",
+    "answer": "B"
+  },
+  {
+    "id": 507,
+    "question": "There will be agglutination when",
+    "A": "Group A serum mixes with Group A erythrocytes",
+    "B": "Group A serum mixes with Group B erythrocytes",
+    "C": "Group AB serum mixes with Group O erythrocytes",
+    "D": "Group B serum mixes with Group B erythrocytes",
+    "E": "Group O serum mixes with Group O erythrocytes",
+    "answer": "B"
+  },
+  {
+    "id": 508,
+    "question": "Which of the following is the function of lymph?",
+    "A": "Carries hormones round the body",
+    "B": "Transports nutrients and oxygen from blood capillaries to the cells",
+    "C": "Distributes heat uniformly round the body",
+    "D": "Conveys amino acids and glucose from the small intestine to the liver",
+    "E": "Produces antibodies",
+    "answer": "B"
+  },
+  {
+    "id": 509,
+    "question": "The type of joint at the point labelled 5 is the (skeleton diagram)",
+    "A": "pivot joint",
+    "B": "gliding joint",
+    "C": "ball and socket joint",
+    "D": "hinge joint",
+    "E": "saddle joint",
+    "answer": "D"
+  },
+  {
+    "id": 510,
+    "question": "Which of the labelled bones is the ulna? (skeleton diagram)",
+    "A": "1",
+    "B": "3",
+    "C": "4",
+    "D": "5",
+    "E": "2",
+    "answer": "C"
+  },
+  {
+    "id": 511,
+    "question": "What is the name of the structure labelled 2? (skeleton diagram)",
+    "A": "Odontoid process",
+    "B": "Olecranon process",
+    "C": "Patella",
+    "D": "Condyle",
+    "E": "Trochlea",
+    "answer": "B"
+  },
+  {
+    "id": 512,
+    "question": "The lumbar vertebra when compared with a thoracic vertebra has a",
+    "A": "longer neural spine",
+    "B": "wider neural canal",
+    "C": "thicker centrum",
+    "D": "shorter transverse process",
+    "E": "larger body",
+    "answer": "C"
+  },
+  {
+    "id": 513,
+    "question": "Wind-pollinated flowers usually have",
+    "A": "rough pollen grains",
+    "B": "sticky stigmas",
+    "C": "small and short stigmas",
+    "D": "long styles",
+    "E": "brightly coloured petals",
+    "answer": "C"
+  },
+  {
+    "id": 514,
+    "question": "The components of castor oil seed and the maize grain are similar EXCEPT for the",
+    "A": "number of cotyledons",
+    "B": "location of the embryo",
+    "C": "number of radicles",
+    "D": "number of plumules",
+    "E": "presence of endosperm",
+    "answer": "A"
+  },
+  {
+    "id": 515,
+    "question": "A corm differs from a bulb in that",
+    "A": "its stem is the main food storage organ",
+    "B": "it has a flattened disc-shaped stem",
+    "C": "buds are absent in the axils of the leaves",
+    "D": "adventitious roots are present",
+    "E": "it has fleshy leaves",
+    "answer": "A"
+  },
+  {
+    "id": 516,
+    "question": "Exponential increase in the population of an organism is a characteristic feature of",
+    "A": "binary fission",
+    "B": "sexual reproduction",
+    "C": "budding",
+    "D": "vegetative propagation",
+    "E": "spore formation",
+    "answer": "A"
+  },
+  {
+    "id": 517,
+    "question": "The irreversible life process by which new protoplasm is added to increase the size and weight of an organism can be termed",
+    "A": "anabolism",
+    "B": "catabolism",
+    "C": "growth",
+    "D": "development",
+    "E": "metabolism",
+    "answer": "C"
+  },
+  {
+    "id": 518,
+    "question": "Fruit enlargement can be induced by spraying young ovary with",
+    "A": "cytokinin, abscisic acid and ethylene",
+    "B": "gibberellin, ethylene and abscisic acid",
+    "C": "auxin, abscisic acid and ethylene",
+    "D": "auxin, cytokinin and gibberellin",
+    "E": "auxin and ethylene only",
+    "answer": "D"
+  },
+  {
+    "id": 519,
+    "question": "A fundamental similarity between nervous and hormonal system is that both",
+    "A": "involve chemical transmission",
+    "B": "have widespread effects",
+    "C": "shed chemicals into the blood stream",
+    "D": "evoke rapid responses",
+    "E": "are controlled by the brain",
+    "answer": "A"
+  },
+  {
+    "id": 520,
+    "question": "The region that controls most of the unconscious processes of a mammalian body is the",
+    "A": "cerebellum",
+    "B": "cerebrum",
+    "C": "spinal cord",
+    "D": "medulla oblongata",
+    "E": "hypothalamus",
+    "answer": "D"
+  },
+  {
+    "id": 521,
+    "question": "During cell division, the two strands of chromosomes are joined at a point called",
+    "A": "spindle",
+    "B": "chromatid",
+    "C": "centromere",
+    "D": "aster",
+    "E": "centriole",
+    "answer": "C"
+  },
+  {
+    "id": 522,
+    "question": "When the two alleles present in an organism are of the same type, the genotype is described as",
+    "A": "heterozygous",
+    "B": "heterogamous",
+    "C": "homozygous",
+    "D": "homologous",
+    "E": "hemizygous",
+    "answer": "C"
+  },
+  {
+    "id": 523,
+    "question": "If parents with blood groups AB and OO produce six children,",
+    "A": "three of them will have group B",
+    "B": "two of them will have group A",
+    "C": "all the offspring will have group O",
+    "D": "none of them will have group A",
+    "E": "all will have group AB",
+    "answer": "A"
+  },
+  {
+    "id": 524,
+    "question": "Which of the following is a sex-linked character?",
+    "A": "Sickle-cell anaemia",
+    "B": "Tongue-rolling",
+    "C": "Skin colour",
+    "D": "Colour blindness",
+    "E": "Blood group",
+    "answer": "D"
+  },
+  {
+    "id": 525,
+    "question": "In an ecosystem, the LEAST efficient energy transfer link is from",
+    "A": "producers to primary consumers",
+    "B": "sun to producers",
+    "C": "primary consumers to secondary consumers",
+    "D": "secondary consumers to decomposers",
+    "E": "secondary consumers to tertiary consumers",
+    "answer": "A"
+  },
+  {
+    "id": 526,
+    "question": "Lichen is an example of",
+    "A": "a saprophytic organism",
+    "B": "a symbiotic association",
+    "C": "an epiphytic plant",
+    "D": "a carnivorous plant",
+    "E": "a parasitic plant",
+    "answer": "B"
+  },
+  {
+    "id": 527,
+    "question": "A physiological adaptation of plants to the problem of excessive water loss is",
+    "A": "reduction in the number of stomata",
+    "B": "reversal of the normal stomatal rhythm",
+    "C": "possession of shallow roots",
+    "D": "possession of waxy cuticle",
+    "E": "sunken stomata",
+    "answer": "B"
+  },
+  {
+    "id": 528,
+    "question": "Which of the ways of controlling bilharzia can result in pollution?",
+    "A": "Clearing water weeds on which the snails feed",
+    "B": "Treating infected people with drugs",
+    "C": "Preventing contamination of water by infected urine and faeces",
+    "D": "Applying chemicals to kill the snails",
+    "E": "Draining swamps",
+    "answer": "D"
+  },
+  {
+    "id": 529,
+    "question": "Which of the following diseases can be caused by a bacterium?",
+    "A": "Ringworm",
+    "B": "Poliomyelitis",
+    "C": "Malaria",
+    "D": "Syphilis",
+    "E": "AIDS",
+    "answer": "D"
+  },
+  {
+    "id": 530,
+    "question": "Which of the following is a dangerous product of coal burning?",
+    "A": "Sulphur dioxide",
+    "B": "Carbon dioxide",
+    "C": "Carbon",
+    "D": "Nitrogen",
+    "E": "Oxygen",
+    "answer": "A"
+  },
+  {
+    "id": 531,
+    "question": "5g of oven dried soil was heated in a furnace for 24 hours, after cooling, it weighed 4.8g. What is the amount of humus in the soil?",
+    "A": "40.0g per 100g dry soil",
+    "B": "4.4g per 100g dry soil",
+    "C": "4.0g per 100g dry soil",
+    "D": "0.4g per 100g dry soil",
+    "E": "0.2g per 100g dry soil",
+    "answer": "C"
+  },
+  {
+    "id": 532,
+    "question": "Most irrigated lands often become unproductive in later years because of",
+    "A": "loss of fertility",
+    "B": "increase in salinity",
+    "C": "soil erosion",
+    "D": "loss of water",
+    "E": "alkalinity",
+    "answer": "B"
+  },
+  {
+    "id": 533,
+    "question": "Farmers practice crop rotation because it",
+    "A": "helps to prevent soil erosion",
+    "B": "allows two crops to be planted at the same time",
+    "C": "helps to conserve soil fertility",
+    "D": "is an alternative to shifting cultivation",
+    "E": "increases yield",
+    "answer": "C"
+  },
+  {
+    "id": 534,
+    "question": "In which of the habitats will the plants show xeromorphic features most prominently?",
+    "A": "X",
+    "B": "R",
+    "C": "P",
+    "D": "Q",
+    "E": "S",
+    "answer": "A"
+  },
+  {
+    "id": 535,
+    "question": "Which ecological factor exerts the greatest influence on the structure of soil profiles?",
+    "A": "Topographic",
+    "B": "Edaphic",
+    "C": "Biotic",
+    "D": "Climatic",
+    "E": "Human",
+    "answer": "D"
+  },
+  {
+    "id": 536,
+    "question": "Viruses are considered to be living organisms because they",
+    "A": "possess transmittable characters",
+    "B": "move from one place to another",
+    "C": "respond to stimulation",
+    "D": "ingest food materials",
+    "E": "reproduce inside host cells",
+    "answer": "A"
+  },
+  {
+    "id": 537,
+    "question": "Which of the following characteristics is common to Amoeba and Paramecium?",
+    "A": "Oral groove",
+    "B": "Trichocyst",
+    "C": "Contractile vacuole",
+    "D": "Cilia",
+    "E": "Pseudopodia",
+    "answer": "C"
+  },
+  {
+    "id": 538,
+    "question": "Hydra removes undigested food by",
+    "A": "passing it through the anus",
+    "B": "passing it through the mouth",
+    "C": "means of a contractile vacuole",
+    "D": "egesting it through the body surface",
+    "E": "diffusion",
+    "answer": "B"
+  },
+  {
+    "id": 539,
+    "question": "Which of the following groups of invertebrates reproduces by budding?",
+    "A": "Arthropoda",
+    "B": "Annelida",
+    "C": "Mollusca",
+    "D": "Coelenterata",
+    "E": "Nematoda",
+    "answer": "D"
+  },
+  {
+    "id": 540,
+    "question": "The algae, bryophytes and pteridophytes are similar in that they",
+    "A": "are seaweeds",
+    "B": "have no vascular tissues",
+    "C": "require moisture for fertilization",
+    "D": "are microscopic plants",
+    "E": "produce seeds",
+    "answer": "C"
+  },
+  {
+    "id": 541,
+    "question": "The spores of ferns are dispersed by",
+    "A": "wind",
+    "B": "water",
+    "C": "insects",
+    "D": "explosive mechanism",
+    "E": "animals",
+    "answer": "A"
+  },
+  {
+    "id": 542,
+    "question": "In bryophytes, sex organs are produced in the",
+    "A": "gametophyte",
+    "B": "rhizoid",
+    "C": "protonema",
+    "D": "sporophyte",
+    "E": "seta",
+    "answer": "A"
+  },
+  {
+    "id": 543,
+    "question": "The part labelled 3 is the (twig diagram)",
+    "A": "leaf scar",
+    "B": "lenticel",
+    "C": "auxiliary bud",
+    "D": "girdle scar",
+    "E": "terminal bud",
+    "answer": "C"
+  },
+  {
+    "id": 544,
+    "question": "Which part of the twig produces auxins?",
+    "A": "4",
+    "B": "3",
+    "C": "2",
+    "D": "1",
+    "E": "5",
+    "answer": "D"
+  },
+  {
+    "id": 545,
+    "question": "Which of the following animals has homodont dentition?",
+    "A": "Rat",
+    "B": "Man",
+    "C": "Lizard",
+    "D": "Pigeon",
+    "E": "Dog",
+    "answer": "D"
+  },
+  {
+    "id": 546,
+    "question": "In which of the following does external fertilization take place?",
+    "A": "Toad",
+    "B": "Lizard",
+    "C": "Bird",
+    "D": "Cockroach",
+    "E": "Snake",
+    "answer": "A"
+  },
+  {
+    "id": 547,
+    "question": "In the tapeworm, the suckers on the scolex are used for",
+    "A": "sucking the blood of the host",
+    "B": "holding fast to the host",
+    "C": "reproduction",
+    "D": "locomotion",
+    "E": "feeding",
+    "answer": "B"
+  },
+  {
+    "id": 548,
+    "question": "A feature which adapts birds to flight is the possession of",
+    "A": "scaly legs",
+    "B": "light bones",
+    "C": "two walking legs",
+    "D": "a pointed beak",
+    "E": "feathers",
+    "answer": "B"
+  },
+  {
+    "id": 549,
+    "question": "The nephridia in the earthworm form part of the",
+    "A": "reproductive system",
+    "B": "respiratory system",
+    "C": "circulatory system",
+    "D": "excretory system",
+    "E": "nervous system",
+    "answer": "D"
+  },
+  {
+    "id": 550,
+    "question": "Which of the following diseases is rarely spread by a housefly?",
+    "A": "Yellow fever",
+    "B": "Dysentery",
+    "C": "Typhoid fever",
+    "D": "Poliomyelitis",
+    "E": "Cholera",
+    "answer": "A"
+  },
+  {
+    "id": 551,
+    "question": "Which of the following cells is thin-walled and living at maturity?",
+    "A": "Collenchyma",
+    "B": "Sieve tube",
+    "C": "Xylem vessel",
+    "D": "Sclerenchyma",
+    "E": "Tracheid",
+    "answer": "A"
+  },
+  {
+    "id": 552,
+    "question": "The mode of nutrition in which digestion is extracellular is",
+    "A": "holophytic",
+    "B": "parasitic",
+    "C": "holozoic",
+    "D": "saprophytic",
+    "E": "autotrophic",
+    "answer": "C"
+  },
+  {
+    "id": 553,
+    "question": "The first step in the process of photosynthesis is the",
+    "A": "activation of the chlorophyll",
+    "B": "photolysis of water",
+    "C": "reduction of carbon dioxide",
+    "D": "formation of sugar",
+    "E": "absorption of light energy",
+    "answer": "A"
+  },
+  {
+    "id": 554,
+    "question": "Which of the following food substances will produce a brick-red colour when warmed with Benedict's solution?",
+    "A": "Glucose",
+    "B": "Starch",
+    "C": "Egg white",
+    "D": "Maltose",
+    "E": "Sucrose",
+    "answer": "A"
+  },
+  {
+    "id": 555,
+    "question": "The organ which secretes digestive enzymes as well as hormone is the",
+    "A": "liver",
+    "B": "salivary gland",
+    "C": "pancreas",
+    "D": "spleen",
+    "E": "stomach",
+    "answer": "C"
+  },
+  {
+    "id": 556,
+    "question": "The villus in the small intestine is significant because it",
+    "A": "increases the surface area for absorption",
+    "B": "increases the surface area for digestion",
+    "C": "assists in mixing digested food",
+    "D": "assists in filtering undigested food",
+    "E": "produces digestive enzymes",
+    "answer": "A"
+  },
+  {
+    "id": 557,
+    "question": "If a ring of bark and phloem is removed from a stem, the",
+    "A": "plant dies immediately",
+    "B": "plant dies after two days",
+    "C": "movement of food is not affected",
+    "D": "movement of mineral salts is hardly affected",
+    "E": "roots die first",
+    "answer": "D"
+  },
+  {
+    "id": 558,
+    "question": "Transpiration can be measured with a",
+    "A": "photometer",
+    "B": "hygrometer",
+    "C": "potometer",
+    "D": "barometer",
+    "E": "anemometer",
+    "answer": "C"
+  },
+  {
+    "id": 559,
+    "question": "Excretory products responsible for the red, purple and blue colours of flowers are called",
+    "A": "alkaloids",
+    "B": "tannins",
+    "C": "anthocyanins",
+    "D": "resins",
+    "E": "carotenoids",
+    "answer": "C"
+  },
+  {
+    "id": 560,
+    "question": "Etiolation is caused by the influence of",
+    "A": "mineral salts",
+    "B": "water",
+    "C": "carbon dioxide",
+    "D": "light",
+    "E": "temperature",
+    "answer": "D"
+  },
+  {
+    "id": 561,
+    "question": "Muscles are indirectly attached to bones by means of",
+    "A": "ligaments",
+    "B": "membranes",
+    "C": "tendons",
+    "D": "sutures",
+    "E": "cartilage",
+    "answer": "C"
+  },
+  {
+    "id": 562,
+    "question": "Which structure is the glomerulus? (kidney diagram)",
+    "A": "5",
+    "B": "3",
+    "C": "2",
+    "D": "1",
+    "E": "4",
+    "answer": "D"
+  },
+  {
+    "id": 563,
+    "question": "If the blood is too concentrated, more water is absorbed from (kidney diagram)",
+    "A": "5",
+    "B": "4",
+    "C": "3",
+    "D": "1",
+    "E": "2",
+    "answer": "A"
+  },
+  {
+    "id": 564,
+    "question": "During mammalian embryo development, large amount of oestrogen and progesterone are produced in the",
+    "A": "umbilical cord",
+    "B": "amnion",
+    "C": "placenta",
+    "D": "amniotic fluid",
+    "E": "ovary",
+    "answer": "C"
+  },
+  {
+    "id": 565,
+    "question": "The type of placentation shown in the figure above is",
+    "A": "parietal",
+    "B": "marginal",
+    "C": "axile",
+    "D": "free-central",
+    "E": "basal",
+    "answer": "C"
+  },
+  {
+    "id": 566,
+    "question": "Fruits which develop without fertilization are described as",
+    "A": "simple",
+    "B": "parthenocarpic",
+    "C": "aggregate",
+    "D": "compound",
+    "E": "multiple",
+    "answer": "B"
+  },
+  {
+    "id": 567,
+    "question": "The elephant grass is propagated vegetatively by means of",
+    "A": "corms",
+    "B": "bulbs",
+    "C": "suckers",
+    "D": "stolons",
+    "E": "rhizomes",
+    "answer": "E"
+  },
+  {
+    "id": 568,
+    "question": "All the cell bodies in the spinal cord are found in (spinal cord diagram)",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "E": "5",
+    "answer": "C"
+  },
+  {
+    "id": 569,
+    "question": "In a reflex action, impulse flows from (spinal cord diagram)",
+    "A": "1 to 2",
+    "B": "2 to 1",
+    "C": "4 to 1",
+    "D": "4 to 2",
+    "E": "3 to 4",
+    "answer": "A"
+  },
+  {
+    "id": 570,
+    "question": "The part of the ear that is concerned with balance is the",
+    "A": "semi-circular canals",
+    "B": "incus",
+    "C": "malleus",
+    "D": "Eustachian tube",
+    "E": "cochlea",
+    "answer": "A"
+  },
+  {
+    "id": 571,
+    "question": "In an organism where the 2n number of chromosomes is 16, the number of chromosomes in each gamete will be",
+    "A": "32",
+    "B": "16",
+    "C": "8",
+    "D": "4",
+    "E": "2",
+    "answer": "C"
+  },
+  {
+    "id": 572,
+    "question": "What would be the result of the first filial generation (F1) and the second filial generation (F2) of a monohybrid cross between pure line normal-winged Drosophila flies and pure line short-winged flies if the gene for normal wing is dominant?",
+    "A": "F1 flies all short-winged and F2 flies all normal-winged",
+    "B": "F1 flies all normal-winged and F2 flies all short-winged",
+    "C": "F1 flies all short-winged and three-quarters of F2 flies are short-winged",
+    "D": "F1 flies all normal-winged and three-quarters of F2 flies are normal-winged",
+    "E": "F1 all normal-winged and F2 all normal-winged",
+    "answer": "D"
+  },
+  {
+    "id": 573,
+    "question": "What stage during cell division is represented in the figure above?",
+    "A": "prophase",
+    "B": "metaphase",
+    "C": "anaphase",
+    "D": "telophase",
+    "E": "interphase",
+    "answer": "B"
+  },
+  {
+    "id": 574,
+    "question": "An individual in the AB blood group is a universal recipient for blood transfusion because",
+    "A": "all the red blood cells do not carry antigen",
+    "B": "all the red blood cells carry antigen A",
+    "C": "all the red blood cells carry antigen B",
+    "D": "there are no anti-A and anti-B antibodies in the serum",
+    "E": "there are both anti-A and anti-B antibodies",
+    "answer": "D"
+  },
+  {
+    "id": 575,
+    "question": "Haemophilia results from the mutation of the genes",
+    "A": "in the sex chromosomes",
+    "B": "which control skin colour",
+    "C": "which control the mechanism for blood-clotting",
+    "D": "which control the formation of haemoglobin",
+    "E": "on autosomes",
+    "answer": "C"
+  },
+  {
+    "id": 576,
+    "question": "In a savanna ecosystem, the abiotic factors include",
+    "A": "legumes, temperature and sandy soil",
+    "B": "water, temperature and soil",
+    "C": "minerals, oxygen and reptiles",
+    "D": "water, soil and grasses",
+    "E": "sunlight, rainfall and animals",
+    "answer": "B"
+  },
+  {
+    "id": 577,
+    "question": "Which organism is an omnivore? (food web diagram)",
+    "A": "Praying mantis",
+    "B": "Hawk",
+    "C": "Mouse",
+    "D": "Grasshopper",
+    "E": "Snake",
+    "answer": "C"
+  },
+  {
+    "id": 578,
+    "question": "Which of the organisms will have the lowest population in an ecosystem? (food web diagram)",
+    "A": "Hawk",
+    "B": "Cowpea",
+    "C": "Praying mantis",
+    "D": "Mouse",
+    "E": "Grasshopper",
+    "answer": "A"
+  },
+  {
+    "id": 579,
+    "question": "The salinity of a brackish environment",
+    "A": "increases immediately after rain",
+    "B": "increases at the end of the rainy season",
+    "C": "decreases with increase in micro-organisms",
+    "D": "increases during the dry season",
+    "E": "remains constant",
+    "answer": "D"
+  },
+  {
+    "id": 580,
+    "question": "Physiological adaptation to very dry condition in animals is called",
+    "A": "hibernation",
+    "B": "aestivation",
+    "C": "rejuvenation",
+    "D": "xeromorphism",
+    "E": "migration",
+    "answer": "B"
+  },
+  {
+    "id": 581,
+    "question": "Which set of diseases is spread mainly by insect vectors?",
+    "A": "cholera, taeniasis and gonorrhoea",
+    "B": "poliomyelitis, tuberculosis and syphilis",
+    "C": "cholera, malaria and tuberculosis",
+    "D": "malaria, cholera and river blindness",
+    "E": "malaria, sleeping sickness and typhus",
+    "answer": "D"
+  },
+  {
+    "id": 582,
+    "question": "Which of the following constitutes pollution?",
+    "A": "Droppings from birds",
+    "B": "Loud disco music",
+    "C": "A pack of cigarettes",
+    "D": "Refuse in an incinerator",
+    "E": "Carbon dioxide from respiration",
+    "answer": "B"
+  },
+  {
+    "id": 583,
+    "question": "An acidic soil can be improved upon by",
+    "A": "sedimentation",
+    "B": "leaching",
+    "C": "flocculation",
+    "D": "watering",
+    "E": "adding lime",
+    "answer": "E"
+  },
+  {
+    "id": 584,
+    "question": "What do bacteria in root nodules derive from the host plant?",
+    "A": "Protection and minerals",
+    "B": "Water and minerals",
+    "C": "Carbohydrates and water",
+    "D": "Protection and carbohydrates",
+    "E": "Nitrogen and water",
+    "answer": "D"
+  },
+  {
+    "id": 585,
+    "question": "Free nitrogen is released to the atmosphere by",
+    "A": "nitrogen-fixing bacteria",
+    "B": "nitrifying bacteria",
+    "C": "denitrifying bacteria",
+    "D": "saprophytic bacteria",
+    "E": "putrefying bacteria",
+    "answer": "C"
+  },
+  {
+    "id": 586,
+    "question": "Which of the following structures is associated with aerobic respiration? (cell diagram)",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "E": "5",
+    "answer": "C"
+  },
+  {
+    "id": 587,
+    "question": "The structure labelled 5 is used for (cell diagram)",
+    "A": "protein synthesis",
+    "B": "energy production",
+    "C": "secretion",
+    "D": "excretion",
+    "E": "lipid storage",
+    "answer": "A"
+  },
+  {
+    "id": 588,
+    "question": "Angiosperms and gymnosperms belong to the plant group known as",
+    "A": "Schizophyta",
+    "B": "Bryophyta",
+    "C": "Pteridophyta",
+    "D": "Spermatophyta",
+    "E": "Thallophyta",
+    "answer": "D"
+  },
+  {
+    "id": 589,
+    "question": "Which of the following are non-green plants?",
+    "A": "Euglena",
+    "B": "Fungi",
+    "C": "Spirogyra",
+    "D": "Angiosperms",
+    "E": "Ferns",
+    "answer": "B"
+  },
+  {
+    "id": 590,
+    "question": "Stinging cells are normally found in",
+    "A": "flatworms",
+    "B": "hydra",
+    "C": "snails",
+    "D": "Paramecium",
+    "E": "earthworms",
+    "answer": "B"
+  },
+  {
+    "id": 591,
+    "question": "Which of the following are differentiated into true roots, stems and leaves?",
+    "A": "Algae",
+    "B": "Schizophyta",
+    "C": "Pteridophyta",
+    "D": "Bryophyta",
+    "E": "Fungi",
+    "answer": "C"
+  },
+  {
+    "id": 592,
+    "question": "To facilitate gaseous exchange, breathing roots have",
+    "A": "stomata",
+    "B": "mitochondria",
+    "C": "cuticle",
+    "D": "lenticels",
+    "E": "pores",
+    "answer": "D"
+  },
+  {
+    "id": 593,
+    "question": "The annulus of fern sporangium helps in",
+    "A": "spore dispersal",
+    "B": "conduction of mineral salt",
+    "C": "trapping of light energy",
+    "D": "water retention",
+    "E": "photosynthesis",
+    "answer": "A"
+  },
+  {
+    "id": 594,
+    "question": "One of the features which adapts Paramecium to its environment is the possession of",
+    "A": "a regular shape",
+    "B": "two nuclei",
+    "C": "cilia",
+    "D": "a pellicle",
+    "E": "contractile vacuole",
+    "answer": "C"
+  },
+  {
+    "id": 595,
+    "question": "In the earthworm, the cocoon is secreted by the",
+    "A": "chaeta",
+    "B": "prostomium",
+    "C": "peristomium",
+    "D": "clitellum",
+    "E": "pharynx",
+    "answer": "D"
+  },
+  {
+    "id": 596,
+    "question": "The function of maxillipeds in crayfish is to aid",
+    "A": "walking",
+    "B": "swimming",
+    "C": "feeding",
+    "D": "respiration",
+    "E": "defence",
+    "answer": "C"
+  },
+  {
+    "id": 597,
+    "question": "The respiratory organ in the land snail is the",
+    "A": "radula",
+    "B": "mantle",
+    "C": "tentacle",
+    "D": "foot",
+    "E": "lung",
+    "answer": "B"
+  },
+  {
+    "id": 598,
+    "question": "The structure labelled 4 is for (tadpole diagram)",
+    "A": "feeding",
+    "B": "attachment",
+    "C": "excretion",
+    "D": "respiration",
+    "E": "locomotion",
+    "answer": "D"
+  },
+  {
+    "id": 599,
+    "question": "As the tadpole develops, the structure labelled 5 (tadpole diagram)",
+    "A": "grows longer",
+    "B": "becomes shorter",
+    "C": "becomes the hind legs",
+    "D": "remains unchanged",
+    "E": "disappears",
+    "answer": "B"
+  },
+  {
+    "id": 600,
+    "question": "The gill rakers of fishes take part in",
+    "A": "feeding",
+    "B": "respiration",
+    "C": "swimming",
+    "D": "diffusion",
+    "E": "filtration",
+    "answer": "A"
+  }
+    }
+  ]
+}
