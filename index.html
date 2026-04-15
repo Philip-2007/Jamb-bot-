@@ -398,10 +398,18 @@
         };
 
         async function loadQuestions() {
-            const subjects = ['English', 'Mathematics', 'Physics', 'Chemistry', 'Biology'];
-            for (let subject of subjects) {
+            const subjects = {
+                'English': 'english.json',
+                'Mathematics': 'math.json',
+                'Physics': 'physics.json',
+                'Chemistry': 'chemistry.json',
+                'Biology': 'biology.json'
+            };
+            
+            for (let subject in subjects) {
                 try {
-                    const response = await fetch(`${subject.toLowerCase()}.json`);
+                    const filename = subjects[subject];
+                    const response = await fetch(filename);
                     const data = await response.json();
                     
                     if (Array.isArray(data)) {
@@ -603,7 +611,14 @@
             const optionsContainer = document.getElementById('optionsContainer');
             optionsContainer.innerHTML = '';
             
-            const options = Array.isArray(q.options) ? q.options : Object.values(q.options || {});
+            let options = [];
+            if (Array.isArray(q.options)) {
+                options = q.options;
+            } else if (typeof q.options === 'object') {
+                options = Object.values(q.options);
+            } else {
+                options = ['A', 'B', 'C', 'D'];
+            }
             
             options.forEach((opt, idx) => {
                 const optionDiv = document.createElement('div');
@@ -661,8 +676,17 @@
             
             questions.forEach((q, i) => {
                 const userAnswer = answers[i];
-                const correctAnswer = q.correct !== undefined ? q.correct : 
-                                     (q.answer ? q.answer.charCodeAt(0) - 65 : 0);
+                let correctAnswer = 0;
+                
+                if (q.correct !== undefined) {
+                    correctAnswer = q.correct;
+                } else if (q.answer) {
+                    if (typeof q.answer === 'string') {
+                        correctAnswer = q.answer.toUpperCase().charCodeAt(0) - 65;
+                    } else {
+                        correctAnswer = q.answer;
+                    }
+                }
                 
                 if (!subjectScores[q.subject]) {
                     subjectScores[q.subject] = { correct: 0, total: 0 };
@@ -771,7 +795,6 @@
         }
 
         function exportData() {
-            const users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
             const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
             
             let csv = 'Name,Phone,Email,Mode,Score,Percent,Date\n';
