@@ -34,7 +34,6 @@ EXAM_TIME = 30 * 60
 CBT_MARKS_PER_QUESTION = 2.5
 EXAM_MARKS_PER_QUESTION = 1
 
-# File to track if update message was sent
 UPDATE_FLAG_FILE = "update_sent.txt"
 
 def parse_options(options_data):
@@ -160,11 +159,10 @@ def format_time(seconds):
     return f"{mins:02d}:{secs:02d}"
 
 def send_update_notification():
-    """Send update notification to all users when bot starts"""
     if os.path.exists(UPDATE_FLAG_FILE):
         return
     
-    users = phone_db.keys() if phone_db else DB["users"].keys()
+    users = list(set(list(phone_db.keys()) + list(DB["users"].keys())))
     sent = 0
     for uid in users:
         try:
@@ -197,11 +195,9 @@ def start(update: Update, context: CallbackContext):
     )
 
 def ask_phone(update: Update, context: CallbackContext):
-    """Ask for phone number naturally"""
     user_id = str(update.effective_user.id)
     
     if user_id in phone_db:
-        # Already registered
         return start_quiz(update, context)
     
     update.message.reply_text(
@@ -225,7 +221,6 @@ def save_phone(update: Update, context: CallbackContext):
         update.message.reply_text("✅ No problem! You can start the quiz now.\n\nUse /start_quiz to begin!")
         return ConversationHandler.END
     
-    # Basic phone validation
     if text.isdigit() and len(text) >= 10:
         phone_db[user_id] = text
         save_phones(phone_db)
@@ -820,17 +815,19 @@ def force_quit(update: Update, context: CallbackContext):
     q.edit_message_text("❌ Quiz Cancelled\n\nUse /start_quiz to try again!")
     return ConversationHandler.END
 
+# Phone collection conversation
 phone_conv = ConversationHandler(
     entry_points=[CommandHandler("start_quiz", ask_phone)],
     states={
         GET_PHONE: [
-            MessageHandler(telegram.ext.filters.Filters.text & ~telegram.ext.filters.Filters.command, save_phone),
+            MessageHandler(Filters.text & ~Filters.command, save_phone),
             CommandHandler("skip", save_phone)
         ],
     },
     fallbacks=[],
 )
 
+# Quiz conversation
 quiz_conv = ConversationHandler(
     entry_points=[CommandHandler("start_quiz", start_quiz)],
     states={
@@ -866,9 +863,6 @@ dp.add_handler(CommandHandler("broadcast", broadcast))
 dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
 dp.add_handler(CallbackQueryHandler(broadcast_prompt, pattern="^broadcast_prompt$"))
 
-# Import for phone handler
-from telegram.ext import MessageHandler
-
 @app.route("/", methods=["GET"])
 def home():
     return "🤖 JAMB Bot is running!"
@@ -892,7 +886,6 @@ if __name__ == "__main__":
     print(f"\n📱 Phone numbers collected: {len(phone_db)}")
     print(f"\n🚀 Bot starting on port {PORT}...")
     
-    # Send update notification
     send_update_notification()
     
     app.run(host="0.0.0.0", port=PORT)
