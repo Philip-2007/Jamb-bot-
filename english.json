@@ -29,7 +29,6 @@
     "options": { "A": "definately", "B": "definitely", "C": "definitly", "D": "definate" },
     "answer": "B"
   },
-
   {
     "id": 6,
     "question": "Choose the word that best completes the sentence: The teacher asked the students ___ quiet.",
@@ -60,7 +59,6 @@
     "options": { "A": "are", "B": "were", "C": "is", "D": "be" },
     "answer": "B"
   },
-
   {
     "id": 11,
     "question": "Choose the synonym of 'ancient'.",
@@ -96,7 +94,6 @@
     "options": { "A": "occured", "B": "occurred", "C": "ocurred", "D": "occurd" },
     "answer": "B"
   },
-
   {
     "id": 16,
     "question": "Choose the synonym of 'brave'.",
@@ -127,7 +124,6 @@
     "options": { "A": "easy", "B": "hard", "C": "simple", "D": "clear" },
     "answer": "B"
   },
-
   {
     "id": 21,
     "question": "Choose the antonym of 'accept'.",
@@ -193,7 +189,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 31,
     "question": "Choose the synonym of 'angry'.",
@@ -224,7 +219,6 @@
     "options": { "A": "go", "B": "goes", "C": "went", "D": "gone" },
     "answer": "B"
   },
-
   {
     "id": 36,
     "question": "Choose the synonym of 'silent'.",
@@ -255,7 +249,6 @@
     "options": { "A": "dull", "B": "smart", "C": "dark", "D": "boring" },
     "answer": "B"
   },
-
   {
     "id": 41,
     "question": "Choose the antonym of 'love'.",
@@ -286,7 +279,6 @@
     "options": { "A": "wide", "B": "close", "C": "shut", "D": "near" },
     "answer": "C"
   },
-
   {
     "id": 46,
     "question": "Fill in the blank: She is interested ___ learning French.",
@@ -357,7 +349,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 56,
     "question": "Choose the synonym of 'honest'.",
@@ -388,7 +379,6 @@
     "options": { "A": "eat", "B": "were eating", "C": "eats", "D": "eaten" },
     "answer": "B"
   },
-
   {
     "id": 61,
     "question": "Choose the synonym of 'famous'.",
@@ -424,7 +414,6 @@
     "options": { "A": "big", "B": "small", "C": "huge", "D": "wide" },
     "answer": "B"
   },
-
   {
     "id": 66,
     "question": "Choose the antonym of 'success'.",
@@ -455,7 +444,6 @@
     "options": { "A": "rise", "B": "expand", "C": "reduce", "D": "grow" },
     "answer": "C"
   },
-
   {
     "id": 71,
     "question": "Fill in the blank: He is tired ___ working.",
@@ -526,7 +514,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 81,
     "question": "Choose the synonym of 'large'.",
@@ -557,7 +544,6 @@
     "options": { "A": "have", "B": "has", "C": "had", "D": "having" },
     "answer": "B"
   },
-
   {
     "id": 86,
     "question": "Choose the synonym of 'fear'.",
@@ -593,7 +579,6 @@
     "options": { "A": "simple", "B": "hard", "C": "difficult", "D": "tough" },
     "answer": "A"
   },
-
   {
     "id": 91,
     "question": "Choose the antonym of 'strong'.",
@@ -624,7 +609,6 @@
     "options": { "A": "reach", "B": "enter", "C": "depart", "D": "come" },
     "answer": "C"
   },
-
   {
     "id": 96,
     "question": "Fill in the blank: She is afraid ___ snakes.",
@@ -660,7 +644,6 @@
     "options": { "A": "occurence", "B": "occurrence", "C": "occurance", "D": "occurrance" },
     "answer": "B"
   },
-
   {
     "id": 101,
     "question": "Choose the word that best completes the sentence: If he ___ harder, he would pass.",
@@ -731,7 +714,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 111,
     "question": "Choose the synonym of 'fragile'.",
@@ -762,7 +744,6 @@
     "options": { "A": "will have", "B": "have", "C": "had", "D": "are" },
     "answer": "A"
   },
-
   {
     "id": 116,
     "question": "Choose the synonym of 'generous'.",
@@ -798,7 +779,6 @@
     "options": { "A": "modern", "B": "old", "C": "new", "D": "fresh" },
     "answer": "B"
   },
-
   {
     "id": 121,
     "question": "Choose the antonym of 'permit'.",
@@ -829,7 +809,6 @@
     "options": { "A": "defeat", "B": "win", "C": "success", "D": "triumph" },
     "answer": "A"
   },
-
   {
     "id": 126,
     "question": "Fill in the blank: He is keen ___ sports.",
@@ -865,7 +844,6 @@
     "options": { "A": "definately", "B": "definitely", "C": "definitly", "D": "definate" },
     "answer": "B"
   },
-
   {
     "id": 131,
     "question": "Choose the synonym of 'bold'.",
@@ -901,7 +879,6 @@
     "options": { "A": "big", "B": "small", "C": "huge", "D": "large" },
     "answer": "B"
   },
-
   {
     "id": 136,
     "question": "Choose the antonym of 'accept'.",
@@ -932,7 +909,6 @@
     "options": { "A": "close", "B": "wide", "C": "free", "D": "clear" },
     "answer": "A"
   },
-
   {
     "id": 141,
     "question": "Fill in the blank: He is interested ___ music.",
@@ -968,7 +944,6 @@
     "options": { "A": "goverment", "B": "government", "C": "governmant", "D": "governmet" },
     "answer": "B"
   },
-
   {
     "id": 146,
     "question": "Choose the synonym of 'famous'.",
@@ -1004,7 +979,6 @@
     "options": { "A": "small", "B": "big", "C": "huge", "D": "wide" },
     "answer": "A"
   },
-
   {
     "id": 151,
     "question": "Choose the antonym of 'success'.",
@@ -1035,7 +1009,6 @@
     "options": { "A": "reduce", "B": "rise", "C": "expand", "D": "grow" },
     "answer": "A"
   },
-
   {
     "id": 156,
     "question": "Fill in the blank: He is tired ___ working.",
@@ -1071,7 +1044,6 @@
     "options": { "A": "beleive", "B": "believe", "C": "belive", "D": "beleve" },
     "answer": "B"
   },
-
   {
     "id": 161,
     "question": "Choose the synonym of 'smart'.",
@@ -1102,7 +1074,6 @@
     "options": { "A": "simple", "B": "hard", "C": "difficult", "D": "tough" },
     "answer": "A"
   },
-
   {
     "id": 166,
     "question": "Choose the antonym of 'strong'.",
@@ -1138,7 +1109,6 @@
     "options": { "A": "depart", "B": "reach", "C": "enter", "D": "come" },
     "answer": "A"
   },
-
   {
     "id": 171,
     "question": "Fill in the blank: He is married ___ her.",
@@ -1174,7 +1144,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 176,
     "question": "Choose the synonym of 'dangerous'.",
@@ -1205,7 +1174,6 @@
     "options": { "A": "popular", "B": "unknown", "C": "hidden", "D": "secret" },
     "answer": "A"
   },
-
   {
     "id": 181,
     "question": "Choose the antonym of 'light'.",
@@ -1241,7 +1209,6 @@
     "options": { "A": "failure", "B": "victory", "C": "achievement", "D": "progress" },
     "answer": "A"
   },
-
   {
     "id": 186,
     "question": "Fill in the blank: She insisted ___ paying.",
@@ -1277,7 +1244,6 @@
     },
     "answer": "B"
   },
-
   {
     "id": 191,
     "question": "Choose the synonym of 'smart'.",
@@ -1308,7 +1274,6 @@
     "options": { "A": "simple", "B": "hard", "C": "difficult", "D": "tough" },
     "answer": "A"
   },
-
   {
     "id": 196,
     "question": "Choose the antonym of 'strong'.",
@@ -1347,1801 +1312,2196 @@
   {
     "id": 201,
     "question": "Which Use of English Paper Type is given to you?",
-    "A": "Type A",
-    "B": "Type B",
-    "C": "Type C",
-    "D": "Type D",
+    "options": { "A": "Type A", "B": "Type B", "C": "Type C", "D": "Type D" },
     "answer": "A"
   },
   {
     "id": 202,
     "question": "Though Mr. Iro is a new chairman, he views other members with jaundiced eye.",
-    "A": "He takes a rather forceful position on dealing with his members",
-    "B": "He takes an unfavourable position concerning his members",
-    "C": "He takes a sickly view of his members",
-    "D": "He takes a rather hazy view of his members",
+    "options": {
+      "A": "He takes a rather forceful position on dealing with his members",
+      "B": "He takes an unfavourable position concerning his members",
+      "C": "He takes a sickly view of his members",
+      "D": "He takes a rather hazy view of his members"
+    },
     "answer": "B"
   },
   {
     "id": 203,
     "question": "People are not interested in who rules.",
-    "A": "People are not ruled by the leaders they want",
-    "B": "People are not concerned about who rules them",
-    "C": "The rulers are not concerned about the people",
-    "D": "People who rule are not interested in the ruled",
+    "options": {
+      "A": "People are not ruled by the leaders they want",
+      "B": "People are not concerned about who rules them",
+      "C": "The rulers are not concerned about the people",
+      "D": "People who rule are not interested in the ruled"
+    },
     "answer": "B"
   },
   {
     "id": 204,
     "question": "It was good to steer a middle course in whatever one does.",
-    "A": "It is always good to get midway in anything one does",
-    "B": "It is always good to act with moderation",
-    "C": "It is always good to move away from the forefront",
-    "D": "It is always good to work very hard",
+    "options": {
+      "A": "It is always good to get midway in anything one does",
+      "B": "It is always good to act with moderation",
+      "C": "It is always good to move away from the forefront",
+      "D": "It is always good to work very hard"
+    },
     "answer": "B"
   },
   {
     "id": 205,
     "question": "The witness said he had no axe to grind with his brothers.",
-    "A": "He had no hatred for them",
-    "B": "He had no tool to sharpen",
-    "C": "He had no favour to ask from them",
-    "D": "He had no personal interest to serve",
+    "options": {
+      "A": "He had no hatred for them",
+      "B": "He had no tool to sharpen",
+      "C": "He had no favour to ask from them",
+      "D": "He had no personal interest to serve"
+    },
     "answer": "A"
   },
   {
     "id": 206,
     "question": "The footballers moved with their tails between their legs.",
-    "A": "They moved happily because they won the match",
-    "B": "They were unhappy because they had been despised by their opponents",
-    "C": "They were ashamed because they had been defeated",
-    "D": "They moved with their tails between their legs",
+    "options": {
+      "A": "They moved happily because they won the match",
+      "B": "They were unhappy because they had been despised by their opponents",
+      "C": "They were ashamed because they had been defeated",
+      "D": "They moved with their tails between their legs"
+    },
     "answer": "C"
   },
   {
     "id": 207,
     "question": "The headmaster managed to talk his way out of having to give a speech.",
-    "A": "He delivered a speech despite the difficulty",
-    "B": "He managed to give a speech out of a difficult situation",
-    "C": "He managed to get himself out of a difficult situation",
-    "D": "He managed to talk on his way",
+    "options": {
+      "A": "He delivered a speech despite the difficulty",
+      "B": "He managed to give a speech out of a difficult situation",
+      "C": "He managed to get himself out of a difficult situation",
+      "D": "He managed to talk on his way"
+    },
     "answer": "C"
   },
   {
     "id": 208,
     "question": "As regards the matter, we have crossed the rubicon.",
-    "A": "We are completely at a loss",
-    "B": "We are irrevocably committed",
-    "C": "We are already qualified",
-    "D": "We are perfectly committed",
+    "options": {
+      "A": "We are completely at a loss",
+      "B": "We are irrevocably committed",
+      "C": "We are already qualified",
+      "D": "We are perfectly committed"
+    },
     "answer": "B"
   },
   {
     "id": 209,
     "question": "Uche is full of himself.",
-    "A": "He is conceited",
-    "B": "He is complete",
-    "C": "He is a rich man",
-    "D": "He is careful",
+    "options": {
+      "A": "He is conceited",
+      "B": "He is complete",
+      "C": "He is a rich man",
+      "D": "He is careful"
+    },
     "answer": "A"
   },
   {
     "id": 210,
     "question": "As debutants in that tournament, the Super Eagles were up against their first opponents by three goals to nil.",
-    "A": "The Super Eagles were playing in the tournament for the first time, but they won their match by three goals to nothing",
-    "B": "Though the Super Eagles were rated as the weakest side in the tournament, they won their first match by three goals to nil",
-    "C": "Even though the Super Eagles were playing without some of their regulars, they won their match by three goals to nil",
-    "D": "As the best attackers in the match, the Super Eagles easily defeated their opponents by three goals to nothing",
+    "options": {
+      "A": "The Super Eagles were playing in the tournament for the first time, but they won their match by three goals to nothing",
+      "B": "Though the Super Eagles were rated as the weakest side in the tournament, they won their first match by three goals to nil",
+      "C": "Even though the Super Eagles were playing without some of their regulars, they won their match by three goals to nil",
+      "D": "As the best attackers in the match, the Super Eagles easily defeated their opponents by three goals to nothing"
+    },
     "answer": "A"
   },
   {
     "id": 211,
     "question": "The woman was mournful as her husband was found dead drunk.",
-    "A": "She was sad because her husband was absolutely drunk",
-    "B": "She was apprehensive that her husband would drink again as soon as he recovered from the drunken stupor",
-    "C": "She was sad because her husband was drunk and always as helpless as a dead man",
-    "D": "She was mourning because her husband drank and died",
+    "options": {
+      "A": "She was sad because her husband was absolutely drunk",
+      "B": "She was apprehensive that her husband would drink again as soon as he recovered from the drunken stupor",
+      "C": "She was sad because her husband was drunk and always as helpless as a dead man",
+      "D": "She was mourning because her husband drank and died"
+    },
     "answer": "C"
   },
   {
     "id": 212,
     "question": "I am optimistic about the interview though it was a mind-bending exercise.",
-    "A": "An enervating",
-    "B": "A debilitating",
-    "C": "A difficult",
-    "D": "An easy",
+    "options": {
+      "A": "An enervating",
+      "B": "A debilitating",
+      "C": "A difficult",
+      "D": "An easy"
+    },
     "answer": "D"
   },
   {
     "id": 213,
     "question": "The trader was amused by the cut-throat rush for the goods.",
-    "A": "Worrisome",
-    "B": "Strange",
-    "C": "Lacklustre",
-    "D": "Mad",
+    "options": {
+      "A": "Worrisome",
+      "B": "Strange",
+      "C": "Lacklustre",
+      "D": "Mad"
+    },
     "answer": "C"
   },
   {
     "id": 214,
     "question": "The teacher said that Ali's essay was full of many redundant details.",
-    "A": "Unexplained",
-    "B": "Necessary",
-    "C": "Unnecessary",
-    "D": "Important",
+    "options": {
+      "A": "Unexplained",
+      "B": "Necessary",
+      "C": "Unnecessary",
+      "D": "Important"
+    },
     "answer": "C"
   },
   {
     "id": 215,
     "question": "His father surmounted the myriad of obstacles on his way.",
-    "A": "Most",
-    "B": "Few",
-    "C": "All",
-    "D": "Many",
+    "options": {
+      "A": "Most",
+      "B": "Few",
+      "C": "All",
+      "D": "Many"
+    },
     "answer": "B"
   },
   {
     "id": 216,
     "question": "Her ingenuous smile drew our attention.",
-    "A": "Witty",
-    "B": "Naive",
-    "C": "Clever",
-    "D": "Arrogant",
+    "options": {
+      "A": "Witty",
+      "B": "Naive",
+      "C": "Clever",
+      "D": "Arrogant"
+    },
     "answer": "D"
   },
   {
     "id": 217,
     "question": "Ndani gave a flawless speech at the party.",
-    "A": "A wonderful",
-    "B": "A careless",
-    "C": "An interesting",
-    "D": "An imperfect",
+    "options": {
+      "A": "A wonderful",
+      "B": "A careless",
+      "C": "An interesting",
+      "D": "An imperfect"
+    },
     "answer": "D"
   },
   {
     "id": 218,
     "question": "Beneath Ado's guff exterior, he's really very kind-hearted.",
-    "A": "Nice",
-    "B": "Harsh",
-    "C": "Rough",
-    "D": "Gentle",
+    "options": {
+      "A": "Nice",
+      "B": "Harsh",
+      "C": "Rough",
+      "D": "Gentle"
+    },
     "answer": "A"
   },
   {
     "id": 219,
     "question": "The captain says sports is being debased by commercial sponsorship.",
-    "A": "Localized",
-    "B": "Perverted",
-    "C": "Elevated",
-    "D": "Overvalued",
+    "options": {
+      "A": "Localized",
+      "B": "Perverted",
+      "C": "Elevated",
+      "D": "Overvalued"
+    },
     "answer": "C"
   },
   {
     "id": 220,
     "question": "Governing a country is not always as straightforward as people sometimes imagine.",
-    "A": "Complicated",
-    "B": "Troublesome",
-    "C": "Untoward",
-    "D": "Irksome",
+    "options": {
+      "A": "Complicated",
+      "B": "Troublesome",
+      "C": "Untoward",
+      "D": "Irksome"
+    },
     "answer": "A"
   },
   {
     "id": 221,
     "question": "The crowd was very receptive to the speaker's suggestion.",
-    "A": "Disobedient",
-    "B": "Disagreeable",
-    "C": "Disloyal",
-    "D": "Hostile",
+    "options": {
+      "A": "Disobedient",
+      "B": "Disagreeable",
+      "C": "Disloyal",
+      "D": "Hostile"
+    },
     "answer": "D"
   },
   {
     "id": 222,
     "question": "There was a general acquiescence on the new drug law.",
-    "A": "Resistance",
-    "B": "Discrepancy",
-    "C": "Compromise",
-    "D": "Agreement",
+    "options": {
+      "A": "Resistance",
+      "B": "Discrepancy",
+      "C": "Compromise",
+      "D": "Agreement"
+    },
     "answer": "A"
   },
   {
     "id": 223,
     "question": "Aisha seems to feel ambivalent about her future.",
-    "A": "Decisive",
-    "B": "Anxious",
-    "C": "Ambitious",
-    "D": "Inconsiderate",
+    "options": {
+      "A": "Decisive",
+      "B": "Anxious",
+      "C": "Ambitious",
+      "D": "Inconsiderate"
+    },
     "answer": "A"
   },
   {
     "id": 224,
     "question": "The report of the committee contained a plethora of details.",
-    "A": "Shortage",
-    "B": "Simplicity",
-    "C": "Multitude",
-    "D": "Spectrum",
+    "options": {
+      "A": "Shortage",
+      "B": "Simplicity",
+      "C": "Multitude",
+      "D": "Spectrum"
+    },
     "answer": "A"
   },
   {
     "id": 225,
     "question": "The weather was still very heavy and sultry.",
-    "A": "Wintry and shadowy",
-    "B": "Cold and friendly",
-    "C": "Cloudy and thundery",
-    "D": "Hot and uncomfortable",
+    "options": {
+      "A": "Wintry and shadowy",
+      "B": "Cold and friendly",
+      "C": "Cloudy and thundery",
+      "D": "Hot and uncomfortable"
+    },
     "answer": "B"
   },
   {
     "id": 226,
     "question": "Ada gave her husband a look that made words superfluous.",
-    "A": "Redundant",
-    "B": "Spurious",
-    "C": "Unnecessary",
-    "D": "Scanty",
+    "options": {
+      "A": "Redundant",
+      "B": "Spurious",
+      "C": "Unnecessary",
+      "D": "Scanty"
+    },
     "answer": "D"
   },
   {
     "id": 227,
     "question": "A political impasse does not offer the best opportunity for merrymaking.",
-    "A": "Manifesto",
-    "B": "Party",
-    "C": "Gridlock",
-    "D": "Rally",
+    "options": {
+      "A": "Manifesto",
+      "B": "Party",
+      "C": "Gridlock",
+      "D": "Rally"
+    },
     "answer": "C"
   },
   {
     "id": 228,
     "question": "We were all enthusiastic as we awaited the result of the election.",
-    "A": "Bemused",
-    "B": "Agitated",
-    "C": "Elated",
-    "D": "Nervous",
+    "options": {
+      "A": "Bemused",
+      "B": "Agitated",
+      "C": "Elated",
+      "D": "Nervous"
+    },
     "answer": "B"
   },
   {
     "id": 229,
     "question": "The uniform makes the guards look absurd.",
-    "A": "Dirty",
-    "B": "Smart",
-    "C": "Sensible",
-    "D": "Ridiculous",
+    "options": {
+      "A": "Dirty",
+      "B": "Smart",
+      "C": "Sensible",
+      "D": "Ridiculous"
+    },
     "answer": "D"
   },
   {
     "id": 230,
     "question": "The law is often tardy in reacting to changing attitude.",
-    "A": "Quick",
-    "B": "Slow",
-    "C": "Exclusive",
-    "D": "Generous",
+    "options": {
+      "A": "Quick",
+      "B": "Slow",
+      "C": "Exclusive",
+      "D": "Generous"
+    },
     "answer": "B"
   },
   {
     "id": 231,
     "question": "Isa and llu ate sumptuous meal on their brother's wedding day.",
-    "A": "Expensive",
-    "B": "Foreign",
-    "C": "Insipid",
-    "D": "Cheap",
+    "options": {
+      "A": "Expensive",
+      "B": "Foreign",
+      "C": "Insipid",
+      "D": "Cheap"
+    },
     "answer": "A"
   },
   {
     "id": 232,
     "question": "Kaltume crouched over the paper on her desk.",
-    "A": "Wrote on",
-    "B": "Stood on",
-    "C": "Walked over",
-    "D": "Bent over",
+    "options": {
+      "A": "Wrote on",
+      "B": "Stood on",
+      "C": "Walked over",
+      "D": "Bent over"
+    },
     "answer": "D"
   },
   {
     "id": 233,
     "question": "The panacea for a country's economic mess lies in systematic planning and hardwork.",
-    "A": "Cure",
-    "B": "Hope",
-    "C": "Foresight",
-    "D": "Trouble",
+    "options": {
+      "A": "Cure",
+      "B": "Hope",
+      "C": "Foresight",
+      "D": "Trouble"
+    },
     "answer": "A"
   },
   {
     "id": 234,
     "question": "Thousands of workers have been victims of retrenchment since the military came back to power.",
-    "A": "Unemployment",
-    "B": "Trench mentality",
-    "C": "Redundancy",
-    "D": "Promotion",
+    "options": {
+      "A": "Unemployment",
+      "B": "Trench mentality",
+      "C": "Redundancy",
+      "D": "Promotion"
+    },
     "answer": "A"
   },
   {
     "id": 235,
     "question": "The principal gave his speech offhand at the sports meeting.",
-    "A": "Calmly",
-    "B": "Beautifully",
-    "C": "Unconcerned",
-    "D": "Unprepared",
+    "options": {
+      "A": "Calmly",
+      "B": "Beautifully",
+      "C": "Unconcerned",
+      "D": "Unprepared"
+    },
     "answer": "A"
   },
   {
     "id": 236,
     "question": "Jankoli was dressed in an old assortment of clothes.",
-    "A": "Avalanche",
-    "B": "Homogeneity",
-    "C": "Sameness",
-    "D": "Melange",
+    "options": {
+      "A": "Avalanche",
+      "B": "Homogeneity",
+      "C": "Sameness",
+      "D": "Melange"
+    },
     "answer": "D"
   },
   {
     "id": 237,
     "question": "The girl's father was astounded to see her appear from the shrine.",
-    "A": "Collected",
-    "B": "Overwhelmed",
-    "C": "Embarrassed",
-    "D": "Astonished",
+    "options": {
+      "A": "Collected",
+      "B": "Overwhelmed",
+      "C": "Embarrassed",
+      "D": "Astonished"
+    },
     "answer": "D"
   },
   {
     "id": 238,
     "question": "The director's remark was extremely apposite to the issue being discussed.",
-    "A": "Appropriate",
-    "B": "Inconsequential",
-    "C": "Emphatic",
-    "D": "Adequate",
+    "options": {
+      "A": "Appropriate",
+      "B": "Inconsequential",
+      "C": "Emphatic",
+      "D": "Adequate"
+    },
     "answer": "A"
   },
   {
     "id": 239,
     "question": "Her reputation is without a blemish.",
-    "A": "Struggle",
-    "B": "Problem",
-    "C": "Fault",
-    "D": "Blessing",
+    "options": {
+      "A": "Struggle",
+      "B": "Problem",
+      "C": "Fault",
+      "D": "Blessing"
+    },
     "answer": "C"
   },
   {
     "id": 240,
     "question": "Ugo is eligible for the post of secretary.",
-    "A": "Nominated",
-    "B": "Invited",
-    "C": "Qualified",
-    "D": "Intelligent",
+    "options": {
+      "A": "Nominated",
+      "B": "Invited",
+      "C": "Qualified",
+      "D": "Intelligent"
+    },
     "answer": "C"
   },
   {
     "id": 241,
     "question": "This is an abridged version of No Longer at Ease.",
-    "A": "An outdated",
-    "B": "A shortened",
-    "C": "An enlarged",
-    "D": "An updated",
+    "options": {
+      "A": "An outdated",
+      "B": "A shortened",
+      "C": "An enlarged",
+      "D": "An updated"
+    },
     "answer": "B"
   },
   {
     "id": 242,
     "question": "Lemoti...... as a painter, but also as a sculptor.",
-    "A": "is a gifted only not",
-    "B": "is only not gifted",
-    "C": "is gifted not only",
-    "D": "is only gifted",
+    "options": {
+      "A": "is a gifted only not",
+      "B": "is only not gifted",
+      "C": "is gifted not only",
+      "D": "is only gifted"
+    },
     "answer": "C"
   },
   {
     "id": 243,
     "question": "He can recall the important dates in the nation's history, it is interesting to listen as he rattles ......",
-    "A": "off",
-    "B": "over",
-    "C": "up",
-    "D": "out",
+    "options": {
+      "A": "off",
+      "B": "over",
+      "C": "up",
+      "D": "out"
+    },
     "answer": "A"
   },
   {
     "id": 244,
     "question": "The boy told his mother ......",
-    "A": "that was the girl he told her about",
-    "B": "that was the girl I told you about her",
-    "C": "that was the girl I told her about",
-    "D": "that is the girl he told her about",
+    "options": {
+      "A": "that was the girl he told her about",
+      "B": "that was the girl I told you about her",
+      "C": "that was the girl I told her about",
+      "D": "that is the girl he told her about"
+    },
     "answer": "A"
   },
   {
     "id": 245,
     "question": "Last Monday his father asked me ......",
-    "A": "if I had come some days before",
-    "B": "if I had come the day before",
-    "C": "did you come yesterday",
-    "D": "had I come yesterday",
+    "options": {
+      "A": "if I had come some days before",
+      "B": "if I had come the day before",
+      "C": "did you come yesterday",
+      "D": "had I come yesterday"
+    },
     "answer": "B"
   },
   {
     "id": 246,
     "question": "His wife was badly injured in the fracas, but I think she will pull ......",
-    "A": "up",
-    "B": "over",
-    "C": "through",
-    "D": "back",
+    "options": {
+      "A": "up",
+      "B": "over",
+      "C": "through",
+      "D": "back"
+    },
     "answer": "C"
   },
   {
     "id": 247,
     "question": "A wide range of options ...... made available to students in the final year last year.",
-    "A": "is",
-    "B": "were",
-    "C": "are",
-    "D": "was",
+    "options": {
+      "A": "is",
+      "B": "were",
+      "C": "are",
+      "D": "was"
+    },
     "answer": "D"
   },
   {
     "id": 248,
     "question": "One of the women who ...... in the premises ...... been ordered to quit.",
-    "A": "sells/have",
-    "B": "sell/has",
-    "C": "sell/have",
-    "D": "sells/has",
+    "options": {
+      "A": "sells/have",
+      "B": "sell/has",
+      "C": "sell/have",
+      "D": "sells/has"
+    },
     "answer": "D"
   },
   {
     "id": 249,
     "question": "The new trade agreement should facilitate ......",
-    "A": "more economic rapid growth",
-    "B": "economic more rapid growth",
-    "C": "rapid economic more growth",
-    "D": "more rapid economic growth",
+    "options": {
+      "A": "more economic rapid growth",
+      "B": "economic more rapid growth",
+      "C": "rapid economic more growth",
+      "D": "more rapid economic growth"
+    },
     "answer": "D"
   },
   {
     "id": 250,
     "question": "The principal said that he was pleased ...... my effort.",
-    "A": "on",
-    "B": "of",
-    "C": "with",
-    "D": "about",
+    "options": {
+      "A": "on",
+      "B": "of",
+      "C": "with",
+      "D": "about"
+    },
     "answer": "C"
   },
   {
     "id": 251,
     "question": "Paper is made ...... wood pulp.",
-    "A": "on",
-    "B": "of",
-    "C": "from",
-    "D": "with",
+    "options": {
+      "A": "on",
+      "B": "of",
+      "C": "from",
+      "D": "with"
+    },
     "answer": "C"
   },
   {
     "id": 252,
     "question": "Long after everyone ...... the hall, Obi still sat inside.",
-    "A": "left",
-    "B": "is leaving",
-    "C": "has left",
-    "D": "had left",
+    "options": {
+      "A": "left",
+      "B": "is leaving",
+      "C": "has left",
+      "D": "had left"
+    },
     "answer": "C"
   },
   {
     "id": 253,
     "question": "They are the ...... dresses.",
-    "A": "babys'",
-    "B": "baby",
-    "C": "babies",
-    "D": "babies'",
+    "options": {
+      "A": "babys'",
+      "B": "baby",
+      "C": "babies",
+      "D": "babies'"
+    },
     "answer": "D"
   },
   {
     "id": 254,
     "question": "The politician was sent ...... exile.",
-    "A": "onto",
-    "B": "into",
-    "C": "on",
-    "D": "to",
+    "options": {
+      "A": "onto",
+      "B": "into",
+      "C": "on",
+      "D": "to"
+    },
     "answer": "C"
   },
   {
     "id": 255,
     "question": "When we looked up, we ...... the plane some miles away.",
-    "A": "site",
-    "B": "cited",
-    "C": "sited",
-    "D": "sighted",
+    "options": {
+      "A": "site",
+      "B": "cited",
+      "C": "sited",
+      "D": "sighted"
+    },
     "answer": "D"
   },
   {
     "id": 256,
     "question": "Vital ...... is still spread ...... word of mouth in most villages in Africa.",
-    "A": "information/from",
-    "B": "information/with",
-    "C": "information/by",
-    "D": "information/through",
+    "options": {
+      "A": "information/from",
+      "B": "information/with",
+      "C": "information/by",
+      "D": "information/through"
+    },
     "answer": "C"
   },
   {
     "id": 257,
     "question": "Western education is one of the ...... of colonial rule.",
-    "A": "legacies",
-    "B": "evidence",
-    "C": "remnants",
-    "D": "inheritance",
+    "options": {
+      "A": "legacies",
+      "B": "evidence",
+      "C": "remnants",
+      "D": "inheritance"
+    },
     "answer": "A"
   },
   {
     "id": 258,
     "question": "The federal government has ...... child trafficking.",
-    "A": "postulated",
-    "B": "projected",
-    "C": "prescribed",
-    "D": "proscribed",
+    "options": {
+      "A": "postulated",
+      "B": "projected",
+      "C": "prescribed",
+      "D": "proscribed"
+    },
     "answer": "D"
   },
   {
     "id": 259,
     "question": "The man was happy that his son confessed his guilt and so the others were ......",
-    "A": "implicated",
-    "B": "accused",
-    "C": "punished",
-    "D": "exonerated",
+    "options": {
+      "A": "implicated",
+      "B": "accused",
+      "C": "punished",
+      "D": "exonerated"
+    },
     "answer": "D"
   },
   {
     "id": 260,
     "question": "Based on the facts before me, I have no alternative ...... to hold you responsible.",
-    "A": "only",
-    "B": "as",
-    "C": "than",
-    "D": "but",
+    "options": {
+      "A": "only",
+      "B": "as",
+      "C": "than",
+      "D": "but"
+    },
     "answer": "C"
   },
   {
     "id": 261,
     "question": "Many people would always find reasons to ...... the law.",
-    "A": "arrogate",
-    "B": "debase",
-    "C": "circumvent",
-    "D": "circumspect",
+    "options": {
+      "A": "arrogate",
+      "B": "debase",
+      "C": "circumvent",
+      "D": "circumspect"
+    },
     "answer": "C"
   },
   {
     "id": 262,
     "question": "Which word has the same consonant sound as the underlined letters in 'Coup'?",
-    "A": "whup",
-    "B": "hoot",
-    "C": "couple",
-    "D": "scout",
+    "options": {
+      "A": "whup",
+      "B": "hoot",
+      "C": "couple",
+      "D": "scout"
+    },
     "answer": "B"
   },
   {
     "id": 263,
     "question": "Which word has the same vowel sound as the underlined letters in 'Indict'?",
-    "A": "bright",
-    "B": "fish",
-    "C": "pick",
-    "D": "brick",
+    "options": {
+      "A": "bright",
+      "B": "fish",
+      "C": "pick",
+      "D": "brick"
+    },
     "answer": "A"
   },
   {
     "id": 264,
     "question": "Which word has the same vowel sound as the underlined letters in 'Roared'?",
-    "A": "towered",
-    "B": "coast",
-    "C": "brought",
-    "D": "rod",
+    "options": {
+      "A": "towered",
+      "B": "coast",
+      "C": "brought",
+      "D": "rod"
+    },
     "answer": "A"
   },
   {
     "id": 265,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'Sheath'.",
-    "A": "bathe",
-    "B": "length",
-    "C": "months",
-    "D": "paths",
+    "options": {
+      "A": "bathe",
+      "B": "length",
+      "C": "months",
+      "D": "paths"
+    },
     "answer": "B"
   },
   {
     "id": 266,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'High'.",
-    "A": "what",
-    "B": "honest",
-    "C": "who",
-    "D": "vehicle",
+    "options": {
+      "A": "what",
+      "B": "honest",
+      "C": "who",
+      "D": "vehicle"
+    },
     "answer": "C"
   },
   {
     "id": 267,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'Of course'.",
-    "A": "plough",
-    "B": "dough",
-    "C": "over",
-    "D": "orphan",
+    "options": {
+      "A": "plough",
+      "B": "dough",
+      "C": "over",
+      "D": "orphan"
+    },
     "answer": "C"
   },
   {
     "id": 268,
     "question": "Choose the option that rhymes with 'Boys'.",
-    "A": "noise",
-    "B": "nose",
-    "C": "voice",
-    "D": "toys",
+    "options": {
+      "A": "noise",
+      "B": "nose",
+      "C": "voice",
+      "D": "toys"
+    },
     "answer": "C"
   },
   {
     "id": 269,
     "question": "Choose the option that rhymes with 'Shine'.",
-    "A": "clean",
-    "B": "fine",
-    "C": "machine",
-    "D": "lain",
+    "options": {
+      "A": "clean",
+      "B": "fine",
+      "C": "machine",
+      "D": "lain"
+    },
     "answer": "B"
   },
   {
     "id": 270,
     "question": "Choose the option that rhymes with 'Seer'.",
-    "A": "snares",
-    "B": "spare",
-    "C": "spear",
-    "D": "square",
+    "options": {
+      "A": "snares",
+      "B": "spare",
+      "C": "spear",
+      "D": "square"
+    },
     "answer": "B"
   },
   {
     "id": 271,
     "question": "Choose the most appropriate stress pattern for 'Political'.",
-    "A": "poliTical",
-    "B": "PolItical",
-    "C": "Political",
-    "D": "political",
+    "options": {
+      "A": "poliTical",
+      "B": "PolItical",
+      "C": "Political",
+      "D": "political"
+    },
     "answer": "B"
   },
   {
     "id": 272,
     "question": "Choose the most appropriate stress pattern for 'Satisfactory'.",
-    "A": "saTISfactory",
-    "B": "satisFACtory",
-    "C": "SATisfactory",
-    "D": "satisfactory",
+    "options": {
+      "A": "saTISfactory",
+      "B": "satisFACtory",
+      "C": "SATisfactory",
+      "D": "satisfactory"
+    },
     "answer": "B"
   },
   {
     "id": 273,
     "question": "Choose the most appropriate stress pattern for 'captivity'.",
-    "A": "captiVIty",
-    "B": "CAPtivity",
-    "C": "captIVity",
-    "D": "CAPtivITY",
+    "options": {
+      "A": "captiVIty",
+      "B": "CAPtivity",
+      "C": "captIVity",
+      "D": "CAPtivITY"
+    },
     "answer": "C"
   },
   {
     "id": 274,
     "question": "EMEKA finished his home work yesterday.",
-    "A": "Was Emeka helped to do his homework?",
-    "B": "Did Emeka do his homework?",
-    "C": "When did Emeka finish his homework?",
-    "D": "Who finished his home work yesterday?",
+    "options": {
+      "A": "Was Emeka helped to do his homework?",
+      "B": "Did Emeka do his homework?",
+      "C": "When did Emeka finish his homework?",
+      "D": "Who finished his home work yesterday?"
+    },
     "answer": "D"
   },
   {
     "id": 275,
     "question": "Taiwo SAILED to London.",
-    "A": "Did Taiwo fly to London?",
-    "B": "Did Taiwo sail to Brazil?",
-    "C": "Did Taiwo sail to London?",
-    "D": "Where did Taiwo sail to?",
+    "options": {
+      "A": "Did Taiwo fly to London?",
+      "B": "Did Taiwo sail to Brazil?",
+      "C": "Did Taiwo sail to London?",
+      "D": "Where did Taiwo sail to?"
+    },
     "answer": "A"
   },
   {
     "id": 276,
     "question": "My bag is made of LEATHER.",
-    "A": "Whose bag is made of leather?",
-    "B": "Is my bag made of polythene?",
-    "C": "Is Abu's bag made of leather?",
-    "D": "Is my bag made of leather?",
+    "options": {
+      "A": "Whose bag is made of leather?",
+      "B": "Is my bag made of polythene?",
+      "C": "Is Abu's bag made of leather?",
+      "D": "Is my bag made of leather?"
+    },
     "answer": "B"
   },
   {
     "id": 277,
     "question": "Which question paper type of use of English is given to you?",
-    "A": "Type A",
-    "B": "Type B",
-    "C": "Type C",
-    "D": "Type D",
+    "options": {
+      "A": "Type A",
+      "B": "Type B",
+      "C": "Type C",
+      "D": "Type D"
+    },
     "answer": "D"
   },
   {
     "id": 278,
     "question": "If he were here, it could be more fun.",
-    "A": "He was expected but did not show up to make the occasion lively",
-    "B": "There was no fun because he was not present",
-    "C": "He did not show up and so the occasion lacked much fun",
-    "D": "He was being expected to supply more fun",
+    "options": {
+      "A": "He was expected but did not show up to make the occasion lively",
+      "B": "There was no fun because he was not present",
+      "C": "He did not show up and so the occasion lacked much fun",
+      "D": "He was being expected to supply more fun"
+    },
     "answer": "C"
   },
   {
     "id": 279,
     "question": "The secretary said that the postponement of the meeting was due to unforeseen circumstances.",
-    "A": "The date of the meeting was shifted as a result of unexpected reasons",
-    "B": "The meeting's date was put off for strange reasons",
-    "C": "The meeting was called off as a result of obstacles hitherto unknown",
-    "D": "The meeting broke off as a result of unusual difficulties",
+    "options": {
+      "A": "The date of the meeting was shifted as a result of unexpected reasons",
+      "B": "The meeting's date was put off for strange reasons",
+      "C": "The meeting was called off as a result of obstacles hitherto unknown",
+      "D": "The meeting broke off as a result of unusual difficulties"
+    },
     "answer": "A"
   },
   {
     "id": 280,
     "question": "The hunter has a bird's-eye view of the animals.",
-    "A": "He views the animal from a high position",
-    "B": "He views the bird's eye",
-    "C": "He views the birds on the tree with one eye",
-    "D": "He watches animals and birds closely",
+    "options": {
+      "A": "He views the animal from a high position",
+      "B": "He views the bird's eye",
+      "C": "He views the birds on the tree with one eye",
+      "D": "He watches animals and birds closely"
+    },
     "answer": "A"
   },
   {
     "id": 281,
     "question": "Even though Susan was the last in the examination, her result wasn't too different from what had been expected.",
-    "A": "Her result was poor",
-    "B": "Her result was a disappointment",
-    "C": "Her result was as expected",
-    "D": "She had not been serious with her studies",
+    "options": {
+      "A": "Her result was poor",
+      "B": "Her result was a disappointment",
+      "C": "Her result was as expected",
+      "D": "She had not been serious with her studies"
+    },
     "answer": "C"
   },
   {
     "id": 282,
     "question": "Mrs. Adasu does all her work with more haste, less speed.",
-    "A": "She accepts whatever she does with more haste and speed",
-    "B": "She approaches whatever she does hurriedly",
-    "C": "She addresses everything she does very quickly to avoid mistakes",
-    "D": "She does everything carefully to avoid mistakes",
+    "options": {
+      "A": "She accepts whatever she does with more haste and speed",
+      "B": "She approaches whatever she does hurriedly",
+      "C": "She addresses everything she does very quickly to avoid mistakes",
+      "D": "She does everything carefully to avoid mistakes"
+    },
     "answer": "D"
   },
   {
     "id": 283,
     "question": "She stopped her education as her uncle left her in the lurch.",
-    "A": "Her uncle deceived her",
-    "B": "Her uncle disinherited her",
-    "C": "Her uncle refused to help her",
-    "D": "Her uncle disrespected her",
+    "options": {
+      "A": "Her uncle deceived her",
+      "B": "Her uncle disinherited her",
+      "C": "Her uncle refused to help her",
+      "D": "Her uncle disrespected her"
+    },
     "answer": "C"
   },
   {
     "id": 284,
     "question": "The plan to upgrade the dispensary to a general hospital did not materialize.",
-    "A": "The plan did not meet the required specifications",
-    "B": "The arrangement did not work out as wished",
-    "C": "It was difficult to obtain the materials",
-    "D": "The materials purchased were not the right ones",
+    "options": {
+      "A": "The plan did not meet the required specifications",
+      "B": "The arrangement did not work out as wished",
+      "C": "It was difficult to obtain the materials",
+      "D": "The materials purchased were not the right ones"
+    },
     "answer": "B"
   },
   {
     "id": 285,
     "question": "Okon's company took a hit last year.",
-    "A": "His company improved last year",
-    "B": "His company made a huge success last year",
-    "C": "His company was badly damaged last year",
-    "D": "His company was established last year",
+    "options": {
+      "A": "His company improved last year",
+      "B": "His company made a huge success last year",
+      "C": "His company was badly damaged last year",
+      "D": "His company was established last year"
+    },
     "answer": "B"
   },
   {
     "id": 286,
     "question": "My eldest son, who is in Lagos, is studying English.",
-    "A": "Only my son is in Lagos studying English",
-    "B": "My only son is in Lagos studying English",
-    "C": "One of my sons is in Lagos studying English",
-    "D": "My sons are in Lagos but only one is studying English",
+    "options": {
+      "A": "Only my son is in Lagos studying English",
+      "B": "My only son is in Lagos studying English",
+      "C": "One of my sons is in Lagos studying English",
+      "D": "My sons are in Lagos but only one is studying English"
+    },
     "answer": "C"
   },
   {
     "id": 287,
     "question": "If I went to the village, I would visit the king.",
-    "A": "If I go to the village I will visit the king",
-    "B": "I did not go to the village and I did not visit the king",
-    "C": "All the times I went to village I also visited the King",
-    "D": "I will visit the king when I go to the village",
+    "options": {
+      "A": "If I go to the village I will visit the king",
+      "B": "I did not go to the village and I did not visit the king",
+      "C": "All the times I went to village I also visited the King",
+      "D": "I will visit the king when I go to the village"
+    },
     "answer": "C"
   },
   {
     "id": 288,
     "question": "Since its inception in 1983, the newspaper has attracted thousands of readers.",
-    "A": "renaissance",
-    "B": "coming",
-    "C": "commencement",
-    "D": "publication",
+    "options": {
+      "A": "renaissance",
+      "B": "coming",
+      "C": "commencement",
+      "D": "publication"
+    },
     "answer": "C"
   },
   {
     "id": 289,
     "question": "Mrs. Asio wanted her sister to stop being so detached.",
-    "A": "friendly",
-    "B": "careless",
-    "C": "indifferent",
-    "D": "passionate",
+    "options": {
+      "A": "friendly",
+      "B": "careless",
+      "C": "indifferent",
+      "D": "passionate"
+    },
     "answer": "C"
   },
   {
     "id": 290,
     "question": "Lantana dwelt in a ruined cottage on the hillside.",
-    "A": "sat",
-    "B": "worked",
-    "C": "slept",
-    "D": "lived",
+    "options": {
+      "A": "sat",
+      "B": "worked",
+      "C": "slept",
+      "D": "lived"
+    },
     "answer": "D"
   },
   {
     "id": 291,
     "question": "The mistake brought the show to an ignominious end.",
-    "A": "a good",
-    "B": "a palatable",
-    "C": "a disgraceful",
-    "D": "a satisfactory",
+    "options": {
+      "A": "a good",
+      "B": "a palatable",
+      "C": "a disgraceful",
+      "D": "a satisfactory"
+    },
     "answer": "C"
   },
   {
     "id": 292,
     "question": "He compliments me on my way of doing things.",
-    "A": "complements",
-    "B": "imitates",
-    "C": "disgusts",
-    "D": "praises",
+    "options": {
+      "A": "complements",
+      "B": "imitates",
+      "C": "disgusts",
+      "D": "praises"
+    },
     "answer": "D"
   },
   {
     "id": 293,
     "question": "The girl is angry with her friend who had ensnared her into this relationship.",
-    "A": "tricked",
-    "B": "encouraged",
-    "C": "forced",
-    "D": "pushed",
+    "options": {
+      "A": "tricked",
+      "B": "encouraged",
+      "C": "forced",
+      "D": "pushed"
+    },
     "answer": "A"
   },
   {
     "id": 294,
     "question": "Their new house was roofed with corrugated sheets.",
-    "A": "folded",
-    "B": "iron",
-    "C": "aluminium",
-    "D": "corrupted",
+    "options": {
+      "A": "folded",
+      "B": "iron",
+      "C": "aluminium",
+      "D": "corrupted"
+    },
     "answer": "B"
   },
   {
     "id": 295,
     "question": "The stockbroker said it was an astute move to sell the shares then.",
-    "A": "a bad",
-    "B": "a shrewd",
-    "C": "an unprofitable",
-    "D": "an insincere",
+    "options": {
+      "A": "a bad",
+      "B": "a shrewd",
+      "C": "an unprofitable",
+      "D": "an insincere"
+    },
     "answer": "B"
   },
   {
     "id": 296,
     "question": "The principal described Oche as the most tactful person he had ever worked with.",
-    "A": "passionate",
-    "B": "discrete",
-    "C": "hard-working",
-    "D": "innovate",
+    "options": {
+      "A": "passionate",
+      "B": "discrete",
+      "C": "hard-working",
+      "D": "innovate"
+    },
     "answer": "B"
   },
   {
     "id": 297,
     "question": "The old woman is suffering from dementia.",
-    "A": "lucidity",
-    "B": "senility",
-    "C": "insanity",
-    "D": "sagacity",
+    "options": {
+      "A": "lucidity",
+      "B": "senility",
+      "C": "insanity",
+      "D": "sagacity"
+    },
     "answer": "B"
   },
   {
     "id": 298,
     "question": "Some drugs have deleterious effect on a child's development.",
-    "A": "debilitating",
-    "B": "helpful",
-    "C": "harmful",
-    "D": "healing",
+    "options": {
+      "A": "debilitating",
+      "B": "helpful",
+      "C": "harmful",
+      "D": "healing"
+    },
     "answer": "C"
   },
   {
     "id": 299,
     "question": "Fila has always been described as belligerent.",
-    "A": "beautiful",
-    "B": "attractive",
-    "C": "combative",
-    "D": "innocent",
+    "options": {
+      "A": "beautiful",
+      "B": "attractive",
+      "C": "combative",
+      "D": "innocent"
+    },
     "answer": "C"
   },
   {
     "id": 300,
     "question": "Laraba saw a forlorn little figure sitting outside the class.",
-    "A": "wise and intelligent",
-    "B": "lonely and unhappy",
-    "C": "smart and healthy",
-    "D": "short and ugly",
+    "options": {
+      "A": "wise and intelligent",
+      "B": "lonely and unhappy",
+      "C": "smart and healthy",
+      "D": "short and ugly"
+    },
     "answer": "B"
   },
   {
     "id": 301,
     "question": "The circular supersedes all previous correspondence on the matter.",
-    "A": "supports",
-    "B": "displaces",
-    "C": "eliminates",
-    "D": "circumvent",
+    "options": {
+      "A": "supports",
+      "B": "displaces",
+      "C": "eliminates",
+      "D": "circumvent"
+    },
     "answer": "B"
   },
   {
     "id": 302,
     "question": "Her problem was exacerbated by the loss of her father.",
-    "A": "exaggerated",
-    "B": "solved",
-    "C": "aggravated",
-    "D": "infuriated",
+    "options": {
+      "A": "exaggerated",
+      "B": "solved",
+      "C": "aggravated",
+      "D": "infuriated"
+    },
     "answer": "C"
   },
   {
     "id": 303,
     "question": "The warring communities were coerced into negotiating a settlement.",
-    "A": "driven",
-    "B": "compelled",
-    "C": "persuaded",
-    "D": "pressured",
+    "options": {
+      "A": "driven",
+      "B": "compelled",
+      "C": "persuaded",
+      "D": "pressured"
+    },
     "answer": "C"
   },
   {
     "id": 304,
     "question": "His father served as a mercenary in the army.",
-    "A": "preacher",
-    "B": "regular",
-    "C": "recruit",
-    "D": "officer",
+    "options": {
+      "A": "preacher",
+      "B": "regular",
+      "C": "recruit",
+      "D": "officer"
+    },
     "answer": "B"
   },
   {
     "id": 305,
     "question": "Jummai is cruel to her husband.",
-    "A": "harsh",
-    "B": "brutal",
-    "C": "passionate",
-    "D": "ferocious",
+    "options": {
+      "A": "harsh",
+      "B": "brutal",
+      "C": "passionate",
+      "D": "ferocious"
+    },
     "answer": "C"
   },
   {
     "id": 306,
     "question": "The teacher who beat the student was treated with mercy.",
-    "A": "disrespect",
-    "B": "contempt",
-    "C": "vengeance",
-    "D": "kindness",
+    "options": {
+      "A": "disrespect",
+      "B": "contempt",
+      "C": "vengeance",
+      "D": "kindness"
+    },
     "answer": "C"
   },
   {
     "id": 307,
     "question": "His wife hated his garrulous attitude.",
-    "A": "outspoken",
-    "B": "unfriendly",
-    "C": "reticent",
-    "D": "thoughtful",
+    "options": {
+      "A": "outspoken",
+      "B": "unfriendly",
+      "C": "reticent",
+      "D": "thoughtful"
+    },
     "answer": "C"
   },
   {
     "id": 308,
     "question": "Agoshito is a callow youth; said the teacher.",
-    "A": "An ignorant",
-    "B": "An experienced",
-    "C": "An idle",
-    "D": "An organized",
+    "options": {
+      "A": "An ignorant",
+      "B": "An experienced",
+      "C": "An idle",
+      "D": "An organized"
+    },
     "answer": "B"
   },
   {
     "id": 309,
     "question": "What you are asking me to do is a herculean task.",
-    "A": "a strenuous",
-    "B": "a demanding",
-    "C": "a lovely",
-    "D": "an easy",
+    "options": {
+      "A": "a strenuous",
+      "B": "a demanding",
+      "C": "a lovely",
+      "D": "an easy"
+    },
     "answer": "D"
   },
   {
     "id": 310,
     "question": "Nkechi was a novice when she was first employed.",
-    "A": "manager",
-    "B": "clerk",
-    "C": "supervisor",
-    "D": "professional",
+    "options": {
+      "A": "manager",
+      "B": "clerk",
+      "C": "supervisor",
+      "D": "professional"
+    },
     "answer": "D"
   },
   {
     "id": 311,
     "question": "'I do not trust him,' he said, in a rare moment of candour.",
-    "A": "reproach",
-    "B": "dishonesty",
-    "C": "frankness",
-    "D": "fairness",
+    "options": {
+      "A": "reproach",
+      "B": "dishonesty",
+      "C": "frankness",
+      "D": "fairness"
+    },
     "answer": "B"
   },
   {
     "id": 312,
     "question": "Mrs Akunilo looks anaemic today.",
-    "A": "strange",
-    "B": "sick",
-    "C": "weak",
-    "D": "strong",
+    "options": {
+      "A": "strange",
+      "B": "sick",
+      "C": "weak",
+      "D": "strong"
+    },
     "answer": "D"
   },
   {
     "id": 313,
     "question": "It is inconceivable that the sun shone in the night.",
-    "A": "credible",
-    "B": "unthinkable",
-    "C": "impossible",
-    "D": "contestable",
+    "options": {
+      "A": "credible",
+      "B": "unthinkable",
+      "C": "impossible",
+      "D": "contestable"
+    },
     "answer": "A"
   },
   {
     "id": 314,
     "question": "She only gives a superficial impression of warmth and friendliness.",
-    "A": "a strong",
-    "B": "a fake",
-    "C": "a deep",
-    "D": "an unrealistic",
+    "options": {
+      "A": "a strong",
+      "B": "a fake",
+      "C": "a deep",
+      "D": "an unrealistic"
+    },
     "answer": "C"
   },
   {
     "id": 315,
     "question": "As a prudent businessman, Adayi does not leave anything to chance.",
-    "A": "A frugal",
-    "B": "Shrewd",
-    "C": "careless",
-    "D": "unsuccessful",
+    "options": {
+      "A": "A frugal",
+      "B": "Shrewd",
+      "C": "careless",
+      "D": "unsuccessful"
+    },
     "answer": "C"
   },
   {
     "id": 316,
     "question": "His antipathy affected the growth of his business.",
-    "A": "hatred",
-    "B": "receptiveness",
-    "C": "loyalty",
-    "D": "hostility",
+    "options": {
+      "A": "hatred",
+      "B": "receptiveness",
+      "C": "loyalty",
+      "D": "hostility"
+    },
     "answer": "B"
   },
   {
     "id": 317,
     "question": "Okonkwo's lethal right foot did the magic in the football match.",
-    "A": "Weak",
-    "B": "wicked",
-    "C": "fat",
-    "D": "harmless",
+    "options": {
+      "A": "Weak",
+      "B": "wicked",
+      "C": "fat",
+      "D": "harmless"
+    },
     "answer": "A"
   },
   {
     "id": 318,
     "question": "When his car tyre ...... on the way, he did not know what to do.",
-    "A": "has burst",
-    "B": "had burst",
-    "C": "bursted",
-    "D": "burst",
+    "options": {
+      "A": "has burst",
+      "B": "had burst",
+      "C": "bursted",
+      "D": "burst"
+    },
     "answer": "D"
   },
   {
     "id": 319,
     "question": "Lami's father ...... as a gardener when he was young, but now he is a driver.",
-    "A": "had been working",
-    "B": "use to work",
-    "C": "has worked",
-    "D": "used to work",
+    "options": {
+      "A": "had been working",
+      "B": "use to work",
+      "C": "has worked",
+      "D": "used to work"
+    },
     "answer": "D"
   },
   {
     "id": 320,
     "question": "...... he switches on the light, the shadow disappears.",
-    "A": "whenever",
-    "B": "except",
-    "C": "since",
-    "D": "until",
+    "options": {
+      "A": "whenever",
+      "B": "except",
+      "C": "since",
+      "D": "until"
+    },
     "answer": "A"
   },
   {
     "id": 321,
     "question": "It is important that you clear the refuse in front of your house every ......",
-    "A": "fourteenth",
-    "B": "fortnight",
-    "C": "fourthnight",
-    "D": "forthnight",
+    "options": {
+      "A": "fourteenth",
+      "B": "fortnight",
+      "C": "fourthnight",
+      "D": "forthnight"
+    },
     "answer": "B"
   },
   {
     "id": 322,
     "question": "The policemen became suspicious as the hoodlums ...... in their office.",
-    "A": "ferreted",
-    "B": "ferreted",
-    "C": "ferreted about",
-    "D": "ferreted about",
+    "options": {
+      "A": "ferreted",
+      "B": "ferreted",
+      "C": "ferreted about",
+      "D": "ferreted about"
+    },
     "answer": "C"
   },
   {
     "id": 323,
     "question": "Suara needn't come with us ......?",
-    "A": "does she",
-    "B": "will she",
-    "C": "can she",
-    "D": "need she",
+    "options": {
+      "A": "does she",
+      "B": "will she",
+      "C": "can she",
+      "D": "need she"
+    },
     "answer": "A"
   },
   {
     "id": 324,
     "question": "Unoka ...... the whole house to find his missing wristwatch.",
-    "A": "scourged",
-    "B": "scoured",
-    "C": "scored",
-    "D": "scouted",
+    "options": {
+      "A": "scourged",
+      "B": "scoured",
+      "C": "scored",
+      "D": "scouted"
+    },
     "answer": "B"
   },
   {
     "id": 325,
     "question": "Ife asked me ......",
-    "A": "what time it was",
-    "B": "what is it by my time",
-    "C": "what time is it",
-    "D": "what time it is",
+    "options": {
+      "A": "what time it was",
+      "B": "what is it by my time",
+      "C": "what time is it",
+      "D": "what time it is"
+    },
     "answer": "A"
   },
   {
     "id": 326,
     "question": "There are many ways to kill a rat, so we should be ...... in our approach to the task ahead of us.",
-    "A": "ecletic",
-    "B": "eclectic",
-    "C": "eclactic",
-    "D": "eclactic",
+    "options": {
+      "A": "ecletic",
+      "B": "eclectic",
+      "C": "eclactic",
+      "D": "eclactic"
+    },
     "answer": "B"
   },
   {
     "id": 327,
     "question": "Audu took these action purely ...... his own career.",
-    "A": "on furtherance of",
-    "B": "in furtherance of",
-    "C": "to furtherance in",
-    "D": "in furtherance with",
+    "options": {
+      "A": "on furtherance of",
+      "B": "in furtherance of",
+      "C": "to furtherance in",
+      "D": "in furtherance with"
+    },
     "answer": "B"
   },
   {
     "id": 328,
     "question": "Here is Mr. Odumusu who teaches English ...... in our school.",
-    "A": "pronounciation",
-    "B": "pronunciation",
-    "C": "pronounciation",
-    "D": "pronunciation",
+    "options": {
+      "A": "pronounciation",
+      "B": "pronunciation",
+      "C": "pronounciation",
+      "D": "pronunciation"
+    },
     "answer": "C"
   },
   {
     "id": 329,
     "question": "Instead of ...... she lied.",
-    "A": "pleading",
-    "B": "her to plead",
-    "C": "her pleading",
-    "D": "plead",
+    "options": {
+      "A": "pleading",
+      "B": "her to plead",
+      "C": "her pleading",
+      "D": "plead"
+    },
     "answer": "A"
   },
   {
     "id": 330,
     "question": "Of the three girls, Uka is the ......",
-    "A": "so much notorious",
-    "B": "notorious",
-    "C": "naught",
-    "D": "naughtiest",
+    "options": {
+      "A": "so much notorious",
+      "B": "notorious",
+      "C": "naught",
+      "D": "naughtiest"
+    },
     "answer": "D"
   },
   {
     "id": 331,
     "question": "I wonder how he will ...... being absent from school for a long time.",
-    "A": "make in",
-    "B": "make up",
-    "C": "make off",
-    "D": "make out",
+    "options": {
+      "A": "make in",
+      "B": "make up",
+      "C": "make off",
+      "D": "make out"
+    },
     "answer": "B"
   },
   {
     "id": 332,
     "question": "Please sit on the ......",
-    "A": "carrier",
-    "B": "career",
-    "C": "carrier",
-    "D": "carrear",
+    "options": {
+      "A": "carrier",
+      "B": "career",
+      "C": "carrier",
+      "D": "carrear"
+    },
     "answer": "C"
   },
   {
     "id": 333,
     "question": "I want to ...... this chance to acquaint you with the latest development.",
-    "A": "size",
-    "B": "seize",
-    "C": "sieze",
-    "D": "cease",
+    "options": {
+      "A": "size",
+      "B": "seize",
+      "C": "sieze",
+      "D": "cease"
+    },
     "answer": "B"
   },
   {
     "id": 334,
     "question": "Getting a well-paid job nowadays is on ...... task.",
-    "A": "utmost",
-    "B": "upbeat",
-    "C": "uphill",
-    "D": "upfield",
+    "options": {
+      "A": "utmost",
+      "B": "upbeat",
+      "C": "uphill",
+      "D": "upfield"
+    },
     "answer": "C"
   },
   {
     "id": 335,
     "question": "The secretary has no right to ...... my affairs.",
-    "A": "spy from",
-    "B": "meddle in",
-    "C": "toy at",
-    "D": "complain into",
+    "options": {
+      "A": "spy from",
+      "B": "meddle in",
+      "C": "toy at",
+      "D": "complain into"
+    },
     "answer": "B"
   },
   {
     "id": 336,
     "question": "Bola studiously avoided ...... the question.",
-    "A": "parrying",
-    "B": "answering",
-    "C": "projecting",
-    "D": "destroying",
+    "options": {
+      "A": "parrying",
+      "B": "answering",
+      "C": "projecting",
+      "D": "destroying"
+    },
     "answer": "B"
   },
   {
     "id": 337,
     "question": "The school authority dismissed him for ...... but I won't tell you about it yet.",
-    "A": "certain reason",
-    "B": "a reason",
-    "C": "more reason",
-    "D": "a certain reason",
+    "options": {
+      "A": "certain reason",
+      "B": "a reason",
+      "C": "more reason",
+      "D": "a certain reason"
+    },
     "answer": "A"
   },
   {
     "id": 338,
     "question": "Choose the option that has the same vowel sound as the one represented by the underlined letters in 'bubble'.",
-    "A": "guy",
-    "B": "bull",
-    "C": "bumper",
-    "D": "gurgle",
+    "options": {
+      "A": "guy",
+      "B": "bull",
+      "C": "bumper",
+      "D": "gurgle"
+    },
     "answer": "C"
   },
   {
     "id": 339,
     "question": "Choose the option that has the same vowel sound as the one represented by the underlined letters in 'Weight'.",
-    "A": "whale",
-    "B": "while",
-    "C": "wheat",
-    "D": "writhe",
+    "options": {
+      "A": "whale",
+      "B": "while",
+      "C": "wheat",
+      "D": "writhe"
+    },
     "answer": "C"
   },
   {
     "id": 340,
     "question": "Choose the option that has the same vowel sound as the one represented by the underlined letters in 'Leach'.",
-    "A": "gear",
-    "B": "cedar",
-    "C": "cheer",
-    "D": "death",
+    "options": {
+      "A": "gear",
+      "B": "cedar",
+      "C": "cheer",
+      "D": "death"
+    },
     "answer": "A"
   },
   {
     "id": 341,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'mention'.",
-    "A": "that",
-    "B": "machine",
-    "C": "church",
-    "D": "test",
+    "options": {
+      "A": "that",
+      "B": "machine",
+      "C": "church",
+      "D": "test"
+    },
     "answer": "B"
   },
   {
     "id": 342,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'prestige'.",
-    "A": "bag",
-    "B": "badge",
-    "C": "reggae",
-    "D": "leisure",
+    "options": {
+      "A": "bag",
+      "B": "badge",
+      "C": "reggae",
+      "D": "leisure"
+    },
     "answer": "D"
   },
   {
     "id": 343,
     "question": "Choose the option that has the same consonant sound as the one represented by the underlined letters in 'knot'.",
-    "A": "cot",
-    "B": "keep",
-    "C": "norm",
-    "D": "king",
+    "options": {
+      "A": "cot",
+      "B": "keep",
+      "C": "norm",
+      "D": "king"
+    },
     "answer": "C"
   },
   {
     "id": 344,
     "question": "Choose the option that rhymes with 'Fuel'.",
-    "A": "cruel",
-    "B": "fool",
-    "C": "rule",
-    "D": "field",
+    "options": {
+      "A": "cruel",
+      "B": "fool",
+      "C": "rule",
+      "D": "field"
+    },
     "answer": "A"
   },
   {
     "id": 345,
     "question": "Choose the option that rhymes with 'match'.",
-    "A": "harsh",
-    "B": "batch",
-    "C": "such",
-    "D": "watch",
+    "options": {
+      "A": "harsh",
+      "B": "batch",
+      "C": "such",
+      "D": "watch"
+    },
     "answer": "B"
   },
   {
     "id": 346,
     "question": "Choose the option that rhymes with 'Sheer'.",
-    "A": "Sheila",
-    "B": "care",
-    "C": "ear",
-    "D": "sherry",
+    "options": {
+      "A": "Sheila",
+      "B": "care",
+      "C": "ear",
+      "D": "sherry"
+    },
     "answer": "C"
   },
   {
     "id": 347,
     "question": "Choose the appropriate stress pattern for 'Termination'.",
-    "A": "terminaTION",
-    "B": "TERmination",
-    "C": "termiNation",
-    "D": "terMInation",
+    "options": {
+      "A": "terminaTION",
+      "B": "TERmination",
+      "C": "termiNation",
+      "D": "terMInation"
+    },
     "answer": "C"
   },
   {
     "id": 348,
     "question": "Choose the appropriate stress pattern for 'meditative'.",
-    "A": "meDIttative",
-    "B": "mediTative",
-    "C": "Meditative",
-    "D": "meditaTIVE",
+    "options": {
+      "A": "meDIttative",
+      "B": "mediTative",
+      "C": "Meditative",
+      "D": "meditaTIVE"
+    },
     "answer": "C"
   },
   {
     "id": 349,
     "question": "Choose the appropriate stress pattern for 'Suggestible'.",
-    "A": "suggeSTIble",
-    "B": "Suggestible",
-    "C": "suGGEstible",
-    "D": "suggestible",
+    "options": {
+      "A": "suggeSTIble",
+      "B": "Suggestible",
+      "C": "suGGEstible",
+      "D": "suggestible"
+    },
     "answer": "C"
   },
   {
     "id": 350,
     "question": "Uche LOVES Toyota cars.",
-    "A": "Who loves Toyota cars?",
-    "B": "What brand of car does Uche love?",
-    "C": "Does Uche hate Toyota cars?",
-    "D": "Does Uche love bicycles?",
+    "options": {
+      "A": "Who loves Toyota cars?",
+      "B": "What brand of car does Uche love?",
+      "C": "Does Uche hate Toyota cars?",
+      "D": "Does Uche love bicycles?"
+    },
     "answer": "C"
   },
   {
     "id": 351,
     "question": "The POLICE arrested the suspect.",
-    "A": "Did the police placate the suspect?",
-    "B": "Who arrested the suspect?",
-    "C": "Who did the police arrest?",
-    "D": "Did the police arrest the suspect?",
+    "options": {
+      "A": "Did the police placate the suspect?",
+      "B": "Who arrested the suspect?",
+      "C": "Who did the police arrest?",
+      "D": "Did the police arrest the suspect?"
+    },
     "answer": "B"
   },
   {
     "id": 352,
     "question": "Maiduguri is the CAPITAL of Borno state.",
-    "A": "Is Maiduguri the capital of plateau state?",
-    "B": "Which state is Maiduguri the capital of?",
-    "C": "Is Maiduguri a town in Borno state?",
-    "D": "What is the capital of Borno state?",
+    "options": {
+      "A": "Is Maiduguri the capital of plateau state?",
+      "B": "Which state is Maiduguri the capital of?",
+      "C": "Is Maiduguri a town in Borno state?",
+      "D": "What is the capital of Borno state?"
+    },
     "answer": "C"
   },
   {
     "id": 353,
     "question": "Hardworking students must not have a finger in every pie at school.",
-    "A": "Hardworking students must not have a role to play in most activities in the school",
-    "B": "Only hardworking students must participate in all activities in the school",
-    "C": "Hardworking students do not participate in all activities in the school",
-    "D": "Hardworking students must ask others to participate in school activities",
+    "options": {
+      "A": "Hardworking students must not have a role to play in most activities in the school",
+      "B": "Only hardworking students must participate in all activities in the school",
+      "C": "Hardworking students do not participate in all activities in the school",
+      "D": "Hardworking students must ask others to participate in school activities"
+    },
     "answer": "C"
   },
   {
     "id": 354,
     "question": "The vice chancellor is riding the crest of the last quarter of his administration.",
-    "A": "The vice chancellor enjoys the acknowledgement of the success of his administration",
-    "B": "The vice chancellor does not enjoy the people's criticism of his administration",
-    "C": "The vice chancellor hopes to overcome soon, the poor comments on his administration",
-    "D": "The vice chancellor does not talk of his successes in office",
+    "options": {
+      "A": "The vice chancellor enjoys the acknowledgement of the success of his administration",
+      "B": "The vice chancellor does not enjoy the people's criticism of his administration",
+      "C": "The vice chancellor hopes to overcome soon, the poor comments on his administration",
+      "D": "The vice chancellor does not talk of his successes in office"
+    },
     "answer": "A"
   },
   {
     "id": 355,
     "question": "She was absolved by the court from the charge.",
-    "A": "She was convicted for the charge",
-    "B": "She was blamed and charged to court",
-    "C": "Her case was resolved by the court",
-    "D": "She was declared free from the charge",
+    "options": {
+      "A": "She was convicted for the charge",
+      "B": "She was blamed and charged to court",
+      "C": "Her case was resolved by the court",
+      "D": "She was declared free from the charge"
+    },
     "answer": "D"
   },
   {
     "id": 356,
     "question": "The landlord is fond of throwing his weight about.",
-    "A": "The landlord likes healthy exercise",
-    "B": "The landlord is overweight",
-    "C": "The landlord gives orders to people",
-    "D": "The landlord is respected by his tenants",
+    "options": {
+      "A": "The landlord likes healthy exercise",
+      "B": "The landlord is overweight",
+      "C": "The landlord gives orders to people",
+      "D": "The landlord is respected by his tenants"
+    },
     "answer": "C"
   },
   {
     "id": 357,
     "question": "The company ought to have issued warrants for one billion shares.",
-    "A": "The company has issued one billion shares",
-    "B": "The management expected the company to issue more than one billion shares",
-    "C": "Members of the company bought less than one billion shares",
-    "D": "The company did not issue one billion shares",
+    "options": {
+      "A": "The company has issued one billion shares",
+      "B": "The management expected the company to issue more than one billion shares",
+      "C": "Members of the company bought less than one billion shares",
+      "D": "The company did not issue one billion shares"
+    },
     "answer": "D"
   },
   {
     "id": 358,
     "question": "He needed not to have played in the position of quarterback in the volleyball.",
-    "A": "He participated in the game in his unusual position",
-    "B": "Nobody expected him to have participated in the game",
-    "C": "He wanted to play in a position other than the one he was offered",
-    "D": "Someone did not want him to play in the position that he played",
+    "options": {
+      "A": "He participated in the game in his unusual position",
+      "B": "Nobody expected him to have participated in the game",
+      "C": "He wanted to play in a position other than the one he was offered",
+      "D": "Someone did not want him to play in the position that he played"
+    },
     "answer": "A"
   },
   {
     "id": 359,
     "question": "I wouldn't have responded to his rude talk, if I were you.",
-    "A": "The advice was taken by the respondent, so he did not respond to the talk",
-    "B": "The adviser put himself in the respondent's position, so he did not respond to the talk",
-    "C": "The respondent replied to the speaker's talk, although he ought not have done so",
-    "D": "What was advisable was that the respondent gave it back to the speaker",
+    "options": {
+      "A": "The advice was taken by the respondent, so he did not respond to the talk",
+      "B": "The adviser put himself in the respondent's position, so he did not respond to the talk",
+      "C": "The respondent replied to the speaker's talk, although he ought not have done so",
+      "D": "What was advisable was that the respondent gave it back to the speaker"
+    },
     "answer": "C"
   },
   {
     "id": 360,
     "question": "He could not speak out because he had a feet of clay.",
-    "A": "His feet was muddy",
-    "B": "He was weak and cowardly",
-    "C": "He was clumsy and lazy",
-    "D": "He was shy and timid",
+    "options": {
+      "A": "His feet was muddy",
+      "B": "He was weak and cowardly",
+      "C": "He was clumsy and lazy",
+      "D": "He was shy and timid"
+    },
     "answer": "D"
   },
   {
     "id": 361,
     "question": "The player wasted a golden opportunity during the penalty shoot-out.",
-    "A": "The player hit the bar",
-    "B": "The player did not score the shot",
-    "C": "The player scored the shot that made them win the gold cup",
-    "D": "Instead of a silver cup, they received the golden one",
+    "options": {
+      "A": "The player hit the bar",
+      "B": "The player did not score the shot",
+      "C": "The player scored the shot that made them win the gold cup",
+      "D": "Instead of a silver cup, they received the golden one"
+    },
     "answer": "B"
   },
   {
     "id": 362,
     "question": "As far as Abu is concerned, Mero should be given fifty naira at the most.",
-    "A": "All Abu is saying is that Mero probably deserves more than fifty naira and not less",
-    "B": "All Abu is concerned with is that Mero should be given nothing more than fifty naira",
-    "C": "In Abu's estimation, Mero merits not more than fifty naira",
-    "D": "In Abu's opinion, Mero deserves fifty naira or probably more",
+    "options": {
+      "A": "All Abu is saying is that Mero probably deserves more than fifty naira and not less",
+      "B": "All Abu is concerned with is that Mero should be given nothing more than fifty naira",
+      "C": "In Abu's estimation, Mero merits not more than fifty naira",
+      "D": "In Abu's opinion, Mero deserves fifty naira or probably more"
+    },
     "answer": "B"
   },
   {
     "id": 363,
     "question": "As an idiot, the boy is weak in class.",
-    "A": "a deviant",
-    "B": "a dunce",
-    "C": "an expert",
-    "D": "a genius",
+    "options": {
+      "A": "a deviant",
+      "B": "a dunce",
+      "C": "an expert",
+      "D": "a genius"
+    },
     "answer": "D"
   },
   {
     "id": 364,
     "question": "We were shocked by the news that he had lost the money.",
-    "A": "astonished",
-    "B": "disconcerted",
-    "C": "unconcerned",
-    "D": "surprised",
+    "options": {
+      "A": "astonished",
+      "B": "disconcerted",
+      "C": "unconcerned",
+      "D": "surprised"
+    },
     "answer": "C"
   },
   {
     "id": 365,
     "question": "The principal was advised to be flexible on critical issues.",
-    "A": "livid",
-    "B": "cautious",
-    "C": "evasive",
-    "D": "rigid",
+    "options": {
+      "A": "livid",
+      "B": "cautious",
+      "C": "evasive",
+      "D": "rigid"
+    },
     "answer": "D"
   },
   {
     "id": 366,
     "question": "Bola always looks sober.",
-    "A": "excited",
-    "B": "serious",
-    "C": "worried",
-    "D": "helpless",
+    "options": {
+      "A": "excited",
+      "B": "serious",
+      "C": "worried",
+      "D": "helpless"
+    },
     "answer": "A"
   },
   {
     "id": 367,
     "question": "Dupe was promoted for her efficiency.",
-    "A": "ability",
-    "B": "incompetence",
-    "C": "inconsistency",
-    "D": "rudeness",
+    "options": {
+      "A": "ability",
+      "B": "incompetence",
+      "C": "inconsistency",
+      "D": "rudeness"
+    },
     "answer": "B"
   },
   {
     "id": 368,
     "question": "The management wants to consider her reticent behaviour in due course.",
-    "A": "disapproving",
-    "B": "disciplinarian",
-    "C": "contemplative",
-    "D": "loquacious",
+    "options": {
+      "A": "disapproving",
+      "B": "disciplinarian",
+      "C": "contemplative",
+      "D": "loquacious"
+    },
     "answer": "D"
   },
   {
     "id": 369,
     "question": "Election process often become volatile.",
-    "A": "calm",
-    "B": "strange",
-    "C": "sudden",
-    "D": "latent",
+    "options": {
+      "A": "calm",
+      "B": "strange",
+      "C": "sudden",
+      "D": "latent"
+    },
     "answer": "A"
   },
   {
     "id": 370,
     "question": "Oche entered the principal's office in a rather abrasive manner.",
-    "A": "gentle",
-    "B": "rude",
-    "C": "lackadaisical",
-    "D": "indifferent",
+    "options": {
+      "A": "gentle",
+      "B": "rude",
+      "C": "lackadaisical",
+      "D": "indifferent"
+    },
     "answer": "A"
   },
   {
     "id": 371,
     "question": "Otokpa is a member of the ad hoc committee on stock acquisition.",
-    "A": "improvised",
-    "B": "formal",
-    "C": "temporary",
-    "D": "fact-finding",
+    "options": {
+      "A": "improvised",
+      "B": "formal",
+      "C": "temporary",
+      "D": "fact-finding"
+    },
     "answer": "B"
   },
   {
     "id": 372,
     "question": "His gift to the poor was always infinitesimal.",
-    "A": "large",
-    "B": "small",
-    "C": "supportive",
-    "D": "shameful",
+    "options": {
+      "A": "large",
+      "B": "small",
+      "C": "supportive",
+      "D": "shameful"
+    },
     "answer": "A"
   },
   {
     "id": 373,
     "question": "The economist concluded that several factors have been adduced to explain the fall in the birth rate.",
-    "A": "affirmed",
-    "B": "diffused",
-    "C": "mentioned",
-    "D": "refuted",
+    "options": {
+      "A": "affirmed",
+      "B": "diffused",
+      "C": "mentioned",
+      "D": "refuted"
+    },
     "answer": "D"
   },
   {
     "id": 374,
     "question": "The presidential system is an antidote to some political ailments.",
-    "A": "an answer",
-    "B": "a reply",
-    "C": "an injury",
-    "D": "an obstacle",
+    "options": {
+      "A": "an answer",
+      "B": "a reply",
+      "C": "an injury",
+      "D": "an obstacle"
+    },
     "answer": "D"
   },
   {
     "id": 375,
     "question": "Ola thought that her father was very callous.",
-    "A": "parlous",
-    "B": "compassionate",
-    "C": "wicked",
-    "D": "cheerful",
+    "options": {
+      "A": "parlous",
+      "B": "compassionate",
+      "C": "wicked",
+      "D": "cheerful"
+    },
     "answer": "B"
   },
   {
     "id": 376,
     "question": "He was very much respected, though he had no temporal power.",
-    "A": "spiritual",
-    "B": "mundane",
-    "C": "permanent",
-    "D": "ephemeral",
+    "options": {
+      "A": "spiritual",
+      "B": "mundane",
+      "C": "permanent",
+      "D": "ephemeral"
+    },
     "answer": "A"
   },
   {
     "id": 377,
     "question": "The way the worship was organized was rather hit-and-miss.",
-    "A": "systematic",
-    "B": "hasty",
-    "C": "slow",
-    "D": "funny",
+    "options": {
+      "A": "systematic",
+      "B": "hasty",
+      "C": "slow",
+      "D": "funny"
+    },
     "answer": "A"
   },
   {
     "id": 378,
     "question": "Some men will continue to cause offences until they are given a taste of their own medicine.",
-    "A": "placated",
-    "B": "revenged on",
-    "C": "recompensed for",
-    "D": "cured",
+    "options": {
+      "A": "placated",
+      "B": "revenged on",
+      "C": "recompensed for",
+      "D": "cured"
+    },
     "answer": "B"
   },
   {
     "id": 379,
     "question": "Okibe was rusticated for his derogatory remark about the principal.",
-    "A": "complimentary",
-    "B": "unsavoury",
-    "C": "unwarranted",
-    "D": "lacklustre",
+    "options": {
+      "A": "complimentary",
+      "B": "unsavoury",
+      "C": "unwarranted",
+      "D": "lacklustre"
+    },
     "answer": "B"
   },
   {
     "id": 380,
     "question": "Justice is difficult to enforce because people are unwilling to accept any loss of sovereignty.",
-    "A": "autonomy",
-    "B": "position",
-    "C": "leadership",
-    "D": "kingdom",
+    "options": {
+      "A": "autonomy",
+      "B": "position",
+      "C": "leadership",
+      "D": "kingdom"
+    },
     "answer": "A"
   },
   {
     "id": 381,
     "question": "There are still virtuous women in our society today.",
-    "A": "clever",
-    "B": "upright",
-    "C": "devilish",
-    "D": "intelligent",
+    "options": {
+      "A": "clever",
+      "B": "upright",
+      "C": "devilish",
+      "D": "intelligent"
+    },
     "answer": "B"
   },
   {
     "id": 382,
     "question": "The type of response is typical of a lazy teacher.",
-    "A": "symptomatic",
-    "B": "characteristic",
-    "C": "universal",
-    "D": "incontestable",
+    "options": {
+      "A": "symptomatic",
+      "B": "characteristic",
+      "C": "universal",
+      "D": "incontestable"
+    },
     "answer": "B"
   },
   {
     "id": 383,
     "question": "Akin is an inveterate gambler.",
-    "A": "a selfish and self-centred",
-    "B": "an extremely unlucky but popular",
-    "C": "an incurable but fearful",
-    "D": "a long time and incorrigible",
+    "options": {
+      "A": "a selfish and self-centred",
+      "B": "an extremely unlucky but popular",
+      "C": "an incurable but fearful",
+      "D": "a long time and incorrigible"
+    },
     "answer": "D"
   },
   {
     "id": 384,
     "question": "He was too petrified to give the closing remarks at the conference.",
-    "A": "frightened",
-    "B": "delighted",
-    "C": "agitated",
-    "D": "happy",
+    "options": {
+      "A": "frightened",
+      "B": "delighted",
+      "C": "agitated",
+      "D": "happy"
+    },
     "answer": "A"
   },
   {
     "id": 385,
     "question": "During a particular time of the day, the road shimmers in the heat.",
-    "A": "darkens",
-    "B": "lightens",
-    "C": "shines",
-    "D": "glistens",
+    "options": {
+      "A": "darkens",
+      "B": "lightens",
+      "C": "shines",
+      "D": "glistens"
+    },
     "answer": "C"
   },
   {
     "id": 386,
     "question": "Every human being is vulnerable to communicable diseases.",
-    "A": "liable",
-    "B": "lifted",
-    "C": "immuned",
-    "D": "closed",
+    "options": {
+      "A": "liable",
+      "B": "lifted",
+      "C": "immuned",
+      "D": "closed"
+    },
     "answer": "A"
   },
   {
     "id": 387,
     "question": "Mariam looks rather furtive to Shehu.",
-    "A": "intoxicated",
-    "B": "unfriendly",
-    "C": "sad",
-    "D": "sly",
+    "options": {
+      "A": "intoxicated",
+      "B": "unfriendly",
+      "C": "sad",
+      "D": "sly"
+    },
     "answer": "D"
   },
   {
     "id": 388,
     "question": "The student's union leader delivered his speech extempore.",
-    "A": "out-of-hand",
-    "B": "off the cuff",
-    "C": "accurately",
-    "D": "courageously",
+    "options": {
+      "A": "out-of-hand",
+      "B": "off the cuff",
+      "C": "accurately",
+      "D": "courageously"
+    },
     "answer": "A"
   },
   {
     "id": 389,
     "question": "His story gave us an inkling of what he passed through during the strike.",
-    "A": "a possible idea",
-    "B": "a taste",
-    "C": "a summary",
-    "D": "the right view",
+    "options": {
+      "A": "a possible idea",
+      "B": "a taste",
+      "C": "a summary",
+      "D": "the right view"
+    },
     "answer": "A"
   },
   {
     "id": 390,
     "question": "These policies have been exposed by the ruling party.",
-    "A": "condemned",
-    "B": "rejected",
-    "C": "supported",
-    "D": "outlined",
+    "options": {
+      "A": "condemned",
+      "B": "rejected",
+      "C": "supported",
+      "D": "outlined"
+    },
     "answer": "D"
   },
   {
     "id": 391,
     "question": "We must not foreclose reconciliation as the purpose of his trip.",
-    "A": "exclude",
-    "B": "consider",
-    "C": "underestimate",
-    "D": "forgo",
+    "options": {
+      "A": "exclude",
+      "B": "consider",
+      "C": "underestimate",
+      "D": "forgo"
+    },
     "answer": "A"
   },
   {
     "id": 392,
     "question": "Her finding exploded widely held beliefs about learning.",
-    "A": "challenged",
-    "B": "debunked",
-    "C": "projected",
-    "D": "confirmed",
+    "options": {
+      "A": "challenged",
+      "B": "debunked",
+      "C": "projected",
+      "D": "confirmed"
+    },
     "answer": "B"
   },
   {
     "id": 393,
     "question": "He was both a writer and a politician, but he was better ...... a singer.",
-    "A": "as if",
-    "B": "like",
-    "C": "as",
-    "D": "to be",
+    "options": {
+      "A": "as if",
+      "B": "like",
+      "C": "as",
+      "D": "to be"
+    },
     "answer": "C"
   },
   {
     "id": 394,
     "question": "Vacancies in the company will be notified by ......",
-    "A": "bulletin",
-    "B": "publication",
-    "C": "publicity",
-    "D": "advertisement",
+    "options": {
+      "A": "bulletin",
+      "B": "publication",
+      "C": "publicity",
+      "D": "advertisement"
+    },
     "answer": "D"
   },
   {
     "id": 395,
     "question": "The driver was short of petrol, so he ...... down the hills with the engine switched off.",
-    "A": "glided",
-    "B": "coasted",
-    "C": "wheeled",
-    "D": "taxied",
+    "options": {
+      "A": "glided",
+      "B": "coasted",
+      "C": "wheeled",
+      "D": "taxied"
+    },
     "answer": "A"
   },
   {
     "id": 396,
     "question": "He started his career as an ...... teacher.",
-    "A": "auxillary",
-    "B": "auxilliary",
-    "C": "auxiliary",
-    "D": "auxiliary",
+    "options": {
+      "A": "auxillary",
+      "B": "auxilliary",
+      "C": "auxiliary",
+      "D": "auxiliary"
+    },
     "answer": "D"
   },
   {
     "id": 397,
     "question": "His many years of success in legal practice ...... did not come without challenges.",
-    "A": "indeed",
-    "B": "but",
-    "C": "however",
-    "D": "although",
+    "options": {
+      "A": "indeed",
+      "B": "but",
+      "C": "however",
+      "D": "although"
+    },
     "answer": "A"
   },
   {
     "id": 398,
     "question": "One should be careful how ...... behaves in the public, shouldn't ......?",
-    "A": "one/one",
-    "B": "he/he",
-    "C": "she/one",
-    "D": "one/he",
+    "options": {
+      "A": "one/one",
+      "B": "he/he",
+      "C": "she/one",
+      "D": "one/he"
+    },
     "answer": "D"
   },
   {
     "id": 399,
     "question": "......, a good leader must have two characteristics.",
-    "A": "First and formost",
-    "B": "First and formost",
-    "C": "First and formost",
-    "D": "First and foremost",
+    "options": {
+      "A": "First and formost",
+      "B": "First and formost",
+      "C": "First and formost",
+      "D": "First and foremost"
+    },
     "answer": "D"
   },
   {
     "id": 400,
     "question": "We visited his house ...... three times.",
-    "A": "like",
-    "B": "for like",
-    "C": "about",
-    "D": "for about",
+    "options": {
+      "A": "like",
+      "B": "for like",
+      "C": "about",
+      "D": "for about"
+    },
     "answer": "C"
   }
 ]
