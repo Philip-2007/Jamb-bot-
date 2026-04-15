@@ -227,41 +227,46 @@ def admin(update: Update, context: CallbackContext):
     txt += f"   Exam: {avg_exam:.1f}%\n"
     txt += f"   CBT: {avg_cbt:.1f}%\n\n"
     
-    subject_stats = {}
-    for a in DB["attempts"]:
-        if a.get('subject_scores'):
-            for subj, data in a['subject_scores'].items():
-                if subj not in subject_stats:
-                    subject_stats[subj] = {'correct': 0, 'total': 0, 'attempts': 0}
-                subject_stats[subj]['correct'] += data['correct']
-                subject_stats[subj]['total'] += data['total']
-                subject_stats[subj]['attempts'] += 1
-    
-    if subject_stats:
-        txt += f"📚 SUBJECT PERFORMANCE:\n"
-        for subj, data in sorted(subject_stats.items()):
-            avg_pct = round(data['correct'] / data['total'] * 100, 1) if data['total'] > 0 else 0
-            emoji = EMOJIS.get(subj, "📚")
-            txt += f"   {emoji} {subj}: {avg_pct}% ({data['attempts']} attempts)\n"
-    
-    txt += f"\n📋 RECENT ATTEMPTS:\n"
-    for a in DB["attempts"][-5:]:
-        txt += f"   • {a['name']}: {a['percent']}% ({a['mode']})\n"
-    
-    user_best = {}
+    # Group attempts by user
+    user_attempts = {}
     for a in DB["attempts"]:
         uid = a["user_id"]
-        if uid not in user_best or a["percent"] > user_best[uid]["percent"]:
-            user_best[uid] = a
+        if uid not in user_attempts:
+            user_attempts[uid] = []
+        user_attempts[uid].append(a)
     
-    top = sorted(user_best.values(), key=lambda x: x["percent"], reverse=True)[:5]
+    txt += f"━━━━━━━━━━━━━━━━━━━━━━\n"
+    txt += f"📋 ALL PARTICIPANT RESULTS:\n"
+    txt += f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
     
-    txt += f"\n🏆 TOP 5 PERFORMERS:\n"
-    for i, t in enumerate(top, 1):
-        medal = "🥇" if i==1 else "🥈" if i==2 else "🥉" if i==3 else f"{i}."
-        txt += f"{medal} {t['name']}: {t['percent']}% ({t['mode']})\n"
+    for uid, attempts_list in user_attempts.items():
+        latest = attempts_list[-1]
+        txt += f"👤 {latest['name']}"
+        if latest.get('username') and latest['username'] != 'N/A':
+            txt += f" (@{latest['username']})"
+        txt += f"\n"
+        txt += f"   Mode: {latest['mode'].upper()}\n"
+        txt += f"   Date: {latest['timestamp']}\n"
+        txt += f"   Overall: {latest['percent']}% ({latest['raw_score']}/{latest['total_questions']})\n"
+        txt += f"   Marks: {latest['total_marks_earned']:.1f}/{latest['total_marks']}\n"
+        
+        if latest.get('subject_scores'):
+            txt += f"   📚 Subject Breakdown:\n"
+            for subj, data in latest['subject_scores'].items():
+                emoji = EMOJIS.get(subj, "📚")
+                txt += f"      {emoji} {subj}: {data['correct']}/{data['total']} ({data['percent']}%)\n"
+        
+        if len(attempts_list) > 1:
+            txt += f"   📊 Total attempts: {len(attempts_list)}\n"
+        
+        txt += f"\n"
+        
+        # Telegram has message length limit
+        if len(txt) > 3500:
+            txt += "...\n(Use /export for full data)"
+            break
     
-    kb = [[InlineKeyboardButton("📥 EXPORT ALL RESULTS", callback_data="export_csv")]]
+    kb = [[InlineKeyboardButton("📥 EXPORT ALL RESULTS (CSV)", callback_data="export_csv")]]
     update.message.reply_text(txt, reply_markup=InlineKeyboardMarkup(kb))
 
 def export_csv(update: Update, context: CallbackContext):
@@ -277,12 +282,22 @@ def export_csv(update: Update, context: CallbackContext):
         q.edit_message_text("No data to export!")
         return
     
-    csv = "Name,Username,Mode,Subjects,Correct,Total Questions,Marks Earned,Total Marks,Percent,Time,Date\n"
+    csv = "Name,Username,Mode,Date,Overall Score,Overall Percent,Total Marks,"
+    csv += "English Score,English %,Math Score,Math %,Physics Score,Physics %,"
+    csv += "Chemistry Score,Chemistry %,Biology Score,Biology %\n"
+    
     for a in DB["attempts"]:
-        time_str = format_time(a.get('time_taken'))
-        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},{a.get('subjects','')},"
-        csv += f"{a['raw_score']},{a['total_questions']},{a['total_marks_earned']:.1f},{a['total_marks']},"
-        csv += f"{a['percent']}%,{time_str},{a.get('timestamp','')}\n"
+        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},"
+        csv += f"{a.get('timestamp','')},{a['raw_score']}/{a['total_questions']},"
+        csv += f"{a['percent']}%,{a['total_marks_earned']:.1f}/{a['total_marks']},"
+        
+        for subj in ["English", "Mathematics", "Physics", "Chemistry", "Biology"]:
+            if a.get('subject_scores') and subj in a['subject_scores']:
+                data = a['subject_scores'][subj]
+                csv += f"{data['correct']}/{data['total']},{data['percent']}%,"
+            else:
+                csv += "N/A,N/A,"
+        csv += "\n"
     
     filename = f"jamb_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
     with open(filename, "w", encoding="utf-8") as f:
@@ -437,7 +452,6 @@ def send_q(q, context, user):
         check = "✅ " if current_answer == idx else ""
         kb.append([InlineKeyboardButton(f"{check}{chr(65+idx)}. {display}", callback_data=f"ans_{idx}")])
     
-    # Navigation row with PREV button
     nav_row = []
     if i > 0:
         nav_row.append(InlineKeyboardButton("◀️ PREV", callback_data="prev"))
@@ -493,7 +507,6 @@ def handle_answer(update: Update, context: CallbackContext):
         s["answers"][s["i"]] = idx
         q.answer(f"✅ Selected {chr(65+idx)}")
         
-        # Auto-advance to next question if not at end
         if s["i"] < len(s["q"]) - 1:
             s["i"] += 1
             return send_q(q, context, user)
@@ -712,3 +725,4 @@ if __name__ == "__main__":
     print(f"\n👑 Admin ID: {ADMIN_ID}")
     print(f"\n🚀 Bot starting on port {PORT}...")
     app.run(host="0.0.0.0", port=PORT)
+         
