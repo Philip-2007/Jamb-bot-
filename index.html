@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB 2026 CBT Bot - Web Version</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #a0a0b0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            color: #ffffff;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #667eea;
+        }
+
+        input::placeholder {
+            color: #808090;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: none;
+            margin-top: 10px;
+        }
+
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .subject-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .subject-card.selected {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .subject-card h3 {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .subject-card .emoji {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .question-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .question-text {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px 20px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .option:hover {
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .option.selected {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            transition: width 0.3s;
+        }
+
+        .timer {
+            color: #667eea;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .result-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .result-score {
+            font-size: 60px;
+            font-weight: 700;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .subject-breakdown {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .subject-row {
+            display: flex;
+            justify-content: space-between;
+            color: #a0a0b0;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .admin-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .admin-link a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .subject-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Screen -->
+        <div id="registerScreen" class="screen active">
+            <h1>📱 <span class="gradient-text">Register</span></h1>
+            <p class="subtitle">Enter your details to start the quiz</p>
+            
+            <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" id="fullName" placeholder="e.g., Philip John" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="phoneNumber" placeholder="e.g., 08123456789" required>
+                <small style="color: #808090; display: block; margin-top: 5px;">Required for result identification</small>
+            </div>
+            
+            <div class="form-group">
+                <label>Email (Optional)</label>
+                <input type="email" id="email" placeholder="your@email.com">
+            </div>
+            
+            <button class="btn" onclick="register()">Continue →</button>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://t.me/JambCBT2026_Bot" style="color: #667eea; text-decoration: none;">📱 Use Telegram Bot Instead →</a>
+            </div>
+        </div>
+
+        <!-- Mode Selection Screen -->
+        <div id="modeScreen" class="screen">
+            <h1>🎯 <span class="gradient-text">Select Mode</span></h1>
+            <p class="subtitle">Choose your test format</p>
+            
+            <button class="btn" onclick="selectMode('exam')" style="margin-bottom: 15px;">
+                📝 EXAM MODE - 60 Questions, 30 Minutes
+            </button>
+            <button class="btn" onclick="selectMode('cbt')">
+                💻 CBT MODE - 160 Questions, 80 Minutes
+            </button>
+        </div>
+
+        <!-- Subject Selection Screen -->
+        <div id="subjectScreen" class="screen">
+            <h1>📚 <span class="gradient-text">Select Subjects</span></h1>
+            <p class="subtitle" id="subjectInstruction">Pick your subjects</p>
+            
+            <div id="subjectContainer" class="subject-grid"></div>
+            
+            <button class="btn" id="subjectContinueBtn" onclick="continueFromSubjects()">Continue →</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="timer" id="timer">⏱️ 30:00</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            
+            <div class="question-box">
+                <div id="subjectLabel" style="color: #667eea; margin-bottom: 10px;"></div>
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()">◀️ PREV</button>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()">NEXT ▶️</button>
+            </div>
+            <button class="btn btn-secondary" onclick="submitQuiz()">📝 SUBMIT QUIZ</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="resultScreen" class="screen">
+            <h1>🏁 <span class="gradient-text">Quiz Completed!</span></h1>
+            
+            <div class="result-box">
+                <div id="resultEmoji" style="font-size: 50px;"></div>
+                <div class="result-score" id="resultScore"></div>
+                <div id="resultFeedback" style="color: #a0a0b0; margin-bottom: 20px;"></div>
+                
+                <div class="subject-breakdown" id="subjectBreakdown"></div>
+                
+                <button class="btn" onclick="location.reload()">🔄 Start New Quiz</button>
+            </div>
+        </div>
+        
+        <!-- Admin Link -->
+        <div class="admin-link">
+            <a href="#" onclick="showAdminLogin()">🔐 Admin Access</a>
+        </div>
+    </div>
+
+    <script>
+        // Quiz state
+        let currentUser = null;
+        let currentMode = null;
+        let selectedSubjects = [];
+        let questions = [];
+        let currentIndex = 0;
+        let answers = [];
+        let startTime = null;
+        let timerInterval = null;
+        let timeLimit = 0;
+
+        // Questions database (loaded from your JSON files)
+        const questionBank = {
+            English: [],
+            Mathematics: [],
+            Physics: [],
+            Chemistry: [],
+            Biology: []
+        };
+
+        // Load questions from JSON files
+        async function loadQuestions() {
+            const subjects = ['English', 'Mathematics', 'Physics', 'Chemistry', 'Biology'];
+            for (let subject of subjects) {
+                try {
+                    const response = await fetch(`${subject.toLowerCase()}.json`);
+                    const data = await response.json();
+                    
+                    if (Array.isArray(data)) {
+                        questionBank[subject] = data;
+                    } else if (typeof data === 'object') {
+                        // Handle different JSON formats
+                        for (let key in data) {
+                            if (Array.isArray(data[key])) {
+                                questionBank[subject] = questionBank[subject].concat(data[key]);
+                            } else if (typeof data[key] === 'object' && data[key].question) {
+                                questionBank[subject].push(data[key]);
+                            }
+                        }
+                    }
+                    console.log(`Loaded ${questionBank[subject].length} ${subject} questions`);
+                } catch (e) {
+                    console.error(`Failed to load ${subject}:`, e);
+                }
+            }
+        }
+
+        // Registration
+        function register() {
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNumber').value.trim();
+            const email = document.getElementById('email').value.trim();
+            
+            if (!name) {
+                alert('Please enter your full name');
+                return;
+            }
+            
+            if (!phone) {
+                alert('Phone number is required for result identification');
+                return;
+            }
+            
+            if (!phone.match(/^\d{10,15}$/)) {
+                alert('Please enter a valid phone number (10-15 digits)');
+                return;
+            }
+            
+            currentUser = { name, phone, email: email || 'Not provided' };
+            
+            // Save to localStorage for admin
+            saveUserData(currentUser);
+            
+            showScreen('modeScreen');
+        }
+
+        function saveUserData(user) {
+            let users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
+            users.push({
+                ...user,
+                timestamp: new Date().toISOString()
+            });
+            localStorage.setItem('jamb_users', JSON.stringify(users));
+        }
+
+        function selectMode(mode) {
+            currentMode = mode;
+            
+            if (mode === 'exam') {
+                timeLimit = 30 * 60;
+                showScreen('subjectScreen');
+                document.getElementById('subjectInstruction').textContent = 'Select ONE subject';
+                renderSubjectGrid(true);
+            } else {
+                timeLimit = 80 * 60;
+                showScreen('subjectScreen');
+                document.getElementById('subjectInstruction').textContent = 'English (Compulsory) + Select 3 more subjects';
+                renderSubjectGrid(false);
+            }
+        }
+
+        function renderSubjectGrid(singleSelect) {
+            const container = document.getElementById('subjectContainer');
+            const subjects = singleSelect 
+                ? ['English', 'Mathematics', 'Physics', 'Chemistry', 'Biology']
+                : ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
+            
+            selectedSubjects = singleSelect ? [] : ['English'];
+            
+            container.innerHTML = '';
+            
+            subjects.forEach(subject => {
+                const card = document.createElement('div');
+                card.className = 'subject-card';
+                card.innerHTML = `
+                    <div class="emoji">${getEmoji(subject)}</div>
+                    <h3>${subject}</h3>
+                    <small style="color: #808090;">${questionBank[subject]?.length || 0} Qs</small>
+                `;
+                
+                card.onclick = () => {
+                    if (singleSelect) {
+                        document.querySelectorAll('.subject-card').forEach(c => c.classList.remove('selected'));
+                        selectedSubjects = [subject];
+                    } else {
+                        if (selectedSubjects.includes(subject)) {
+                            selectedSubjects = selectedSubjects.filter(s => s !== subject);
+                        } else if (selectedSubjects.length < 4) {
+                            selectedSubjects.push(subject);
+                        } else {
+                            alert('You can only select 3 additional subjects');
+                            return;
+                        }
+                    }
+                    card.classList.toggle('selected');
+                    updateContinueButton();
+                };
+                
+                container.appendChild(card);
+            });
+            
+            if (!singleSelect) {
+                const englishNote = document.createElement('div');
+                englishNote.style.cssText = 'grid-column: span 2; text-align: center; color: #667eea; margin-top: 10px;';
+                englishNote.innerHTML = '📖 English (Compulsory) ✅';
+                container.appendChild(englishNote);
+            }
+        }
+
+        function getEmoji(subject) {
+            const emojis = { English: '📖', Mathematics: '🧮', Physics: '⚡', Chemistry: '🧪', Biology: '🧬' };
+            return emojis[subject] || '📚';
+        }
+
+        function updateContinueButton() {
+            const btn = document.getElementById('subjectContinueBtn');
+            if (currentMode === 'exam') {
+                btn.disabled = selectedSubjects.length !== 1;
+            } else {
+                btn.disabled = selectedSubjects.length !== 4;
+            }
+            btn.style.opacity = btn.disabled ? '0.5' : '1';
+        }
+
+        function continueFromSubjects() {
+            if ((currentMode === 'exam' && selectedSubjects.length !== 1) ||
+                (currentMode === 'cbt' && selectedSubjects.length !== 4)) {
+                alert('Please select the required number of subjects');
+                return;
+            }
+            
+            generateQuestions();
+            startQuiz();
+        }
+
+        function generateQuestions() {
+            questions = [];
+            
+            selectedSubjects.forEach(subject => {
+                const bank = questionBank[subject] || [];
+                const numQuestions = currentMode === 'cbt' ? 40 : 60;
+                const shuffled = bank.sort(() => Math.random() - 0.5);
+                const selected = shuffled.slice(0, Math.min(numQuestions, bank.length));
+                
+                selected.forEach(q => {
+                    questions.push({
+                        ...q,
+                        subject: subject
+                    });
+                });
+            });
+            
+            questions = questions.sort(() => Math.random() - 0.5);
+            answers = new Array(questions.length).fill(null);
+        }
+
+        function startQuiz() {
+            currentIndex = 0;
+            startTime = Date.now();
+            
+            showScreen('quizScreen');
+            renderQuestion();
+            startTimer();
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                const elapsed = Math.floor((Date.now() - startTime) / 1000);
+                const remaining = Math.max(0, timeLimit - elapsed);
+                
+                const mins = Math.floor(remaining / 60);
+                const secs = remaining % 60;
+                document.getElementById('timer').textContent = `⏱️ ${mins}:${secs.toString().padStart(2, '0')}`;
+                
+                if (remaining <= 0) {
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function renderQuestion() {
+            const q = questions[currentIndex];
+            const progress = ((currentIndex + 1) / questions.length) * 100;
+            
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('subjectLabel').textContent = `📖 ${q.subject}`;
+            document.getElementById('questionText').textContent = q.question;
+            
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+            
+            const options = Array.isArray(q.options) ? q.options : Object.values(q.options || {});
+            
+            options.forEach((opt, idx) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option' + (answers[currentIndex] === idx ? ' selected' : '');
+                optionDiv.textContent = `${String.fromCharCode(65 + idx)}. ${opt}`;
+                optionDiv.onclick = () => selectOption(idx);
+                optionsContainer.appendChild(optionDiv);
+            });
+            
+            document.getElementById('prevBtn').style.display = currentIndex > 0 ? 'block' : 'none';
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.textContent = currentIndex === questions.length - 1 ? 'FINISH ▶️' : 'NEXT ▶️';
+        }
+
+        function selectOption(idx) {
+            answers[currentIndex] = idx;
+            renderQuestion();
+        }
+
+        function prevQuestion() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderQuestion();
+            }
+        }
+
+        function nextQuestion() {
+            if (currentIndex < questions.length - 1) {
+                currentIndex++;
+                renderQuestion();
+            } else {
+                submitQuiz();
+            }
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            
+            const answered = answers.filter(a => a !== null).length;
+            const unanswered = questions.length - answered;
+            
+            if (unanswered > 0) {
+                if (!confirm(`You have ${unanswered} unanswered questions. Submit anyway?`)) {
+                    startTimer();
+                    return;
+                }
+            }
+            
+            calculateResults();
+        }
+
+        function calculateResults() {
+            let correct = 0;
+            const subjectScores = {};
+            
+            questions.forEach((q, i) => {
+                const userAnswer = answers[i];
+                const correctAnswer = q.correct !== undefined ? q.correct : 
+                                     (q.answer ? q.answer.charCodeAt(0) - 65 : 0);
+                
+                if (!subjectScores[q.subject]) {
+                    subjectScores[q.subject] = { correct: 0, total: 0 };
+                }
+                subjectScores[q.subject].total++;
+                
+                if (userAnswer === correctAnswer) {
+                    correct++;
+                    subjectScores[q.subject].correct++;
+                }
+            });
+            
+            const total = questions.length;
+            const percent = Math.round((correct / total) * 100);
+            const timeTaken = Math.floor((Date.now() - startTime) / 1000);
+            
+            // Save result
+            const result = {
+                user: currentUser,
+                mode: currentMode,
+                subjects: selectedSubjects,
+                correct,
+                total,
+                percent,
+                timeTaken,
+                subjectScores,
+                timestamp: new Date().toISOString()
+            };
+            
+            let results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
+            results.push(result);
+            localStorage.setItem('jamb_results', JSON.stringify(results));
+            
+            // Display results
+            showScreen('resultScreen');
+            
+            const emoji = percent >= 80 ? '🏆' : percent >= 70 ? '🎯' : percent >= 60 ? '💪' : percent >= 50 ? '📝' : '🌱';
+            const feedback = percent >= 80 ? 'Outstanding!' : percent >= 70 ? 'Excellent!' : percent >= 60 ? 'Good effort!' : percent >= 50 ? 'Fair performance!' : 'Keep practicing!';
+            
+            document.getElementById('resultEmoji').textContent = emoji;
+            document.getElementById('resultScore').textContent = `${percent}%`;
+            document.getElementById('resultFeedback').textContent = feedback;
+            
+            let breakdown = '';
+            for (let subj in subjectScores) {
+                const data = subjectScores[subj];
+                const subjPercent = Math.round((data.correct / data.total) * 100);
+                breakdown += `<div class="subject-row"><span>${getEmoji(subj)} ${subj}</span><span>${data.correct}/${data.total} (${subjPercent}%)</span></div>`;
+            }
+            document.getElementById('subjectBreakdown').innerHTML = breakdown;
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        // Admin functions
+        function showAdminLogin() {
+            const password = prompt('Enter admin password:');
+            if (password === 'admin2026') {
+                showAdminPanel();
+            } else {
+                alert('Invalid password');
+            }
+        }
+
+        function showAdminPanel() {
+            const users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
+            const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
+            
+            let html = '<h2>Admin Panel</h2><div style="max-height: 400px; overflow-y: auto;">';
+            
+            html += '<h3>Registered Users (' + users.length + ')</h3>';
+            users.forEach(u => {
+                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px;">`;
+                html += `<strong>${u.name}</strong><br>`;
+                html += `📞 ${u.phone}<br>`;
+                html += `📧 ${u.email || 'N/A'}<br>`;
+                html += `🕐 ${new Date(u.timestamp).toLocaleString()}`;
+                html += `</div>`;
+            });
+            
+            html += '<h3 style="margin-top: 20px;">Quiz Results (' + results.length + ')</h3>';
+            results.slice(-10).reverse().forEach(r => {
+                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px;">`;
+                html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>`;
+                html += `📞 ${r.user.phone}<br>`;
+                html += `Mode: ${r.mode.toUpperCase()} | ${r.correct}/${r.total}<br>`;
+                html += `🕐 ${new Date(r.timestamp).toLocaleString()}`;
+                html += `</div>`;
+            });
+            
+            html += '</div><br><button class="btn" onclick="exportData()">Export CSV</button>';
+            html += '<button class="btn btn-secondary" onclick="clearData()">Clear All Data</button>';
+            
+            const container = document.createElement('div');
+            container.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1a1a2e; padding: 30px; border-radius: 20px; max-width: 500px; width: 90%; z-index: 1000; box-shadow: 0 25px 50px rgba(0,0,0,0.5);';
+            container.innerHTML = html;
+            
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 999;';
+            overlay.onclick = () => { overlay.remove(); container.remove(); };
+            
+            document.body.appendChild(overlay);
+            document.body.appendChild(container);
+        }
+
+        function exportData() {
+            const users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
+            const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
+            
+            let csv = 'Name,Phone,Email,Mode,Score,Percent,Date\n';
+            results.forEach(r => {
+                csv += `"${r.user.name}","${r.user.phone}","${r.user.email || ''}","${r.mode}","${r.correct}/${r.total}","${r.percent}%","${r.timestamp}"\n`;
+            });
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `jamb_results_${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+        }
+
+        function clearData() {
+            if (confirm('Are you sure? This will delete ALL data!')) {
+                localStorage.removeItem('jamb_users');
+                localStorage.removeItem('jamb_results');
+                alert('Data cleared');
+                location.reload();
+            }
+        }
+
+        // Initialize
+        loadQuestions();
+    </script>
+</body>
+</html>
