@@ -17,7 +17,7 @@ TOKEN = os.environ.get("BOT_TOKEN", "8224895234:AAGlQmIMHgNv_P0XW2qZ9PMoIcv2dhQq
 ADMIN_ID = 6726456466
 PORT = int(os.environ.get("PORT", 8000))
 
-CHOOSING_MODE, SUBJECT, CBT, QUIZ, CONFIRM_QUIT, REVIEW_MISSED = range(6)
+CHOOSING_MODE, SUBJECT, CBT, QUIZ, CONFIRM_QUIT, REVIEW_MISSED, GET_PHONE = range(7)
 
 SUBJECTS = {
     "English": "english.json",
@@ -33,6 +33,9 @@ CBT_TIME = 80 * 60
 EXAM_TIME = 30 * 60
 CBT_MARKS_PER_QUESTION = 2.5
 EXAM_MARKS_PER_QUESTION = 1
+
+# File to track if update message was sent
+UPDATE_FLAG_FILE = "update_sent.txt"
 
 def parse_options(options_data):
     if isinstance(options_data, list):
@@ -118,6 +121,7 @@ for s, qs in ALL_Q.items():
 
 DB = {"users": {}, "attempts": []}
 RESULT_FILE = "results.json"
+PHONE_FILE = "phone_numbers.json"
 
 def load_db():
     global DB
@@ -129,7 +133,18 @@ def save_db():
     with open(RESULT_FILE, "w") as f:
         json.dump(DB, f)
 
+def load_phones():
+    if os.path.exists(PHONE_FILE):
+        with open(PHONE_FILE, "r") as f:
+            return json.load(f)
+    return {}
+
+def save_phones(phones):
+    with open(PHONE_FILE, "w") as f:
+        json.dump(phones, f)
+
 load_db()
+phone_db = load_phones()
 
 sessions = {}
 app = Flask(__name__)
@@ -144,14 +159,88 @@ def format_time(seconds):
     secs = seconds % 60
     return f"{mins:02d}:{secs:02d}"
 
+def send_update_notification():
+    """Send update notification to all users when bot starts"""
+    if os.path.exists(UPDATE_FLAG_FILE):
+        return
+    
+    users = phone_db.keys() if phone_db else DB["users"].keys()
+    sent = 0
+    for uid in users:
+        try:
+            bot.send_message(
+                chat_id=int(uid),
+                text="🔄 *New update available!*\n\nUse /start_quiz to continue your JAMB preparation.\n\nGood luck! 🍀",
+                parse_mode="Markdown"
+            )
+            sent += 1
+            time.sleep(0.1)
+        except:
+            pass
+    
+    with open(UPDATE_FLAG_FILE, "w") as f:
+        f.write(datetime.now().strftime("%Y-%m-%d %H:%M"))
+    
+    logger.info(f"📢 Update notification sent to {sent} users")
+
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
         "🎓 JAMB 2026 CBT PRO BOT\n\n"
+        "Welcome to the most comprehensive JAMB practice bot!\n\n"
         "/start_quiz - Begin test\n"
         "/leaderboard - Top students\n"
         "/myresult - Your last score\n"
-        "/admin - Admin dashboard"
+        "/admin - Admin dashboard\n\n"
+        "📞 *Note:* Your phone number helps us identify top performers for rewards. "
+        "You'll be asked once before your first quiz.",
+        parse_mode="Markdown"
     )
+
+def ask_phone(update: Update, context: CallbackContext):
+    """Ask for phone number naturally"""
+    user_id = str(update.effective_user.id)
+    
+    if user_id in phone_db:
+        # Already registered
+        return start_quiz(update, context)
+    
+    update.message.reply_text(
+        "📱 *Quick Registration*\n\n"
+        "To help us identify top performers for future rewards, "
+        "please share your phone number.\n\n"
+        "Format: 08123456789\n\n"
+        "This is completely optional and your number is kept private.\n\n"
+        "Type your number or /skip to continue without it.",
+        parse_mode="Markdown"
+    )
+    return GET_PHONE
+
+def save_phone(update: Update, context: CallbackContext):
+    user_id = str(update.effective_user.id)
+    text = update.message.text.strip()
+    
+    if text == "/skip":
+        phone_db[user_id] = "Not provided"
+        save_phones(phone_db)
+        update.message.reply_text("✅ No problem! You can start the quiz now.\n\nUse /start_quiz to begin!")
+        return ConversationHandler.END
+    
+    # Basic phone validation
+    if text.isdigit() and len(text) >= 10:
+        phone_db[user_id] = text
+        save_phones(phone_db)
+        update.message.reply_text(
+            "✅ Thank you! Your number has been saved.\n\n"
+            "Use /start_quiz to begin your test!\n\n"
+            "Good luck! 🍀"
+        )
+        return ConversationHandler.END
+    else:
+        update.message.reply_text(
+            "❌ That doesn't look like a valid phone number.\n\n"
+            "Please enter a valid Nigerian number (e.g., 08123456789) or /skip"
+        )
+        return GET_PHONE
 
 def my_result(update: Update, context: CallbackContext):
     uid = str(update.effective_user.id)
@@ -227,7 +316,6 @@ def admin(update: Update, context: CallbackContext):
     txt += f"   Exam: {avg_exam:.1f}%\n"
     txt += f"   CBT: {avg_cbt:.1f}%\n\n"
     
-    # Group attempts by user
     user_attempts = {}
     for a in DB["attempts"]:
         uid = a["user_id"]
@@ -241,10 +329,13 @@ def admin(update: Update, context: CallbackContext):
     
     for uid, attempts_list in user_attempts.items():
         latest = attempts_list[-1]
+        phone = phone_db.get(uid, "Not provided")
+        
         txt += f"👤 {latest['name']}"
         if latest.get('username') and latest['username'] != 'N/A':
             txt += f" (@{latest['username']})"
         txt += f"\n"
+        txt += f"   📞 Phone: {phone}\n"
         txt += f"   Mode: {latest['mode'].upper()}\n"
         txt += f"   Date: {latest['timestamp']}\n"
         txt += f"   Overall: {latest['percent']}% ({latest['raw_score']}/{latest['total_questions']})\n"
@@ -256,18 +347,69 @@ def admin(update: Update, context: CallbackContext):
                 emoji = EMOJIS.get(subj, "📚")
                 txt += f"      {emoji} {subj}: {data['correct']}/{data['total']} ({data['percent']}%)\n"
         
-        if len(attempts_list) > 1:
-            txt += f"   📊 Total attempts: {len(attempts_list)}\n"
-        
         txt += f"\n"
         
-        # Telegram has message length limit
         if len(txt) > 3500:
             txt += "...\n(Use /export for full data)"
             break
     
-    kb = [[InlineKeyboardButton("📥 EXPORT ALL RESULTS (CSV)", callback_data="export_csv")]]
+    kb = [
+        [InlineKeyboardButton("📥 EXPORT ALL RESULTS (CSV)", callback_data="export_csv")],
+        [InlineKeyboardButton("📢 BROADCAST MESSAGE", callback_data="broadcast_prompt")]
+    ]
     update.message.reply_text(txt, reply_markup=InlineKeyboardMarkup(kb))
+
+def broadcast_prompt(update: Update, context: CallbackContext):
+    q = update.callback_query
+    q.answer()
+    user_id = q.from_user.id
+    
+    if user_id != ADMIN_ID:
+        q.edit_message_text("⛔ Admin only!")
+        return
+    
+    q.edit_message_text(
+        "📢 BROADCAST MESSAGE\n\n"
+        "Use /broadcast followed by your message to send to all users.\n\n"
+        "Example: /broadcast New questions added! Use /start_quiz to try them."
+    )
+
+def broadcast(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    
+    if user_id != ADMIN_ID:
+        update.message.reply_text("⛔ Admin only!")
+        return
+    
+    if not context.args:
+        update.message.reply_text("Usage: /broadcast Your message here")
+        return
+    
+    message = " ".join(context.args)
+    users = list(set(list(phone_db.keys()) + list(DB["users"].keys())))
+    
+    if not users:
+        update.message.reply_text("No users to broadcast to.")
+        return
+    
+    update.message.reply_text(f"📢 Broadcasting to {len(users)} users...")
+    
+    sent = 0
+    failed = 0
+    
+    for uid in users:
+        try:
+            bot.send_message(
+                chat_id=int(uid),
+                text=f"📢 *Announcement*\n\n{message}",
+                parse_mode="Markdown"
+            )
+            sent += 1
+            time.sleep(0.1)
+        except:
+            failed += 1
+    
+    update.message.reply_text(f"✅ Broadcast complete!\n\n📤 Sent: {sent}\n❌ Failed: {failed}")
 
 def export_csv(update: Update, context: CallbackContext):
     q = update.callback_query
@@ -282,12 +424,13 @@ def export_csv(update: Update, context: CallbackContext):
         q.edit_message_text("No data to export!")
         return
     
-    csv = "Name,Username,Mode,Date,Overall Score,Overall Percent,Total Marks,"
+    csv = "Name,Username,Phone,Mode,Date,Overall Score,Overall Percent,Total Marks,"
     csv += "English Score,English %,Math Score,Math %,Physics Score,Physics %,"
     csv += "Chemistry Score,Chemistry %,Biology Score,Biology %\n"
     
     for a in DB["attempts"]:
-        csv += f"{a.get('name','')},{a.get('username','')},{a.get('mode','')},"
+        phone = phone_db.get(a["user_id"], "Not provided")
+        csv += f"{a.get('name','')},{a.get('username','')},{phone},{a.get('mode','')},"
         csv += f"{a.get('timestamp','')},{a['raw_score']}/{a['total_questions']},"
         csv += f"{a['percent']}%,{a['total_marks_earned']:.1f}/{a['total_marks']},"
         
@@ -310,6 +453,11 @@ def export_csv(update: Update, context: CallbackContext):
     q.edit_message_text("✅ Export complete! Check above for the CSV file.")
 
 def start_quiz(update: Update, context: CallbackContext):
+    user_id = str(update.effective_user.id)
+    
+    if user_id not in phone_db:
+        return ask_phone(update, context)
+    
     kb = [
         [InlineKeyboardButton("📝 EXAM MODE (60 Qs, 60 Marks)", callback_data="exam")],
         [InlineKeyboardButton("💻 CBT MODE (160 Qs, 400 Marks)", callback_data="cbt")],
@@ -672,7 +820,18 @@ def force_quit(update: Update, context: CallbackContext):
     q.edit_message_text("❌ Quiz Cancelled\n\nUse /start_quiz to try again!")
     return ConversationHandler.END
 
-conv = ConversationHandler(
+phone_conv = ConversationHandler(
+    entry_points=[CommandHandler("start_quiz", ask_phone)],
+    states={
+        GET_PHONE: [
+            MessageHandler(telegram.ext.filters.Filters.text & ~telegram.ext.filters.Filters.command, save_phone),
+            CommandHandler("skip", save_phone)
+        ],
+    },
+    fallbacks=[],
+)
+
+quiz_conv = ConversationHandler(
     entry_points=[CommandHandler("start_quiz", start_quiz)],
     states={
         CHOOSING_MODE: [CallbackQueryHandler(mode, pattern="^(exam|cbt)$")],
@@ -697,12 +856,18 @@ conv = ConversationHandler(
     allow_reentry=True
 )
 
+dp.add_handler(phone_conv)
+dp.add_handler(quiz_conv)
 dp.add_handler(CommandHandler("start", start))
 dp.add_handler(CommandHandler("myresult", my_result))
 dp.add_handler(CommandHandler("leaderboard", leaderboard))
 dp.add_handler(CommandHandler("admin", admin))
+dp.add_handler(CommandHandler("broadcast", broadcast))
 dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
-dp.add_handler(conv)
+dp.add_handler(CallbackQueryHandler(broadcast_prompt, pattern="^broadcast_prompt$"))
+
+# Import for phone handler
+from telegram.ext import MessageHandler
 
 @app.route("/", methods=["GET"])
 def home():
@@ -719,10 +884,15 @@ if __name__ == "__main__":
     if render_url:
         bot.set_webhook(f"{render_url}/telegram")
         logger.info(f"✅ Webhook set to {render_url}/telegram")
+    
     print(f"\n📊 Questions loaded:")
     for s, qs in ALL_Q.items():
         print(f"   {EMOJIS.get(s, '📚')} {s}: {len(qs)}")
     print(f"\n👑 Admin ID: {ADMIN_ID}")
+    print(f"\n📱 Phone numbers collected: {len(phone_db)}")
     print(f"\n🚀 Bot starting on port {PORT}...")
+    
+    # Send update notification
+    send_update_notification()
+    
     app.run(host="0.0.0.0", port=PORT)
-         
