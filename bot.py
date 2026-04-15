@@ -7,7 +7,7 @@ from datetime import datetime
 from flask import Flask, request, Response
 import telegram
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Dispatcher, CommandHandler, CallbackQueryHandler, ConversationHandler, CallbackContext
+from telegram.ext import Dispatcher, CommandHandler, CallbackQueryHandler, ConversationHandler, CallbackContext, MessageHandler, Filters
 from telegram.ext import Updater
 
 logging.basicConfig(level=logging.INFO)
