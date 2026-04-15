@@ -250,6 +250,28 @@
             text-decoration: none;
         }
 
+        .telegram-cta {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .telegram-cta a {
+            display: inline-block;
+            background: #0088cc;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .telegram-cta a:hover {
+            transform: scale(1.05);
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -286,8 +308,9 @@
             
             <button class="btn" onclick="register()">Continue →</button>
             
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="https://t.me/JambCBT2026_Bot" style="color: #667eea; text-decoration: none;">📱 Use Telegram Bot Instead →</a>
+            <div class="telegram-cta">
+                <p style="color: #a0a0b0; margin-bottom: 15px;">Prefer using Telegram?</p>
+                <a href="https://t.me/jamb2026quiz_bot" target="_blank">📱 Open in Telegram</a>
             </div>
         </div>
 
@@ -356,7 +379,6 @@
     </div>
 
     <script>
-        // Quiz state
         let currentUser = null;
         let currentMode = null;
         let selectedSubjects = [];
@@ -367,7 +389,6 @@
         let timerInterval = null;
         let timeLimit = 0;
 
-        // Questions database (loaded from your JSON files)
         const questionBank = {
             English: [],
             Mathematics: [],
@@ -376,7 +397,6 @@
             Biology: []
         };
 
-        // Load questions from JSON files
         async function loadQuestions() {
             const subjects = ['English', 'Mathematics', 'Physics', 'Chemistry', 'Biology'];
             for (let subject of subjects) {
@@ -387,7 +407,6 @@
                     if (Array.isArray(data)) {
                         questionBank[subject] = data;
                     } else if (typeof data === 'object') {
-                        // Handle different JSON formats
                         for (let key in data) {
                             if (Array.isArray(data[key])) {
                                 questionBank[subject] = questionBank[subject].concat(data[key]);
@@ -403,7 +422,6 @@
             }
         }
 
-        // Registration
         function register() {
             const name = document.getElementById('fullName').value.trim();
             const phone = document.getElementById('phoneNumber').value.trim();
@@ -425,8 +443,6 @@
             }
             
             currentUser = { name, phone, email: email || 'Not provided' };
-            
-            // Save to localStorage for admin
             saveUserData(currentUser);
             
             showScreen('modeScreen');
@@ -663,7 +679,6 @@
             const percent = Math.round((correct / total) * 100);
             const timeTaken = Math.floor((Date.now() - startTime) / 1000);
             
-            // Save result
             const result = {
                 user: currentUser,
                 mode: currentMode,
@@ -680,7 +695,6 @@
             results.push(result);
             localStorage.setItem('jamb_results', JSON.stringify(results));
             
-            // Display results
             showScreen('resultScreen');
             
             const emoji = percent >= 80 ? '🏆' : percent >= 70 ? '🎯' : percent >= 60 ? '💪' : percent >= 50 ? '📝' : '🌱';
@@ -704,7 +718,6 @@
             document.getElementById(screenId).classList.add('active');
         }
 
-        // Admin functions
         function showAdminLogin() {
             const password = prompt('Enter admin password:');
             if (password === 'admin2026') {
@@ -718,11 +731,11 @@
             const users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
             const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
             
-            let html = '<h2>Admin Panel</h2><div style="max-height: 400px; overflow-y: auto;">';
+            let html = '<h2 style="color: white;">Admin Panel</h2><div style="max-height: 400px; overflow-y: auto;">';
             
-            html += '<h3>Registered Users (' + users.length + ')</h3>';
-            users.forEach(u => {
-                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px;">`;
+            html += '<h3 style="color: #667eea;">Registered Users (' + users.length + ')</h3>';
+            users.slice(-20).reverse().forEach(u => {
+                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
                 html += `<strong>${u.name}</strong><br>`;
                 html += `📞 ${u.phone}<br>`;
                 html += `📧 ${u.email || 'N/A'}<br>`;
@@ -730,9 +743,9 @@
                 html += `</div>`;
             });
             
-            html += '<h3 style="margin-top: 20px;">Quiz Results (' + results.length + ')</h3>';
+            html += '<h3 style="color: #667eea; margin-top: 20px;">Quiz Results (' + results.length + ')</h3>';
             results.slice(-10).reverse().forEach(r => {
-                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px;">`;
+                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
                 html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>`;
                 html += `📞 ${r.user.phone}<br>`;
                 html += `Mode: ${r.mode.toUpperCase()} | ${r.correct}/${r.total}<br>`;
@@ -742,13 +755,15 @@
             
             html += '</div><br><button class="btn" onclick="exportData()">Export CSV</button>';
             html += '<button class="btn btn-secondary" onclick="clearData()">Clear All Data</button>';
-            
-            const container = document.createElement('div');
-            container.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1a1a2e; padding: 30px; border-radius: 20px; max-width: 500px; width: 90%; z-index: 1000; box-shadow: 0 25px 50px rgba(0,0,0,0.5);';
-            container.innerHTML = html;
+            html += '<br><br><button class="btn btn-secondary" onclick="this.parentElement.parentElement.remove()">Close</button>';
             
             const overlay = document.createElement('div');
-            overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 999;';
+            overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 998;';
+            
+            const container = document.createElement('div');
+            container.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1a1a2e; padding: 30px; border-radius: 20px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; z-index: 999; box-shadow: 0 25px 50px rgba(0,0,0,0.5);';
+            container.innerHTML = html;
+            
             overlay.onclick = () => { overlay.remove(); container.remove(); };
             
             document.body.appendChild(overlay);
@@ -781,7 +796,6 @@
             }
         }
 
-        // Initialize
         loadQuestions();
     </script>
 </body>
