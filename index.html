@@ -109,6 +109,22 @@
             padding: 30px;
             text-align: center;
         }
+        .total-marks {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 15px;
+            border: 1px solid rgba(102, 126, 234, 0.5);
+        }
+        .total-marks span {
+            font-size: 36px;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            margin-top: 5px;
+        }
         .result-score { font-size: 60px; font-weight: 700; color: #667eea; margin: 20px 0; }
         .subject-breakdown { text-align: left; margin: 20px 0; }
         .subject-row {
@@ -251,6 +267,10 @@
             <div class="result-box">
                 <div id="resultEmoji" style="font-size: 50px;"></div>
                 <div class="result-score" id="resultScore"></div>
+                <div class="total-marks" id="totalMarksDisplay">
+                    TOTAL MARKS
+                    <span id="totalMarksValue">0/400</span>
+                </div>
                 <div id="resultFeedback" style="color: #a0a0b0; margin-bottom: 20px;"></div>
                 <div class="subject-breakdown" id="subjectBreakdown"></div>
                 <button class="btn" onclick="showAnswersReview()">📋 REVIEW ANSWERS</button>
@@ -327,14 +347,7 @@
             if (!phone) { alert('Phone number is required'); return; }
             if (!phone.match(/^\d{10,15}$/)) { alert('Please enter a valid phone number'); return; }
             currentUser = { name, phone, email: email || 'Not provided' };
-            saveUserData(currentUser);
             showScreen('modeScreen');
-        }
-
-        function saveUserData(user) {
-            let users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
-            users.push({ ...user, timestamp: new Date().toISOString() });
-            localStorage.setItem('jamb_users', JSON.stringify(users));
         }
 
         function selectMode(mode) {
@@ -523,9 +536,12 @@
                 const userAnswerText = userAnswer !== null ? options[userAnswer] : 'Not answered';
                 const isCorrect = userAnswer === correctIdx;
                 
-                if (!subjectScores[q.subject]) subjectScores[q.subject] = { correct: 0, total: 0 };
+                if (!subjectScores[q.subject]) subjectScores[q.subject] = { correct: 0, total: 0, marks: 0 };
                 subjectScores[q.subject].total++;
-                if (isCorrect) { correct++; subjectScores[q.subject].correct++; }
+                if (isCorrect) { 
+                    correct++; 
+                    subjectScores[q.subject].correct++;
+                }
                 
                 answersDetail.push({
                     qNum: i + 1, question: q.question, subject: q.subject,
@@ -537,12 +553,33 @@
             const percent = Math.round((correct / total) * 100);
             const timeTaken = Math.floor((Date.now() - startTime) / 1000);
             
+            // Calculate marks
+            const marksPerQuestion = currentMode === 'cbt' ? 2.5 : 1;
+            const totalMarks = total * marksPerQuestion;
+            const earnedMarks = correct * marksPerQuestion;
+            
+            // Calculate subject marks
+            for (let subj in subjectScores) {
+                subjectScores[subj].marks = subjectScores[subj].correct * marksPerQuestion;
+                subjectScores[subj].totalMarks = subjectScores[subj].total * marksPerQuestion;
+            }
+            
             quizResults = {
-                user: currentUser, mode: currentMode, subjects: selectedSubjects,
-                correct, total, percent, timeTaken, subjectScores, answersDetail,
+                user: currentUser,
+                mode: currentMode,
+                subjects: selectedSubjects,
+                correct,
+                total,
+                percent,
+                earnedMarks,
+                totalMarks,
+                timeTaken,
+                subjectScores,
+                answersDetail,
                 timestamp: new Date().toISOString()
             };
             
+            // Save to localStorage
             let results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
             results.push(quizResults);
             localStorage.setItem('jamb_results', JSON.stringify(results));
@@ -554,13 +591,14 @@
             
             document.getElementById('resultEmoji').textContent = emoji;
             document.getElementById('resultScore').textContent = `${percent}%`;
+            document.getElementById('totalMarksValue').textContent = `${earnedMarks.toFixed(1)}/${totalMarks} Marks`;
             document.getElementById('resultFeedback').textContent = feedback;
             
             let breakdown = '';
             for (let subj in subjectScores) {
                 const data = subjectScores[subj];
                 const subjPercent = Math.round((data.correct / data.total) * 100);
-                breakdown += `<div class="subject-row"><span>${getEmoji(subj)} ${subj}</span><span>${data.correct}/${data.total} (${subjPercent}%)</span></div>`;
+                breakdown += `<div class="subject-row"><span>${getEmoji(subj)} ${subj}</span><span>${data.correct}/${data.total} (${data.marks.toFixed(1)}/${data.totalMarks.toFixed(1)} marks) - ${subjPercent}%</span></div>`;
             }
             document.getElementById('subjectBreakdown').innerHTML = breakdown;
         }
@@ -592,24 +630,38 @@
 
         function showAdminLogin() {
             const password = prompt('Enter admin password:');
-            if (password === 'admin2026') showAdminPanel();
-            else alert('Invalid password');
+            if (password === 'admin2026') {
+                showAdminPanel();
+            } else {
+                alert('Invalid password');
+            }
         }
 
         function showAdminPanel() {
-            const users = JSON.parse(localStorage.getItem('jamb_users') || '[]');
             const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
+            
             let html = '<h2 style="color: white;">Admin Panel</h2><div style="max-height: 400px; overflow-y: auto;">';
-            html += '<h3 style="color: #667eea;">Users (' + users.length + ')</h3>';
-            users.slice(-20).reverse().forEach(u => {
+            
+            const users = {};
+            results.forEach(r => { if (r.user) users[r.user.phone] = r.user; });
+            
+            html += '<h3 style="color: #667eea;">Users (' + Object.keys(users).length + ')</h3>';
+            Object.values(users).slice(-20).reverse().forEach(u => {
                 html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
-                html += `<strong>${u.name}</strong><br>📞 ${u.phone}<br>📧 ${u.email || 'N/A'}<br>🕐 ${new Date(u.timestamp).toLocaleString()}</div>`;
+                html += `<strong>${u.name}</strong><br>📞 ${u.phone}<br>📧 ${u.email || 'N/A'}</div>`;
             });
+            
             html += '<h3 style="color: #667eea; margin-top: 20px;">Results (' + results.length + ')</h3>';
             results.slice(-10).reverse().forEach(r => {
-                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
-                html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>📞 ${r.user.phone}<br>Mode: ${r.mode.toUpperCase()} | ${r.correct}/${r.total}<br>🕐 ${new Date(r.timestamp).toLocaleString()}</div>`;
+                if (r.user) {
+                    html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
+                    html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>`;
+                    html += `Marks: ${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}<br>`;
+                    html += `Mode: ${r.mode?.toUpperCase() || 'N/A'} | ${r.correct}/${r.total}<br>`;
+                    html += `🕐 ${new Date(r.timestamp).toLocaleString()}</div>`;
+                }
             });
+            
             html += '</div><br><button class="btn" onclick="exportData()">Export CSV</button>';
             html += '<button class="btn btn-secondary" onclick="clearData()">Clear All Data</button>';
             html += '<br><br><button class="btn btn-secondary" onclick="this.parentElement.parentElement.remove()">Close</button>';
@@ -622,27 +674,29 @@
             overlay.onclick = () => { overlay.remove(); container.remove(); };
             document.body.appendChild(overlay);
             document.body.appendChild(container);
-        }
-
-        function exportData() {
-            const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
-            let csv = 'Name,Phone,Email,Mode,Score,Percent,Date\n';
-            results.forEach(r => { csv += `"${r.user.name}","${r.user.phone}","${r.user.email || ''}","${r.mode}","${r.correct}/${r.total}","${r.percent}%","${r.timestamp}"\n`; });
-            const blob = new Blob([csv], { type: 'text/csv' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `jamb_results_${new Date().toISOString().split('T')[0]}.csv`;
-            a.click();
-        }
-
-        function clearData() {
-            if (confirm('Are you sure? This will delete ALL data!')) {
-                localStorage.removeItem('jamb_users');
-                localStorage.removeItem('jamb_results');
-                alert('Data cleared');
-                location.reload();
-            }
+            
+            window.exportData = function() {
+                let csv = 'Name,Phone,Email,Mode,Score,Percent,Marks,Date\n';
+                results.forEach(r => {
+                    if (r.user) {
+                        csv += `"${r.user.name}","${r.user.phone}","${r.user.email || ''}","${r.mode || ''}","${r.correct}/${r.total}","${r.percent}%","${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}","${r.timestamp}"\n`;
+                    }
+                });
+                const blob = new Blob([csv], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `jamb_results_${new Date().toISOString().split('T')[0]}.csv`;
+                a.click();
+            };
+            
+            window.clearData = function() {
+                if (confirm('Are you sure? This will delete ALL data!')) {
+                    localStorage.removeItem('jamb_results');
+                    alert('Data cleared');
+                    location.reload();
+                }
+            };
         }
 
         loadQuestions();
