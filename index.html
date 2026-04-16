@@ -130,6 +130,7 @@
         }
         .admin-link { text-align: center; margin-top: 20px; }
         .admin-link a { color: #667eea; text-decoration: none; }
+        .loading { color: #a0a0b0; text-align: center; padding: 20px; }
         @media (max-width: 600px) {
             .container { padding: 20px; }
             .subject-grid { grid-template-columns: 1fr; }
@@ -242,6 +243,12 @@
     </div>
 
     <script>
+        // JSONBin Credentials
+        const JSONBIN_BIN_ID = '69e0db67aaba882197069654';
+        const JSONBIN_API_KEY = '$2a$10$Ailo1FCdiaG3coaubaZK3O80dS9MOHCx6zOtBWxpBbiDcNbA8y5w6';
+        const JSONBIN_URL = `https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`;
+        const ADMIN_PASSWORD = 'admin2026';
+        
         let currentUser = null;
         let currentMode = null;
         let selectedSubjects = [];
@@ -252,6 +259,7 @@
         let timerInterval = null;
         let timeLimit = 0;
         let quizResults = null;
+        let allCloudResults = [];
 
         const questionBank = { English: [], Mathematics: [], Physics: [], Chemistry: [], Biology: [] };
         const emojis = { English: '📖', Mathematics: '🧮', Physics: '⚡', Chemistry: '🧪', Biology: '🧬' };
@@ -382,7 +390,7 @@
         function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
         function nextQuestion() { if (currentIndex < questions.length - 1) { currentIndex++; renderQuestion(); } else { submitQuiz(); } }
 
-        function submitQuiz() {
+        async function submitQuiz() {
             clearInterval(timerInterval);
             const unanswered = answers.filter(a => a === null).length;
             if (unanswered > 0 && !confirm(`${unanswered} unanswered. Submit anyway?`)) { startTimer(); return; }
@@ -403,11 +411,26 @@
             const earned = correct * marksPerQ;
             const totalMarks = total * marksPerQ;
             
-            quizResults = { user: currentUser, mode: currentMode, correct, total, percent, earnedMarks: earned, totalMarks, subjectScores, timestamp: new Date().toISOString() };
+            quizResults = { 
+                user: currentUser, 
+                mode: currentMode, 
+                subjects: selectedSubjects,
+                correct, 
+                total, 
+                percent, 
+                earnedMarks: earned, 
+                totalMarks, 
+                subjectScores, 
+                timestamp: new Date().toISOString() 
+            };
             
-            let results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
-            results.push(quizResults);
-            localStorage.setItem('jamb_results', JSON.stringify(results));
+            // Save to localStorage
+            let localResults = JSON.parse(localStorage.getItem('jamb_results') || '[]');
+            localResults.push(quizResults);
+            localStorage.setItem('jamb_results', JSON.stringify(localResults));
+            
+            // Save to Cloud
+            await saveToCloud(quizResults);
             
             showScreen('resultScreen');
             document.getElementById('resultEmoji').textContent = percent >= 80 ? '🏆' : percent >= 60 ? '💪' : '📝';
@@ -423,16 +446,111 @@
             document.getElementById('subjectBreakdown').innerHTML = breakdown;
         }
 
+        async function saveToCloud(result) {
+            try {
+                // Get existing data
+                const response = await fetch(`${JSONBIN_URL}/latest`, {
+                    headers: { 'X-Master-Key': JSONBIN_API_KEY }
+                });
+                const data = await response.json();
+                const existing = data.record || { results: [], users: [] };
+                
+                // Add new result
+                existing.results.push(result);
+                if (!existing.users.find(u => u.phone === result.user.phone)) {
+                    existing.users.push(result.user);
+                }
+                
+                // Save back
+                await fetch(JSONBIN_URL, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Master-Key': JSONBIN_API_KEY
+                    },
+                    body: JSON.stringify(existing)
+                });
+                console.log('✅ Saved to cloud');
+            } catch (e) {
+                console.error('Cloud save failed:', e);
+            }
+        }
+
+        async function loadFromCloud() {
+            try {
+                const response = await fetch(`${JSONBIN_URL}/latest`, {
+                    headers: { 'X-Master-Key': JSONBIN_API_KEY }
+                });
+                const data = await response.json();
+                allCloudResults = data.record || { results: [], users: [] };
+                return allCloudResults;
+            } catch (e) {
+                console.error('Cloud load failed:', e);
+                return { results: [], users: [] };
+            }
+        }
+
         function showScreen(id) {
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
             document.getElementById(id).classList.add('active');
         }
 
-        function showAdmin() {
-            const pw = prompt('Admin password:');
-            if (pw !== 'admin2026') { alert('Wrong password'); return; }
-            const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
-            alert(`Total results: ${results.length}\n\nCheck console for details or use Export feature.`);
+        async function showAdmin() {
+            const pw = prompt('Enter admin password:');
+            if (pw !== ADMIN_PASSWORD) { alert('Wrong password'); return; }
+            
+            // Show loading
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:998;';
+            const container = document.createElement('div');
+            container.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#1a1a2e;padding:30px;border-radius:20px;max-width:500px;width:90%;max-height:80vh;overflow-y:auto;z-index:999;';
+            container.innerHTML = '<h2 style="color:#fff;">Loading from cloud...</h2><div class="loading">Fetching all results...</div>';
+            document.body.appendChild(overlay);
+            document.body.appendChild(container);
+            
+            // Load from cloud
+            const cloudData = await loadFromCloud();
+            const results = cloudData.results || [];
+            const users = cloudData.users || [];
+            
+            let html = '<h2 style="color:#fff;">📊 ADMIN PANEL (Cloud)</h2>';
+            html += `<p style="color:#667eea;">🌐 Total Users: ${users.length} | Total Attempts: ${results.length}</p>`;
+            html += '<div style="max-height:350px;overflow-y:auto;">';
+            
+            const sorted = [...results].reverse();
+            sorted.slice(0, 30).forEach(r => {
+                if (r.user) {
+                    html += `<div style="background:rgba(255,255,255,0.05);padding:10px;margin:5px 0;border-radius:10px;color:#fff;">`;
+                    html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>`;
+                    html += `📞 ${r.user.phone}<br>`;
+                    html += `Marks: ${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}<br>`;
+                    html += `Mode: ${r.mode?.toUpperCase() || 'N/A'} | ${r.correct}/${r.total}<br>`;
+                    html += `🕐 ${new Date(r.timestamp).toLocaleString()}</div>`;
+                }
+            });
+            
+            if (results.length > 30) html += `<p style="color:#808090;">...and ${results.length - 30} more</p>`;
+            html += '</div><br>';
+            html += '<button class="btn" onclick="exportCloudData()">📥 Export CSV</button>';
+            html += '<button class="btn btn-secondary" onclick="this.parentElement.parentElement.remove();document.querySelector(\'div[style*=\\\'fixed\\\']\').remove();">Close</button>';
+            
+            container.innerHTML = html;
+            overlay.onclick = () => { overlay.remove(); container.remove(); };
+            
+            window.exportCloudData = function() {
+                let csv = 'Name,Phone,Email,Mode,Score,Percent,Marks,Date\n';
+                results.forEach(r => {
+                    if (r.user) {
+                        csv += `"${r.user.name}","${r.user.phone}","${r.user.email || ''}","${r.mode || ''}","${r.correct}/${r.total}","${r.percent}%","${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}","${r.timestamp}"\n`;
+                    }
+                });
+                const blob = new Blob([csv], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `jamb_results_${new Date().toISOString().split('T')[0]}.csv`;
+                a.click();
+            };
         }
 
         loadQuestions();
