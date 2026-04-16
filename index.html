@@ -178,7 +178,7 @@
             <h1>🎯 <span class="gradient">Select Mode</span></h1>
             <p class="subtitle">Choose your test format</p>
             <button class="btn" onclick="selectMode('exam')">📝 EXAM MODE</button>
-            <button class="btn" onclick="selectMode('cbt')">💻 CBT MODE (160 Qs, 400 Marks)</button>
+            <button class="btn" onclick="selectMode('cbt')">💻 CBT MODE (180 Qs, 60+40+40+40)</button>
         </div>
 
         <!-- Exam Settings -->
@@ -210,7 +210,7 @@
         <!-- CBT Subject Selection -->
         <div id="subjectScreen" class="screen">
             <h1>📚 <span class="gradient">Select Subjects</span></h1>
-            <p class="subtitle">English (Compulsory) + 3 more</p>
+            <p class="subtitle">English (Compulsory - 60 Qs) + Select 3 more (40 Qs each)</p>
             <div id="subjectContainer" class="subject-grid"></div>
             <button class="btn" id="continueBtn" onclick="continueFromSubjects()" disabled>Continue →</button>
         </div>
@@ -313,7 +313,11 @@
         function selectMode(mode) {
             currentMode = mode;
             if (mode === 'exam') showScreen('examSettingsScreen');
-            else { timeLimit = 80 * 60; showScreen('subjectScreen'); renderSubjects(); }
+            else { 
+                timeLimit = 80 * 60; 
+                showScreen('subjectScreen'); 
+                renderSubjects(); 
+            }
         }
 
         function renderSubjects() {
@@ -349,7 +353,7 @@
 
         function continueFromSubjects() {
             if (selectedSubjects.length !== 4) { alert('Select 3 additional subjects'); return; }
-            generateQuestions(40);
+            generateCBTQuestions();
             startQuiz();
         }
 
@@ -363,6 +367,31 @@
                 });
             });
             questions = questions.sort(() => Math.random() - 0.5);
+            answers = new Array(questions.length).fill(null);
+        }
+
+        function generateCBTQuestions() {
+            questions = [];
+            
+            // ENGLISH FIRST - 60 questions
+            const englishBank = questionBank['English'] || [];
+            const englishShuffled = [...englishBank].sort(() => Math.random() - 0.5);
+            englishShuffled.slice(0, Math.min(60, englishBank.length)).forEach(q => {
+                questions.push({ ...q, subject: 'English' });
+            });
+            
+            // THEN OTHER SUBJECTS IN ORDER SELECTED - 40 questions each
+            selectedSubjects.forEach(s => {
+                if (s !== 'English') {
+                    const bank = questionBank[s] || [];
+                    const shuffled = [...bank].sort(() => Math.random() - 0.5);
+                    shuffled.slice(0, Math.min(40, bank.length)).forEach(q => {
+                        questions.push({ ...q, subject: s });
+                    });
+                }
+            });
+            
+            // DON'T SHUFFLE - Keep subjects grouped: English first, then in order
             answers = new Array(questions.length).fill(null);
         }
 
@@ -440,7 +469,7 @@
                 answersDetail.push({
                     qNum: i + 1, question: q.question, subject: q.subject,
                     userAnswer: userAnswerText, correctAnswer: correctAnswer, isCorrect: isCorrect
-     });
+                });
             });
             
             const total = questions.length;
