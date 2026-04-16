@@ -280,7 +280,6 @@
         let timerInterval = null;
         let timeLimit = 0;
         let quizResults = null;
-        let allCloudResults = [];
 
         const questionBank = { English: [], Mathematics: [], Physics: [], Chemistry: [], Biology: [] };
         const emojis = { English: '📖', Mathematics: '🧮', Physics: '⚡', Chemistry: '🧪', Biology: '🧬' };
@@ -391,7 +390,6 @@
                 }
             });
             
-            // DON'T SHUFFLE - Keep subjects grouped: English first, then in order
             answers = new Array(questions.length).fill(null);
         }
 
@@ -447,9 +445,27 @@
             }
         }
 
-        async function submitQuiz() {
+        function submitQuiz() {
             clearInterval(timerInterval);
             
+            // Count unanswered questions
+            const unanswered = answers.filter(a => a === null).length;
+            
+            // If there are unanswered questions, confirm with user
+            if (unanswered > 0) {
+                const confirmSubmit = confirm(`⚠️ You have ${unanswered} unanswered question(s).\n\nDo you want to submit anyway?`);
+                if (!confirmSubmit) {
+                    // User cancelled - restart timer and return
+                    startTimer();
+                    return;
+                }
+            }
+            
+            // Proceed with submission
+            processSubmission();
+        }
+
+        async function processSubmission() {
             let correct = 0;
             const subjectScores = {};
             const answersDetail = [];
