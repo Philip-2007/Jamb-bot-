@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAMB 2026 CBT Bot - Web Version</title>
+    <title>JAMB 2026 CBT Practice</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             min-height: 100vh;
             padding: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -22,32 +22,29 @@
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        h1 { color: #ffffff; font-size: 32px; margin-bottom: 10px; text-align: center; }
-        .gradient-text {
+        h1 { color: #fff; text-align: center; margin-bottom: 10px; }
+        .gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
         .subtitle { color: #a0a0b0; text-align: center; margin-bottom: 30px; }
         .screen { display: none; }
         .screen.active { display: block; }
-        .form-group { margin-bottom: 25px; }
-        label { display: block; color: #ffffff; margin-bottom: 8px; font-weight: 500; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; color: #fff; margin-bottom: 8px; }
         input, select {
             width: 100%;
-            padding: 15px 20px;
+            padding: 15px;
             font-size: 16px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
             border-radius: 15px;
-            color: #ffffff;
-            outline: none;
+            color: #fff;
         }
-        input:focus, select:focus { border-color: #667eea; }
         .btn {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            color: #fff;
             font-size: 18px;
             font-weight: 600;
             padding: 15px 30px;
@@ -55,43 +52,41 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
             margin-bottom: 10px;
         }
-        .btn-secondary { background: rgba(255, 255, 255, 0.1); box-shadow: none; }
+        .btn-secondary { background: rgba(255,255,255,0.1); }
         .subject-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 25px; }
         .subject-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 15px;
             padding: 20px;
             cursor: pointer;
             text-align: center;
+            color: #fff;
         }
-        .subject-card.selected { border-color: #667eea; background: rgba(102, 126, 234, 0.1); }
-        .subject-card h3 { color: #ffffff; font-size: 18px; }
+        .subject-card.selected { border-color: #667eea; background: rgba(102,126,234,0.1); }
         .subject-card .emoji { font-size: 30px; margin-bottom: 10px; }
         .question-box {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255,255,255,0.05);
             border-radius: 20px;
             padding: 30px;
             margin-bottom: 25px;
         }
-        .question-text { color: #ffffff; font-size: 20px; line-height: 1.5; margin-bottom: 25px; }
+        .question-text { color: #fff; font-size: 20px; margin-bottom: 25px; }
         .options { display: flex; flex-direction: column; gap: 12px; }
         .option {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
             border-radius: 15px;
             padding: 15px 20px;
-            color: #ffffff;
+            color: #fff;
             cursor: pointer;
         }
-        .option.selected { border-color: #667eea; background: rgba(102, 126, 234, 0.2); }
+        .option.selected { border-color: #667eea; background: rgba(102,126,234,0.2); }
         .progress-bar {
-            width: 100%;
             height: 8px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
             margin-bottom: 20px;
         }
@@ -99,73 +94,42 @@
             height: 100%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 10px;
-            transition: width 0.3s;
+            width: 0%;
         }
         .timer { color: #667eea; font-size: 18px; font-weight: 600; text-align: center; margin-bottom: 20px; }
-        .nav-buttons { display: flex; gap: 15px; margin-top: 25px; }
-        .result-box {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-        }
+        .counter { color: #fff; text-align: center; margin-bottom: 15px; }
+        .result-box { text-align: center; color: #fff; }
+        .result-score { font-size: 60px; font-weight: 700; color: #667eea; margin: 20px 0; }
         .total-marks {
             font-size: 24px;
-            color: #ffffff;
-            margin: 15px 0;
             padding: 15px;
-            background: rgba(102, 126, 234, 0.2);
+            background: rgba(102,126,234,0.2);
             border-radius: 15px;
-            border: 1px solid rgba(102, 126, 234, 0.5);
+            margin: 15px 0;
         }
         .total-marks span {
             font-size: 36px;
             font-weight: 700;
             color: #667eea;
             display: block;
-            margin-top: 5px;
         }
-        .result-score { font-size: 60px; font-weight: 700; color: #667eea; margin: 20px 0; }
-        .subject-breakdown { text-align: left; margin: 20px 0; }
-        .subject-row {
-            display: flex;
-            justify-content: space-between;
-            color: #a0a0b0;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        .nav-buttons { display: flex; gap: 15px; margin-top: 25px; }
+        .telegram-link {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
-        .answers-review { max-height: 400px; overflow-y: auto; text-align: left; margin-top: 20px; }
-        .answer-item {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-        .answer-item.correct { border-left: 4px solid #4caf50; }
-        .answer-item.incorrect { border-left: 4px solid #f44336; }
-        .answer-question { color: #ffffff; font-weight: 600; margin-bottom: 8px; }
-        .answer-detail { color: #a0a0b0; font-size: 14px; }
-        .admin-link { text-align: center; margin-top: 20px; }
-        .admin-link a { color: #667eea; text-decoration: none; }
-        .telegram-cta { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
-        .telegram-cta a {
-            display: inline-block;
+        .telegram-link a {
             background: #0088cc;
-            color: white;
+            color: #fff;
             padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
         }
-        .counter-badge {
-            display: inline-block;
-            background: rgba(102, 126, 234, 0.3);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
+        .admin-link { text-align: center; margin-top: 20px; }
+        .admin-link a { color: #667eea; text-decoration: none; }
         @media (max-width: 600px) {
             .container { padding: 20px; }
             .subject-grid { grid-template-columns: 1fr; }
@@ -174,45 +138,43 @@
 </head>
 <body>
     <div class="container">
-        <!-- Registration Screen -->
+        <!-- Register Screen -->
         <div id="registerScreen" class="screen active">
-            <h1>📱 <span class="gradient-text">Register</span></h1>
-            <p class="subtitle">Enter your details to start the quiz</p>
+            <h1>📱 <span class="gradient">Register</span></h1>
+            <p class="subtitle">Enter your details to start</p>
             <div class="form-group">
                 <label>Full Name *</label>
-                <input type="text" id="fullName" placeholder="e.g., Philip John" required>
+                <input type="text" id="fullName" placeholder="e.g., Philip John">
             </div>
             <div class="form-group">
                 <label>Phone Number *</label>
-                <input type="tel" id="phoneNumber" placeholder="e.g., 08123456789" required>
+                <input type="tel" id="phoneNumber" placeholder="08123456789">
             </div>
             <div class="form-group">
                 <label>Email (Optional)</label>
                 <input type="email" id="email" placeholder="your@email.com">
             </div>
             <button class="btn" onclick="register()">Continue →</button>
-            <div class="telegram-cta">
-                <p style="color: #a0a0b0; margin-bottom: 15px;">Prefer using Telegram?</p>
+            <div class="telegram-link">
                 <a href="https://t.me/jamb2026quiz_bot" target="_blank">📱 Open in Telegram</a>
             </div>
         </div>
 
-        <!-- Mode Selection Screen -->
+        <!-- Mode Screen -->
         <div id="modeScreen" class="screen">
-            <h1>🎯 <span class="gradient-text">Select Mode</span></h1>
+            <h1>🎯 <span class="gradient">Select Mode</span></h1>
             <p class="subtitle">Choose your test format</p>
-            <button class="btn" onclick="selectMode('exam')">📝 EXAM MODE - Custom Questions & Time</button>
-            <button class="btn" onclick="selectMode('cbt')">💻 CBT MODE - 160 Questions, 80 Minutes</button>
+            <button class="btn" onclick="selectMode('exam')">📝 EXAM MODE</button>
+            <button class="btn" onclick="selectMode('cbt')">💻 CBT MODE (160 Qs, 400 Marks)</button>
         </div>
 
-        <!-- Exam Settings Screen -->
+        <!-- Exam Settings -->
         <div id="examSettingsScreen" class="screen">
-            <h1>⚙️ <span class="gradient-text">Exam Settings</span></h1>
-            <p class="subtitle">Customize your exam</p>
+            <h1>⚙️ <span class="gradient">Exam Settings</span></h1>
             <div class="form-group">
-                <label>Select Subject *</label>
+                <label>Subject *</label>
                 <select id="examSubject">
-                    <option value="">-- Choose a subject --</option>
+                    <option value="">-- Choose --</option>
                     <option value="English">📖 English</option>
                     <option value="Mathematics">🧮 Mathematics</option>
                     <option value="Physics">⚡ Physics</option>
@@ -221,34 +183,30 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>Number of Questions *</label>
-                <input type="number" id="examQuestions" min="10" max="100" value="60" placeholder="e.g., 60">
-                <small style="color: #808090;">Min: 10, Max: 100</small>
+                <label>Questions (10-100)</label>
+                <input type="number" id="examQuestions" min="10" max="100" value="60">
             </div>
             <div class="form-group">
-                <label>Time Limit (minutes) *</label>
-                <input type="number" id="examTime" min="10" max="180" value="30" placeholder="e.g., 30">
-                <small style="color: #808090;">Min: 10, Max: 180 minutes</small>
+                <label>Time in minutes (10-180)</label>
+                <input type="number" id="examTime" min="10" max="180" value="30">
             </div>
-            <button class="btn" onclick="startExamWithSettings()">Start Exam →</button>
+            <button class="btn" onclick="startExam()">Start Exam →</button>
             <button class="btn btn-secondary" onclick="showScreen('modeScreen')">🔙 Back</button>
         </div>
 
-        <!-- CBT Subject Selection Screen -->
+        <!-- CBT Subject Selection -->
         <div id="subjectScreen" class="screen">
-            <h1>📚 <span class="gradient-text">Select Subjects</span></h1>
-            <p class="subtitle">English (Compulsory) + Select 3 more subjects</p>
+            <h1>📚 <span class="gradient">Select Subjects</span></h1>
+            <p class="subtitle">English (Compulsory) + 3 more</p>
             <div id="subjectContainer" class="subject-grid"></div>
-            <button class="btn" id="subjectContinueBtn" onclick="continueFromSubjects()">Continue →</button>
+            <button class="btn" id="continueBtn" onclick="continueFromSubjects()" disabled>Continue →</button>
         </div>
 
         <!-- Quiz Screen -->
         <div id="quizScreen" class="screen">
             <div class="timer" id="timer">⏱️ 30:00</div>
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-            </div>
-            <div class="counter-badge" id="questionCounter">Question 1 of 60</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <div class="counter" id="questionCounter">Question 1 of 60</div>
             <div class="question-box">
                 <div id="subjectLabel" style="color: #667eea; margin-bottom: 10px;"></div>
                 <div class="question-text" id="questionText"></div>
@@ -263,32 +221,23 @@
 
         <!-- Result Screen -->
         <div id="resultScreen" class="screen">
-            <h1>🏁 <span class="gradient-text">Quiz Completed!</span></h1>
+            <h1>🏁 <span class="gradient">Quiz Completed!</span></h1>
             <div class="result-box">
                 <div id="resultEmoji" style="font-size: 50px;"></div>
                 <div class="result-score" id="resultScore"></div>
-                <div class="total-marks" id="totalMarksDisplay">
+                <div class="total-marks">
                     TOTAL MARKS
                     <span id="totalMarksValue">0/400</span>
                 </div>
                 <div id="resultFeedback" style="color: #a0a0b0; margin-bottom: 20px;"></div>
-                <div class="subject-breakdown" id="subjectBreakdown"></div>
-                <button class="btn" onclick="showAnswersReview()">📋 REVIEW ANSWERS</button>
-                <button class="btn btn-secondary" onclick="location.reload()">🔄 Start New Quiz</button>
+                <div id="subjectBreakdown" style="text-align: left;"></div>
+                <button class="btn" onclick="location.reload()">🔄 Start New Quiz</button>
             </div>
         </div>
-        
-        <!-- Answers Review Screen -->
-        <div id="answersScreen" class="screen">
-            <h1>📋 <span class="gradient-text">Answer Review</span></h1>
-            <p class="subtitle">✅ Green = Correct | ❌ Red = Incorrect</p>
-            <div id="answersReviewContainer" class="answers-review"></div>
-            <button class="btn" onclick="showScreen('resultScreen')">🔙 Back to Results</button>
-        </div>
-        
+
         <!-- Admin Link -->
         <div class="admin-link">
-            <a href="#" onclick="showAdminLogin()">🔐 Admin Access</a>
+            <a href="#" onclick="showAdmin()">🔐 Admin</a>
         </div>
     </div>
 
@@ -303,146 +252,86 @@
         let timerInterval = null;
         let timeLimit = 0;
         let quizResults = null;
-        let examSettings = { subject: '', numQuestions: 60, timeMinutes: 30 };
 
-        const questionBank = {
-            English: [], Mathematics: [], Physics: [], Chemistry: [], Biology: []
-        };
+        const questionBank = { English: [], Mathematics: [], Physics: [], Chemistry: [], Biology: [] };
+        const emojis = { English: '📖', Mathematics: '🧮', Physics: '⚡', Chemistry: '🧪', Biology: '🧬' };
 
         async function loadQuestions() {
-            const subjects = {
-                'English': 'english.json',
-                'Mathematics': 'math.json',
-                'Physics': 'physics.json',
-                'Chemistry': 'chemistry.json',
-                'Biology': 'biology.json'
-            };
-            for (let subject in subjects) {
+            const files = { English: 'english.json', Mathematics: 'math.json', Physics: 'physics.json', Chemistry: 'chemistry.json', Biology: 'biology.json' };
+            for (let s in files) {
                 try {
-                    const response = await fetch(subjects[subject]);
-                    const data = await response.json();
-                    if (Array.isArray(data)) {
-                        questionBank[subject] = data;
-                    } else if (typeof data === 'object') {
-                        for (let key in data) {
-                            if (Array.isArray(data[key])) {
-                                questionBank[subject] = questionBank[subject].concat(data[key]);
-                            } else if (typeof data[key] === 'object' && data[key].question) {
-                                questionBank[subject].push(data[key]);
-                            }
+                    const res = await fetch(files[s]);
+                    const data = await res.json();
+                    if (Array.isArray(data)) questionBank[s] = data;
+                    else if (typeof data === 'object') {
+                        for (let k in data) {
+                            if (Array.isArray(data[k])) questionBank[s] = questionBank[s].concat(data[k]);
+                            else if (data[k].question) questionBank[s].push(data[k]);
                         }
                     }
-                    console.log(`Loaded ${questionBank[subject].length} ${subject} questions`);
-                } catch (e) {
-                    console.error(`Failed to load ${subject}:`, e);
-                }
+                } catch(e) { console.error('Failed to load', s); }
             }
         }
 
         function register() {
             const name = document.getElementById('fullName').value.trim();
             const phone = document.getElementById('phoneNumber').value.trim();
-            const email = document.getElementById('email').value.trim();
-            if (!name) { alert('Please enter your full name'); return; }
-            if (!phone) { alert('Phone number is required'); return; }
-            if (!phone.match(/^\d{10,15}$/)) { alert('Please enter a valid phone number'); return; }
-            currentUser = { name, phone, email: email || 'Not provided' };
+            if (!name || !phone) { alert('Name and phone required'); return; }
+            currentUser = { name, phone, email: document.getElementById('email').value.trim() || 'N/A' };
             showScreen('modeScreen');
         }
 
         function selectMode(mode) {
             currentMode = mode;
-            if (mode === 'exam') {
-                showScreen('examSettingsScreen');
-            } else {
-                timeLimit = 80 * 60;
-                showScreen('subjectScreen');
-                renderSubjectGrid(false);
-            }
+            if (mode === 'exam') showScreen('examSettingsScreen');
+            else { timeLimit = 80 * 60; showScreen('subjectScreen'); renderSubjects(); }
         }
 
-        function startExamWithSettings() {
-            const subject = document.getElementById('examSubject').value;
-            const numQuestions = parseInt(document.getElementById('examQuestions').value);
-            const timeMinutes = parseInt(document.getElementById('examTime').value);
-            
-            if (!subject) { alert('Please select a subject'); return; }
-            if (numQuestions < 10 || numQuestions > 100) { alert('Questions must be between 10 and 100'); return; }
-            if (timeMinutes < 10 || timeMinutes > 180) { alert('Time must be between 10 and 180 minutes'); return; }
-            
-            examSettings = { subject, numQuestions, timeMinutes };
-            selectedSubjects = [subject];
-            timeLimit = timeMinutes * 60;
-            generateExamQuestions();
-            startQuiz();
-        }
-
-        function renderSubjectGrid(singleSelect) {
+        function renderSubjects() {
             const container = document.getElementById('subjectContainer');
-            const subjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
+            const subs = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
             selectedSubjects = ['English'];
             container.innerHTML = '';
-            subjects.forEach(subject => {
+            subs.forEach(s => {
                 const card = document.createElement('div');
                 card.className = 'subject-card';
-                card.innerHTML = `<div class="emoji">${getEmoji(subject)}</div><h3>${subject}</h3><small style="color: #808090;">${questionBank[subject]?.length || 0} Qs</small>`;
+                card.innerHTML = `<div class="emoji">${emojis[s]}</div><h3>${s}</h3>`;
                 card.onclick = () => {
-                    if (selectedSubjects.includes(subject)) {
-                        selectedSubjects = selectedSubjects.filter(s => s !== subject);
-                    } else if (selectedSubjects.length < 4) {
-                        selectedSubjects.push(subject);
-                    } else {
-                        alert('You can only select 3 additional subjects');
-                        return;
-                    }
+                    if (selectedSubjects.includes(s)) selectedSubjects = selectedSubjects.filter(x => x !== s);
+                    else if (selectedSubjects.length < 4) selectedSubjects.push(s);
+                    else { alert('Max 3 additional subjects'); return; }
                     card.classList.toggle('selected');
-                    updateContinueButton();
+                    document.getElementById('continueBtn').disabled = selectedSubjects.length !== 4;
                 };
                 container.appendChild(card);
             });
-            const englishNote = document.createElement('div');
-            englishNote.style.cssText = 'grid-column: span 2; text-align: center; color: #667eea; margin-top: 10px;';
-            englishNote.innerHTML = '📖 English (Compulsory) ✅';
-            container.appendChild(englishNote);
         }
 
-        function getEmoji(subject) {
-            const emojis = { English: '📖', Mathematics: '🧮', Physics: '⚡', Chemistry: '🧪', Biology: '🧬' };
-            return emojis[subject] || '📚';
-        }
-
-        function updateContinueButton() {
-            const btn = document.getElementById('subjectContinueBtn');
-            btn.disabled = selectedSubjects.length !== 4;
-            btn.style.opacity = btn.disabled ? '0.5' : '1';
-        }
-
-        function continueFromSubjects() {
-            if (selectedSubjects.length !== 4) {
-                alert('Please select 3 additional subjects (English is compulsory)');
-                return;
-            }
-            generateQuestions();
+        function startExam() {
+            const subj = document.getElementById('examSubject').value;
+            const num = parseInt(document.getElementById('examQuestions').value);
+            const mins = parseInt(document.getElementById('examTime').value);
+            if (!subj || num < 10 || num > 100 || mins < 10 || mins > 180) { alert('Invalid settings'); return; }
+            selectedSubjects = [subj];
+            timeLimit = mins * 60;
+            generateQuestions(num);
             startQuiz();
         }
 
-        function generateExamQuestions() {
-            questions = [];
-            const bank = questionBank[examSettings.subject] || [];
-            const shuffled = [...bank].sort(() => Math.random() - 0.5);
-            const selected = shuffled.slice(0, Math.min(examSettings.numQuestions, bank.length));
-            selected.forEach(q => { questions.push({ ...q, subject: examSettings.subject }); });
-            questions = questions.sort(() => Math.random() - 0.5);
-            answers = new Array(questions.length).fill(null);
+        function continueFromSubjects() {
+            if (selectedSubjects.length !== 4) { alert('Select 3 additional subjects'); return; }
+            generateQuestions(40);
+            startQuiz();
         }
 
-        function generateQuestions() {
+        function generateQuestions(numPerSubject) {
             questions = [];
-            selectedSubjects.forEach(subject => {
-                const bank = questionBank[subject] || [];
+            selectedSubjects.forEach(s => {
+                const bank = questionBank[s] || [];
                 const shuffled = [...bank].sort(() => Math.random() - 0.5);
-                const selected = shuffled.slice(0, Math.min(40, bank.length));
-                selected.forEach(q => { questions.push({ ...q, subject: subject }); });
+                shuffled.slice(0, Math.min(numPerSubject, bank.length)).forEach(q => {
+                    questions.push({ ...q, subject: s });
+                });
             });
             questions = questions.sort(() => Math.random() - 0.5);
             answers = new Array(questions.length).fill(null);
@@ -452,7 +341,6 @@
             currentIndex = 0;
             startTime = Date.now();
             showScreen('quizScreen');
-            updateQuestionCounter();
             renderQuestion();
             startTimer();
         }
@@ -469,234 +357,82 @@
             }, 1000);
         }
 
-        function updateQuestionCounter() {
-            document.getElementById('questionCounter').textContent = `Question ${currentIndex + 1} of ${questions.length}`;
-        }
-
         function renderQuestion() {
             const q = questions[currentIndex];
-            const progress = ((currentIndex + 1) / questions.length) * 100;
-            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressFill').style.width = ((currentIndex + 1) / questions.length * 100) + '%';
             document.getElementById('subjectLabel').textContent = `📖 ${q.subject}`;
             document.getElementById('questionText').textContent = q.question;
-            updateQuestionCounter();
+            document.getElementById('questionCounter').textContent = `Question ${currentIndex + 1} of ${questions.length}`;
             
-            const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.innerHTML = '';
-            let options = Array.isArray(q.options) ? q.options : Object.values(q.options || {});
-            options.forEach((opt, idx) => {
-                const optionDiv = document.createElement('div');
-                optionDiv.className = 'option' + (answers[currentIndex] === idx ? ' selected' : '');
-                optionDiv.textContent = `${String.fromCharCode(65 + idx)}. ${opt}`;
-                optionDiv.onclick = () => selectOption(idx);
-                optionsContainer.appendChild(optionDiv);
+            const opts = Array.isArray(q.options) ? q.options : Object.values(q.options || {});
+            const container = document.getElementById('optionsContainer');
+            container.innerHTML = '';
+            opts.forEach((opt, i) => {
+                const div = document.createElement('div');
+                div.className = 'option' + (answers[currentIndex] === i ? ' selected' : '');
+                div.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+                div.onclick = () => { answers[currentIndex] = i; renderQuestion(); };
+                container.appendChild(div);
             });
             
             document.getElementById('prevBtn').style.display = currentIndex > 0 ? 'block' : 'none';
             document.getElementById('nextBtn').textContent = currentIndex === questions.length - 1 ? 'FINISH ▶️' : 'NEXT ▶️';
         }
 
-        function selectOption(idx) {
-            answers[currentIndex] = idx;
-            renderQuestion();
-        }
-
-        function prevQuestion() {
-            if (currentIndex > 0) { currentIndex--; renderQuestion(); }
-        }
-
-        function nextQuestion() {
-            if (currentIndex < questions.length - 1) { currentIndex++; renderQuestion(); }
-            else { submitQuiz(); }
-        }
+        function prevQuestion() { if (currentIndex > 0) { currentIndex--; renderQuestion(); } }
+        function nextQuestion() { if (currentIndex < questions.length - 1) { currentIndex++; renderQuestion(); } else { submitQuiz(); } }
 
         function submitQuiz() {
             clearInterval(timerInterval);
-            const answered = answers.filter(a => a !== null).length;
-            const unanswered = questions.length - answered;
-            if (unanswered > 0) {
-                if (!confirm(`You have ${unanswered} unanswered questions. Submit anyway?`)) {
-                    startTimer();
-                    return;
-                }
-            }
-            calculateResults();
-        }
-
-        function calculateResults() {
+            const unanswered = answers.filter(a => a === null).length;
+            if (unanswered > 0 && !confirm(`${unanswered} unanswered. Submit anyway?`)) { startTimer(); return; }
+            
             let correct = 0;
             const subjectScores = {};
-            const answersDetail = [];
-            
             questions.forEach((q, i) => {
-                const userAnswer = answers[i];
-                let correctIdx = q.correct !== undefined ? q.correct : (q.answer ? (typeof q.answer === 'string' ? q.answer.toUpperCase().charCodeAt(0) - 65 : q.answer) : 0);
-                let options = Array.isArray(q.options) ? q.options : Object.values(q.options || {});
-                const correctAnswer = options[correctIdx] || 'N/A';
-                const userAnswerText = userAnswer !== null ? options[userAnswer] : 'Not answered';
-                const isCorrect = userAnswer === correctIdx;
-                
-                if (!subjectScores[q.subject]) subjectScores[q.subject] = { correct: 0, total: 0, marks: 0 };
+                const ans = answers[i];
+                let correctIdx = q.correct ?? (q.answer ? (typeof q.answer === 'string' ? q.answer.toUpperCase().charCodeAt(0) - 65 : q.answer) : 0);
+                if (!subjectScores[q.subject]) subjectScores[q.subject] = { correct: 0, total: 0 };
                 subjectScores[q.subject].total++;
-                if (isCorrect) { 
-                    correct++; 
-                    subjectScores[q.subject].correct++;
-                }
-                
-                answersDetail.push({
-                    qNum: i + 1, question: q.question, subject: q.subject,
-                    userAnswer: userAnswerText, correctAnswer: correctAnswer, isCorrect: isCorrect
-                });
+                if (ans === correctIdx) { correct++; subjectScores[q.subject].correct++; }
             });
             
             const total = questions.length;
             const percent = Math.round((correct / total) * 100);
-            const timeTaken = Math.floor((Date.now() - startTime) / 1000);
+            const marksPerQ = currentMode === 'cbt' ? 2.5 : 1;
+            const earned = correct * marksPerQ;
+            const totalMarks = total * marksPerQ;
             
-            // Calculate marks
-            const marksPerQuestion = currentMode === 'cbt' ? 2.5 : 1;
-            const totalMarks = total * marksPerQuestion;
-            const earnedMarks = correct * marksPerQuestion;
+            quizResults = { user: currentUser, mode: currentMode, correct, total, percent, earnedMarks: earned, totalMarks, subjectScores, timestamp: new Date().toISOString() };
             
-            // Calculate subject marks
-            for (let subj in subjectScores) {
-                subjectScores[subj].marks = subjectScores[subj].correct * marksPerQuestion;
-                subjectScores[subj].totalMarks = subjectScores[subj].total * marksPerQuestion;
-            }
-            
-            quizResults = {
-                user: currentUser,
-                mode: currentMode,
-                subjects: selectedSubjects,
-                correct,
-                total,
-                percent,
-                earnedMarks,
-                totalMarks,
-                timeTaken,
-                subjectScores,
-                answersDetail,
-                timestamp: new Date().toISOString()
-            };
-            
-            // Save to localStorage
             let results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
             results.push(quizResults);
             localStorage.setItem('jamb_results', JSON.stringify(results));
             
             showScreen('resultScreen');
-            
-            const emoji = percent >= 80 ? '🏆' : percent >= 70 ? '🎯' : percent >= 60 ? '💪' : percent >= 50 ? '📝' : '🌱';
-            const feedback = percent >= 80 ? 'Outstanding!' : percent >= 70 ? 'Excellent!' : percent >= 60 ? 'Good effort!' : percent >= 50 ? 'Fair performance!' : 'Keep practicing!';
-            
-            document.getElementById('resultEmoji').textContent = emoji;
+            document.getElementById('resultEmoji').textContent = percent >= 80 ? '🏆' : percent >= 60 ? '💪' : '📝';
             document.getElementById('resultScore').textContent = `${percent}%`;
-            document.getElementById('totalMarksValue').textContent = `${earnedMarks.toFixed(1)}/${totalMarks} Marks`;
-            document.getElementById('resultFeedback').textContent = feedback;
+            document.getElementById('totalMarksValue').textContent = `${earned.toFixed(1)}/${totalMarks} Marks`;
+            document.getElementById('resultFeedback').textContent = percent >= 80 ? 'Outstanding!' : percent >= 60 ? 'Good effort!' : 'Keep practicing!';
             
             let breakdown = '';
-            for (let subj in subjectScores) {
-                const data = subjectScores[subj];
-                const subjPercent = Math.round((data.correct / data.total) * 100);
-                breakdown += `<div class="subject-row"><span>${getEmoji(subj)} ${subj}</span><span>${data.correct}/${data.total} (${data.marks.toFixed(1)}/${data.totalMarks.toFixed(1)} marks) - ${subjPercent}%</span></div>`;
+            for (let s in subjectScores) {
+                const d = subjectScores[s];
+                breakdown += `<div style="display:flex;justify-content:space-between;color:#a0a0b0;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.1);"><span>${emojis[s]} ${s}</span><span>${d.correct}/${d.total} (${(d.correct*marksPerQ).toFixed(1)}/${(d.total*marksPerQ).toFixed(1)}) - ${Math.round(d.correct/d.total*100)}%</span></div>`;
             }
             document.getElementById('subjectBreakdown').innerHTML = breakdown;
         }
 
-        function showAnswersReview() {
-            if (!quizResults || !quizResults.answersDetail) { alert('No answer details available!'); return; }
-            const container = document.getElementById('answersReviewContainer');
-            container.innerHTML = '';
-            quizResults.answersDetail.forEach(ans => {
-                const div = document.createElement('div');
-                div.className = `answer-item ${ans.isCorrect ? 'correct' : 'incorrect'}`;
-                div.innerHTML = `
-                    <div class="answer-question">${ans.isCorrect ? '✅' : '❌'} Q${ans.qNum}: ${ans.question}</div>
-                    <div class="answer-detail">
-                        📖 Subject: ${ans.subject}<br>
-                        📝 Your answer: ${ans.userAnswer}<br>
-                        ✓ Correct answer: ${ans.correctAnswer}
-                    </div>
-                `;
-                container.appendChild(div);
-            });
-            showScreen('answersScreen');
-        }
-
-        function showScreen(screenId) {
+        function showScreen(id) {
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-            document.getElementById(screenId).classList.add('active');
+            document.getElementById(id).classList.add('active');
         }
 
-        function showAdminLogin() {
-            const password = prompt('Enter admin password:');
-            if (password === 'admin2026') {
-                showAdminPanel();
-            } else {
-                alert('Invalid password');
-            }
-        }
-
-        function showAdminPanel() {
+        function showAdmin() {
+            const pw = prompt('Admin password:');
+            if (pw !== 'admin2026') { alert('Wrong password'); return; }
             const results = JSON.parse(localStorage.getItem('jamb_results') || '[]');
-            
-            let html = '<h2 style="color: white;">Admin Panel</h2><div style="max-height: 400px; overflow-y: auto;">';
-            
-            const users = {};
-            results.forEach(r => { if (r.user) users[r.user.phone] = r.user; });
-            
-            html += '<h3 style="color: #667eea;">Users (' + Object.keys(users).length + ')</h3>';
-            Object.values(users).slice(-20).reverse().forEach(u => {
-                html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
-                html += `<strong>${u.name}</strong><br>📞 ${u.phone}<br>📧 ${u.email || 'N/A'}</div>`;
-            });
-            
-            html += '<h3 style="color: #667eea; margin-top: 20px;">Results (' + results.length + ')</h3>';
-            results.slice(-10).reverse().forEach(r => {
-                if (r.user) {
-                    html += `<div style="background: rgba(255,255,255,0.05); padding: 10px; margin: 5px 0; border-radius: 10px; color: white;">`;
-                    html += `<strong>${r.user.name}</strong> - ${r.percent}%<br>`;
-                    html += `Marks: ${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}<br>`;
-                    html += `Mode: ${r.mode?.toUpperCase() || 'N/A'} | ${r.correct}/${r.total}<br>`;
-                    html += `🕐 ${new Date(r.timestamp).toLocaleString()}</div>`;
-                }
-            });
-            
-            html += '</div><br><button class="btn" onclick="exportData()">Export CSV</button>';
-            html += '<button class="btn btn-secondary" onclick="clearData()">Clear All Data</button>';
-            html += '<br><br><button class="btn btn-secondary" onclick="this.parentElement.parentElement.remove()">Close</button>';
-            
-            const overlay = document.createElement('div');
-            overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 998;';
-            const container = document.createElement('div');
-            container.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #1a1a2e; padding: 30px; border-radius: 20px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; z-index: 999; box-shadow: 0 25px 50px rgba(0,0,0,0.5);';
-            container.innerHTML = html;
-            overlay.onclick = () => { overlay.remove(); container.remove(); };
-            document.body.appendChild(overlay);
-            document.body.appendChild(container);
-            
-            window.exportData = function() {
-                let csv = 'Name,Phone,Email,Mode,Score,Percent,Marks,Date\n';
-                results.forEach(r => {
-                    if (r.user) {
-                        csv += `"${r.user.name}","${r.user.phone}","${r.user.email || ''}","${r.mode || ''}","${r.correct}/${r.total}","${r.percent}%","${r.earnedMarks?.toFixed(1) || 0}/${r.totalMarks || 0}","${r.timestamp}"\n`;
-                    }
-                });
-                const blob = new Blob([csv], { type: 'text/csv' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `jamb_results_${new Date().toISOString().split('T')[0]}.csv`;
-                a.click();
-            };
-            
-            window.clearData = function() {
-                if (confirm('Are you sure? This will delete ALL data!')) {
-                    localStorage.removeItem('jamb_results');
-                    alert('Data cleared');
-                    location.reload();
-                }
-            };
+            alert(`Total results: ${results.length}\n\nCheck console for details or use Export feature.`);
         }
 
         loadQuestions();
