@@ -3,6 +3,7 @@ import json
 import random
 import logging
 import time
+import requests
 from datetime import datetime
 from flask import Flask, request, Response
 import telegram
@@ -16,6 +17,11 @@ logger = logging.getLogger(__name__)
 TOKEN = os.environ.get("BOT_TOKEN", "8224895234:AAGlQmIMHgNv_P0XW2qZ9PMoIcv2dhQqBhI")
 ADMIN_ID = 6726456466
 PORT = int(os.environ.get("PORT", 8000))
+
+# JSONBin Configuration
+JSONBIN_BIN_ID = '69e0db67aaba882197069654'
+JSONBIN_API_KEY = '$2a$10$Ailo1FCdiaG3coaubaZK3O80dS9MOHCx6zOtBWxpBbiDcNbA8y5w6'
+JSONBIN_URL = f'https://api.jsonbin.io/v3/b/{JSONBIN_BIN_ID}'
 
 CHOOSING_MODE, EXAM_SUBJECT, EXAM_QUESTIONS, EXAM_TIME, CBT_SUBJECTS, QUIZ, CONFIRM_QUIT, REVIEW_MISSED, GET_PHONE = range(9)
 
@@ -32,8 +38,6 @@ EMOJIS = {"English": "📖", "Mathematics": "🧮", "Physics": "⚡", "Chemistry
 CBT_TIME = 80 * 60
 CBT_MARKS_PER_QUESTION = 2.5
 EXAM_MARKS_PER_QUESTION = 1
-
-UPDATE_FLAG_FILE = "update_sent.txt"
 
 def parse_options(options_data):
     if isinstance(options_data, list):
@@ -117,32 +121,45 @@ ALL_Q = {s: load_questions(s) for s in SUBJECTS}
 for s, qs in ALL_Q.items():
     print(f"📚 {s}: {len(qs)} questions")
 
-DB = {"users": {}, "attempts": []}
-RESULT_FILE = "results.json"
-PHONE_FILE = "phone_numbers.json"
+# Cloud Database Functions
+def load_cloud_data():
+    """Load data from JSONBin"""
+    try:
+        response = requests.get(f"{JSONBIN_URL}/latest", 
+                               headers={'X-Master-Key': JSONBIN_API_KEY})
+        if response.status_code == 200:
+            data = response.json()
+            return data.get('record', {'results': [], 'users': [], 'phone_numbers': {}})
+        return {'results': [], 'users': [], 'phone_numbers': {}}
+    except Exception as e:
+        logger.error(f"Failed to load from cloud: {e}")
+        return {'results': [], 'users': [], 'phone_numbers': {}}
 
-def load_db():
-    global DB
-    if os.path.exists(RESULT_FILE):
-        with open(RESULT_FILE, "r") as f:
-            DB = json.load(f)
+def save_cloud_data(data):
+    """Save data to JSONBin"""
+    try:
+        response = requests.put(JSONBIN_URL,
+                               headers={'Content-Type': 'application/json',
+                                       'X-Master-Key': JSONBIN_API_KEY},
+                               json=data)
+        return response.status_code == 200
+    except Exception as e:
+        logger.error(f"Failed to save to cloud: {e}")
+        return False
 
-def save_db():
-    with open(RESULT_FILE, "w") as f:
-        json.dump(DB, f)
+# Load initial data from cloud
+cloud_db = load_cloud_data()
+DB = {'users': cloud_db.get('users', {}), 'attempts': cloud_db.get('results', [])}
+phone_db = cloud_db.get('phone_numbers', {})
 
-def load_phones():
-    if os.path.exists(PHONE_FILE):
-        with open(PHONE_FILE, "r") as f:
-            return json.load(f)
-    return {}
-
-def save_phones(phones):
-    with open(PHONE_FILE, "w") as f:
-        json.dump(phones, f)
-
-load_db()
-phone_db = load_phones()
+def sync_to_cloud():
+    """Sync local DB to cloud"""
+    cloud_data = {
+        'results': DB['attempts'],
+        'users': DB['users'],
+        'phone_numbers': phone_db
+    }
+    return save_cloud_data(cloud_data)
 
 sessions = {}
 app = Flask(__name__)
@@ -156,29 +173,6 @@ def format_time(seconds):
     mins = seconds // 60
     secs = seconds % 60
     return f"{mins:02d}:{secs:02d}"
-
-def send_update_notification():
-    if os.path.exists(UPDATE_FLAG_FILE):
-        return
-    
-    users = list(set(list(phone_db.keys()) + list(DB["users"].keys())))
-    sent = 0
-    for uid in users:
-        try:
-            bot.send_message(
-                chat_id=int(uid),
-                text="🔄 *New update available!*\n\nUse /start_quiz to continue your JAMB preparation.\n\nGood luck! 🍀",
-                parse_mode="Markdown"
-            )
-            sent += 1
-            time.sleep(0.1)
-        except:
-            pass
-    
-    with open(UPDATE_FLAG_FILE, "w") as f:
-        f.write(datetime.now().strftime("%Y-%m-%d %H:%M"))
-    
-    logger.info(f"📢 Update notification sent to {sent} users")
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
@@ -208,18 +202,19 @@ def ask_phone(update: Update, context: CallbackContext):
     return GET_PHONE
 
 def save_phone(update: Update, context: CallbackContext):
+    global phone_db
     user_id = str(update.effective_user.id)
     text = update.message.text.strip()
     
     if text == "/skip":
         phone_db[user_id] = "Skipped"
-        save_phones(phone_db)
+        sync_to_cloud()
         update.message.reply_text("✅ No problem! You can start the quiz now.\n\nUse /start_quiz to begin!")
         return ConversationHandler.END
     
     if text.isdigit() and len(text) >= 10:
         phone_db[user_id] = text
-        save_phones(phone_db)
+        sync_to_cloud()
         update.message.reply_text("✅ Thank you! Your number has been saved.\n\nUse /start_quiz to begin your test!\n\nGood luck! 🍀")
         return ConversationHandler.END
     else:
@@ -235,7 +230,7 @@ def start_quiz(update: Update, context: CallbackContext):
 def start_quiz_direct(update: Update, context: CallbackContext):
     kb = [
         [InlineKeyboardButton("📝 EXAM MODE (Custom Questions & Time)", callback_data="exam")],
-        [InlineKeyboardButton("💻 CBT MODE (160 Qs, 80 mins, 400 Marks)", callback_data="cbt")],
+        [InlineKeyboardButton("💻 CBT MODE (180 Qs, 60+40+40+40)", callback_data="cbt")],
     ]
     update.message.reply_text("🎯 SELECT TEST MODE:", reply_markup=InlineKeyboardMarkup(kb))
     return CHOOSING_MODE
@@ -262,7 +257,7 @@ def mode(update: Update, context: CallbackContext):
     kb.append([InlineKeyboardButton("✅ DONE", callback_data="cbt_done")])
     
     q.edit_message_text(
-        "💻 CBT MODE\n\n📖 English (Compulsory) ✅\n\nSelect 3 additional subjects:",
+        "💻 CBT MODE\n\n📖 English (Compulsory - 60 Qs) ✅\n\nSelect 3 additional subjects (40 Qs each):",
         reply_markup=InlineKeyboardMarkup(kb)
     )
     return CBT_SUBJECTS
@@ -384,7 +379,7 @@ def cbt(update: Update, context: CallbackContext):
     
     selected_display = ", ".join([s for s in subs if s != "English"]) or "None"
     q.edit_message_text(
-        f"💻 CBT MODE\n\n📖 English ✅\n\nSelected: {selected_display}\n({len(subs)-1}/3 selected)",
+        f"💻 CBT MODE\n\n📖 English ✅ (60 Qs)\n\nSelected: {selected_display}\n({len(subs)-1}/3 selected)",
         reply_markup=InlineKeyboardMarkup(kb)
     )
     return CBT_SUBJECTS
@@ -393,14 +388,22 @@ def start_cbt_session(q, context, subjects):
     user = q.from_user.id
     all_qs = []
     
+    # ENGLISH FIRST - 60 questions
+    english_bank = ALL_Q.get('English', [])
+    english_selected = random.sample(english_bank, min(60, len(english_bank)))
+    for item in english_selected:
+        item["subject"] = "English"
+    all_qs.extend(english_selected)
+    
+    # THEN OTHER SUBJECTS - 40 questions each
     for s in subjects:
-        available = ALL_Q.get(s, [])
-        if available:
-            num = min(40, len(available))
-            selected = random.sample(available, num)
-            for item in selected:
-                item["subject"] = s
-            all_qs.extend(selected)
+        if s != "English":
+            available = ALL_Q.get(s, [])
+            if available:
+                selected = random.sample(available, min(40, len(available)))
+                for item in selected:
+                    item["subject"] = s
+                all_qs.extend(selected)
     
     if not all_qs:
         q.edit_message_text("❌ No questions available!")
@@ -486,7 +489,7 @@ def handle_answer(update: Update, context: CallbackContext):
     if data == "quit":
         return confirm_quit(q, context)
     elif data == "submit":
-        return check_before_submit(q, context, user)
+        return submit_quiz(q, context, user)
     elif data == "prev":
         if s["i"] > 0:
             s["i"] -= 1
@@ -508,51 +511,8 @@ def handle_answer(update: Update, context: CallbackContext):
     
     return QUIZ
 
-def check_before_submit(q, context, user):
-    s = sessions.get(user)
-    if not s:
-        return ConversationHandler.END
-    
-    unanswered = []
-    for i, ans in enumerate(s["answers"]):
-        if ans is None:
-            unanswered.append(i)
-    
-    if unanswered:
-        txt = f"⚠️ UNANSWERED QUESTIONS\n\nYou have {len(unanswered)} unanswered question(s).\n\n"
-        
-        by_subject = {}
-        for idx in unanswered[:10]:
-            subj = s["q"][idx].get('subject', 'General')
-            if subj not in by_subject:
-                by_subject[subj] = []
-            by_subject[subj].append(idx + 1)
-        
-        for subj, q_nums in by_subject.items():
-            txt += f"{EMOJIS.get(subj, '📚')} {subj}: Q{', Q'.join(map(str, q_nums))}\n"
-        
-        if len(unanswered) > 10:
-            txt += f"\n...and {len(unanswered)-10} more"
-        
-        txt += "\n\nDo you want to submit anyway?"
-        
-        kb = [
-            [InlineKeyboardButton("🔙 GO BACK", callback_data="back")],
-            [InlineKeyboardButton("✅ SUBMIT ANYWAY", callback_data="force_submit")],
-        ]
-        
-        q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
-        return REVIEW_MISSED
-    else:
-        return submit_quiz(q, context, user)
-
-def force_submit(update: Update, context: CallbackContext):
-    q = update.callback_query
-    q.answer()
-    user = q.from_user.id
-    return submit_quiz(q, context, user)
-
 def submit_quiz(q, context, user, time_up=False):
+    global DB
     s = sessions.get(user)
     if not s:
         return ConversationHandler.END
@@ -602,24 +562,29 @@ def submit_quiz(q, context, user, time_up=False):
     
     user_obj = q.from_user
     
+    # Save to cloud DB
     DB["users"][str(user)] = {"name": user_obj.first_name, "username": user_obj.username}
-    DB["attempts"].append({
+    
+    attempt_data = {
         "user_id": str(user),
         "name": user_obj.first_name,
         "username": user_obj.username or "N/A",
+        "phone": phone_db.get(str(user), "Not provided"),
         "mode": s["mode"],
         "subjects": ", ".join(s["subjects"]),
         "raw_score": raw_score,
         "total_questions": total_questions,
         "total_marks": total_marks,
-        "total_marks_earned": earned_marks,
+        "earned_marks": earned_marks,
         "percent": percent,
         "time_taken": time_taken,
         "subject_scores": subject_scores,
         "answers_detail": answers_detail,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M")
-    })
-    save_db()
+    }
+    
+    DB["attempts"].append(attempt_data)
+    sync_to_cloud()  # Save to JSONBin immediately!
     
     if time_up:
         fb, emoji = "⏰ TIME'S UP!", "⏰"
@@ -649,46 +614,12 @@ def submit_quiz(q, context, user, time_up=False):
         txt += f"{emoji} {subj}: {data['correct']}/{data['total']} ({subj_marks:.1f}/{subj_total:.1f} marks) - {data['percent']}%\n"
     
     txt += f"\n{fb}\n\n"
-    
-    kb = [[InlineKeyboardButton("📋 VIEW ANSWERS", callback_data=f"view_answers_{user}")]]
-    
     txt += "/start_quiz - Try again\n"
     txt += "/myresult - View again"
     
     del sessions[user]
-    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
+    q.edit_message_text(txt)
     return ConversationHandler.END
-
-def view_answers(update: Update, context: CallbackContext):
-    q = update.callback_query
-    q.answer()
-    user = q.from_user.id
-    
-    attempts = [a for a in DB["attempts"] if a.get("user_id") == str(user)]
-    if not attempts:
-        q.edit_message_text("No attempts found!")
-        return
-    
-    latest = attempts[-1]
-    answers_detail = latest.get("answers_detail", [])
-    
-    if not answers_detail:
-        q.edit_message_text("No answer details available!")
-        return
-    
-    txt = f"📋 YOUR ANSWERS - {latest['mode'].upper()}\n\n"
-    
-    for ans in answers_detail[:15]:
-        emoji = "✅" if ans["is_correct"] else "❌"
-        txt += f"{emoji} Q{ans['q_num']}: {ans['question'][:40]}...\n"
-        txt += f"   Your answer: {ans['user_answer']}\n"
-        txt += f"   Correct: {ans['correct_answer']}\n\n"
-    
-    if len(answers_detail) > 15:
-        txt += f"...and {len(answers_detail) - 15} more questions.\n"
-    
-    kb = [[InlineKeyboardButton("🔄 NEW QUIZ", callback_data="new_quiz")]]
-    q.edit_message_text(txt, reply_markup=InlineKeyboardMarkup(kb))
 
 def confirm_quit(q, context):
     kb = [
@@ -725,7 +656,7 @@ def my_result(update: Update, context: CallbackContext):
     txt = f"📊 YOUR LAST RESULT\n\n"
     txt += f"Mode: {a.get('mode', 'N/A').upper()}\n"
     txt += f"Score: {a['raw_score']}/{a['total_questions']} correct\n"
-    txt += f"Marks: {a['total_marks_earned']:.1f}/{a['total_marks']}\n"
+    txt += f"Marks: {a['earned_marks']:.1f}/{a['total_marks']}\n"
     txt += f"Percent: {a['percent']}%\n"
     txt += f"Time: {time_str}"
     
@@ -763,6 +694,12 @@ def admin(update: Update, context: CallbackContext):
         update.message.reply_text("⛔ Admin only!")
         return
     
+    # Refresh from cloud
+    global DB, phone_db
+    cloud_data = load_cloud_data()
+    DB = {'users': cloud_data.get('users', {}), 'attempts': cloud_data.get('results', [])}
+    phone_db = cloud_data.get('phone_numbers', {})
+    
     if not DB["attempts"]:
         update.message.reply_text("No attempts yet!")
         return
@@ -770,75 +707,28 @@ def admin(update: Update, context: CallbackContext):
     participants = len(DB["users"])
     attempts = len(DB["attempts"])
     
-    exam_attempts = [a for a in DB["attempts"] if a.get("mode") == "exam"]
-    cbt_attempts = [a for a in DB["attempts"] if a.get("mode") == "cbt"]
-    
     avg_all = sum(a["percent"] for a in DB["attempts"]) / attempts
     
-    txt = f"📊 ADMIN DASHBOARD\n\n"
+    txt = f"📊 ADMIN DASHBOARD (Cloud)\n\n"
     txt += f"👥 Total Participants: {participants}\n"
     txt += f"📝 Total Attempts: {attempts}\n"
-    txt += f"   └ Exam Mode: {len(exam_attempts)}\n"
-    txt += f"   └ CBT Mode: {len(cbt_attempts)}\n"
     txt += f"📈 Average Score: {avg_all:.1f}%\n\n"
-    
-    user_attempts = {}
-    for a in DB["attempts"]:
-        uid = a["user_id"]
-        if uid not in user_attempts:
-            user_attempts[uid] = []
-        user_attempts[uid].append(a)
     
     txt += f"━━━━━━━━━━━━━━━━━━━━━━\n"
     txt += f"📋 ALL PARTICIPANT RESULTS:\n"
     txt += f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
     
-    for uid, attempts_list in user_attempts.items():
-        latest = attempts_list[-1]
-        phone = phone_db.get(uid, "Not provided")
-        
-        txt += f"👤 {latest['name']}"
-        if latest.get('username') and latest['username'] != 'N/A':
-            txt += f" (@{latest['username']})"
+    for a in DB["attempts"][-15:]:
+        txt += f"👤 {a['name']}"
+        if a.get('username') and a['username'] != 'N/A':
+            txt += f" (@{a['username']})"
         txt += f"\n"
-        txt += f"   📞 Phone: {phone}\n"
-        txt += f"   Mode: {latest['mode'].upper()}\n"
-        txt += f"   Date: {latest['timestamp']}\n"
-        txt += f"   Overall: {latest['percent']}% ({latest['raw_score']}/{latest['total_questions']})\n"
-        txt += f"   Marks: {latest['total_marks_earned']:.1f}/{latest['total_marks']}\n"
-        
-        if latest.get('subject_scores'):
-            txt += f"   📚 Subject Breakdown:\n"
-            for subj, data in latest['subject_scores'].items():
-                emoji = EMOJIS.get(subj, "📚")
-                txt += f"      {emoji} {subj}: {data['correct']}/{data['total']} ({data['percent']}%)\n"
-        
-        txt += f"\n"
-        
-        if len(txt) > 3500:
-            txt += "...\n(Use /export for full data)"
-            break
+        txt += f"   📞 Phone: {a.get('phone', 'N/A')}\n"
+        txt += f"   Mode: {a['mode'].upper()}\n"
+        txt += f"   Score: {a['percent']}% ({a['raw_score']}/{a['total_questions']})\n"
+        txt += f"   Marks: {a['earned_marks']:.1f}/{a['total_marks']}\n\n"
     
-    kb = [
-        [InlineKeyboardButton("📥 EXPORT ALL RESULTS (CSV)", callback_data="export_csv")],
-        [InlineKeyboardButton("📢 BROADCAST MESSAGE", callback_data="broadcast_prompt")]
-    ]
-    update.message.reply_text(txt, reply_markup=InlineKeyboardMarkup(kb))
-
-def broadcast_prompt(update: Update, context: CallbackContext):
-    q = update.callback_query
-    q.answer()
-    user_id = q.from_user.id
-    
-    if user_id != ADMIN_ID:
-        q.edit_message_text("⛔ Admin only!")
-        return
-    
-    q.edit_message_text(
-        "📢 BROADCAST MESSAGE\n\n"
-        "Use /broadcast followed by your message to send to all users.\n\n"
-        "Example: /broadcast New questions added! Use /start_quiz to try them."
-    )
+    update.message.reply_text(txt)
 
 def broadcast(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
@@ -861,8 +751,6 @@ def broadcast(update: Update, context: CallbackContext):
     update.message.reply_text(f"📢 Broadcasting to {len(users)} users...")
     
     sent = 0
-    failed = 0
-    
     for uid in users:
         try:
             bot.send_message(
@@ -873,40 +761,9 @@ def broadcast(update: Update, context: CallbackContext):
             sent += 1
             time.sleep(0.1)
         except:
-            failed += 1
+            pass
     
-    update.message.reply_text(f"✅ Broadcast complete!\n\n📤 Sent: {sent}\n❌ Failed: {failed}")
-
-def export_csv(update: Update, context: CallbackContext):
-    q = update.callback_query
-    q.answer()
-    user_id = q.from_user.id
-    
-    if user_id != ADMIN_ID:
-        q.edit_message_text("⛔ Admin only!")
-        return
-    
-    if not DB["attempts"]:
-        q.edit_message_text("No data to export!")
-        return
-    
-    csv = "Name,Username,Phone,Mode,Date,Overall Score,Overall Percent,Total Marks\n"
-    
-    for a in DB["attempts"]:
-        phone = phone_db.get(a["user_id"], "Not provided")
-        csv += f"{a.get('name','')},{a.get('username','')},{phone},{a.get('mode','')},"
-        csv += f"{a.get('timestamp','')},{a['raw_score']}/{a['total_questions']},"
-        csv += f"{a['percent']}%,{a['total_marks_earned']:.1f}/{a['total_marks']}\n"
-    
-    filename = f"jamb_export_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(csv)
-    
-    with open(filename, "rb") as f:
-        q.message.reply_document(document=f, filename=filename, caption=f"📊 {len(DB['attempts'])} attempts from {len(DB['users'])} participants")
-    
-    os.remove(filename)
-    q.edit_message_text("✅ Export complete! Check above for the CSV file.")
+    update.message.reply_text(f"✅ Broadcast complete!\n\n📤 Sent: {sent}")
 
 # Phone collection conversation
 phone_conv = ConversationHandler(
@@ -939,10 +796,6 @@ quiz_conv = ConversationHandler(
             CallbackQueryHandler(force_quit, pattern="^force_quit$"),
             CallbackQueryHandler(resume, pattern="^resume$")
         ],
-        REVIEW_MISSED: [
-            CallbackQueryHandler(resume, pattern="^back$"),
-            CallbackQueryHandler(force_submit, pattern="^force_submit$"),
-        ],
     },
     fallbacks=[],
     allow_reentry=True
@@ -955,10 +808,6 @@ dp.add_handler(CommandHandler("myresult", my_result))
 dp.add_handler(CommandHandler("leaderboard", leaderboard))
 dp.add_handler(CommandHandler("admin", admin))
 dp.add_handler(CommandHandler("broadcast", broadcast))
-dp.add_handler(CallbackQueryHandler(export_csv, pattern="^export_csv$"))
-dp.add_handler(CallbackQueryHandler(broadcast_prompt, pattern="^broadcast_prompt$"))
-dp.add_handler(CallbackQueryHandler(view_answers, pattern="^view_answers_"))
-dp.add_handler(CallbackQueryHandler(lambda u, c: start_quiz_direct(u, c), pattern="^new_quiz$"))
 
 @app.route("/", methods=["GET"])
 def home():
@@ -980,9 +829,7 @@ if __name__ == "__main__":
     for s, qs in ALL_Q.items():
         print(f"   {EMOJIS.get(s, '📚')} {s}: {len(qs)}")
     print(f"\n👑 Admin ID: {ADMIN_ID}")
-    print(f"\n📱 Phone numbers collected: {len(phone_db)}")
+    print(f"\n☁️ Cloud Database: Connected to JSONBin")
     print(f"\n🚀 Bot starting on port {PORT}...")
-    
-    send_update_notification()
     
     app.run(host="0.0.0.0", port=PORT)
